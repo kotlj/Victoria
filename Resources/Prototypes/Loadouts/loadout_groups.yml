@@ -876,7 +876,6 @@
   loadouts:
   - RoboticistCap
   - SkullBandana
-  - ScientificBeret
 
 - type: loadoutGroup
   id: ScientistNeck
