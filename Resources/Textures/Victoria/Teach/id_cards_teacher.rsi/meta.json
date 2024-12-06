@@ -28,6 +28,10 @@
     {
       "name": "default-inhand-right",
       "directions": 4
+    },
+    {
+      "name": "default-inhand-left",
+      "directions": 4
     }
   ]
 }
