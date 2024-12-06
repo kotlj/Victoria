@@ -254,16 +254,6 @@
   id: ClothingUniformJumpskirtEngineering
   result: ClothingUniformJumpskirtEngineering
 
-- type: latheRecipe
-  parent: BaseJumpsuitRecipe
-  id: ClothingUniformJumpsuitSeniorEngineer
-  result: ClothingUniformJumpsuitSeniorEngineer
-
-- type: latheRecipe
-  parent: BaseJumpsuitRecipe
-  id: ClothingUniformJumpskirtSeniorEngineer
-  result: ClothingUniformJumpskirtSeniorEngineer
-
 ## HoP
 
 - type: latheRecipe
@@ -383,16 +373,6 @@
   id: ClothingUniformJumpskirtMedicalDoctor
   result: ClothingUniformJumpskirtMedicalDoctor
 
-- type: latheRecipe
-  parent: BaseJumpsuitRecipe
-  id: ClothingUniformJumpsuitSeniorPhysician
-  result: ClothingUniformJumpsuitSeniorPhysician
-
-- type: latheRecipe
-  parent: BaseJumpsuitRecipe
-  id: ClothingUniformJumpskirtSeniorPhysician
-  result: ClothingUniformJumpskirtSeniorPhysician
-
 ## Mime
 
 - type: latheRecipe
@@ -435,18 +415,6 @@
   parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtParamedic
   result: ClothingUniformJumpskirtParamedic
-
-## Senior Officer
-
-- type: latheRecipe
-  parent: BaseJumpsuitRecipe
-  id: ClothingUniformJumpsuitSeniorOfficer
-  result: ClothingUniformJumpsuitSeniorOfficer
-
-- type: latheRecipe
-  parent: BaseJumpsuitRecipe
-  id: ClothingUniformJumpskirtSeniorOfficer
-  result: ClothingUniformJumpskirtSeniorOfficer
 
 ## Prisoner
 
@@ -510,16 +478,6 @@
   parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtScientist
   result: ClothingUniformJumpskirtScientist
-
-- type: latheRecipe
-  parent: BaseJumpsuitRecipe
-  id: ClothingUniformJumpsuitSeniorResearcher
-  result: ClothingUniformJumpsuitSeniorResearcher
-
-- type: latheRecipe
-  parent: BaseJumpsuitRecipe
-  id: ClothingUniformJumpskirtSeniorResearcher
-  result: ClothingUniformJumpskirtSeniorResearcher
 
 ## Security Officer
 
@@ -824,11 +782,6 @@
   parent: BaseHatRecipe
   id: ClothingHeadHatBeretSecurity
   result: ClothingHeadHatBeretSecurity
-
-- type: latheRecipe
-  parent: BaseHatRecipe
-  id: ClothingHeadHatBeretSeniorPhysician
-  result: ClothingHeadHatBeretSeniorPhysician
 
 - type: latheRecipe
   parent: BaseHatRecipe
