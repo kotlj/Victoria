@@ -7,6 +7,7 @@
   - CargoTechnician
   - Quartermaster
   - SalvageSpecialist
+  - CargoTeacher # Victoria-Job
 
 - type: department
   id: Civilian
@@ -87,6 +88,7 @@
   - ChiefEngineer
   - StationEngineer
   - TechnicalAssistant
+  - EngTeacher # Victoria-Job
 
 - type: department
   id: Medical
@@ -100,6 +102,7 @@
   - MedicalIntern
   - Psychologist
   - Paramedic
+  - MedTeacher # Victoria-Job
 
 - type: department
   id: Security
@@ -114,6 +117,7 @@
   - Pilot # Corvax-Pilot
   - Detective
   - Warden
+  - SecTeacher # Victoria-Job
 
 - type: department
   id: Science
@@ -124,6 +128,7 @@
   - ResearchDirector
   - Scientist
   - ResearchAssistant
+  - SciTeacher # Victoria-Job
 
 - type: department
   id: Silicon

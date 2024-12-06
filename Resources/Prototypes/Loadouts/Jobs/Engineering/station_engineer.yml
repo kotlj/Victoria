@@ -121,11 +121,3 @@
   id: StationEngineerPDA
   equipment:
     id: EngineerPDA
-
-- type: loadout
-  id: SeniorEngineerPDA
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: SeniorEngineering
-  equipment:
-    id: SeniorEngineerPDA

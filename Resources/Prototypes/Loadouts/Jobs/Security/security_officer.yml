@@ -150,15 +150,7 @@
   id: SecurityPDA
   equipment:
     id: SecurityPDA
-
-- type: loadout
-  id: SeniorOfficerPDA
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: SeniorOfficer
-  equipment:
-    id: SeniorOfficerPDA
-
+    
 # Misc
 - type: loadout
   id: SecStar

@@ -697,6 +697,313 @@
     corvax-chatsan-word-124: corvax-chatsan-replacement-124
     corvax-chatsan-word-125: corvax-chatsan-replacement-125
 # Corvax-ChatSanitize-End
+    # Victoria-accent-start
+    victoria-chatsan-word-1-1: victoria-chatsan-replacement-1-1
+    victoria-chatsan-word-1-2: victoria-chatsan-replacement-1-2
+    victoria-chatsan-word-1-3: victoria-chatsan-replacement-1-3
+    victoria-chatsan-word-1-4: victoria-chatsan-replacement-1-4
+    victoria-chatsan-word-1-5: victoria-chatsan-replacement-1-5
+    victoria-chatsan-word-1-6: victoria-chatsan-replacement-1-6
+    victoria-chatsan-word-1-7: victoria-chatsan-replacement-1-7
+    victoria-chatsan-word-1-8: victoria-chatsan-replacement-1-8
+    victoria-chatsan-word-1-9: victoria-chatsan-replacement-1-9
+    victoria-chatsan-word-1-10: victoria-chatsan-replacement-1-10
+
+    victoria-chatsan-word-2-1: victoria-chatsan-replacement-2-1
+    victoria-chatsan-word-2-2: victoria-chatsan-replacement-2-2
+    victoria-chatsan-word-2-3: victoria-chatsan-replacement-2-3
+    victoria-chatsan-word-2-4: victoria-chatsan-replacement-2-4
+    victoria-chatsan-word-2-5: victoria-chatsan-replacement-2-5
+    victoria-chatsan-word-2-7: victoria-chatsan-replacement-2-7
+    victoria-chatsan-word-2-8: victoria-chatsan-replacement-2-8
+    victoria-chatsan-word-2-9: victoria-chatsan-replacement-2-9
+    victoria-chatsan-word-2-10: victoria-chatsan-replacement-2-10
+
+    victoria-chatsan-word-3: victoria-chatsan-replacement-3
+    victoria-chatsan-word-3-2: victoria-chatsan-replacement-3-2
+    victoria-chatsan-word-3-3: victoria-chatsan-replacement-3-3
+    victoria-chatsan-word-3-4: victoria-chatsan-replacement-3-4
+    victoria-chatsan-word-3-5: victoria-chatsan-replacement-3-5
+    victoria-chatsan-word-3-6: victoria-chatsan-replacement-3-6
+    victoria-chatsan-word-3-7: victoria-chatsan-replacement-3-7
+    victoria-chatsan-word-3-8: victoria-chatsan-replacement-3-8
+    victoria-chatsan-word-3-9: victoria-chatsan-replacement-3-9
+
+    victoria-chatsan-word-4-1: victoria-chatsan-replacement-4-1
+    victoria-chatsan-word-4-2: victoria-chatsan-replacement-4-2
+    victoria-chatsan-word-4-3: victoria-chatsan-replacement-4-3
+    victoria-chatsan-word-4-4: victoria-chatsan-replacement-4-4
+    victoria-chatsan-word-4-5: victoria-chatsan-replacement-4-5
+    victoria-chatsan-word-4-6: victoria-chatsan-replacement-4-6
+    victoria-chatsan-word-4-7: victoria-chatsan-replacement-4-7
+    victoria-chatsan-word-4-8: victoria-chatsan-replacement-4-8
+    victoria-chatsan-word-4-9: victoria-chatsan-replacement-4-9
+    victoria-chatsan-word-4-10: victoria-chatsan-replacement-4-10
+
+    victoria-chatsan-word-5-1: victoria-chatsan-replacement-5-1
+    victoria-chatsan-word-5-2: victoria-chatsan-replacement-5-2
+    victoria-chatsan-word-5-3: victoria-chatsan-replacement-5-3
+    victoria-chatsan-word-5-4: victoria-chatsan-replacement-5-4
+    victoria-chatsan-word-5-5: victoria-chatsan-replacement-5-5
+    victoria-chatsan-word-5-6: victoria-chatsan-replacement-5-6
+    victoria-chatsan-word-5-7: victoria-chatsan-replacement-5-7
+    victoria-chatsan-word-5-8: victoria-chatsan-replacement-5-8
+    victoria-chatsan-word-5-9: victoria-chatsan-replacement-5-9
+    victoria-chatsan-word-5-10: victoria-chatsan-replacement-5-10
+
+    victoria-chatsan-word-6-1: victoria-chatsan-replacement-6-1
+    victoria-chatsan-word-6-2: victoria-chatsan-replacement-6-2
+    victoria-chatsan-word-6-3: victoria-chatsan-replacement-6-3
+    victoria-chatsan-word-6-4: victoria-chatsan-replacement-6-4
+    victoria-chatsan-word-6-5: victoria-chatsan-replacement-6-5
+    victoria-chatsan-word-6-6: victoria-chatsan-replacement-6-6
+    victoria-chatsan-word-6-7: victoria-chatsan-replacement-6-7
+    victoria-chatsan-word-6-8: victoria-chatsan-replacement-6-8
+    victoria-chatsan-word-6-9: victoria-chatsan-replacement-6-9
+    victoria-chatsan-word-6-10: victoria-chatsan-replacement-6-10
+
+    victoria-chatsan-word-7-1: victoria-chatsan-replacement-7-1
+    victoria-chatsan-word-7-2: victoria-chatsan-replacement-7-2
+    victoria-chatsan-word-7-3: victoria-chatsan-replacement-7-3
+    victoria-chatsan-word-7-4: victoria-chatsan-replacement-7-4
+    victoria-chatsan-word-7-5: victoria-chatsan-replacement-7-5
+    victoria-chatsan-word-7-6: victoria-chatsan-replacement-7-6
+    victoria-chatsan-word-7-7: victoria-chatsan-replacement-7-7
+    victoria-chatsan-word-7-8: victoria-chatsan-replacement-7-8
+    victoria-chatsan-word-7-9: victoria-chatsan-replacement-7-9
+    victoria-chatsan-word-7-10: victoria-chatsan-replacement-7-10
+
+    victoria-chatsan-word-8-1: victoria-chatsan-replacement-8-1
+    victoria-chatsan-word-8-2: victoria-chatsan-replacement-8-2
+    victoria-chatsan-word-8-3: victoria-chatsan-replacement-8-3
+    victoria-chatsan-word-8-4: victoria-chatsan-replacement-8-4
+    victoria-chatsan-word-8-5: victoria-chatsan-replacement-8-5
+    victoria-chatsan-word-8-6: victoria-chatsan-replacement-8-6
+    victoria-chatsan-word-8-7: victoria-chatsan-replacement-8-7
+    victoria-chatsan-word-8-8: victoria-chatsan-replacement-8-8
+    victoria-chatsan-word-8-9: victoria-chatsan-replacement-8-9
+    victoria-chatsan-word-8-10: victoria-chatsan-replacement-8-10
+
+    victoria-chatsan-word-9-1: victoria-chatsan-replacement-9-1
+    victoria-chatsan-word-9-2: victoria-chatsan-replacement-9-2
+    victoria-chatsan-word-9-3: victoria-chatsan-replacement-9-3
+    victoria-chatsan-word-9-4: victoria-chatsan-replacement-9-4
+    victoria-chatsan-word-9-5: victoria-chatsan-replacement-9-5
+    victoria-chatsan-word-9-6: victoria-chatsan-replacement-9-6
+    victoria-chatsan-word-9-7: victoria-chatsan-replacement-9-7
+    victoria-chatsan-word-9-8: victoria-chatsan-replacement-9-8
+    victoria-chatsan-word-9-9: victoria-chatsan-replacement-9-9
+    victoria-chatsan-word-9-10: victoria-chatsan-replacement-9-10
+
+    victoria-chatsan-word-10: victoria-chatsan-replacement-10
+    victoria-chatsan-word-10-2: victoria-chatsan-replacement-10-2
+    victoria-chatsan-word-10-3: victoria-chatsan-replacement-10-3
+    victoria-chatsan-word-10-4: victoria-chatsan-replacement-10-4
+    victoria-chatsan-word-10-5: victoria-chatsan-replacement-10-5
+    victoria-chatsan-word-10-6: victoria-chatsan-replacement-10-6
+    victoria-chatsan-word-10-7: victoria-chatsan-replacement-10-7
+    victoria-chatsan-word-10-8: victoria-chatsan-replacement-10-8
+    victoria-chatsan-word-10-9: victoria-chatsan-replacement-10-9
+    victoria-chatsan-word-10-10: victoria-chatsan-replacement-10-10
+
+    victoria-chatsan-word-11: victoria-chatsan-replacement-11
+    victoria-chatsan-word-11-2: victoria-chatsan-replacement-11-2
+    victoria-chatsan-word-11-3: victoria-chatsan-replacement-11-3
+    victoria-chatsan-word-11-4: victoria-chatsan-replacement-11-4
+    victoria-chatsan-word-11-5: victoria-chatsan-replacement-11-5
+    victoria-chatsan-word-11-6: victoria-chatsan-replacement-11-6
+    victoria-chatsan-word-11-7: victoria-chatsan-replacement-11-7
+    victoria-chatsan-word-11-8: victoria-chatsan-replacement-11-8
+    victoria-chatsan-word-11-9: victoria-chatsan-replacement-11-9
+    victoria-chatsan-word-11-10: -chatsan-replacement-11-10
+
+    victoria-chatsan-word-12: victoria-chatsan-replacement-12
+    victoria-chatsan-word-12-2: victoria-chatsan-replacement-12-2
+    victoria-chatsan-word-12-3: victoria-chatsan-replacement-12-3
+    victoria-chatsan-word-12-4: victoria-chatsan-replacement-12-4
+    victoria-chatsan-word-12-5: victoria-chatsan-replacement-12-5
+    victoria-chatsan-word-12-6: victoria-chatsan-replacement-12-6
+    victoria-chatsan-word-12-7: victoria-chatsan-replacement-12-7
+    victoria-chatsan-word-12-8: victoria-chatsan-replacement-12-8
+    victoria-chatsan-word-12-9: victoria-chatsan-replacement-12-9
+    victoria-chatsan-word-12-10: victoria-chatsan-replacement-12-10
+
+    victoria-chatsan-word-13: victoria-chatsan-replacement-13
+    victoria-chatsan-word-13-2: victoria-chatsan-replacement-13-2
+    victoria-chatsan-word-13-3: victoria-chatsan-replacement-13-3
+    victoria-chatsan-word-13-4: victoria-chatsan-replacement-13-4
+    victoria-chatsan-word-13-5: victoria-chatsan-replacement-13-5
+    victoria-chatsan-word-13-6: victoria-chatsan-replacement-13-6
+    victoria-chatsan-word-13-7: victoria-chatsan-replacement-13-7
+    victoria-chatsan-word-13-8: victoria-chatsan-replacement-13-8
+    victoria-chatsan-word-13-9: victoria-chatsan-replacement-13-9
+    victoria-chatsan-word-13-10: victoria-chatsan-replacement-13-10
+
+    victoria-chatsan-word-14: victoria-chatsan-replacement-14
+    victoria-chatsan-word-14-2: victoria-chatsan-replacement-14-2
+    victoria-chatsan-word-14-3: victoria-chatsan-replacement-14-3
+    victoria-chatsan-word-14-4: victoria-chatsan-replacement-14-4
+    victoria-chatsan-word-14-5: victoria-chatsan-replacement-14-5
+    victoria-chatsan-word-14-6: victoria-chatsan-replacement-14-6
+    victoria-chatsan-word-14-7: victoria-chatsan-replacement-14-7
+    victoria-chatsan-word-14-8: victoria-chatsan-replacement-14-8
+    victoria-chatsan-word-14-9: victoria-chatsan-replacement-14-9
+    victoria-chatsan-word-14-10: victoria-chatsan-replacement-14-10
+
+    victoria-chatsan-word-15: victoria-chatsan-replacement-15
+    victoria-chatsan-word-15-2: victoria-chatsan-replacement-15-2
+    victoria-chatsan-word-15-3: victoria-chatsan-replacement-15-3
+    victoria-chatsan-word-15-4: victoria-chatsan-replacement-15-4
+    victoria-chatsan-word-15-5: victoria-chatsan-replacement-15-5
+    victoria-chatsan-word-15-6: victoria-chatsan-replacement-15-6
+    victoria-chatsan-word-15-7: victoria-chatsan-replacement-15-7
+    victoria-chatsan-word-15-8: victoria-chatsan-replacement-15-8
+    victoria-chatsan-word-15-9: victoria-chatsan-replacement-15-9
+    victoria-chatsan-word-15-10: victoria-chatsan-replacement-15-10
+
+    victoria-chatsan-word-16: victoria-chatsan-replacement-16
+    victoria-chatsan-word-16-2: victoria-chatsan-replacement-16-2
+    victoria-chatsan-word-16-3: victoria-chatsan-replacement-16-3
+    victoria-chatsan-word-16-4: victoria-chatsan-replacement-16-4
+    victoria-chatsan-word-16-5: victoria-chatsan-replacement-16-5
+    victoria-chatsan-word-16-6: victoria-chatsan-replacement-16-6
+    victoria-chatsan-word-16-7: victoria-chatsan-replacement-16-7
+    victoria-chatsan-word-16-8: victoria-chatsan-replacement-16-8
+    victoria-chatsan-word-16-9: victoria-chatsan-replacement-16-9
+    victoria-chatsan-word-16-10: victoria-chatsan-replacement-16-10
+
+    victoria-chatsan-word-17: victoria-chatsan-replacement-17
+    victoria-chatsan-word-17-2: victoria-chatsan-replacement-17-2
+    victoria-chatsan-word-17-3: victoria-chatsan-replacement-17-3
+    victoria-chatsan-word-17-4: victoria-chatsan-replacement-17-4
+    victoria-chatsan-word-17-5: victoria-chatsan-replacement-17-5
+    victoria-chatsan-word-17-6: victoria-chatsan-replacement-17-6
+    victoria-chatsan-word-17-7: victoria-chatsan-replacement-17-7
+    victoria-chatsan-word-17-8: victoria-chatsan-replacement-17-8
+    victoria-chatsan-word-17-9: victoria-chatsan-replacement-17-9
+    victoria-chatsan-word-17-10: victoria-chatsan-replacement-17-10
+
+    victoria-chatsan-word-18: victoria-chatsan-replacement-18
+    victoria-chatsan-word-18-2: victoria-chatsan-replacement-18-2
+    victoria-chatsan-word-18-3: victoria-chatsan-replacement-18-3
+    victoria-chatsan-word-18-4: victoria-chatsan-replacement-18-4
+    victoria-chatsan-word-18-5: victoria-chatsan-replacement-18-5
+    victoria-chatsan-word-18-6: victoria-chatsan-replacement-18-6
+    victoria-chatsan-word-18-7: victoria-chatsan-replacement-18-7
+    victoria-chatsan-word-18-8: victoria-chatsan-replacement-18-8
+    victoria-chatsan-word-18-9: victoria-chatsan-replacement-18-9
+    victoria-chatsan-word-18-10: victoria-chatsan-replacement-18-10
+
+    victoria-chatsan-word-19: victoria-chatsan-replacement-19
+    victoria-chatsan-word-19-2: victoria-chatsan-replacement-19-2
+    victoria-chatsan-word-19-3: victoria-chatsan-replacement-19-3
+    victoria-chatsan-word-19-4: victoria-chatsan-replacement-19-4
+    victoria-chatsan-word-19-5: victoria-chatsan-replacement-19-5
+    victoria-chatsan-word-19-6: victoria-chatsan-replacement-19-6
+    victoria-chatsan-word-19-7: victoria-chatsan-replacement-19-7
+    victoria-chatsan-word-19-8: victoria-chatsan-replacement-19-8
+    victoria-chatsan-word-19-9: victoria-chatsan-replacement-19-9
+    victoria-chatsan-word-19-10: victoria-chatsan-replacement-19-10
+
+    victoria-chatsan-word-20: victoria-chatsan-replacement-20
+    victoria-chatsan-word-20-2: victoria-chatsan-replacement-20-2
+    victoria-chatsan-word-20-3: victoria-chatsan-replacement-20-3
+    victoria-chatsan-word-20-4: victoria-chatsan-replacement-20-4
+    victoria-chatsan-word-20-5: victoria-chatsan-replacement-20-5
+    victoria-chatsan-word-20-6: victoria-chatsan-replacement-20-6
+    victoria-chatsan-word-20-7: victoria-chatsan-replacement-20-7
+    victoria-chatsan-word-20-8: victoria-chatsan-replacement-20-8
+    victoria-chatsan-word-20-9: victoria-chatsan-replacement-20-9
+    victoria-chatsan-word-20-10: victoria-chatsan-replacement-20-10
+
+    victoria-chatsan-word-21: victoria-chatsan-replacement-21
+    victoria-chatsan-word-21-2: victoria-chatsan-replacement-21-2
+    victoria-chatsan-word-21-3: victoria-chatsan-replacement-21-3
+    victoria-chatsan-word-21-4: victoria-chatsan-replacement-21-4
+    victoria-chatsan-word-21-5: victoria-chatsan-replacement-21-5
+    victoria-chatsan-word-21-6: victoria-chatsan-replacement-21-6
+    victoria-chatsan-word-21-7: victoria-chatsan-replacement-21-7
+    victoria-chatsan-word-21-8: victoria-chatsan-replacement-21-8
+    victoria-chatsan-word-21-9: victoria-chatsan-replacement-21-9
+    victoria-chatsan-word-21-10: victoria-chatsan-replacement-21-10
+
+    victoria-chatsan-word-22: victoria-chatsan-replacement-22
+    victoria-chatsan-word-22-2: victoria-chatsan-replacement-22-2
+    victoria-chatsan-word-22-3: victoria-chatsan-replacement-22-3
+    victoria-chatsan-word-22-5: victoria-chatsan-replacement-22-5
+    victoria-chatsan-word-22-6: victoria-chatsan-replacement-22-7
+    victoria-chatsan-word-22-8: victoria-chatsan-replacement-22-8
+    victoria-chatsan-word-22-9: victoria-chatsan-replacement-22-9
+    victoria-chatsan-word-22-10: victoria-chatsan-replacement-22-10
+    victoria-chatsan-word-22-11: victoria-chatsan-replacement-22-11
+
+    victoria-chatsan-word-23: victoria-chatsan-replacement-23
+    victoria-chatsan-word-23-2: victoria-chatsan-replacement-23-2
+    victoria-chatsan-word-23-3: victoria-chatsan-replacement-23-3
+    victoria-chatsan-word-23-4: victoria-chatsan-replacement-23-4
+    victoria-chatsan-word-23-5: victoria-chatsan-replacement-23-5
+
+    victoria-chatsan-word-24: victoria-chatsan-replacement-24
+    victoria-chatsan-word-24-2: victoria-chatsan-replacement-24-2
+    victoria-chatsan-word-24-3: victoria-chatsan-replacement-24-3
+    victoria-chatsan-word-24-4: victoria-chatsan-replacement-24-4
+    victoria-chatsan-word-24-5: victoria-chatsan-replacement-24-5
+
+    victoria-chatsan-word-25: victoria-chatsan-replacement-25
+    victoria-chatsan-word-25-2: victoria-chatsan-replacement-25-2
+    victoria-chatsan-word-25-3: victoria-chatsan-replacement-25-3
+    victoria-chatsan-word-25-4: victoria-chatsan-replacement-25-4
+    victoria-chatsan-word-25-5: victoria-chatsan-replacement-25-5
+
+    victoria-chatsan-word-26: victoria-chatsan-replacement-26
+    victoria-chatsan-word-26-2: victoria-chatsan-replacement-26-2
+    victoria-chatsan-word-26-3: victoria-chatsan-replacement-26-3
+    victoria-chatsan-word-26-4: victoria-chatsan-replacement-26-4
+    victoria-chatsan-word-26-5: victoria-chatsan-replacement-26-5
+
+    victoria-chatsan-word-27: victoria-chatsan-replacement-27
+    victoria-chatsan-word-27-2: victoria-chatsan-replacement-27-2
+    victoria-chatsan-word-27-3: victoria-chatsan-replacement-27-3
+    victoria-chatsan-word-27-4: victoria-chatsan-replacement-27-4
+    victoria-chatsan-word-27-5: victoria-chatsan-replacement-27-5
+    victoria-chatsan-word-27-6: victoria-chatsan-replacement-27-6
+    victoria-chatsan-word-27-7: victoria-chatsan-replacement-27-7
+    victoria-chatsan-word-27-8: victoria-chatsan-replacement-27-8
+    victoria-chatsan-word-27-9: victoria-chatsan-replacement-27-9
+    victoria-chatsan-word-27-10: victoria-chatsan-replacement-27-10
+
+    victoria-chatsan-word-28: victoria-chatsan-replacement-28
+    victoria-chatsan-word-28-2: victoria-chatsan-replacement-28-2
+    victoria-chatsan-word-28-3: victoria-chatsan-replacement-28-3
+    victoria-chatsan-word-28-4: victoria-chatsan-replacement-28-4
+    victoria-chatsan-word-28-5: victoria-chatsan-replacement-28-5
+    victoria-chatsan-word-28-6: victoria-chatsan-replacement-28-6
+
+    victoria-chatsan-word-29: victoria-chatsan-replacement-29
+
+    victoria-chatsan-word-30: victoria-chatsan-replacement-30
+
+    victoria-chatsan-word-31: victoria-chatsan-replacement-31
+
+    victoria-chatsan-word-32: victoria-chatsan-replacement-32
+
+    victoria-chatsan-word-33: victoria-chatsan-replacement-33
+
+    victoria-chatsan-word-34: victoria-chatsan-replacement-34
+
+    victoria-chatsan-word-35: victoria-chatsan-replacement-35
+    victoria-chatsan-word-35-5: victoria-chatsan-replacement-35-5
+    victoria-chatsan-word-35-6: victoria-chatsan-replacement-35-6
+    victoria-chatsan-word-35-7: victoria-chatsan-replacement-35-7
+    victoria-chatsan-word-35-8: victoria-chatsan-replacement-35-8
+
+    victoria-chatsan-word-36: victoria-chatsan-replacement-36
+    victoria-chatsan-word-36-2: victoria-chatsan-replacement-36-2
+    victoria-chatsan-word-36-3: victoria-chatsan-replacement-36-3
+    victoria-chatsan-word-36-4: victoria-chatsan-replacement-36-4
+    victoria-chatsan-word-36-5: victoria-chatsan-replacement-36-5
+    victoria-chatsan-word-36-6: victoria-chatsan-replacement-36-6
+    # Victoria-accent-end
 
 - type: accent
   id: liar
