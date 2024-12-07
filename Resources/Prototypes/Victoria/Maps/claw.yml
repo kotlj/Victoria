@@ -15,8 +15,6 @@
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/claw_emergency.yml
         - type: StationJobs
-          overflowJobs:
-            - Passenger
           availableJobs:
             CargoTechnician: [ 6, 6 ]
             Passenger: [ -1, -1 ]
