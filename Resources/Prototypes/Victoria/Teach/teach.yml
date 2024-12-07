@@ -80,7 +80,7 @@
 - type: entity
   parent: BasePDA
   id: PDACargoTeacher
-  name: ID-карта бригадира
+  name: КПК бригадира
   suffix: Ведущие
   description: Этот КПК так и подначивает на всех наорать и всех построить
   components:
@@ -591,7 +591,7 @@
     sprite: Victoria/Teach/id_cards_teacher.rsi
     layers:
     - state: default
-    - state: idsci_teacher
+    - state: idmed_teacher
   - type: PresetIdCard
     job: MedTeacher
 #-------------------------КПК--------------
