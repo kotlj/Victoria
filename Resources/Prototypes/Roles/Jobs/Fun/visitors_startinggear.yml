@@ -517,7 +517,7 @@
 - type: startingGear
   id: VisitorEngineerAlt
   equipment:
-    jumpsuit: ClothingUniformJumpsuitSeniorEngineer
+    jumpsuit: ClothingUniformJumpsuitEngineering
     shoes: ClothingShoesBootsWork
     gloves: ClothingHandsGlovesColorYellow
     head: ClothingHeadHatBeretEngineering
@@ -630,7 +630,7 @@
     jumpsuit: ClothingUniformJumpsuitVirology
     shoes: ClothingShoesColorGreen
     gloves: ClothingHandsGlovesNitrile
-    head: ClothingHeadHatBeretSeniorPhysician
+    head: ClothingHeadMirror
     neck: ClothingNeckStethoscope
     id: VisitorPDA
     belt: ClothingBeltMedicalFilled
