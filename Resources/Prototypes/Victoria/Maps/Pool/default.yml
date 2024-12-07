@@ -1,0 +1,19 @@
+- type: gameMapPool
+  id: VictoriaDefaultMapPool
+  maps:
+  # Highpop (76-100)
+  - CorvaxDelta
+  - VictoriaClaw
+  # MidHigpop (51-75)
+  - Box
+  - CorvaxPaper
+  - Bagel
+  - Marathon
+  - VictoriaCross
+  # Midpop (26-50)
+  - Core
+  # MidLowpop (11-25)
+  - Packed
+  - Omega
+  # Lowpop (0-10)
+  - CorvaxSilly

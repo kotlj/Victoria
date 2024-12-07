@@ -111,7 +111,7 @@
   parent: JobIcon
   id: JobIconCargoTeacher
   icon:
-    sprite: Victoria/Teach/job_icons_teacher.rsi
+    sprite: /Textures/Victoria/Teach/job_icons_teacher.rsi
     state: TeacherCargo
   jobName: Бригадир
 #-------------------------Роль--------------
@@ -245,7 +245,7 @@
   parent: JobIcon
   id: JobIconEngTeacher
   icon:
-    sprite: Victoria/Teach/job_icons_teacher.rsi
+    sprite: /Textures/Victoria/Teach/job_icons_teacher.rsi
     state: TeacherEngineer
   jobName: Ведущий инженер
 #-------------------------Роль--------------
@@ -381,7 +381,7 @@
   parent: JobIcon
   id: JobIconSecTeacher
   icon:
-    sprite: Victoria/Teach/job_icons_teacher.rsi
+    sprite: /Textures/Victoria/Teach/job_icons_teacher.rsi
     state: TeacherOfficer
   jobName: Инструктор
 #-------------------------Роль--------------
@@ -517,7 +517,7 @@
   parent: JobIcon
   id: JobIconSciTeacher
   icon:
-    sprite: Victoria/Teach/job_icons_teacher.rsi
+    sprite: /Textures/Victoria/Teach/job_icons_teacher.rsi
     state: TeacherSci
   jobName: Доцент
 #-------------------------Роль--------------
@@ -630,7 +630,7 @@
   parent: JobIcon
   id: JobIconMedTeacher
   icon:
-    sprite: Victoria/Teach/job_icons_teacher.rsi
+    sprite: /Textures/Victoria/Teach/job_icons_teacher.rsi
     state: TeacherMed
   jobName: Мед.консультант
 #-------------------------Роль--------------
