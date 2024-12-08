@@ -8,9 +8,9 @@
   description: description-of-UmporUniformSoldier
   components:
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Equipment/uniform_s.rsi
+    sprite: Victoria/Umpor/Equipment/uniform_s.rsi
   - type: Clothing
-    sprite: Corvax/Lore/Umpor/Equipment/uniform_s.rsi
+    sprite: Victoria/Umpor/Equipment/uniform_s.rsi
 #------------------------------------офицер----------     
 - type: entity
   parent: ClothingUniformSkirtBase
@@ -20,9 +20,9 @@
   description: description-of-UmporUniformOficier
   components:
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Equipment/uniform_o.rsi
+    sprite: Victoria/Umpor/Equipment/uniform_o.rsi
   - type: Clothing
-    sprite: Corvax/Lore/Umpor/Equipment/uniform_o.rsi
+    sprite: Victoria/Umpor/Equipment/uniform_o.rsi
 #------------------------------------медик----------     
 - type: entity
   parent: ClothingUniformSkirtBase
@@ -32,9 +32,9 @@
   description: description-of-UmporUniformMedic
   components:
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Equipment/uniform_m.rsi
+    sprite: Victoria/Umpor/Equipment/uniform_m.rsi
   - type: Clothing
-    sprite: Corvax/Lore/Umpor/Equipment/uniform_m.rsi
+    sprite: Victoria/Umpor/Equipment/uniform_m.rsi
 #------------------------------------инженер---------- 
 - type: entity
   parent: ClothingUniformSkirtBase
@@ -44,9 +44,9 @@
   description: description-of-UmporUniformEngineer
   components:
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Equipment/uniform_e.rsi
+    sprite: Victoria/Umpor/Equipment/uniform_e.rsi
   - type: Clothing
-    sprite: Corvax/Lore/Umpor/Equipment/uniform_e.rsi
+    sprite: Victoria/Umpor/Equipment/uniform_e.rsi
 #------------------------------------логист----------     
 - type: entity
   parent: ClothingUniformSkirtBase
@@ -56,9 +56,9 @@
   description: description-of-UmporUniformLogist
   components:
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Equipment/uniform_l.rsi
+    sprite: Victoria/Umpor/Equipment/uniform_l.rsi
   - type: Clothing
-    sprite: Corvax/Lore/Umpor/Equipment/uniform_l.rsi
+    sprite: Victoria/Umpor/Equipment/uniform_l.rsi
 #------------------------------------радист----------     
 - type: entity
   parent: ClothingUniformSkirtBase
@@ -68,9 +68,9 @@
   description: description-of-UmporUniformRadist
   components:
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Equipment/uniform_r.rsi
+    sprite: Victoria/Umpor/Equipment/uniform_r.rsi
   - type: Clothing
-    sprite: Corvax/Lore/Umpor/Equipment/uniform_r.rsi
+    sprite: Victoria/Umpor/Equipment/uniform_r.rsi
 #-------------------------------одежда и снаряга----------------------------------------------------------------------
 #------------------------------------рюкзак---------- 
 - type: entity
@@ -81,7 +81,7 @@
   description: description-of-UmporBackpack
   components:
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_back.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_back.rsi
 #------------------------------------рюкзак-радиостанция----------     
 - type: entity
   parent: ClothingBackpack
@@ -91,7 +91,7 @@
   description: description-of-UmporRadioBackpack
   components:
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_back_radio.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_back_radio.rsi
   - type: Storage
     grid:
     - 0,0,4,4
@@ -118,9 +118,9 @@
   description: description-of-UmporBoots
   components:
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_boots.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_boots.rsi
   - type: Clothing
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_boots.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_boots.rsi
 #------------------------------------шлем---------- 
 - type: entity
   parent: ClothingHeadHelmetBasic
@@ -130,9 +130,9 @@
   description: description-of-UmporHelmet
   components:
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Armor/umpor_helmet.rsi
+    sprite: Victoria/Umpor/Armor/umpor_helmet.rsi
   - type: Clothing
-    sprite: Corvax/Lore/Umpor/Armor/umpor_helmet.rsi
+    sprite: Victoria/Umpor/Armor/umpor_helmet.rsi
 #------------------------------------беретка---------- 
 - type: entity
   parent: ClothingHeadBase
@@ -142,9 +142,9 @@
   description: description-of-UmporBeret
   components:
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_beret.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_beret.rsi
   - type: Clothing
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_beret.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_beret.rsi
   - type: Tag
     tags:
     - ClothMade
@@ -159,9 +159,9 @@
   description: description-of-UmporCap
   components:
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_cap.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_cap.rsi
   - type: Clothing
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_cap.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_cap.rsi
   - type: Tag
     tags:
     - ClothMade
@@ -176,9 +176,9 @@
   description: description-of-UmporGlovesFingerless
   components:
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_gloves.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_gloves.rsi
   - type: Clothing
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_gloves.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_gloves.rsi
   - type: Fiber
     fiberMaterial: fibers-synthetic
     fiberColor: fibers-black
@@ -207,9 +207,9 @@
   description: description-of-UmporCapP
   components:
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_cap_p.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_cap_p.rsi
   - type: Clothing
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_cap_p.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_cap_p.rsi
   - type: Tag
     tags:
     - ClothMade
@@ -224,9 +224,9 @@
   description: description-of-UmporArmorBasic
   components:
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Armor/umpor_armor_light.rsi
+    sprite: Victoria/Umpor/Armor/umpor_armor_light.rsi
   - type: Clothing
-    sprite: Corvax/Lore/Umpor/Armor/umpor_armor_light.rsi
+    sprite: Victoria/Umpor/Armor/umpor_armor_light.rsi
   - type: Armor 
     modifiers:
       coefficients:
@@ -245,9 +245,9 @@
   description: description-of-UmporArmorMiddl
   components:
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Armor/umpor_armor_mid.rsi
+    sprite: Victoria/Umpor/Armor/umpor_armor_mid.rsi
   - type: Clothing
-    sprite: Corvax/Lore/Umpor/Armor/umpor_armor_mid.rsi
+    sprite: Victoria/Umpor/Armor/umpor_armor_mid.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -268,9 +268,9 @@
   description: description-of-UmporHardsuit
   components:
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Armor/umpor_hardsuits.rsi
+    sprite: Victoria/Umpor/Armor/umpor_hardsuits.rsi
   - type: Clothing
-    sprite: Corvax/Lore/Umpor/Armor/umpor_hardsuits.rsi
+    sprite: Victoria/Umpor/Armor/umpor_hardsuits.rsi
   - type: ExplosionResistance
     damageCoefficient: 0.9
   - type: Armor
@@ -296,9 +296,9 @@
   components:
   - type: BreathMask
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Armor/umpor_hardsuits_helmet.rsi
+    sprite: Victoria/Umpor/Armor/umpor_hardsuits_helmet.rsi
   - type: Clothing
-    sprite: Corvax/Lore/Umpor/Armor/umpor_hardsuits_helmet.rsi
+    sprite: Victoria/Umpor/Armor/umpor_hardsuits_helmet.rsi
   - type: PointLight
     color: "#ffdbad"
   - type: PressureProtection
@@ -322,7 +322,7 @@
   description: description-of-UmporHealthAnalyzerUnpowered
   components:
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_healthanalyzer.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_healthanalyzer.rsi
     state: icon
     layers:
       - state: icon
@@ -370,7 +370,7 @@
     - UmporHatchet
   - type: Sharp
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Weapon/umpor_hatchet.rsi
+    sprite: Victoria/Umpor/Weapon/umpor_hatchet.rsi
     state: icon
   - type: MeleeWeapon
     wideAnimationRotation: 135
@@ -380,7 +380,7 @@
         Slash: 10
         Piercing: 5
   - type: Item
-    sprite: Corvax/Lore/Umpor/Weapon/umpor_hatchet.rsi
+    sprite: Victoria/Umpor/Weapon/umpor_hatchet.rsi
 #------------------------------------лопатка----------     
 - type: Tag
   id: UmporSpade
@@ -396,7 +396,7 @@
     tags:
     - UmporSpade
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Weapon/umpor_spade.rsi
+    sprite: Victoria/Umpor/Weapon/umpor_spade.rsi
     state: icon
   - type: MeleeWeapon
     wideAnimationRotation: 45
@@ -405,7 +405,7 @@
         Blunt: 11
         Piercing: 7
   - type: Item
-    sprite: Corvax/Lore/Umpor/Weapon/umpor_spade.rsi
+    sprite: Victoria/Umpor/Weapon/umpor_spade.rsi
 #---------------------------------------------РСУ---------------------    
 #------------------------сумка-------------- 
 - type: Tag
@@ -423,13 +423,13 @@
     - BackpackRCD
     - WhitelistChameleon
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_backpack_rcd.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_backpack_rcd.rsi
     state: icon
   - type: Item
     size: Ginormous
   - type: Clothing
     slots: BACK
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_backpack_rcd.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_backpack_rcd.rsi
   - type: SolutionAmmoProvider
     solutionId: tank
     proto: BulletWaterShot
@@ -444,10 +444,10 @@
   description: description-of-UmporRCD
   components:
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_rcd.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_rcd.rsi
     state: icon
   - type: Item
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_rcd.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_rcd.rsi
     size: Small
   - type: RCD
     availablePrototypes:
@@ -494,9 +494,9 @@
   description: description-of-UmporBeltEng
   components:
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_belt_e.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_belt_e.rsi
   - type: Clothing
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_belt_e.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_belt_e.rsi
   - type: Storage
     maxItemSize: Normal
     # TODO: Fill this out more.
@@ -558,9 +558,9 @@
   description: description-of-UmporeBeltAssault
   components:
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_belt_s.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_belt_s.rsi
   - type: Clothing
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_belt_s.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_belt_s.rsi
   - type: Storage
   - type: Appearance
 
@@ -584,9 +584,9 @@
   description: description-of-UmporeBeltMed
   components:
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_belt_m.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_belt_m.rsi
   - type: Clothing
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_belt_m.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_belt_m.rsi
   - type: Storage
   - type: Appearance
 
@@ -621,10 +621,10 @@
     - Knife
     - UmpornKnife
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Weapon/umpor_knife.rsi
+    sprite: Victoria/Umpor/Weapon/umpor_knife.rsi
     state: icon
   - type: Item
-    sprite: Corvax/Lore/Umpor/Weapon/umpor_knife.rsi
+    sprite: Victoria/Umpor/Weapon/umpor_knife.rsi
 #-------------------------------------дальнее-------------------------------------------------------------------------------
 #-------------------------------------пули--------------------------------------------------------------
 #------------------------------------винтовка---------- 
@@ -733,7 +733,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Weapon/umpor_rifle_magazine.rsi
+    sprite: Victoria/Umpor/Weapon/umpor_rifle_magazine.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -785,7 +785,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Weapon/umpor_automat_magazine.rsi
+    sprite: Victoria/Umpor/Weapon/umpor_automat_magazine.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -838,7 +838,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Weapon/umpor_pistol_magazine.rsi
+    sprite: Victoria/Umpor/Weapon/umpor_pistol_magazine.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -873,7 +873,7 @@
   description: description-of-UmporHeavyRifle
   components:
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Weapon/umpor_rifle.rsi
+    sprite: Victoria/Umpor/Weapon/umpor_rifle.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
@@ -882,7 +882,7 @@
   - type: Item
     size: Large
   - type: Clothing
-    sprite: Corvax/Lore/Umpor/Weapon/umpor_rifle.rsi
+    sprite: Victoria/Umpor/Weapon/umpor_rifle.rsi
   - type: Gun
     fireRate: 0.75
     soundGunshot:
@@ -928,7 +928,7 @@
   description: description-of-UmporLightRifle
   components:
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Weapon/umpor_automat.rsi
+    sprite: Victoria/Umpor/Weapon/umpor_automat.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
@@ -937,7 +937,7 @@
   - type: Item
     size: Large
   - type: Clothing
-    sprite: Corvax/Lore/Umpor/Weapon/umpor_automat.rsi
+    sprite: Victoria/Umpor/Weapon/umpor_automat.rsi
   - type: Gun
     fireRate: 5
     soundGunshot:
@@ -986,7 +986,7 @@
   description: description-of-UmporPistol
   components:
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Weapon/umpor_pistol.rsi
+    sprite: Victoria/Umpor/Weapon/umpor_pistol.rsi
     layers:
      - state: base
        map: ["enum.GunVisualLayers.Base"]
@@ -1054,7 +1054,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Weapon/umpor_box_ammo.rsi
+    sprite: Victoria/Umpor/Weapon/umpor_box_ammo.rsi
   - type: Appearance
 #------------------------------винтовочные----------------
 - type: entity
@@ -1152,7 +1152,7 @@
     containers:
       board: [ DoorElectronicsUmporAccess ]
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/umpor_airlock.rsi
+    sprite: Victoria/Umpor/umpor_airlock.rsi
 #------------------------------------свободный шлюз---------- 
 - type: entity
   parent: Airlock
@@ -1160,7 +1160,7 @@
   suffix: Umpor
   components:
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/umpor_airlock.rsi
+    sprite: Victoria/Umpor/umpor_airlock.rsi
 #------------------------------------закрытый стеклянный шлюз---------- 
 - type: entity
   parent: AirlockGlass
@@ -1171,7 +1171,7 @@
     containers:
       board: [ DoorElectronicsUmporAccess ]
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/umpor_airlock_glass.rsi
+    sprite: Victoria/Umpor/umpor_airlock_glass.rsi
   - type: PaintableAirlock
     group: Glass     
 #------------------------------------свободный стеклянный шлюз----------
@@ -1181,7 +1181,7 @@
   suffix: Umpor
   components:
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/umpor_airlock_glass.rsi
+    sprite: Victoria/Umpor/umpor_airlock_glass.rsi
   - type: PaintableAirlock
     group: Glass  
 #------------------------------------------КПК, карты----------------------------------------  
@@ -1194,11 +1194,11 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_id_cards.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_id_cards.rsi
   - type: Clothing
     slots:
     - idcard
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_id_cards.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_id_cards.rsi
   - type: Item
     size: Small
     heldPrefix: default
@@ -1297,7 +1297,7 @@
   components:
   - type: Appearance
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_pda.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_pda.rsi
     layers:
     - map: [ "enum.PdaVisualLayers.Base" ]
     - state: "light_overlay"
@@ -1309,7 +1309,7 @@
       shader: "unshaded"
       visible: false
   - type: Icon
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_pda.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_pda.rsi
     state: pda
 #------------------------------------КПК солдата----------    
 - type: entity
@@ -1323,7 +1323,7 @@
       id: UmporIDCardSolder
       state: pda
     - type: Icon
-      sprite: Corvax/Lore/Umpor/Equipment/umpor_pda.rsi
+      sprite: Victoria/Umpor/Equipment/umpor_pda.rsi
       state: pda
 #------------------------------------КПК офицера----------       
 - type: entity
@@ -1337,7 +1337,7 @@
       id: UmporIDCardOfficer
       state: pda
     - type: Icon
-      sprite: Corvax/Lore/Umpor/Equipment/umpor_pda.rsi
+      sprite: Victoria/Umpor/Equipment/umpor_pda.rsi
       state: pda
 #------------------------------------КПК инженера----------       
 - type: entity
@@ -1351,7 +1351,7 @@
       id: UmporIDCardEngener
       state: pda
     - type: Icon
-      sprite: Corvax/Lore/Umpor/Equipment/umpor_pda.rsi
+      sprite: Victoria/Umpor/Equipment/umpor_pda.rsi
       state: pda
 #------------------------------------КПК медика----------       
 - type: entity
@@ -1365,7 +1365,7 @@
       id: UmporIDCardMedic
       state: pda
     - type: Icon
-      sprite: Corvax/Lore/Umpor/Equipment/umpor_pda.rsi
+      sprite: Victoria/Umpor/Equipment/umpor_pda.rsi
       state: pda
 #------------------------------------КПК логиста----------       
 - type: entity
@@ -1379,7 +1379,7 @@
       id: UmporIDCardLogist
       state: pda
     - type: Icon
-      sprite: Corvax/Lore/Umpor/Equipment/umpor_pda.rsi
+      sprite: Victoria/Umpor/Equipment/umpor_pda.rsi
       state: pda
 #------------------------------------------связь----------------------------------------  
 #-----------------------------канал----------------------------------------  
@@ -1403,9 +1403,9 @@
     - UmporRadio
     defaultChannel: UmporRadio
   - type: Item
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_encryption_keys.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_encryption_keys.rsi
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_encryption_keys.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_encryption_keys.rsi
   - type: StealTarget
     stealGroup: EncryptionKey
 #-----------------------------ключ----------------------------------------      
@@ -1436,9 +1436,9 @@
       key_slots:
       - UmporEncryptionKey
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_garniture.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_garniture.rsi
   - type: Clothing
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_garniture.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_garniture.rsi
 #-----------------------------------------------------роли------------------------------------------------------      
 #------------------------------------офицер---------- 
 - type: playTimeTracker
@@ -1720,10 +1720,10 @@
     size: Normal
     shape:
     - 0,0,4,1
-    sprite: Corvax/Lore/Umpor/Weapon/umpor_shotgan.rsi
+    sprite: Victoria/Umpor/Weapon/umpor_shotgan.rsi
     heldPrefix: pump
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Weapon/umpor_shotgan.rsi
+    sprite: Victoria/Umpor/Weapon/umpor_shotgan.rsi
   - type: BallisticAmmoProvider
     capacity: 8
   - type: Tag
@@ -2425,7 +2425,7 @@
     stampedColor: "#7f7f7f"
     stampState: "paper_stamp-generic"
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/Equipment/umpor_stamp.rsi
+    sprite: Victoria/Umpor/Equipment/umpor_stamp.rsi
     state: stamp
 #---------------------------------------------------------------Ящики со снарягой------------------------------------------------------------        
 #-----------------------------Базовый ящик------------------ 
@@ -2436,9 +2436,9 @@
   suffix: Umpor
   components:
   - type: Icon
-    sprite: Corvax/Lore/Umpor/umpor_crates.rsi
+    sprite: Victoria/Umpor/umpor_crates.rsi
   - type: Sprite
-    sprite: Corvax/Lore/Umpor/umpor_crates.rsi
+    sprite: Victoria/Umpor/umpor_crates.rsi
   - type: AccessReader
     access: [["UmporAccess"]]
 #-----------------------------Ящик оружия------------------    
