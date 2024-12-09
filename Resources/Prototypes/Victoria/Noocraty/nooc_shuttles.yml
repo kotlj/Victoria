@@ -13,6 +13,21 @@
     neck: NoocCloak
     pocket1: NoocPaperVis
     pocket2: NoocRubberStamp
+    
+- type: startingGear
+  id: NoocVisDelegGear1
+  equipment:
+    jumpsuit: NoocUniformVis
+    back: NoocSatchelsFilledPistol
+    shoes: NoocBoots
+    head: NoocCap
+    id: NoocPDAVis
+    ears: NoocHeadset
+    belt: NoocBelt
+    gloves: NoocGlovesVis
+    neck: NoocCloak
+    pocket1: NoocPaperVis
+    pocket2: NoocRubberStamp
 #-------------------------------------Спавнер потеряных-----------------------------------  
 - type: entity
   name: Спавнер Ноократа Охранника
@@ -90,7 +105,7 @@
       raffle:
         settings: short
     - type: Loadout
-      prototypes: NoocVisDelegGear
+      prototypes: [ NoocVisDelegGear, NoocVisDelegGear1 ]
 
 - type: preloadedGrid
   id: ShuttleNoocLost
