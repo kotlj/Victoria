@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-SA-3.0",
+  "copyright": "Sprite created by crazzy_pingvin",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "gan"
+    },
+    {
+      "name": "mag-0"
+    },
+    {
+      "name": "pistol"
+    },
+    {
+      "name": "rifle"
+    },
+    {
+      "name": "mg"
+    },
+    {
+      "name": "o1"
+    },
+    {
+      "name": "o2"
+    },
+    {
+      "name": "giga"
+    },
+    {
+      "name": "cold"
+    }
+  ]
+}
