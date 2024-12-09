@@ -8,9 +8,9 @@
   description: Стандартная корпоративная форма рядовых грузчиков корпорации Космологистика. Удобная, комфортная, массового пошива. Достаточно дешёвая, а потому без изысков и быстро изнашивается.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_uniform_cargotech.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_uniform_cargotech.rsi
   - type: Clothing
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_uniform_cargotech.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_uniform_cargotech.rsi
   - type: ClothingSpeedModifier
     walkModifier: 1.20
     sprintModifier: 1.20
@@ -23,9 +23,9 @@
   description: Стандартная корпоративная форма старших снабженцев корпорации Космологистика. Такая же удобная и комфортная, как и у грузчиков и тоже массового пошива, но куда более качественная и дорогая.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_uniform_qm.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_uniform_qm.rsi
   - type: Clothing
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_uniform_qm.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_uniform_qm.rsi
 #------------------------------------ремонтник---------- 
 - type: entity
   parent: ClothingUniformSkirtBase
@@ -35,9 +35,9 @@
   description: Стардатная рубашка Космологистики не слишком удобна для ремонта машин, агрегатов и шаттлов. Ремонтники всё время её рвут на тряпки дл потирания масла, а работают в простых майках.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_uniform_repairman.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_uniform_repairman.rsi
   - type: Clothing
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_uniform_repairman.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_uniform_repairman.rsi
 #------------------------------------инженер---------- 
 - type: entity
   parent: ClothingUniformSkirtBase
@@ -47,9 +47,9 @@
   description: Если штаны этой формы являются стандартными штанами чуть ли не самого массового пошива в Галактике, то куртки. которые на вид очень напоминают самые обычные корпоративные куртки Космологистики. Но на деле она более плотная и лучше защищает от всякой гадости.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_uniform_engineering.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_uniform_engineering.rsi
   - type: Clothing
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_uniform_engineering.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_uniform_engineering.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -67,9 +67,9 @@
   description: В этой версии формы создатели хотели не только сохранить все преймущества куртки обычного инеженера, но и усовершенствовать её. Они ведь понимали, что старший инженер никогда не сможет усидеть в кресле руководителя, а сам полезет на стройку или в ремонт.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_uniform_ce.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_uniform_ce.rsi
   - type: Clothing
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_uniform_ce.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_uniform_ce.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -87,9 +87,9 @@
   description: Говорят, что в своё время пилоты Космологистики устравивали крупную забостовку. Они утверждали, что являются самыми важными сотрудники компании, а потому имею право требовать форму по желанию. Желанием были штаны под старину и утеплённая подкладка, ибо пилоты в космосе всегда боятся замёрзнуть.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_uniform_pilot.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_uniform_pilot.rsi
   - type: Clothing
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_uniform_pilot.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_uniform_pilot.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -106,9 +106,9 @@
   description: Нет ничего более обычного, чем форма сервисного сотрудника корпорации Космологистика. Простые чёрные блюки и простая зелёная рубашка.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_uniform_servise.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_uniform_servise.rsi
   - type: Clothing
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_uniform_servise.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_uniform_servise.rsi
 #------------------------------------охранник---------- 
 - type: entity
   parent: ClothingUniformSkirtBase
@@ -118,9 +118,9 @@
   description: К форме охраны корпорация Космологистика подошла ответсвенно. Она выполнена из плотных и прочных нетканных материалов, способных погасить слабые удары, выдерживать небольшие порезы, уколы, а так же согреть в прохладной атмосфере.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_uniform_security.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_uniform_security.rsi
   - type: Clothing
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_uniform_security.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_uniform_security.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -141,9 +141,9 @@
   description: Ботинки и ботинки. Ничего такого. Никаких секретов. Просто корпоративные ботинки массового производства корпорации Космологистика.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_boots.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_boots.rsi
   - type: Clothing
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_boots.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_boots.rsi
 #----------------------------------рабоочие боты------------------------
 - type: entity
   parent: ClothingShoesMilitaryBase
@@ -153,9 +153,9 @@
   description: Крепкие рабочие боты. Хороший друг всех инженеров, охранников и других сотрудников, которым приходится бывать в какой-то грязи по указу корпорации Космологистика.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_boots_work.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_boots_work.rsi
   - type: Clothing
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_boots_work.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_boots_work.rsi
 #---------------------------------------------перчатки------------------------------    
 #------------------------------------перчатки охраны---------- 
 - type: entity
@@ -166,9 +166,9 @@
   description: Предотвращают образование мозолей от долгой работы с оружием или инструментами. Но в них на морозе мёрзнут руки.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_gloves_battle.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_gloves_battle.rsi
   - type: Clothing
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_gloves_battle.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_gloves_battle.rsi
   - type: Fiber
     fiberMaterial: fibers-synthetic
     fiberColor: fibers-green
@@ -188,9 +188,9 @@
   description: Пилотка из плотной ткани активно используется сотрудниками корпорации Космологистика для создания официального и респектабельного вида.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_cap_p.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_cap_p.rsi
   - type: Clothing
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_cap_p.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_cap_p.rsi
   - type: Tag
     tags:
     - ClothMade
@@ -205,9 +205,9 @@
   description: Удобный берет сотрудников корпорации Космологистика, который все вечно всюду забывают...
   components:
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_beret.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_beret.rsi
   - type: Clothing
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_beret.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_beret.rsi
   - type: Tag
     tags:
     - ClothMade
@@ -222,9 +222,9 @@
   description: Простенькая фуражка сержанта охраны корпорации Космологистики. Никакого изыска.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_cap.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_cap.rsi
   - type: Clothing
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_cap.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_cap.rsi
   - type: Tag
     tags:
     - ClothMade
@@ -239,9 +239,9 @@
   description: Корпоративня плотная жёсткая кепка корпорации Космологистика. Не очень удобная, массового пошива, дешёвая и простая. Не самый удачный продукт.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_cepka.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_cepka.rsi
   - type: Clothing
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_cepka.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_cepka.rsi
   - type: Tag
     tags:
     - ClothMade
@@ -255,9 +255,9 @@
   description: Корпорация Космологистика не планировала создавать банданы... Но многие сотрудники начали носить их сами, ибо так было удобней. Боссы решили, что если они не могут что-то сотановить, то надо возглавить.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_bandans.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_bandans.rsi
   - type: Clothing
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_bandans.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_bandans.rsi
   - type: Tag
     tags:
     - ClothMade
@@ -272,7 +272,7 @@
   description: Проще чем ботинки только корпоративный стандартный рюкзак Космологистики. Буквально мешок с карманами, что кое-как держит форму и имеет лямки.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_backpack_std.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_backpack_std.rsi
   - type: Storage
     grid:
     - 0,0,6,4
@@ -285,7 +285,7 @@
   description: Охранникам космологистики приходится бывать много где. И местами нужно поддерживать связь. Но не заставишь же весь мир вставить свои ключи шифрования в сервера? Потому офицерам и стали выдавать акие радиорюкзаки.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_backpack_rad.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_backpack_rad.rsi
   - type: EncryptionKeyHolder
     keysExtractionMethod: Prying
     keySlots: 10
@@ -312,7 +312,7 @@
   description: Эполеты, обозначающие десять лет службы в корпорации Космологистика.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_epaulet_10.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_epaulet_10.rsi
 #------------------------------------20---------- 
 - type: entity
   parent: ClothingNeckBase
@@ -322,7 +322,7 @@
   description: Эполеты, обозначающие двадцать лет службы в корпорации Космологистика.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_epaulet_20.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_epaulet_20.rsi
 #------------------------------------30---------- 
 - type: entity
   parent: ClothingNeckBase
@@ -332,7 +332,7 @@
   description: Эполеты, обозначающие тридцать лет службы в корпорации Космологистика.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_epaulet_30.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_epaulet_30.rsi
 #---------------------------------------------------------------------------жилеты-куртки----------------------
 #------------------------------------------рабочий жилет---------------------------------
 - type: entity
@@ -358,9 +358,9 @@
   description: Лёгкий охранный бронежилет используемый сотрудниками безопасности корпорации Космологистика. Немного утеплён.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Armor/kmlg_armor.rsi
+    sprite: Victoria/KMLG/Armor/kmlg_armor.rsi
   - type: Clothing
-    sprite: Corvax/Lore/KMLG/Armor/kmlg_armor.rsi
+    sprite: Victoria/KMLG/Armor/kmlg_armor.rsi
   - type: Armor 
     modifiers:
       coefficients:
@@ -383,9 +383,9 @@
   description: Корпоративная тёплая куртка, которая выдаётся всем без исключения сотрудникам, которым приходится лететь на планеты с холодным климатом. особенно сильно её любят пилоты и ремонтники.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_coat.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_coat.rsi
   - type: Clothing
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_coat.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_coat.rsi
   - type: ToggleableClothing
     clothingPrototype: KMLGCoatHood
     slot: head
@@ -409,9 +409,9 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_coat_hood.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_coat_hood.rsi
   - type: Clothing
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_coat_hood.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_coat_hood.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -432,9 +432,9 @@
   - type: Item
     size: Small
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Armor/kmlg_nooc_hardsuits_field.rsi
+    sprite: Victoria/KMLG/Armor/kmlg_nooc_hardsuits_field.rsi
   - type: Clothing
-    sprite: Corvax/Lore/KMLG/Armor/kmlg_nooc_hardsuits_field.rsi
+    sprite: Victoria/KMLG/Armor/kmlg_nooc_hardsuits_field.rsi
   - type: ExplosionResistance
     damageCoefficient: 0.9
   - type: Armor
@@ -459,9 +459,9 @@
   components:
   - type: BreathMask
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Armor/kmlg_nooc_hardsuits_helmet_field.rsi
+    sprite: Victoria/KMLG/Armor/kmlg_nooc_hardsuits_helmet_field.rsi
   - type: Clothing
-    sprite: Corvax/Lore/KMLG/Armor/kmlg_nooc_hardsuits_helmet_field.rsi
+    sprite: Victoria/KMLG/Armor/kmlg_nooc_hardsuits_helmet_field.rsi
   - type: PressureProtection
     highPressureMultiplier: 0.1
     lowPressureMultiplier: 1000
@@ -481,9 +481,9 @@
   description: Стандартный простой скафандр для сотрудников корпорации Космологистика
   components:
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Armor/kmlg_hardsuits.rsi
+    sprite: Victoria/KMLG/Armor/kmlg_hardsuits.rsi
   - type: Clothing
-    sprite: Corvax/Lore/KMLG/Armor/kmlg_hardsuits.rsi
+    sprite: Victoria/KMLG/Armor/kmlg_hardsuits.rsi
   - type: ExplosionResistance
     damageCoefficient: 0.9
   - type: Armor
@@ -511,9 +511,9 @@
   components:
   - type: BreathMask
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Armor/kmlg_hardsuits_helmet.rsi
+    sprite: Victoria/KMLG/Armor/kmlg_hardsuits_helmet.rsi
   - type: Clothing
-    sprite: Corvax/Lore/KMLG/Armor/kmlg_hardsuits_helmet.rsi
+    sprite: Victoria/KMLG/Armor/kmlg_hardsuits_helmet.rsi
   - type: PointLight
     color: "#ffdbad"
   - type: PressureProtection
@@ -541,7 +541,7 @@
     stampedColor: "#394e35"
     stampState: "paper_stamp-generic"
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_stamp.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_stamp.rsi
     state: stamp
 #---------------------------------Стандартная форма---------------------
 - type: entity
@@ -577,9 +577,9 @@
   description: Такие пояса используют инженеры, охрана и техники корпорации Космологистика.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_belt.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_belt.rsi
   - type: Clothing
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_belt.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_belt.rsi
   - type: Storage
     maxItemSize: Normal
   - type: Appearance
@@ -633,7 +633,7 @@
     containers:
       board: [ DoorElectronicsKMLGAccess ]
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/kmlg_airlock.rsi
+    sprite: Victoria/KMLG/kmlg_airlock.rsi
 #------------------------------------свободный шлюз---------- 
 - type: entity
   parent: Airlock
@@ -641,7 +641,7 @@
   suffix: KMLG
   components:
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/kmlg_airlock.rsi
+    sprite: Victoria/KMLG/kmlg_airlock.rsi
 #------------------------------------закрытый стеклянный шлюз---------- 
 - type: entity
   parent: AirlockGlass
@@ -652,7 +652,7 @@
     containers:
       board: [ DoorElectronicsKMLGAccess ]
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/kmlg_airlock_glass.rsi
+    sprite: Victoria/KMLG/kmlg_airlock_glass.rsi
   - type: PaintableAirlock
     group: Glass     
 #------------------------------------свободный стеклянный шлюз----------
@@ -662,7 +662,7 @@
   suffix: KMLG
   components:
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/kmlg_airlock_glass.rsi
+    sprite: Victoria/KMLG/kmlg_airlock_glass.rsi
   - type: PaintableAirlock
     group: Glass  
 #------------------------------------стыковочный---------- 
@@ -690,11 +690,11 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_id_cards.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_id_cards.rsi
   - type: Clothing
     slots:
     - idcard
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_id_cards.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_id_cards.rsi
   - type: Item
     size: Small
     heldPrefix: default
@@ -853,7 +853,7 @@
   components:
   - type: Appearance
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_pda.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_pda.rsi
     layers:
     - map: [ "enum.PdaVisualLayers.Base" ]
     - state: "light_overlay"
@@ -865,7 +865,7 @@
       shader: "unshaded"
       visible: false
   - type: Icon
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_pda.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_pda.rsi
     state: pda
 #------------------------------------КПК грузчика----------    
 - type: entity
@@ -971,9 +971,9 @@
     - KMLGRadio
     defaultChannel: KMLGRadio
   - type: Item
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_encryption_keys.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_encryption_keys.rsi
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_encryption_keys.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_encryption_keys.rsi
   - type: StealTarget
     stealGroup: EncryptionKey   
 #-----------------------------ключ шифрования----------------------------------------      
@@ -1004,9 +1004,9 @@
       key_slots:
       - KMLGEncryptionKey
   - type: Sprite
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_garniture.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_garniture.rsi
   - type: Clothing
-    sprite: Corvax/Lore/KMLG/Equipment/kmlg_garniture.rsi
+    sprite: Victoria/KMLG/Equipment/kmlg_garniture.rsi
 #--------------------------------------------сумки------------------------------------ 
 #------------------------------------гражданские-------
 - type: entity

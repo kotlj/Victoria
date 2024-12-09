@@ -8,9 +8,9 @@
   description: Стандартная униформа пехотинца СНК. Плотная, долговечная и удобная.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_uniform_std.rsi
+    sprite: Victoria/SNK/Equipment/snk_uniform_std.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Equipment/snk_uniform_std.rsi
+    sprite: Victoria/SNK/Equipment/snk_uniform_std.rsi
 #------------------------------------Солдат-лес---------- 
 - type: entity
   parent: ClothingUniformSkirtBase
@@ -20,9 +20,9 @@
   description: Лесная униформа пехотинца СНК. Плотная, долговечная и удобная. несёт на себе маскировочные зелёные пятна. Самое то в лесной какафонии разных планет.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_uniform_les.rsi
+    sprite: Victoria/SNK/Equipment/snk_uniform_les.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Equipment/snk_uniform_les.rsi
+    sprite: Victoria/SNK/Equipment/snk_uniform_les.rsi
 #------------------------------------Солдат-песок---------- 
 - type: entity
   parent: ClothingUniformSkirtBase
@@ -32,9 +32,9 @@
   description: Песочная униформа пехотинца СНК. Плотная, долговечная и удобная. При этом очень лёгкая и прохладная. Но является слишком яркой для любой другой местности.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_uniform_pes.rsi
+    sprite: Victoria/SNK/Equipment/snk_uniform_pes.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Equipment/snk_uniform_pes.rsi
+    sprite: Victoria/SNK/Equipment/snk_uniform_pes.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -48,9 +48,9 @@
   description: Зимняя униформа пехотинца СНК. Плотная, долговечная и удобная. При этом очень тёплая. Бойцы любят, когда им выдают эту форму. В ней они совсем не боятся даже самых лютых морозов.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_uniform_zim.rsi
+    sprite: Victoria/SNK/Equipment/snk_uniform_zim.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Equipment/snk_uniform_zim.rsi
+    sprite: Victoria/SNK/Equipment/snk_uniform_zim.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -64,9 +64,9 @@
   description: Лавовая униформа пехотинца СНК. Очень плотная, долговечная и удобная. В ней не рекомендуется купаться в раскалённой лаве, но от горячих искр и пепла она неплохо оберегает.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_uniform_lav.rsi
+    sprite: Victoria/SNK/Equipment/snk_uniform_lav.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Equipment/snk_uniform_lav.rsi
+    sprite: Victoria/SNK/Equipment/snk_uniform_lav.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -80,9 +80,9 @@
   description: Стандартная униформа офицера СНК. Плотная, долговечная и удобная. Даже несколько стильная.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_uniform_std_offi.rsi
+    sprite: Victoria/SNK/Equipment/snk_uniform_std_offi.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Equipment/snk_uniform_std_offi.rsi
+    sprite: Victoria/SNK/Equipment/snk_uniform_std_offi.rsi
 #------------------------------------Офицер-зима---------- 
 - type: entity
   parent: ClothingUniformSkirtBase
@@ -92,9 +92,9 @@
   description: Зимняя униформа офицера СНК. Плотная, долговечная и удобная. При этом очень тёплая. Командиры любят носить эту форму. В ней они совсем не боятся простудить горло отдавая приказы даже в самых лютых морозах.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_uniform_zim_offi.rsi
+    sprite: Victoria/SNK/Equipment/snk_uniform_zim_offi.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Equipment/snk_uniform_zim_offi.rsi
+    sprite: Victoria/SNK/Equipment/snk_uniform_zim_offi.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -108,9 +108,9 @@
   description: Лавовая униформа офицера СНК. Очень плотная, долговечная и удобная. В ней не рекомендуется купаться в раскалённой лаве, но от горячих искр и пепла она неплохо оберегает.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_uniform_lav_offi.rsi
+    sprite: Victoria/SNK/Equipment/snk_uniform_lav_offi.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Equipment/snk_uniform_lav_offi.rsi
+    sprite: Victoria/SNK/Equipment/snk_uniform_lav_offi.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -125,7 +125,7 @@
   description: Офицерская плечевая сумка СНК. Лёгкая и практичная
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_satchels.rsi
+    sprite: Victoria/SNK/Equipment/snk_satchels.rsi
 #------------------------------------рюкзак---------- 
 #--------------стандартный---------
 - type: entity
@@ -136,10 +136,10 @@
   description: Стандартный армейский рюкзак бойцов СНК. Бойцы СНК должны быть готовы ко всему, а потому на стандартных рюкзаках закрепляется газовый балон. Практично, но достаточно тяжело.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_back_std.rsi
+    sprite: Victoria/SNK/Equipment/snk_back_std.rsi
     state: icon
   - type: Item
-    sprite: Corvax/Lore/SNK/Equipment/snk_back_std.rsi
+    sprite: Victoria/SNK/Equipment/snk_back_std.rsi
     size: Huge
   - type: Clothing
     quickEquip: false
@@ -188,7 +188,7 @@
   description: Стандартный армейский рюкзак бойцов СНК в расцветке песчаного камуфляжа. Позволяет оставаться незамеченным в песчаных дюнах, хотя закреплённый тяжёлый газовый балон стоит маскировать получше.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_back_pes.rsi
+    sprite: Victoria/SNK/Equipment/snk_back_pes.rsi
 #--------------зимний---------
 - type: entity
   parent: SNKBackpackStd
@@ -197,7 +197,7 @@
   description: Стандартный армейский рюкзак бойцов СНК в зимней расцветке. Позволяет оставаться незамеченным в метелях и сугробах, хотя закреплённый тяжёлый газовый балон стоит маскировать получше.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_back_zim.rsi
+    sprite: Victoria/SNK/Equipment/snk_back_zim.rsi
 #-------------------------рюкзак-радиостанция-------------------------    
 - type: entity
   parent: ClothingBackpack
@@ -207,7 +207,7 @@
   description: Мобильная радиостанция с небольшим подсумком, способная обеспечить связь в некотором регионе. (Вынимать ключи шифрования можно ломом)
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_back_radio.rsi
+    sprite: Victoria/SNK/Equipment/snk_back_radio.rsi
   - type: Storage
     grid:
     - 0,0,4,3
@@ -234,9 +234,9 @@
   description: Крепкие армейские сапоги. В них нахожено не мало сотен километров, а они всё ещё целые и удобные.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_boots.rsi
+    sprite: Victoria/SNK/Equipment/snk_boots.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Equipment/snk_boots.rsi
+    sprite: Victoria/SNK/Equipment/snk_boots.rsi
 #------------------------------------солдатские шапки---------- 
 #-------------------стандартная-----------
 - type: entity
@@ -247,9 +247,9 @@
   description: Плотная шапка неплохо защищает солдат СНК от ветра и заморозков. Выполнена в стандартной чёрной расцветке.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_shapka_std.rsi
+    sprite: Victoria/SNK/Equipment/snk_shapka_std.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Equipment/snk_shapka_std.rsi
+    sprite: Victoria/SNK/Equipment/snk_shapka_std.rsi
   - type: Tag
     tags:
     - ClothMade
@@ -263,9 +263,9 @@
   description: Плотная шапка неплохо защищает солдат СНК от ветра и заморозков. Выполнена в леской зелёной расцветке.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_shapka_std_les.rsi
+    sprite: Victoria/SNK/Equipment/snk_shapka_std_les.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Equipment/snk_shapka_std_les.rsi
+    sprite: Victoria/SNK/Equipment/snk_shapka_std_les.rsi
   - type: Tag
     tags:
     - ClothMade
@@ -279,9 +279,9 @@
   description: Плотная шапка неплохо защищает солдат СНК от ветра и заморозков. Выполнена в белой зимней расцветке.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_shapka_std_zim.rsi
+    sprite: Victoria/SNK/Equipment/snk_shapka_std_zim.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Equipment/snk_shapka_std_zim.rsi
+    sprite: Victoria/SNK/Equipment/snk_shapka_std_zim.rsi
   - type: Tag
     tags:
     - ClothMade
@@ -295,9 +295,9 @@
   description: Лёгкая бандана солдат СНК. Уберегает голову от солнечного удара. Выполнена в песочной расцветке.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_bandans.rsi
+    sprite: Victoria/SNK/Equipment/snk_bandans.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Equipment/snk_bandans.rsi
+    sprite: Victoria/SNK/Equipment/snk_bandans.rsi
   - type: Tag
     tags:
     - ClothMade
@@ -312,9 +312,9 @@
   description: Офицерская кепка СНК. Выполнена в стандартной чёрной расцветке. Я вляется признаком статуса и заслуг.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_cepka_std.rsi
+    sprite: Victoria/SNK/Equipment/snk_cepka_std.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Equipment/snk_cepka_std.rsi
+    sprite: Victoria/SNK/Equipment/snk_cepka_std.rsi
   - type: Tag
     tags:
     - ClothMade
@@ -328,9 +328,9 @@
   description: Офицерская кепка СНК. Выполнена в зелёной лесной расцветке. Я вляется признаком статуса и заслуг.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_cepka_std_les.rsi
+    sprite: Victoria/SNK/Equipment/snk_cepka_std_les.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Equipment/snk_cepka_std_les.rsi
+    sprite: Victoria/SNK/Equipment/snk_cepka_std_les.rsi
   - type: Tag
     tags:
     - ClothMade
@@ -344,9 +344,9 @@
   description: Офицерская кепка СНК. Выполнена в белой зимней расцветке. Я вляется признаком статуса и заслуг.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_cepka_std_zim.rsi
+    sprite: Victoria/SNK/Equipment/snk_cepka_std_zim.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Equipment/snk_cepka_std_zim.rsi
+    sprite: Victoria/SNK/Equipment/snk_cepka_std_zim.rsi
   - type: Tag
     tags:
     - ClothMade
@@ -360,9 +360,9 @@
   description: Офицерская кепка СНК. Выполнена в песчаной защитной расцветке. Я вляется признаком статуса и заслуг.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_cepka_std_pes.rsi
+    sprite: Victoria/SNK/Equipment/snk_cepka_std_pes.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Equipment/snk_cepka_std_pes.rsi
+    sprite: Victoria/SNK/Equipment/snk_cepka_std_pes.rsi
   - type: Tag
     tags:
     - ClothMade
@@ -377,7 +377,7 @@
   description: Плащ, который носят разведчики и снайперы СНК для маскировки в зарослях. Очень-очень уютный.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_cloak_les.rsi
+    sprite: Victoria/SNK/Equipment/snk_cloak_les.rsi
 #------------------------------------песочный---------- 
 - type: entity
   parent: ClothingNeckBase
@@ -387,7 +387,7 @@
   description: Плащ, который носят разведчики и снайперы СНК для маскировки в песчаных дюнах. Немного спасает от жаркого зноя.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_cloak_pes.rsi
+    sprite: Victoria/SNK/Equipment/snk_cloak_pes.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -401,7 +401,7 @@
   description: Плащ, который носят разведчики и снайперы СНК для маскировки в сугробах. Тёплый и приятный.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_cloak_zim.rsi
+    sprite: Victoria/SNK/Equipment/snk_cloak_zim.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -416,9 +416,9 @@
   description: Крепкий армейский шлем СНК. Его носят и солдаты, и офицеры. Имеет стандартную чёрную расцветку.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Armor/snk_helmet_std.rsi
+    sprite: Victoria/SNK/Armor/snk_helmet_std.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Armor/snk_helmet_std.rsi
+    sprite: Victoria/SNK/Armor/snk_helmet_std.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -435,9 +435,9 @@
   description: Крепкий армейский шлем СНК. Его носят и солдаты, и офицеры. Имеет стандартную чёрную расцветку, ослабленное бронирование, но дополнительную защиту от нагрева.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Armor/snk_helmet_lav.rsi
+    sprite: Victoria/SNK/Armor/snk_helmet_lav.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Armor/snk_helmet_lav.rsi
+    sprite: Victoria/SNK/Armor/snk_helmet_lav.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -454,9 +454,9 @@
   description: Крепкий армейский шлем СНК. Его носят и солдаты, и офицеры. Имеет лесную камуфляжную расцветку. Имеет улучшенную защиту от порезов.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Armor/snk_helmet_les.rsi
+    sprite: Victoria/SNK/Armor/snk_helmet_les.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Armor/snk_helmet_les.rsi
+    sprite: Victoria/SNK/Armor/snk_helmet_les.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -473,9 +473,9 @@
   description: Крепкий армейский шлем СНК. Его носят и солдаты, и офицеры. Имеет песчаную расцветку и помогает спасать голову от перегрева.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Armor/snk_helmet_pes.rsi
+    sprite: Victoria/SNK/Armor/snk_helmet_pes.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Armor/snk_helmet_pes.rsi
+    sprite: Victoria/SNK/Armor/snk_helmet_pes.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -492,9 +492,9 @@
   description: Крепкий армейский шлем СНК. Его носят и солдаты, и офицеры. Имеет зимнюю расцветку и увеличенный слой термоизоляции.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Armor/snk_helmet_zim.rsi
+    sprite: Victoria/SNK/Armor/snk_helmet_zim.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Armor/snk_helmet_zim.rsi
+    sprite: Victoria/SNK/Armor/snk_helmet_zim.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -514,9 +514,9 @@
   description: Стандартный лёгкий армейский бронежилет СНК, которые носит военная полиция, вспомогательные подразделения и многие нештурмовые части.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Armor/snk_armor_light_std.rsi
+    sprite: Victoria/SNK/Armor/snk_armor_light_std.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Armor/snk_armor_light_std.rsi
+    sprite: Victoria/SNK/Armor/snk_armor_light_std.rsi
   - type: Armor 
     modifiers:
       coefficients:
@@ -535,9 +535,9 @@
   description: Лёгкий армейский бронежилет СНК, которые носит военная полиция, вспомогательные подразделения и многие нештурмовые части на вулканических планетах.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Armor/snk_armor_light_lav.rsi
+    sprite: Victoria/SNK/Armor/snk_armor_light_lav.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Armor/snk_armor_light_lav.rsi
+    sprite: Victoria/SNK/Armor/snk_armor_light_lav.rsi
   - type: Armor 
     modifiers:
       coefficients:
@@ -556,9 +556,9 @@
   description: Лёгкий армейский бронежилет СНК, которые носят вспомогательные подразделения и многие нештурмовые части в лесистых районах.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Armor/snk_armor_light_les.rsi
+    sprite: Victoria/SNK/Armor/snk_armor_light_les.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Armor/snk_armor_light_les.rsi
+    sprite: Victoria/SNK/Armor/snk_armor_light_les.rsi
   - type: Armor 
     modifiers:
       coefficients:
@@ -577,9 +577,9 @@
   description: Лёгкий армейский бронежилет СНК, которые носит военная полиция, вспомогательные подразделения и многие нештурмовые части в пустынных областях.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Armor/snk_armor_light_pes.rsi
+    sprite: Victoria/SNK/Armor/snk_armor_light_pes.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Armor/snk_armor_light_pes.rsi
+    sprite: Victoria/SNK/Armor/snk_armor_light_pes.rsi
   - type: Armor 
     modifiers:
       coefficients:
@@ -598,9 +598,9 @@
   description: Лёгкий армейский бронежилет СНК, которые носит военная полиция, вспомогательные подразделения и многие нештурмовые части зимой и на снежных планетах.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Armor/snk_armor_light_zim.rsi
+    sprite: Victoria/SNK/Armor/snk_armor_light_zim.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Armor/snk_armor_light_zim.rsi
+    sprite: Victoria/SNK/Armor/snk_armor_light_zim.rsi
   - type: Armor 
     modifiers:
       coefficients:
@@ -621,9 +621,9 @@
   description: Стандартный тяжёлый бронекомплект СНК, который используют элитные и штурмовые подразделения.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Armor/snk_armor_mid_std.rsi
+    sprite: Victoria/SNK/Armor/snk_armor_mid_std.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Armor/snk_armor_mid_std.rsi
+    sprite: Victoria/SNK/Armor/snk_armor_mid_std.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -647,9 +647,9 @@
   description: Тяжёлый бронекомплект СНК, имеющий камуфляжную лесную расцветку, который используют элитные и штурмовые подразделения.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Armor/snk_armor_mid_les.rsi
+    sprite: Victoria/SNK/Armor/snk_armor_mid_les.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Armor/snk_armor_mid_les.rsi
+    sprite: Victoria/SNK/Armor/snk_armor_mid_les.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -673,9 +673,9 @@
   description: Тяжёлый бронекомплект СНК, который используют элитные и штурмовые подразделения, когда приходится воевать в пустыне.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Armor/snk_armor_mid_pes.rsi
+    sprite: Victoria/SNK/Armor/snk_armor_mid_pes.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Armor/snk_armor_mid_pes.rsi
+    sprite: Victoria/SNK/Armor/snk_armor_mid_pes.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -699,9 +699,9 @@
   description: Тяжёлый бронекомплект СНК, который используют элитные и штурмовые подразделения в условиях затяжной зимы.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Armor/snk_armor_mid_zim.rsi
+    sprite: Victoria/SNK/Armor/snk_armor_mid_zim.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Armor/snk_armor_mid_zim.rsi
+    sprite: Victoria/SNK/Armor/snk_armor_mid_zim.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -726,9 +726,9 @@
   description: Тяжелейшая из стандартных пехотных видов брони СНК. Среди бойцов ОПЗ получила прозвище "Сердитый дед".
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Armor/snk_hardsuits.rsi
+    sprite: Victoria/SNK/Armor/snk_hardsuits.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Armor/snk_hardsuits.rsi
+    sprite: Victoria/SNK/Armor/snk_hardsuits.rsi
   - type: ExplosionResistance
     damageCoefficient: 0.9
   - type: Armor
@@ -757,9 +757,9 @@
   components:
   - type: BreathMask
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Armor/snk_hardsuits_helmet.rsi
+    sprite: Victoria/SNK/Armor/snk_hardsuits_helmet.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Armor/snk_hardsuits_helmet.rsi
+    sprite: Victoria/SNK/Armor/snk_hardsuits_helmet.rsi
   - type: PointLight
     color: "#ffdbad"
     radius: 6
@@ -791,7 +791,7 @@
     stampedColor: "#001168"
     stampState: "paper_stamp-generic"
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_stamp.rsi
+    sprite: Victoria/SNK/Equipment/snk_stamp.rsi
     state: stamp
 #---------------------------------Стандартная форма---------------------
 - type: entity
@@ -830,9 +830,9 @@
   description: Этот пояс используют солдаты СНК для ношения амуниции, пистолетов и прочего боевого снаряжения
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_belt_sol.rsi
+    sprite: Victoria/SNK/Equipment/snk_belt_sol.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Equipment/snk_belt_sol.rsi
+    sprite: Victoria/SNK/Equipment/snk_belt_sol.rsi
   - type: Storage
   - type: Appearance
 
@@ -844,9 +844,9 @@
   suffix: СНК
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_belt_offi.rsi
+    sprite: Victoria/SNK/Equipment/snk_belt_offi.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Equipment/snk_belt_offi.rsi
+    sprite: Victoria/SNK/Equipment/snk_belt_offi.rsi
 
 - type: entity
   id: SNKBeltMed
@@ -856,9 +856,9 @@
   suffix: СНК
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_belt_med.rsi
+    sprite: Victoria/SNK/Equipment/snk_belt_med.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Equipment/snk_belt_med.rsi
+    sprite: Victoria/SNK/Equipment/snk_belt_med.rsi
 
 - type: entity
   id: SNKBeltEnge
@@ -868,9 +868,9 @@
   suffix: СНК
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_belt_eng.rsi
+    sprite: Victoria/SNK/Equipment/snk_belt_eng.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Equipment/snk_belt_eng.rsi
+    sprite: Victoria/SNK/Equipment/snk_belt_eng.rsi
 #-------------------------------заполненые------------------------------
 - type: entity
   id: SNKBeltOffiFilled
@@ -1122,7 +1122,7 @@
   - type: TimedDespawn
     lifetime: 5
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Weapon/snk_projectiles.rsi
+    sprite: Victoria/SNK/Weapon/snk_projectiles.rsi
     layers:
       - state: lazer
     
@@ -1152,7 +1152,7 @@
   - type: TimedDespawn
     lifetime: 5
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Weapon/snk_projectiles.rsi
+    sprite: Victoria/SNK/Weapon/snk_projectiles.rsi
     layers:
       - state: electro
   - type: StaminaDamageOnCollide
@@ -1313,7 +1313,7 @@
   parent: BaseCartridgeRifle
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Weapon/snk_projectiles.rsi
+    sprite: Victoria/SNK/Weapon/snk_projectiles.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -1333,7 +1333,7 @@
   parent: BaseShellShotgun
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Weapon/snk_projectiles.rsi
+    sprite: Victoria/SNK/Weapon/snk_projectiles.rsi
     layers:
     - state: base
   - type: CartridgeAmmo
@@ -1366,7 +1366,7 @@
     proto: SNKCartridgePistolStd
     capacity: 10
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Weapon/snk_pistol_pist_magazine.rsi
+    sprite: Victoria/SNK/Weapon/snk_pistol_pist_magazine.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -1392,7 +1392,7 @@
     proto: SNKCartridgePistolPoi
     capacity: 10
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Weapon/snk_pistol_pist_magazine.rsi
+    sprite: Victoria/SNK/Weapon/snk_pistol_pist_magazine.rsi
     layers:
     - state: poison
       map: ["enum.GunVisualLayers.Base"]
@@ -1419,7 +1419,7 @@
     proto: SNKCartridgeRifleStd
     capacity: 6
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Weapon/snk_pistol_rif_magazine.rsi
+    sprite: Victoria/SNK/Weapon/snk_pistol_rif_magazine.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -1445,7 +1445,7 @@
     proto: SNKCartridgeRifleHea
     capacity: 6
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Weapon/snk_pistol_rif_magazine.rsi
+    sprite: Victoria/SNK/Weapon/snk_pistol_rif_magazine.rsi
     layers:
     - state: heat
       map: ["enum.GunVisualLayers.Base"]
@@ -1471,7 +1471,7 @@
     proto: SNKCartridgeRifleUrn
     capacity: 6
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Weapon/snk_pistol_rif_magazine.rsi
+    sprite: Victoria/SNK/Weapon/snk_pistol_rif_magazine.rsi
     layers:
     - state: uranium
       map: ["enum.GunVisualLayers.Base"]
@@ -1507,7 +1507,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Weapon/snk_smg_pist_magazine.rsi
+    sprite: Victoria/SNK/Weapon/snk_smg_pist_magazine.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -1587,7 +1587,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Weapon/snk_smg_elec_magazine.rsi
+    sprite: Victoria/SNK/Weapon/snk_smg_elec_magazine.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -1642,7 +1642,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Weapon/snk_automat_fast_magazine.rsi
+    sprite: Victoria/SNK/Weapon/snk_automat_fast_magazine.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -1732,7 +1732,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Weapon/snk_automat_hig_magazine.rsi
+    sprite: Victoria/SNK/Weapon/snk_automat_hig_magazine.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -1782,7 +1782,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Weapon/snk_carabine_hig_magazine.rsi
+    sprite: Victoria/SNK/Weapon/snk_carabine_hig_magazine.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -1832,7 +1832,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Weapon/snk_lmg_hig_magazine.rsi
+    sprite: Victoria/SNK/Weapon/snk_lmg_hig_magazine.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -1884,7 +1884,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Weapon/snk_lmg_drb_magazine.rsi
+    sprite: Victoria/SNK/Weapon/snk_lmg_drb_magazine.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -1966,7 +1966,7 @@
   description: Самое массовое оружие СНК. Используется всеми и везде. Буквально каждой бочке затычка. Притом его чертежи секретны и нигде не разоглашаются. Использует пистолетные патроны СНК калибра .24
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Weapon/snk_pistol_pist.rsi
+    sprite: Victoria/SNK/Weapon/snk_pistol_pist.rsi
     layers:
      - state: base
        map: ["enum.GunVisualLayers.Base"]
@@ -2025,7 +2025,7 @@
   description: Крупнокалиберный и мощный. Хотя работать им долго. Но выходит весьма качественно. Использует винтовочные патроны СНК калибра .34
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Weapon/snk_pistol_rif.rsi
+    sprite: Victoria/SNK/Weapon/snk_pistol_rif.rsi
     layers:
      - state: base
        map: ["enum.GunVisualLayers.Base"]
@@ -2083,14 +2083,14 @@
   description: Массовое оружие, которое заработало неоднозначную репутацию. Кому-то оно очень нравится, а кто-то относится к нему с пренебрежением. Использует пистолетные патроны СНК калибра  .24
   components:
     - type: Sprite
-      sprite: Corvax/Lore/SNK/Weapon/snk_smg_pist.rsi
+      sprite: Victoria/SNK/Weapon/snk_smg_pist.rsi
       layers:
         - state: base
           map: ["enum.GunVisualLayers.Base"]
         - state: mag-0
           map: ["enum.GunVisualLayers.Mag"]
     - type: Clothing
-      sprite: Corvax/Lore/SNK/Weapon/snk_smg_pist.rsi
+      sprite: Victoria/SNK/Weapon/snk_smg_pist.rsi
     - type: Gun
       fireRate: 4
       selectedMode: FullAuto
@@ -2132,13 +2132,13 @@
   description: Оружие необычное, но действенное. С ним главное недопускать дисбаланса системы.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Weapon/snk_smg_elec.rsi
+    sprite: Victoria/SNK/Weapon/snk_smg_elec.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
       - state: mag-0
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Weapon/snk_smg_elec.rsi
+    sprite: Victoria/SNK/Weapon/snk_smg_elec.rsi
   - type: Gun
     fireRate: 4
     selectedMode: FullAuto
@@ -2178,7 +2178,7 @@
   description: Лёгкий, короткий и очень скорострельный. На все случаи жизни. Очень массовый. Использует патроны СНК .34
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Weapon/snk_automat_fast.rsi
+    sprite: Victoria/SNK/Weapon/snk_automat_fast.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
@@ -2187,7 +2187,7 @@
   - type: Item
     size: Large
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Weapon/snk_automat_fast.rsi
+    sprite: Victoria/SNK/Weapon/snk_automat_fast.rsi
   - type: Gun
     fireRate: 8
     soundGunshot:
@@ -2237,7 +2237,7 @@
   description: Короткий, но очень мощный автомат СНК. Не очень часто встречается в войсках. Правда... редко, но метко. Использует патроны СНК .55
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Weapon/snk_automat_hig.rsi
+    sprite: Victoria/SNK/Weapon/snk_automat_hig.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
@@ -2246,7 +2246,7 @@
   - type: Item
     size: Large
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Weapon/snk_automat_hig.rsi
+    sprite: Victoria/SNK/Weapon/snk_automat_hig.rsi
   - type: Gun
     fireRate: 3.5
     soundGunshot:
@@ -2292,13 +2292,13 @@
   description: Просто очень хорошее и качественное оружие. Надёжное и безотказное.
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Weapon/snk_carabine_laser.rsi
+    sprite: Victoria/SNK/Weapon/snk_carabine_laser.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
       shader: unshaded
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Weapon/snk_carabine_laser.rsi
+    sprite: Victoria/SNK/Weapon/snk_carabine_laser.rsi
   - type: Gun
     fireRate: 1.5
     selectedMode: SemiAuto
@@ -2320,13 +2320,13 @@
   description: Хорошее оружие, но порой ставит перед странным вопросом "Как это лечить?"
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Weapon/snk_carabine_radio.rsi
+    sprite: Victoria/SNK/Weapon/snk_carabine_radio.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
       shader: unshaded
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Weapon/snk_carabine_laser.rsi
+    sprite: Victoria/SNK/Weapon/snk_carabine_laser.rsi
   - type: Gun
     fireRate: 2
     selectedMode: SemiAuto
@@ -2348,7 +2348,7 @@
   description: Очень мощная винтовка СНК. Никогда не знаешь когда от неё прилетит, но когда прилетит будет очень-очень плохо. Использует патроны СНК .55
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Weapon/snk_carabine_hig.rsi
+    sprite: Victoria/SNK/Weapon/snk_carabine_hig.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
@@ -2357,7 +2357,7 @@
   - type: Item
     size: Large
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Weapon/snk_carabine_hig.rsi
+    sprite: Victoria/SNK/Weapon/snk_carabine_hig.rsi
   - type: Gun
     fireRate: 0.7
     soundGunshot:
@@ -2406,7 +2406,7 @@
   description: Бойцы говорят, что когда эта чудо-машина начинает голосить, то уже не заткнёшь. Использует патроны СНК .55
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Weapon/snk_lmg_hig.rsi
+    sprite: Victoria/SNK/Weapon/snk_lmg_hig.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -2450,7 +2450,7 @@
   description: Достаточно редкое оружие. Зато, когда появляется на фронта, разваливает всех по понятиям.  Использует ружейные заряды СНК .45
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Weapon/snk_lmg_drb.rsi
+    sprite: Victoria/SNK/Weapon/snk_lmg_drb.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -2504,10 +2504,10 @@
   description: Сперва разрабатывался из охотничьего ружья. Потом стал полицейским вооружением. Что него говорят, что лучше бы и дальше бил животных, нежели от него будут страдать преступники. Используею дробь СНК калибра .45
   components:
   - type: Item
-    sprite: Corvax/Lore/SNK/Weapon/snk_shotgan_drb.rsi
+    sprite: Victoria/SNK/Weapon/snk_shotgan_drb.rsi
     heldPrefix: pump
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Weapon/snk_shotgan_drb.rsi
+    sprite: Victoria/SNK/Weapon/snk_shotgan_drb.rsi
   - type: BallisticAmmoProvider
     whitelist:
       tags:
@@ -2538,9 +2538,9 @@
   description: Не понятно точно чего ради его разрабатывали и собирали... но инженерам хотелось!
   components:
   - type: Item
-    sprite: Corvax/Lore/SNK/Weapon/snk_shotgan_laser.rsi
+    sprite: Victoria/SNK/Weapon/snk_shotgan_laser.rsi
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Weapon/snk_shotgan_laser.rsi
+    sprite: Victoria/SNK/Weapon/snk_shotgan_laser.rsi
   - type: BallisticAmmoProvider
     whitelist:
       tags:
@@ -2587,7 +2587,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Weapon/snk_box_ammo.rsi
+    sprite: Victoria/SNK/Weapon/snk_box_ammo.rsi
   - type: Appearance
 #-------------------------------пистолет-------------------
 #----------------стандартные---------
@@ -2837,7 +2837,7 @@
     containers:
       board: [ DoorElectronicsSNKAccess ]
   - type: Sprite
-    sprite: Corvax/Lore/SNK/snk_airlock.rsi
+    sprite: Victoria/SNK/snk_airlock.rsi
 #------------------------------------свободный шлюз---------- 
 - type: entity
   parent: Airlock
@@ -2847,7 +2847,7 @@
   description: Он открывается, он закрывается, он может вас раздавить
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/snk_airlock.rsi
+    sprite: Victoria/SNK/snk_airlock.rsi
 #------------------------------------закрытый стеклянный шлюз---------- 
 - type: entity
   parent: AirlockGlass
@@ -2860,7 +2860,7 @@
     containers:
       board: [ DoorElectronicsSNKAccess ]
   - type: Sprite
-    sprite: Corvax/Lore/SNK/snk_airlock_glass.rsi
+    sprite: Victoria/SNK/snk_airlock_glass.rsi
   - type: PaintableAirlock
     group: Glass
 #------------------------------------свободный стеклянный шлюз----------
@@ -2872,7 +2872,7 @@
   description: Он открывается, он закрывается, он может вас раздавить
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/snk_airlock_glass.rsi
+    sprite: Victoria/SNK/snk_airlock_glass.rsi
   - type: PaintableAirlock
     group: Glass  
 #------------------------------------стыковочный---------- 
@@ -2897,11 +2897,11 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_id_cards.rsi
+    sprite: Victoria/SNK/Equipment/snk_id_cards.rsi
   - type: Clothing
     slots:
     - idcard
-    sprite: Corvax/Lore/SNK/Equipment/snk_id_cards.rsi
+    sprite: Victoria/SNK/Equipment/snk_id_cards.rsi
   - type: Item
     size: Small
     heldPrefix: default
@@ -2984,7 +2984,7 @@
   components:
   - type: Appearance
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_pda.rsi
+    sprite: Victoria/SNK/Equipment/snk_pda.rsi
     layers:
     - map: [ "enum.PdaVisualLayers.Base" ]
     - state: "light_overlay"
@@ -2996,7 +2996,7 @@
       shader: "unshaded"
       visible: false
   - type: Icon
-    sprite: Corvax/Lore/SNK/Equipment/snk_pda.rsi
+    sprite: Victoria/SNK/Equipment/snk_pda.rsi
     state: pda_s
 #------------------------------------КПК солдата----------    
 - type: entity
@@ -3009,7 +3009,7 @@
       id: SNKIDCardSold
       state: pda_s
     - type: Icon
-      sprite: Corvax/Lore/SNK/Equipment/snk_pda.rsi
+      sprite: Victoria/SNK/Equipment/snk_pda.rsi
       state: pda_s
 #------------------------------------КПК командир----------       
 - type: entity
@@ -3022,7 +3022,7 @@
       id: SNKIDCardOffi
       state: pda_o 
     - type: Icon
-      sprite: Corvax/Lore/SNK/Equipment/snk_pda.rsi
+      sprite: Victoria/SNK/Equipment/snk_pda.rsi
       state: pda_o      
     - type: ActivatableUI
       key: enum.CrewMonitoringUIKey.Key
@@ -3047,7 +3047,7 @@
       id: SNKIDCardMed
       state: pda_m
     - type: Icon
-      sprite: Corvax/Lore/SNK/Equipment/snk_pda.rsi
+      sprite: Victoria/SNK/Equipment/snk_pda.rsi
       state: pda_m
     - type: HealthAnalyzer
       scanDelay: 1
@@ -3064,7 +3064,7 @@
       id: SNKIDCardEng
       state: pda_e
     - type: Icon
-      sprite: Corvax/Lore/SNK/Equipment/snk_pda.rsi
+      sprite: Victoria/SNK/Equipment/snk_pda.rsi
       state: pda_e      
     - type: GasAnalyzer
     - type: ActivatableUI
@@ -3099,9 +3099,9 @@
     - SNKRadio
     defaultChannel: SNKRadio
   - type: Item
-    sprite: Corvax/Lore/SNK/Equipment/snk_encryption_keys.rsi
+    sprite: Victoria/SNK/Equipment/snk_encryption_keys.rsi
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_encryption_keys.rsi
+    sprite: Victoria/SNK/Equipment/snk_encryption_keys.rsi
   - type: StealTarget
     stealGroup: EncryptionKey   
 #-----------------------------ключ шифрования----------------------------------------      
@@ -3132,9 +3132,9 @@
       key_slots:
       - SNKEncryptionKey
   - type: Sprite
-    sprite: Corvax/Lore/SNK/Equipment/snk_garniture.rsi
+    sprite: Victoria/SNK/Equipment/snk_garniture.rsi
   - type: Clothing
-    sprite: Corvax/Lore/SNK/Equipment/snk_garniture.rsi
+    sprite: Victoria/SNK/Equipment/snk_garniture.rsi
 #-----------------------------------------------------роли, полные сумки и гиры------------------------------------------------------  
 #--------------------------------------------роли------------------------------------ 
 - type: playTimeTracker
@@ -3879,11 +3879,11 @@
   description: Шкаф содержащий стандартную форму военослужащего армии СНК
   components:
   - type: Icon
-    sprite: Corvax/Lore/SNK/snk_closet.rsi
+    sprite: Victoria/SNK/snk_closet.rsi
     state: generic_icon
   - type: Sprite
     noRot: true
-    sprite: Corvax/Lore/SNK/snk_closet.rsi
+    sprite: Victoria/SNK/snk_closet.rsi
     layers:
     - state: generic
       map: ["enum.StorageVisualLayers.Base"]
@@ -3910,11 +3910,11 @@
   description: Шкаф содержащий лесную форму военослужащего армии СНК
   components:
   - type: Icon
-    sprite: Corvax/Lore/SNK/snk_closet.rsi
+    sprite: Victoria/SNK/snk_closet.rsi
     state: generic_icon
   - type: Sprite
     noRot: true
-    sprite: Corvax/Lore/SNK/snk_closet.rsi
+    sprite: Victoria/SNK/snk_closet.rsi
     layers:
     - state: generic
       map: ["enum.StorageVisualLayers.Base"]
@@ -3942,11 +3942,11 @@
   description: Шкаф содержащий лавовую форму военослужащего армии СНК
   components:
   - type: Icon
-    sprite: Corvax/Lore/SNK/snk_closet.rsi
+    sprite: Victoria/SNK/snk_closet.rsi
     state: generic_icon
   - type: Sprite
     noRot: true
-    sprite: Corvax/Lore/SNK/snk_closet.rsi
+    sprite: Victoria/SNK/snk_closet.rsi
     layers:
     - state: generic
       map: ["enum.StorageVisualLayers.Base"]
@@ -3973,11 +3973,11 @@
   description: Шкаф содержащий пустынную форму военослужащего армии СНК
   components:
   - type: Icon
-    sprite: Corvax/Lore/SNK/snk_closet.rsi
+    sprite: Victoria/SNK/snk_closet.rsi
     state: generic_icon
   - type: Sprite
     noRot: true
-    sprite: Corvax/Lore/SNK/snk_closet.rsi
+    sprite: Victoria/SNK/snk_closet.rsi
     layers:
     - state: generic
       map: ["enum.StorageVisualLayers.Base"]
@@ -4005,11 +4005,11 @@
   description: Шкаф содержащий зимнюю форму военослужащего армии СНК
   components:
   - type: Icon
-    sprite: Corvax/Lore/SNK/snk_closet.rsi
+    sprite: Victoria/SNK/snk_closet.rsi
     state: generic_icon
   - type: Sprite
     noRot: true
-    sprite: Corvax/Lore/SNK/snk_closet.rsi
+    sprite: Victoria/SNK/snk_closet.rsi
     layers:
     - state: generic
       map: ["enum.StorageVisualLayers.Base"]
@@ -4037,11 +4037,11 @@
   description: Шкаф содержащий стандартную форму офицера армии СНК
   components:
   - type: Icon
-    sprite: Corvax/Lore/SNK/snk_closet.rsi
+    sprite: Victoria/SNK/snk_closet.rsi
     state: generic_icon
   - type: Sprite
     noRot: true
-    sprite: Corvax/Lore/SNK/snk_closet.rsi
+    sprite: Victoria/SNK/snk_closet.rsi
     layers:
     - state: generic
       map: ["enum.StorageVisualLayers.Base"]
@@ -4068,11 +4068,11 @@
   description: Шкаф содержащий лесную форму офицера армии СНК
   components:
   - type: Icon
-    sprite: Corvax/Lore/SNK/snk_closet.rsi
+    sprite: Victoria/SNK/snk_closet.rsi
     state: generic_icon
   - type: Sprite
     noRot: true
-    sprite: Corvax/Lore/SNK/snk_closet.rsi
+    sprite: Victoria/SNK/snk_closet.rsi
     layers:
     - state: generic
       map: ["enum.StorageVisualLayers.Base"]
@@ -4099,11 +4099,11 @@
   description: Шкаф содержащий лавовую форму офицера армии СНК
   components:
   - type: Icon
-    sprite: Corvax/Lore/SNK/snk_closet.rsi
+    sprite: Victoria/SNK/snk_closet.rsi
     state: generic_icon
   - type: Sprite
     noRot: true
-    sprite: Corvax/Lore/SNK/snk_closet.rsi
+    sprite: Victoria/SNK/snk_closet.rsi
     layers:
     - state: generic
       map: ["enum.StorageVisualLayers.Base"]
@@ -4130,11 +4130,11 @@
   description: Шкаф содержащий пустынную форму офицера армии СНК
   components:
   - type: Icon
-    sprite: Corvax/Lore/SNK/snk_closet.rsi
+    sprite: Victoria/SNK/snk_closet.rsi
     state: generic_icon
   - type: Sprite
     noRot: true
-    sprite: Corvax/Lore/SNK/snk_closet.rsi
+    sprite: Victoria/SNK/snk_closet.rsi
     layers:
     - state: generic
       map: ["enum.StorageVisualLayers.Base"]
@@ -4161,11 +4161,11 @@
   description: Шкаф содержащий зимнюю форму офицера армии СНК
   components:
   - type: Icon
-    sprite: Corvax/Lore/SNK/snk_closet.rsi
+    sprite: Victoria/SNK/snk_closet.rsi
     state: generic_icon
   - type: Sprite
     noRot: true
-    sprite: Corvax/Lore/SNK/snk_closet.rsi
+    sprite: Victoria/SNK/snk_closet.rsi
     layers:
     - state: generic
       map: ["enum.StorageVisualLayers.Base"]
@@ -4191,9 +4191,9 @@
   suffix: СНК
   components:
   - type: Icon
-    sprite: Corvax/Lore/SNK/snk_crates.rsi
+    sprite: Victoria/SNK/snk_crates.rsi
   - type: Sprite
-    sprite: Corvax/Lore/SNK/snk_crates.rsi
+    sprite: Victoria/SNK/snk_crates.rsi
   - type: AccessReader
     access: [["SNKAccess"]]
 #-----------------------------Ящик массового лёгкого оружия------------------ 
