@@ -21,6 +21,7 @@
     - id: UnknownShuttleMicroshuttle
     - id: UnknownShuttleSpacebus
     - id: UnknownShuttleUmporLost
+    - id: UnknownShuttleNoocLost
 
 - type: entityTable
   id: UnknownShuttlesFreelanceTable

@@ -1,0 +1,120 @@
+#-------------------------------------Гир делегата-----------------------------------  
+- type: startingGear
+  id: NoocVisDelegGear
+  equipment:
+    jumpsuit: NoocUniformVis
+    back: NoocSatchelsFilledPistol
+    shoes: NoocBoots
+    head: NoocCap
+    id: NoocPDAVis
+    ears: NoocHeadset
+    belt: NoocBelt
+    gloves: NoocGlovesVis
+    neck: NoocCloak
+    pocket1: NoocPaperVis
+    pocket2: NoocRubberStamp
+    
+- type: startingGear
+  id: NoocVisDelegGear1
+  equipment:
+    jumpsuit: NoocUniformVis
+    back: NoocSatchelsFilledPistol
+    shoes: NoocBoots
+    head: NoocCap
+    id: NoocPDAVis
+    ears: NoocHeadset
+    belt: NoocBelt
+    gloves: NoocGlovesVis
+    neck: NoocCloak
+    pocket1: NoocPaperVis
+    pocket2: NoocRubberStamp
+#-------------------------------------Спавнер потеряных-----------------------------------  
+- type: entity
+  name: Спавнер Ноократа Охранника
+  id: LostNoocSpawnerSold
+  suffix: Ноократия
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: Objects/Tools/appraisal-tool.rsi
+          state: icon
+    - type: RandomSpawner
+      prototypes:
+      - RandomNoocSold
+      chance: 1
+      
+- type: entity
+  id: RandomNoocSold
+  name: Ноократский солдат
+  components:
+    - type: Sprite
+      sprite: Objects/Tools/appraisal-tool.rsi
+      state: icon
+    - type: RandomHumanoidSpawner
+      settings: LostNoocSold
+
+- type: randomHumanoidSettings
+  id: LostNoocSold
+  parent: EventHumanoid
+  components:
+    - type: GhostRole
+      name: Ноократский солдат
+      description: Солдат, чьей задачей является обеспечение охраны своего офицера. 
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: Loadout
+      prototypes: [ NoocSrGear, NoocSrMedGear, NoocNizGear]
+
+- type: entity
+  name: Спавнер Ноократа-делегата
+  id: LostNoocSpawnerOffi
+  suffix: Ноократия
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: Objects/Tools/appraisal-tool.rsi
+          state: icon
+    - type: RandomSpawner
+      prototypes:
+      - RandomNoocOffi
+      chance: 1
+      
+- type: entity
+  id: RandomNoocOffi
+  name: Ноокртский делегат
+  components:
+    - type: Sprite
+      sprite: Objects/Tools/appraisal-tool.rsi
+      state: icon
+    - type: RandomHumanoidSpawner
+      settings: LostNoocOffi
+      
+- type: randomHumanoidSettings
+  id: LostNoocOffi
+  parent: EventHumanoid
+  components:
+    - type: GhostRole
+      name: Ноокртский делегат
+      description: Вы летите на объект НТ дабы провести акт научного и культурного обмена с местными сотрудниками РНД.
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: Loadout
+      prototypes: [ NoocVisDelegGear, NoocVisDelegGear1 ]
+
+- type: preloadedGrid
+  id: ShuttleNoocLost
+  path: /Maps/Shuttles/ShuttleEvent/nooc_shuttle_lost.yml
+  copies: 1
+
+- type: entity
+  parent: BaseUnknownShuttleRule
+  id: UnknownShuttleNoocLost
+  components:
+  - type: LoadMapRule
+    preloadedGrid: ShuttleNoocLost
