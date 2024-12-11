@@ -114,6 +114,9 @@
           Quantity: 10
   - type: Item
     heldPrefix: iron
+  - type: Tag
+    tags:
+    - CrystalMaterial
 
 - type: entity
   id: SteelOre1
@@ -218,6 +221,9 @@
           Quantity: 10
   - type: Item
     heldPrefix: spacequartz
+  - type: Tag
+    tags:
+    - CrystalMaterial
 
 - type: entity
   parent: SpaceQuartz

@@ -131,7 +131,7 @@
   materials:
     Steel: 1500
     Plastic: 300
-    Glass: 500
+    RSCrystalMaterial: 1000
     Plasma: 500
     Silver: 250
 
@@ -153,7 +153,7 @@
     Steel: 2000
     Silver: 750
     Plasma: 1500
-    Uranium: 150
+    BSCrystalMaterial: 1000
 
 - type: latheRecipe
   id: ClothingBackpackDuffelHolding
@@ -163,7 +163,7 @@
     Steel: 2000
     Silver: 750
     Plasma: 1500
-    Uranium: 150
+    BSCrystalMaterial: 1000
 
 - type: latheRecipe
   id: OreBagOfHolding
@@ -173,7 +173,7 @@
     Steel: 2000
     Silver: 750
     Plasma: 1500
-    Uranium: 150
+    BSCrystalMaterial: 1000
 
 - type: latheRecipe
   id: ClothingMaskWeldingGas
@@ -200,7 +200,7 @@
   materials:
     Steel: 700
     Glass: 100
-    Uranium: 100
+    BSCrystalMaterial: 1000 
 
 - type: latheRecipe
   id: WeaponProtoKineticAccelerator

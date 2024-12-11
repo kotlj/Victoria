@@ -319,6 +319,7 @@
       Cable: 5
       PlasmaGlass: 15
       MetalRod: 4
+      RSModuleStack: 1 
 
 - type: entity
   parent: BaseMachineCircuitboard
@@ -831,6 +832,7 @@
     stackRequirements:
       Capacitor: 4
       Steel: 5
+      BSModuleStack: 1
 
 - type: entity
   id: GyroscopeMachineCircuitboard
@@ -1066,6 +1068,7 @@
       Manipulator: 2
       MatterBin: 1
       Steel: 1
+      BSModuleStack: 1
 
 - type: entity
   id: EmitterCircuitboard
@@ -1172,6 +1175,7 @@
       stackRequirements:
         Capacitor: 2
         Steel: 5
+        BSModuleStack: 1
 
 - type: entity
   id: SodaDispenserMachineCircuitboard

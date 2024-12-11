@@ -1,12 +1,12 @@
-- type: cargoProduct
-  id: ShuttleThruster
-  icon:
-    sprite: Structures/Shuttles/thruster.rsi
-    state: base
-  product: CrateEngineeringThruster
-  cost: 1500
-  category: cargoproduct-category-name-shuttle
-  group: market
+# - type: cargoProduct
+  # id: ShuttleThruster
+  # icon:
+    # sprite: Structures/Shuttles/thruster.rsi
+    # state: base
+  # product: CrateEngineeringThruster
+  # cost: 1500
+  # category: cargoproduct-category-name-shuttle
+  # group: market
 
 - type: cargoProduct
   id: ShuttleGyroscope

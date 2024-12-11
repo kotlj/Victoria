@@ -1,0 +1,625 @@
+#-----------------------------------------------------"Руда" и добыча--------------------------------
+#----------------------------------база кристалловой "руды"--------------------------------
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: CrystalOreBase
+  description: A piece of unrefined ore.
+  components:
+  - type: Sprite
+    sprite: Victoria/Special_crystals/crystal_rock.rsi
+  - type: Item
+    sprite: Victoria/Special_crystals/crystal_rock.rsi
+#----------------------------------база камня с "рудой"--------------------------------        
+- type: entity
+  id: CrystalWallRock
+  parent: WallRock
+  name: камень
+  suffix: Особые кристаллы
+  components:
+    - type: PlacementReplacement
+      key: walls
+    - type: SoundOnGather
+    - type: Gatherable
+      whitelist:
+        tags:
+          - Pickaxe
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Metallic
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+    - type: Occluder
+    - type: Airtight
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.5,-0.5,0.5,0.5"
+          density: 100
+          mask:
+            - FullTileMask
+          layer:
+            - WallLayer
+    - type: IconSmooth
+      key: walls
+      mode: NoSprite
+    - type: SmoothEdge
+    - type: Sprite
+      sprite: Victoria/Special_crystals/crystal_rock.rsi
+      layers:
+        - state: rock
+        - map: [ "enum.EdgeLayer.South" ]
+          state: rock_south
+        - map: [ "enum.EdgeLayer.East" ]
+          state: rock_east
+        - map: [ "enum.EdgeLayer.North" ]
+          state: rock_north
+        - map: [ "enum.EdgeLayer.West" ]
+          state: rock_west
+    - type: RadiationBlocker
+      resistance: 2
+#----------------------------------БС-кристаллы--------------------------------------
+#------------------Сам кристалл--------------------------
+- type: Tag
+  id: CrystalMaterial
+
+- type: entity
+  parent: CrystalOreBase
+  id: SpaceBSCrystall
+  name: Блюспейс кристалл
+  suffix: Особые кристаллы, Full
+  components:
+  - type: Stack
+    stackType: SpaceBSCrystall
+  - type: Sprite
+    sprite: Victoria/Special_crystals/bs_crystal.rsi
+    state: bs_crystal
+  - type: Extractable
+    grindableSolutionName: bscrystal
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      BSCrystalMaterial: 1000
+  - type: Tag
+    tags:
+    - CrystalMaterial
+#------------------Стак--------------------------
+- type: stack
+  id: SpaceBSCrystall
+  name: Блюспейс Кристалл
+  icon: { sprite: Victoria/Special_crystals/bs_crystal.rsi, state: bs_crystal }
+  spawn: SpaceBSCrystall1
+  maxCount: 30
+  itemSize: 2
+#------------------Один кристалл--------------------------
+- type: entity
+  parent: SpaceBSCrystall
+  id: SpaceBSCrystall1
+  suffix: Особые кристаллы, Single
+  components:
+  - type: Stack
+    count: 1
+#------------------"руда"--------------------------
+- type: ore
+  id: OreBSCrystall
+  oreEntity: SpaceBSCrystall1
+  minOreYield: 1
+  maxOreYield: 3
+#------------------Сам камень с "рудой"--------------------------
+- type: entity
+  id: WallRockBS
+  parent: CrystalWallRock
+  description: Месторождение блюспейс-кристаллов
+  suffix: Особые кристаллы
+  components:
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: OreBSCrystall
+    - type: Sprite
+      layers:
+        - state: rock
+        - map: [ "enum.EdgeLayer.South" ]
+          state: rock_south
+        - map: [ "enum.EdgeLayer.East" ]
+          state: rock_east
+        - map: [ "enum.EdgeLayer.North" ]
+          state: rock_north
+        - map: [ "enum.EdgeLayer.West" ]
+          state: rock_west
+        - state: bs
+#----------------------------------Редспейс-кристаллы--------------------------------------
+#------------------"руда"--------------------------
+- type: ore
+  id: OreRSCrystal
+  oreEntity: Telecrystal1
+  minOreYield: 1
+  maxOreYield: 2
+#------------------Сам камень с "рудой"--------------------------
+- type: entity
+  id: WallRockRS
+  parent: CrystalWallRock
+  description: Месторождение редспейс-кристаллов
+  suffix: Особые кристаллы
+  components:
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: OreRSCrystal
+    - type: Sprite
+      layers:
+        - state: rock
+        - map: [ "enum.EdgeLayer.South" ]
+          state: rock_south
+        - map: [ "enum.EdgeLayer.East" ]
+          state: rock_east
+        - map: [ "enum.EdgeLayer.North" ]
+          state: rock_north
+        - map: [ "enum.EdgeLayer.West" ]
+          state: rock_west
+        - state: rs
+#----------------------------------Кристаллы космеция--------------------------------------
+#------------------Сам кристалл--------------------------
+- type: entity
+  parent: CrystalOreBase
+  id: SpaceCosmCrystall
+  name: Кристалл космеция
+  suffix: Особые кристаллы, Full
+  components:
+  - type: Stack
+    stackType: SpaceCosmCrystall
+  - type: Sprite
+    sprite: Victoria/Special_crystals/cosm_crystal.rsi
+    state: cosm_crystal
+  - type: Extractable
+    grindableSolutionName: cosmcrystal
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      CosmCrystalMaterial: 1000
+  - type: Tag
+    tags:
+    - CrystalMaterial
+#------------------Стак--------------------------
+- type: stack
+  id: SpaceCosmCrystall
+  name: Кристалл Космеция
+  icon: { sprite: Victoria/Special_crystals/cosm_crystal.rsi, state: cosm_crystal }
+  spawn: SpaceCosmCrystall1
+  maxCount: 30
+  itemSize: 2
+#------------------Один кристалл--------------------------
+- type: entity
+  parent: SpaceCosmCrystall
+  id: SpaceCosmCrystall1
+  suffix: Особые кристаллы, Single
+  components:
+  - type: Stack
+    count: 1
+#------------------"руда"--------------------------
+- type: ore
+  id: OreCosmCrystall
+  oreEntity: SpaceCosmCrystall1
+  minOreYield: 1
+  maxOreYield: 4
+#------------------Сам камень с "рудой"--------------------------
+- type: entity
+  id: WallRockCosm
+  parent: CrystalWallRock
+  description: Месторождение кристаллов Космеция
+  suffix: Особые кристаллы
+  components:
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: OreCosmCrystall
+    - type: Sprite
+      layers:
+        - state: rock
+        - map: [ "enum.EdgeLayer.South" ]
+          state: rock_south
+        - map: [ "enum.EdgeLayer.East" ]
+          state: rock_east
+        - map: [ "enum.EdgeLayer.North" ]
+          state: rock_north
+        - map: [ "enum.EdgeLayer.West" ]
+          state: rock_west
+        - state: cosm
+#----------------------------------Сапфир--------------------------------------        
+#------------------Сам кристалл--------------------------
+- type: entity
+  parent: CrystalOreBase
+  id: SapphireCrystall
+  name: Сапфир
+  suffix: Особые кристаллы, Full
+  components:
+  - type: Stack
+    stackType: SapphireCrystall
+  - type: Sprite
+    sprite: Victoria/Special_crystals/sap_crystal.rsi
+    state: sap_crystal
+  - type: Extractable
+    grindableSolutionName: sapcrystal
+  - type: SolutionContainerManager
+    solutions:
+      quartzaore:
+        reagents:
+        - ReagentId: Aluminum
+          Quantity: 10
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      SapphireMaterial: 1000
+  - type: Tag
+    tags:
+    - CrystalMaterial
+#------------------Стак--------------------------
+- type: stack
+  id: SapphireCrystall
+  name: Блюспейс Кристалл
+  icon: { sprite: Victoria/Special_crystals/sap_crystal.rsi, state: sap_crystal }
+  spawn: SapphireCrystall1
+  maxCount: 30
+  itemSize: 2
+#------------------Один кристалл--------------------------
+- type: entity
+  parent: SapphireCrystall
+  id: SapphireCrystall1
+  suffix: Особые кристаллы, Single
+  components:
+  - type: Stack
+    count: 1
+#------------------Реакция получения--------------------------    
+- type: reaction
+  id: CreateSapphireCrystall
+  impact: Low
+  quantized: true
+  conserveEnergy: false
+  reactants:
+    Aluminium:
+      amount: 10
+    Oxygen:
+      amount: 15
+  effects:
+    - !type:CreateEntityReactionEffect
+      entity: SapphireCrystall1   
+#----------------------------------Хром--------------------------------------        
+#------------------Сам кристалл--------------------------
+- type: entity
+  parent: CrystalOreBase
+  id: СhromeCrystall
+  name: Хром
+  suffix: Особые кристаллы, Full
+  components:
+  - type: Stack
+    stackType: СhromeCrystall
+  - type: Sprite
+    sprite: Victoria/Special_crystals/chrome_crystal.rsi
+    state: chrome_crystal
+  - type: Extractable
+    grindableSolutionName: chromcrystal
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      СhromeMaterial: 1000
+  - type: Tag
+    tags:
+    - CrystalMaterial
+#------------------Стак--------------------------
+- type: stack
+  id: СhromeCrystall
+  name: Куски хрома
+  icon: { sprite: Victoria/Special_crystals/chrome_crystal.rsi, state: chrome_crystal }
+  spawn: СhromeCrystall1
+  maxCount: 30
+  itemSize: 2
+#------------------Один кристалл--------------------------
+- type: entity
+  parent: СhromeCrystall
+  id: СhromeCrystall1
+  suffix: Особые кристаллы, Single
+  components:
+  - type: Stack
+    count: 1   
+#----------------------------------Кремний--------------------------------------        
+#------------------Сам кристалл--------------------------
+- type: entity
+  parent: CrystalOreBase
+  id: SiCrystall
+  name: Булька Кремния
+  suffix: Особые кристаллы, Full
+  components:
+  - type: Stack
+    stackType: SiCrystall
+  - type: Sprite
+    sprite: Victoria/Special_crystals/si_crystal.rsi
+    state: si_crystal
+  - type: Extractable
+    grindableSolutionName: sicrystal
+  - type: SolutionContainerManager
+    solutions:
+      quartzaore:
+        reagents:
+        - ReagentId: Silicon
+          Quantity: 20
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      SiMaterial: 1000
+  - type: Tag
+    tags:
+    - CrystalMaterial
+#------------------Стак--------------------------
+- type: stack
+  id: SiCrystall
+  name: Булька Кремния
+  icon: { sprite: Victoria/Special_crystals/si_crystal.rsi, state: si_crystal }
+  spawn: SiCrystall1
+  maxCount: 30
+  itemSize: 2
+#------------------Один кристалл--------------------------
+- type: entity
+  parent: SiCrystall
+  id: SiCrystall1
+  suffix: Особые кристаллы, Single
+  components:
+  - type: Stack
+    count: 1
+#------------------Реакция получения--------------------------    
+- type: reaction
+  id: CreateSiCrystall
+  impact: Low
+  quantized: true
+  minTemp: 350
+  reactants:
+    Silicon:
+      amount: 20
+  effects:
+    - !type:CreateEntityReactionEffect
+      entity: SiCrystall1       
+#-----------------------------------------------------Материалы--------------------------------
+#----------------------------------БС--------------------------------
+- type: material
+  id: BSCrystalMaterial
+  stackEntity: SpaceBSCrystall1
+  name: БС-кристаллы
+  icon: { sprite: Victoria/Special_crystals/bs_crystal.rsi, state: bs_crystal }
+  price: 10
+#----------------------------------РС--------------------------------
+- type: material
+  id: RSCrystalMaterial
+  stackEntity: Telecrystal1
+  name: Редспейс-кристаллы
+  icon: { sprite: Objects\Specific\Syndicate\telecrystal.rsi, state: telecrystal }
+  price: 12
+#----------------------------------Космеций--------------------------------
+- type: material
+  id: CosmCrystalMaterial
+  stackEntity: SpaceCosmCrystall1
+  name: Космеций
+  icon: { sprite: Victoria/Special_crystals/cosm_crystal.rsi, state: cosm_crystal }
+  price: 5
+#----------------------------------сапфир----------------------------------
+- type: material
+  id: SapphireMaterial
+  stackEntity: SapphireCrystall1
+  name: Сапфир
+  icon: { sprite: Victoria/Special_crystals/sap_crystal.rsi, state: sap_crystal }
+  price: 5
+#----------------------------------хром----------------------------------
+- type: material
+  id: СhromeMaterial
+  stackEntity: СhromeCrystall1
+  name: Хром
+  icon: { sprite: Victoria/Special_crystals/chrome_crystal.rsi, state: chrome_crystal }
+  price: 2
+#----------------------------------кремний----------------------------------
+- type: material
+  id: SiMaterial
+  stackEntity: SiCrystall1
+  name: Кремний
+  icon: { sprite: Victoria/Special_crystals/si_crystal.rsi, state: si_crystal }
+  price: 0.1
+#-----------------------------------------------------Трансмутатор--------------------------------
+#----------------------------Рецепт--------------------------------
+- type: latheRecipe
+  id: RecipeBSCrystall
+  result: SpaceBSCrystall1
+  completetime: 10
+  materials:
+    CosmCrystalMaterial: 1000
+    SapphireMaterial: 1000
+    
+- type: latheRecipe
+  id: RecipeСhromeCrystall
+  result: СhromeCrystall1  
+  completetime: 5
+  materials:
+    RawIron: 1000
+    
+- type: latheRecipe
+  id: RecipeSiCrystall
+  result: SiCrystall1  
+  completetime: 1
+  materials:
+    RawQuartz: 1000
+    
+- type: latheRecipe
+  id: RecipeRSCrystall
+  result: Telecrystal1
+  completetime: 10
+  materials:
+    CosmCrystalMaterial: 1000
+    SapphireMaterial: 1000
+    СhromeMaterial: 200
+#----------------------------Сам трансмутатор----------------------
+- type: entity
+  id: TransmutatorMachineCircuitboard
+  parent: BaseMachineCircuitboard
+  name: Плата трансмутатора
+  description: Электронная плата, необходимая для работы трансмутатора
+  components:
+    - type: MachineBoard
+      prototype: Transmutator
+      stackRequirements:
+        MatterBin: 2
+        Manipulator: 2
+      tagRequirements:
+        GlassBeaker:
+          amount: 2
+          defaultPrototype: Beaker
+
+- type: entity
+  id: Transmutator
+  parent: BaseLatheLube
+  name: Трансмутатор
+  description: Сложное научное оборудование для преобразования кристаллов
+  components:
+  - type: Sprite
+    sprite: Victoria/Special_crystals/transmutator.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: TransmutatorMachineCircuitboard
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - CrystalMaterial
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    unlitIdleState: unlit
+    unlitRunningState: unlit-building
+    staticRecipes:
+    - RecipeBSCrystall
+    - RecipeСhromeCrystall
+    - RecipeSiCrystall
+    - RecipeRSCrystall
+#----------------------------------Рецепты на модули с кристаллами-----------------------
+- type: latheRecipe
+  id: BSModuleRecipe
+  result: BSModule
+  completetime: 5
+  materials:
+    Steel: 1000
+    Plasma: 500
+    BSCrystalMaterial: 1000
+    
+- type: latheRecipe
+  id: RSModuleRecipe
+  result: RSModule
+  completetime: 5
+  materials:
+    Steel: 1000
+    Plasma: 500
+    RSCrystalMaterial: 1000
+    
+- type: latheRecipe
+  id: CSCoreRecipe
+  result: CMCore
+  completetime: 5
+  materials:
+    Steel: 1000
+    Plasma: 500
+    CosmCrystalMaterial: 1000
+#----------------------------------Модули с кристаллами-----------------------
+#------------------БС-модуль---------------------------------
+- type: Tag
+  id: BSModule
+
+- type: stack
+  id: BSModuleStack
+  name: Блюспейс-модуль
+  icon: { sprite: Victoria/Special_crystals/module.rsi, state: bs_module }
+  spawn: BSModule
+  maxCount: 1
+  itemSize: 2
+
+- type: entity
+  id: BSModule
+  name: Блюспейс-модуль
+  parent: BaseStockPart
+  description: Сложное энергетическо-вычислительное устройство, используемое для создания крупных машин, взаимодействующих с Блюспейс-пространством.
+  components:
+    - type: Sprite
+      sprite: Victoria/Special_crystals/module.rsi
+      state: bs_module
+    - type: Tag
+      tags:
+        - BSModule
+    - type: Item
+      size: Small
+    - type: Stack
+      stackType: BSModuleStack  
+#------------------РС-модуль---------------------------------      
+- type: Tag
+  id: RSModule
+
+- type: stack
+  id: RSModuleStack
+  name: Блюспейс-модуль
+  icon: { sprite: Victoria/Special_crystals/module.rsi, state: rs_module }
+  spawn: RSModule
+  maxCount: 1
+  itemSize: 2
+
+- type: entity
+  id: RSModule
+  name: Редспейс-модуль
+  parent: BaseStockPart
+  description: Сложное энергетическо-осциллирующейй устройство, используемое для создания техники, взаимодействующей с Редспейсом.
+  components:
+    - type: Sprite
+      sprite: Victoria/Special_crystals/module.rsi
+      state: rs_module
+    - type: Tag
+      tags:
+        - RSModule
+    - type: Item
+      size: Small
+    - type: Stack
+      stackType: RSModuleStack  
+#------------------Ядро космеция---------------------------------     
+- type: Tag
+  id: CMCore
+
+- type: stack
+  id: CMCoreStack
+  name: Ядро космеция
+  icon: { sprite: Victoria/Special_crystals/module.rsi, state: cosm_core }
+  spawn: CMCore
+  maxCount: 1
+  itemSize: 2
+
+- type: entity
+  id: CMCore
+  name: Ядро космеция
+  parent: BaseStockPart
+  description: Сложное энергетическо-силовое устройство, используемое для создания высокоэнергетических, но сравнительно малогабаритных устройств.
+  components:
+    - type: Sprite
+      sprite: Victoria/Special_crystals/module.rsi
+      state: cosm_core
+    - type: Tag
+      tags:
+        - CMCore
+    - type: Item
+      size: Small
+    - type: Stack
+      stackType: CMCoreStack  
+
+#--Удалить покупку движков
