@@ -21,9 +21,6 @@
       key: walls
     - type: SoundOnGather
     - type: Gatherable
-      whitelist:
-        tags:
-          - Pickaxe
     - type: Damageable
       damageContainer: Inorganic
       damageModifierSet: Metallic
@@ -97,8 +94,7 @@
   name: Блюспейс Кристалл
   icon: { sprite: Victoria/Special_crystals/bs_crystal.rsi, state: bs_crystal }
   spawn: SpaceBSCrystall1
-  maxCount: 30
-  itemSize: 2
+  maxCount: 10
 #------------------Один кристалл--------------------------
 - type: entity
   parent: SpaceBSCrystall
@@ -192,8 +188,7 @@
   name: Кристалл Космеция
   icon: { sprite: Victoria/Special_crystals/cosm_crystal.rsi, state: cosm_crystal }
   spawn: SpaceCosmCrystall1
-  maxCount: 30
-  itemSize: 2
+  maxCount: 10
 #------------------Один кристалл--------------------------
 - type: entity
   parent: SpaceCosmCrystall
@@ -261,11 +256,10 @@
 #------------------Стак--------------------------
 - type: stack
   id: SapphireCrystall
-  name: Блюспейс Кристалл
+  name: Сапфир
   icon: { sprite: Victoria/Special_crystals/sap_crystal.rsi, state: sap_crystal }
   spawn: SapphireCrystall1
-  maxCount: 30
-  itemSize: 2
+  maxCount: 10
 #------------------Один кристалл--------------------------
 - type: entity
   parent: SapphireCrystall
@@ -317,7 +311,6 @@
   icon: { sprite: Victoria/Special_crystals/chrome_crystal.rsi, state: chrome_crystal }
   spawn: СhromeCrystall1
   maxCount: 30
-  itemSize: 2
 #------------------Один кристалл--------------------------
 - type: entity
   parent: СhromeCrystall
@@ -360,8 +353,7 @@
   name: Булька Кремния
   icon: { sprite: Victoria/Special_crystals/si_crystal.rsi, state: si_crystal }
   spawn: SiCrystall1
-  maxCount: 30
-  itemSize: 2
+  maxCount: 5
 #------------------Один кристалл--------------------------
 - type: entity
   parent: SiCrystall
@@ -547,7 +539,6 @@
   icon: { sprite: Victoria/Special_crystals/module.rsi, state: bs_module }
   spawn: BSModule
   maxCount: 1
-  itemSize: 2
 
 - type: entity
   id: BSModule
@@ -575,7 +566,6 @@
   icon: { sprite: Victoria/Special_crystals/module.rsi, state: rs_module }
   spawn: RSModule
   maxCount: 1
-  itemSize: 2
 
 - type: entity
   id: RSModule
@@ -603,7 +593,6 @@
   icon: { sprite: Victoria/Special_crystals/module.rsi, state: cosm_core }
   spawn: CMCore
   maxCount: 1
-  itemSize: 2
 
 - type: entity
   id: CMCore
