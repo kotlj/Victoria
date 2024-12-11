@@ -1,0 +1,91 @@
+- type: entity
+  name: Штамп "Сверхсрочно"
+  suffix: Срочность
+  parent: RubberStampBaseAlt
+  id: SverhSrochRubberStamp
+  components:
+  - type: Stamp
+    stampedName: Сверхсрочно
+    stampedColor: "#e50606"
+    stampState: "paper_stamp-generic"
+  - type: Sprite
+    sprite: Objects/Misc/stamps.rsi
+    state: stamp-hos
+    
+- type: entity
+  name: Штамп "Срочно"
+  suffix: Срочность
+  parent: RubberStampBaseAlt
+  id: SrochRubberStamp
+  components:
+  - type: Stamp
+    stampedName: Срочно
+    stampedColor: "#c6bf3a"
+    stampState: "paper_stamp-generic"
+  - type: Sprite
+    sprite: Objects/Misc/stamps.rsi
+    state: stamp-ce
+    
+- type: entity
+  name: Штамп "Средняя срочность"
+  suffix: Срочность
+  parent: RubberStampBaseAlt
+  id: SredSrochRubberStamp
+  components:
+  - type: Stamp
+    stampedName: Средняя срочность
+    stampedColor: "#99e550"
+    stampState: "paper_stamp-generic"
+  - type: Sprite
+    sprite: Objects/Misc/stamps.rsi
+    state: stamp-centcom
+    
+- type: entity
+  name: Штамп "В последнюю очередь"
+  suffix: Срочность
+  parent: RubberStampBaseAlt
+  id: ZeroSrochRubberStamp
+  components:
+  - type: Stamp
+    stampedName: В последнюю очередь
+    stampedColor: "#99e550"
+    stampState: "paper_stamp-generic"
+  - type: Sprite
+    sprite: Objects/Misc/stamps.rsi
+    state: stamp-hop
+    
+- type: entity
+  name: Штамп "Срочность на усмотрение"
+  suffix: Срочность
+  parent: RubberStampBaseAlt
+  id: VarySrochRubberStamp
+  components:
+  - type: Stamp
+    stampedName: Срочность на усмотрение
+    stampedColor: "#7f7f7f"
+    stampState: "paper_stamp-generic"
+  - type: Sprite
+    sprite: Objects/Misc/stamps.rsi
+    state: stamp-chaplain
+    
+- type: entity
+  name: Коробка штампов срочности
+  suffix: Срочность
+  parent: BoxCardboard
+  id: BoxSrochRubberStamp
+  description: Коробка с штампами срочности
+  components:
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,2,1
+  - type: StorageFill
+    contents:
+      - id: SverhSrochRubberStamp
+      - id: SrochRubberStamp
+      - id: SredSrochRubberStamp
+      - id: ZeroSrochRubberStamp
+      - id: VarySrochRubberStamp
+  - type: Sprite
+    layers:
+      - state: box_medical
