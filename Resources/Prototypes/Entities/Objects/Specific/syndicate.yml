@@ -40,6 +40,13 @@
         - Scientist
         - Borg
 # Corvax-HiddenDesc-End
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      RSCrystalMaterial: 1000
+  - type: Tag
+    tags:
+    - CrystalMaterial
         
 - type: entity
   parent: Telecrystal

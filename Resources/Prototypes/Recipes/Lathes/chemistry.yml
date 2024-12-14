@@ -50,7 +50,7 @@
   completetime: 2
   materials:
     Steel: 500
-    Plastic: 500
+    BSCrystalMaterial: 1000
     Plasma: 150
     Silver: 50
 
@@ -60,7 +60,7 @@
   completetime: 2
   materials:
     Steel: 100
-    Plastic: 150
+    BSCrystalMaterial: 1000
     Glass: 250
     Plasma: 100
     Silver: 50
