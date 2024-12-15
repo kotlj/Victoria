@@ -83,7 +83,7 @@
 #------------------Переплавка-------------------------        
 - type: latheRecipe
   id: MeltingCooper
-  result: Cooper
+  result: Cooper1
   completetime: 2
   materials:
     RawCooper: 2000
@@ -225,7 +225,7 @@
 #------------------Переплавка-------------------------        
 - type: latheRecipe
   id: MeltingAluminium
-  result: Aluminium
+  result: Aluminium1
   completetime: 2
   materials:
     RawAluminium: 2000
