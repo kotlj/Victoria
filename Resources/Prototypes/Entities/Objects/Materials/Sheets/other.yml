@@ -33,6 +33,9 @@
   name: paper
   suffix: Full
   components:
+  - type: Tag
+    tags:
+      - CrystalMaterial
   - type: Stack
     stackType: Paper
     baseLayer: base
@@ -110,6 +113,7 @@
   - type: Tag
     tags:
     - Sheet
+    - CrystalMaterial
 
 - type: entity
   parent: SheetPlasma
@@ -142,6 +146,8 @@
     tags:
     - Plastic
     - Sheet
+    - CrystalMaterial
+    - RawCircuitBord
   - type: Material
   - type: PhysicalComposition
     materialComposition:
@@ -172,7 +178,6 @@
         - ReagentId: Phosphorus
           Quantity: 5
         canReact: false
-
 - type: entity
   parent: SheetPlastic
   id: SheetPlastic10

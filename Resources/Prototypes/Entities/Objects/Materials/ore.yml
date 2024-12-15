@@ -155,6 +155,9 @@
           Quantity: 10
   - type: Item
     heldPrefix: plasma
+  - type: Tag
+    tags:
+    - CrystalMaterial
 
 - type: entity
   parent: PlasmaOre

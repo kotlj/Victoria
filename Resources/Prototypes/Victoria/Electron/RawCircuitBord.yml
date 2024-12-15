@@ -1,0 +1,630 @@
+#---------------------------------------------Основы плат----------------------------------------------
+- type: Tag
+  id: RawCircuitBord
+#--------------------------------------Медь------------------------------------------
+#------------------Сама руда-------------------------
+- type: entity
+  parent: CrystalOreBase
+  id: OreCooper
+  name: Медная руда
+  suffix: Электроника, Full
+  components:
+  - type: Stack
+    stackType: OreCooper
+  - type: Sprite
+    sprite: Victoria/Electron/ore_electronic.rsi
+    state: cooper
+  - type: Extractable
+    grindableSolutionName: cooper
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      RawCooper: 400
+  - type: SolutionContainerManager
+    solutions:
+      ironore:
+        reagents:
+        - ReagentId: Cooper
+          Quantity: 40
+  - type: Tag
+    tags:
+    - Ore
+#------------------Стак--------------------------
+- type: stack
+  id: OreCooper
+  name: Медная руда
+  icon: { sprite: Victoria/Electron/ore_electronic.rsi, state: cooper }
+  spawn: OreCooper1
+  maxCount: 30
+#------------------Единица руды--------------------------
+- type: entity
+  parent: OreCooper
+  id: OreCooper1
+  suffix: Электроника, Single
+  components:
+  - type: Stack
+    count: 1  
+#----------------------------------материал----------------------------------
+- type: material
+  id: RawCooper
+  stackEntity: OreCooper1
+  name: Медная руда
+  icon: { sprite: Victoria/Electron/ore_electronic.rsi, state: cooper }
+  price: 0.1 
+#-----------------------------------руда--------------------------
+- type: ore
+  id: OreCooper
+  oreEntity: OreCooper1
+  minOreYield: 2
+  maxOreYield: 6
+#-----------------------------------Сам камень с "рудой"--------------------------
+- type: entity
+  id: WallRockCooper
+  parent: CrystalWallRock
+  description: Месторождение меди
+  suffix: Электроника
+  components:
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: OreCooper
+    - type: Sprite
+      sprite: Victoria/Electron/electronic_rock.rsi
+      layers:
+        - state: rock
+        - map: [ "enum.EdgeLayer.South" ]
+          state: rock_south
+        - map: [ "enum.EdgeLayer.East" ]
+          state: rock_east
+        - map: [ "enum.EdgeLayer.North" ]
+          state: rock_north
+        - map: [ "enum.EdgeLayer.West" ]
+          state: rock_west
+        - state: cooper  
+#------------------Переплавка-------------------------        
+- type: latheRecipe
+  id: MeltingCooper
+  result: Cooper
+  completetime: 2
+  materials:
+    RawCooper: 2000
+    Coal: 1000     
+#------------------Сам-------------------------
+- type: entity
+  parent: CrystalOreBase
+  id: Cooper
+  name: Медь
+  suffix: Электроника, Full
+  components:
+  - type: Stack
+    stackType: Cooper
+  - type: Sprite
+    sprite: Victoria/Electron/contact_crystal.rsi
+    state: cooper
+  - type: Extractable
+    grindableSolutionName: cooper
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      CooperMaterial: 1000
+  - type: Tag
+    tags:
+    - RawMatElectronics
+#------------------Стак--------------------------
+- type: stack
+  id: Cooper
+  name: Медь
+  icon: { sprite: Victoria/Electron/contact_crystal.rsi, state: cooper }
+  spawn: Cooper1
+  maxCount: 30
+#------------------Один кристалл--------------------------
+- type: entity
+  parent: Cooper
+  id: Cooper1
+  suffix: Электроника, Single
+  components:
+  - type: Stack
+    count: 1  
+#----------------------------------материал----------------------------------
+- type: material
+  id: CooperMaterial
+  stackEntity: Cooper1
+  name: Медь
+  icon: { sprite: Victoria/Electron/contact_crystal.rsi, state: cooper }
+  price: 0.1   
+#------------------Рецепт--------------------------
+- type: reaction
+  id: CreateCooper
+  impact: Low
+  quantized: true
+  minTemp: 400
+  reactants:
+    Cooper:
+      amount: 20
+  effects:
+    - !type:CreateEntityReactionEffect
+      entity: Cooper1
+#--------------------------------------Алюминий------------------------------------------
+#------------------Сама руда-------------------------
+- type: entity
+  parent: CrystalOreBase
+  id: OreAluminium
+  name: Алюминиевая руда
+  suffix: Электроника, Full
+  components:
+  - type: Stack
+    stackType: OreAluminium
+  - type: Sprite
+    sprite: Victoria/Electron/ore_electronic.rsi
+    state: aluminium
+  - type: Extractable
+    grindableSolutionName: aluminium
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      RawAluminium: 400
+  - type: SolutionContainerManager
+    solutions:
+      ironore:
+        reagents:
+        - ReagentId: Aluminium1
+          Quantity: 40
+  - type: Tag
+    tags:
+    - Ore
+#------------------Стак--------------------------
+- type: stack
+  id: OreAluminium
+  name: Алюминиевая руда
+  icon: { sprite: Victoria/Electron/ore_electronic.rsi, state: aluminium }
+  spawn: OreAluminium1
+  maxCount: 30
+#------------------Единица руды--------------------------
+- type: entity
+  parent: OreAluminium
+  id: OreAluminium1
+  suffix: Электроника, Single
+  components:
+  - type: Stack
+    count: 1  
+#----------------------------------материал----------------------------------
+- type: material
+  id: RawAluminium
+  stackEntity: OreAluminium1
+  name: Алюминиевая руда
+  icon: { sprite: Victoria/Electron/ore_electronic.rsi, state: aluminium }
+  price: 0.1 
+#-----------------------------------руда--------------------------
+- type: ore
+  id: OreAluminium
+  oreEntity: OreAluminium1
+  minOreYield: 2
+  maxOreYield: 6
+#-----------------------------------Сам камень с "рудой"--------------------------
+- type: entity
+  id: WallRockAluminium
+  parent: CrystalWallRock
+  description: Месторождение алюминия
+  suffix: Электроника
+  components:
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: OreAluminium
+    - type: Sprite
+      sprite: Victoria/Electron/electronic_rock.rsi
+      layers:
+        - state: rock
+        - map: [ "enum.EdgeLayer.South" ]
+          state: rock_south
+        - map: [ "enum.EdgeLayer.East" ]
+          state: rock_east
+        - map: [ "enum.EdgeLayer.North" ]
+          state: rock_north
+        - map: [ "enum.EdgeLayer.West" ]
+          state: rock_west
+        - state: aluminium  
+#------------------Переплавка-------------------------        
+- type: latheRecipe
+  id: MeltingAluminium
+  result: Aluminium
+  completetime: 2
+  materials:
+    RawAluminium: 2000
+    Coal: 1000     
+#------------------Сам-------------------------
+- type: entity
+  parent: CrystalOreBase
+  id: Aluminium
+  name: Алюминий
+  suffix: Электроника, Full
+  components:
+  - type: Stack
+    stackType: Aluminium
+  - type: Sprite
+    sprite: Victoria/Electron/contact_crystal.rsi
+    state: aluminium
+  - type: Extractable
+    grindableSolutionName: aluminium
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      AluminiumMaterial: 1000
+  - type: Tag
+    tags:
+    - RawMatElectronics
+#------------------Стак--------------------------
+- type: stack
+  id: Aluminium
+  name: Алюминий
+  icon: { sprite: Victoria/Electron/contact_crystal.rsi, state: aluminium }
+  spawn: Aluminium1
+  maxCount: 30
+#------------------Один кристалл--------------------------
+- type: entity
+  parent: Aluminium
+  id: Aluminium1
+  suffix: Электроника, Single
+  components:
+  - type: Stack
+    count: 1  
+#----------------------------------материал----------------------------------
+- type: material
+  id: AluminiumMaterial
+  stackEntity: Aluminium1
+  name: Медь
+  icon: { sprite: Victoria/Electron/contact_crystal.rsi, state: aluminium }
+  price: 0.1   
+#------------------Рецепт--------------------------
+- type: reaction
+  id: CreateAluminium
+  impact: Low
+  quantized: true
+  minTemp: 400
+  reactants:
+    Aluminium:
+      amount: 20
+  effects:
+    - !type:CreateEntityReactionEffect
+      entity: Aluminium1               
+#--------------------------------------Сапфир------------------------------------------
+#------------------Сам-------------------------
+- type: entity
+  parent: CrystalOreBase
+  id: SapphireCircuitBord
+  name: Сапфирная плата
+  suffix: Электроника, Full
+  components:
+  - type: Stack
+    stackType: SapphireCircuitBord
+  - type: Sprite
+    sprite: Victoria/Electron/raw_circuit_bord.rsi
+    state: sapphire
+  - type: Extractable
+    grindableSolutionName: sapphire
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      SapphireCircuitBordMaterial: 1000
+  - type: Tag
+    tags:
+    - RawCircuitBord
+#------------------Стак--------------------------
+- type: stack
+  id: SapphireCircuitBord
+  name: Сапфирная плата
+  icon: { sprite: Victoria/Electron/raw_circuit_bord.rsi, state: sapphire }
+  spawn: SapphireCrystall1
+  maxCount: 30
+  itemSize: 2
+#------------------Один кристалл--------------------------
+- type: entity
+  parent: SapphireCircuitBord
+  id: SapphireCircuitBord1
+  suffix: Электроника, Single
+  components:
+  - type: Stack
+    count: 1  
+#----------------------------------материал----------------------------------
+- type: material
+  id: SapphireCircuitBordMaterial
+  stackEntity: SapphireCircuitBord1
+  name: Сапфирная плата
+  icon: { sprite: Victoria/Electron/raw_circuit_bord.rsi, state: sapphire }
+  price: 0.05    
+#------------------Рецепт--------------------------
+- type: latheRecipe
+  id: RecipeSapphireCircuitBord
+  result: SapphireCircuitBord1
+  completetime: 1
+  materials:
+    CooperMaterial: 10
+    SapphireMaterial: 50
+#--------------------------------------Пласкерам------------------------------------------
+#------------------Сам-------------------------
+- type: entity
+  parent: SapphireCircuitBord
+  id: PlazСeramicsCircuitBord
+  name: Плазкерамовая плата
+  components:
+  - type: Stack
+    stackType: PlazСeramicsCircuitBord
+  - type: Sprite
+    state: plazсeram
+  - type: Extractable
+    grindableSolutionName: plazсeram
+  - type: PhysicalComposition
+    materialComposition:
+      PlazСeramicsCircuitBordMaterial: 1000
+#------------------Стак--------------------------
+- type: stack
+  id: PlazСeramicsCircuitBord
+  name: Плазкерамовая плата
+  icon: { sprite: Victoria/Electron/raw_circuit_bord.rsi, state: plazсeram }
+  spawn: SapphireCrystall1
+  maxCount: 30
+  itemSize: 2
+#------------------Один кристалл--------------------------
+- type: entity
+  parent: PlazСeramicsCircuitBord
+  id: PlazСeramicsCircuitBord1
+  suffix: Электроника, Single
+  components:
+  - type: Stack
+    count: 1  
+#----------------------------------материал----------------------------------
+- type: material
+  id: PlazСeramicsCircuitBordMaterial
+  stackEntity: PlazСeramicsCircuitBord1
+  name: Плазкерамовая плата
+  icon: { sprite: Victoria/Electron/raw_circuit_bord.rsi, state: plazсeram }
+  price: 0.05    
+#------------------Рецепт--------------------------
+- type: latheRecipe
+  id: RecipePlazСeramicsCircuitBord
+  result: PlazСeramicsCircuitBord1
+  completetime: 1
+  materials:
+    CooperMaterial: 10
+    PlazСeramicsMaterial: 50
+#--------------------------------------Кремнекерам------------------------------------------
+#------------------Сам-------------------------
+- type: entity
+  parent: SapphireCircuitBord
+  id: SiСeramicsCircuitBord
+  name: Кремнекерамовая плата
+  components:
+  - type: Stack
+    stackType: SiСeramicsCircuitBord
+  - type: Sprite
+    state: siсeramics
+  - type: Extractable
+    grindableSolutionName: siсeramics
+  - type: PhysicalComposition
+    materialComposition:
+      SiСeramicsCircuitBordMaterial: 1000
+#------------------Стак--------------------------
+- type: stack
+  id: SiСeramicsCircuitBord
+  name: Кремнекерамовая плата
+  icon: { sprite: Victoria/Electron/raw_circuit_bord.rsi, state: siсeramics }
+  spawn: SapphireCrystall1
+  maxCount: 30
+  itemSize: 2
+#------------------Один кристалл--------------------------
+- type: entity
+  parent: SiСeramicsCircuitBord
+  id: SiСeramicsCircuitBord1
+  suffix: Электроника, Single
+  components:
+  - type: Stack
+    count: 1  
+#----------------------------------материал----------------------------------
+- type: material
+  id: SiСeramicsCircuitBordMaterial
+  stackEntity: SiСeramicsCircuitBord1
+  name: Кремнекерамовая плата
+  icon: { sprite: Victoria/Electron/raw_circuit_bord.rsi, state: siсeramics }
+  price: 0.05    
+#------------------Рецепт--------------------------
+- type: latheRecipe
+  id: RecipeSiСeramicsCircuitBord
+  result: SiСeramicsCircuitBord1
+  completetime: 1
+  materials:
+    CooperMaterial: 10
+    SiСeramicsMaterial: 50
+#--------------------------------------Стеклотекстолит------------------------------------------
+#------------------Сам-------------------------
+- type: entity
+  parent: SapphireCircuitBord
+  id: FiberglassCircuitBord
+  name: Стеклотекстолитная плата
+  components:
+  - type: Stack
+    stackType: FiberglassCircuitBord
+  - type: Sprite
+    state: fiberglass
+  - type: Extractable
+    grindableSolutionName: fiberglass
+  - type: PhysicalComposition
+    materialComposition:
+      FiberglassCircuitBordMaterial: 1000
+#------------------Стак--------------------------
+- type: stack
+  id: FiberglassCircuitBord
+  name: Стеклотекстолитная плата
+  icon: { sprite: Victoria/Electron/raw_circuit_bord.rsi, state: fiberglass }
+  spawn: SapphireCrystall1
+  maxCount: 30
+  itemSize: 2
+#------------------Один кристалл--------------------------
+- type: entity
+  parent: FiberglassCircuitBord
+  id: FiberglassCircuitBord1
+  suffix: Электроника, Single
+  components:
+  - type: Stack
+    count: 1  
+#----------------------------------материал----------------------------------
+- type: material
+  id: FiberglassCircuitBordMaterial
+  stackEntity: FiberglassCircuitBord1
+  name: Стеклотекстолитная плата
+  icon: { sprite: Victoria/Electron/raw_circuit_bord.rsi, state: fiberglass }
+  price: 0.05    
+#------------------Рецепт--------------------------
+- type: latheRecipe
+  id: RecipeFiberglassCircuitBord
+  result: FiberglassCircuitBord1
+  completetime: 1
+  materials:
+    CooperMaterial: 10
+    FiberglassMaterial: 50
+#--------------------------------------Гетинакс------------------------------------------
+#------------------Сам-------------------------
+- type: entity
+  parent: SapphireCircuitBord
+  id: GethinaxCircuitBord
+  name: Гетинаксная плата
+  components:
+  - type: Stack
+    stackType: GethinaxCircuitBord
+  - type: Sprite
+    state: gethinax
+  - type: Extractable
+    grindableSolutionName: gethinax
+  - type: PhysicalComposition
+    materialComposition:
+      GethinaxCircuitBordMaterial: 1000
+#------------------Стак--------------------------
+- type: stack
+  id: GethinaxCircuitBord
+  name: Гетинаксная плата
+  icon: { sprite: Victoria/Electron/raw_circuit_bord.rsi, state: gethinax }
+  spawn: SapphireCrystall1
+  maxCount: 30
+  itemSize: 2
+#------------------Один кристалл--------------------------
+- type: entity
+  parent: GethinaxCircuitBord
+  id: GethinaxCircuitBord1
+  suffix: Электроника, Single
+  components:
+  - type: Stack
+    count: 1  
+#----------------------------------материал----------------------------------
+- type: material
+  id: GethinaxCircuitBordMaterial
+  stackEntity: GethinaxCircuitBord1
+  name: Гетинаксная плата
+  icon: { sprite: Victoria/Electron/raw_circuit_bord.rsi, state: gethinax }
+  price: 0.05    
+#------------------Рецепт--------------------------
+- type: latheRecipe
+  id: RecipeGethinaxCircuitBord
+  result: GethinaxCircuitBord1
+  completetime: 1
+  materials:
+    CooperMaterial: 10
+    GethinaxMaterial: 50
+#--------------------------------------Кремнеплаз------------------------------------------
+#------------------Сам-------------------------
+- type: entity
+  parent: SapphireCircuitBord
+  id: SiPlazCircuitBord
+  name: Кремнеплазовая плата
+  components:
+  - type: Stack
+    stackType: SiPlazCircuitBord
+  - type: Sprite
+    state: siplaz
+  - type: Extractable
+    grindableSolutionName: siplaz
+  - type: PhysicalComposition
+    materialComposition:
+      SiPlazCircuitBordMaterial: 1000
+#------------------Стак--------------------------
+- type: stack
+  id: SiPlazCircuitBord
+  name: Кремнеплазовая плата
+  icon: { sprite: Victoria/Electron/raw_circuit_bord.rsi, state: siplaz }
+  spawn: SapphireCrystall1
+  maxCount: 30
+  itemSize: 2
+#------------------Один кристалл--------------------------
+- type: entity
+  parent: SiPlazCircuitBord
+  id: SiPlazCircuitBord1
+  suffix: Электроника, Single
+  components:
+  - type: Stack
+    count: 1  
+#----------------------------------материал----------------------------------
+- type: material
+  id: SiPlazCircuitBordMaterial
+  stackEntity: SiPlazCircuitBord1
+  name: Кремнеплазовая плата
+  icon: { sprite: Victoria/Electron/raw_circuit_bord.rsi, state: siplaz }
+  price: 0.05    
+#------------------Рецепт--------------------------
+- type: latheRecipe
+  id: RecipeSiPlazCircuitBord
+  result: SiPlazCircuitBord1
+  completetime: 1
+  materials:
+    CooperMaterial: 10
+    SiPlazMaterial: 50
+#--------------------------------------Вакуумный станок------------------------------------------
+- type: entity
+  id: VacuumMachineMachineCircuitboard
+  parent: BaseMachineCircuitboard
+  name: Плата вакуумного станка
+  description: Электронная плата, необходимая для работы вакуумного станка
+  components:
+    - type: MachineBoard
+      prototype: Transmutator
+      stackRequirements:
+        MatterBin: 2
+        Manipulator: 2
+      tagRequirements:
+        GlassBeaker:
+          amount: 2
+          defaultPrototype: Beaker
+
+- type: entity
+  id: VacuumMachine
+  parent: BaseLatheLube
+  name: Вакуумный станок
+  description: Тяжёлая производственная машина для создания основ печатных плат
+  components:
+  - type: Sprite
+    sprite: Victoria/Electron/vacuum_machine.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: VacuumMachineMachineCircuitboard
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - RawMatElectronics
+        - CrystalMaterial
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    unlitIdleState: unlit
+    unlitRunningState: unlit-building
+    staticRecipes:
+    - RecipeSapphireCircuitBord
+    - RecipePlazСeramicsCircuitBord
+    - RecipeSiСeramicsCircuitBord
+    - RecipeFiberglassCircuitBord
+    - RecipeGethinaxCircuitBord
+    - RecipeSiPlazCircuitBord

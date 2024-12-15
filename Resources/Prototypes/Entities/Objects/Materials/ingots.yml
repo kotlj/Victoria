@@ -59,6 +59,9 @@
         reagents:
         - ReagentId: Gold
           Quantity: 10
+  - type: Tag
+    tags:
+      - CrystalMaterial
 
 - type: entity
   parent: IngotGold
