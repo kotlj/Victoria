@@ -1242,6 +1242,8 @@
       - IngotSilver1
       - MaterialBananium1
       - MaterialDiamond
+      - MeltingCooper
+      - MeltingAluminium
 
 - type: entity
   parent: BaseLathe
