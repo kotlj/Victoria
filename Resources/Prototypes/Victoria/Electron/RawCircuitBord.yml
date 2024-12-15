@@ -24,7 +24,7 @@
     solutions:
       ironore:
         reagents:
-        - ReagentId: Сopper
+        - ReagentId: Copper
           Quantity: 40
   - type: Tag
     tags:
