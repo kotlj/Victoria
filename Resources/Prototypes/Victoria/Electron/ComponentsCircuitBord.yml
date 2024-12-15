@@ -78,7 +78,6 @@
   icon: { sprite: Victoria/Electron/components_circuit.rsi, state: analog }
   spawn: AnalogCircuit1
   maxCount: 30
-  itemSize: 2
 #------------------Один кристалл--------------------------
 - type: entity
   parent: AnalogCircuit
@@ -126,7 +125,6 @@
   icon: { sprite: Victoria/Electron/components_circuit.rsi, state: pulse }
   spawn: PulseCircuit1
   maxCount: 30
-  itemSize: 2
 #------------------Один кристалл--------------------------
 - type: entity
   parent: PulseCircuit
@@ -175,7 +173,6 @@
   icon: { sprite: Victoria/Electron/components_circuit.rsi, state: power }
   spawn: PowerCircuit1
   maxCount: 30
-  itemSize: 2
 #------------------Один кристалл--------------------------
 - type: entity
   parent: PowerCircuit
@@ -223,7 +220,6 @@
   icon: { sprite: Victoria/Electron/components_circuit.rsi, state: programmable }
   spawn: ProgrammableCircuit1
   maxCount: 30
-  itemSize: 2
 #------------------Один кристалл--------------------------
 - type: entity
   parent: ProgrammableCircuit
@@ -272,7 +268,6 @@
   icon: { sprite: Victoria/Electron/components_circuit.rsi, state: microwave }
   spawn: MicrowaveCircuit1
   maxCount: 30
-  itemSize: 2
 #------------------Один кристалл--------------------------
 - type: entity
   parent: MicrowaveCircuit
@@ -321,7 +316,6 @@
   icon: { sprite: Victoria/Electron/components_circuit.rsi, state: discrete }
   spawn: DiscreteCircuit1
   maxCount: 30
-  itemSize: 2
 #------------------Один кристалл--------------------------
 - type: entity
   parent: DiscreteCircuit

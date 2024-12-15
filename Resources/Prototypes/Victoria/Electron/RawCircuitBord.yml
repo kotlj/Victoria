@@ -24,7 +24,7 @@
     solutions:
       ironore:
         reagents:
-        - ReagentId: copper
+        - ReagentId: Сopper
           Quantity: 40
   - type: Tag
     tags:
@@ -138,7 +138,7 @@
   quantized: true
   minTemp: 400
   reactants:
-    Cooper:
+    Copper:
       amount: 20
   effects:
     - !type:CreateEntityReactionEffect
@@ -270,7 +270,7 @@
 - type: material
   id: AluminiumMaterial
   stackEntity: Aluminium1
-  name: Медь
+  name: Алюминий
   icon: { sprite: Victoria/Electron/contact_crystal.rsi, state: aluminium }
   price: 0.1   
 #------------------Рецепт--------------------------
@@ -360,7 +360,6 @@
   icon: { sprite: Victoria/Electron/raw_circuit_bord.rsi, state: plazсeram }
   spawn: SapphireCrystall1
   maxCount: 30
-  itemSize: 2
 #------------------Один кристалл--------------------------
 - type: entity
   parent: PlazСeramicsCircuitBord
@@ -407,7 +406,6 @@
   icon: { sprite: Victoria/Electron/raw_circuit_bord.rsi, state: siсeramics }
   spawn: SapphireCrystall1
   maxCount: 30
-  itemSize: 2
 #------------------Один кристалл--------------------------
 - type: entity
   parent: SiСeramicsCircuitBord
@@ -454,7 +452,6 @@
   icon: { sprite: Victoria/Electron/raw_circuit_bord.rsi, state: fiberglass }
   spawn: SapphireCrystall1
   maxCount: 30
-  itemSize: 2
 #------------------Один кристалл--------------------------
 - type: entity
   parent: FiberglassCircuitBord
@@ -501,7 +498,6 @@
   icon: { sprite: Victoria/Electron/raw_circuit_bord.rsi, state: gethinax }
   spawn: SapphireCrystall1
   maxCount: 30
-  itemSize: 2
 #------------------Один кристалл--------------------------
 - type: entity
   parent: GethinaxCircuitBord
@@ -548,7 +544,6 @@
   icon: { sprite: Victoria/Electron/raw_circuit_bord.rsi, state: siplaz }
   spawn: SapphireCrystall1
   maxCount: 30
-  itemSize: 2
 #------------------Один кристалл--------------------------
 - type: entity
   parent: SiPlazCircuitBord
