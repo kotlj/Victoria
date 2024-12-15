@@ -87,7 +87,7 @@
   completetime: 2
   materials:
     RawCooper: 2000
-    Coal: 1000     
+    Coal: 200     
 #------------------Сам-------------------------
 - type: entity
   parent: CrystalOreBase
@@ -229,7 +229,7 @@
   completetime: 2
   materials:
     RawAluminium: 2000
-    Coal: 1000     
+    Coal: 200     
 #------------------Сам-------------------------
 - type: entity
   parent: CrystalOreBase
