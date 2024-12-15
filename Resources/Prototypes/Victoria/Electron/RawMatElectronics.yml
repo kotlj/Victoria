@@ -433,7 +433,7 @@
 #----------------------------------материал----------------------------------
 - type: material
   id: SiPlazMaterial
-  stackEntity: SiСeramicsCrystall1
+  stackEntity: SiPlazCrystall
   name: Кремнеплаз
   icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: siplaz_crystal }
   price: 0.2    
