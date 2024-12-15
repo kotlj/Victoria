@@ -24,7 +24,7 @@
     solutions:
       ironore:
         reagents:
-        - ReagentId: Cooper
+        - ReagentId: copper
           Quantity: 40
   - type: Tag
     tags:
@@ -166,7 +166,7 @@
     solutions:
       ironore:
         reagents:
-        - ReagentId: Aluminium1
+        - ReagentId: Aluminium
           Quantity: 40
   - type: Tag
     tags:
@@ -314,7 +314,6 @@
   icon: { sprite: Victoria/Electron/raw_circuit_bord.rsi, state: sapphire }
   spawn: SapphireCrystall1
   maxCount: 30
-  itemSize: 2
 #------------------Один кристалл--------------------------
 - type: entity
   parent: SapphireCircuitBord

@@ -31,7 +31,6 @@
   icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: сeramics }
   spawn: СeramicsCrystall1
   maxCount: 30
-  itemSize: 2
 #------------------Один кристалл--------------------------
 - type: entity
   parent: СeramicsCrystall

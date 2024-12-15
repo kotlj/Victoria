@@ -30,7 +30,6 @@
   icon: { sprite: Victoria/Electron/components_circuit.rsi, state: digital }
   spawn: DigitalCircuit1
   maxCount: 30
-  itemSize: 2
 #------------------Один кристалл--------------------------
 - type: entity
   parent: DigitalCircuit
