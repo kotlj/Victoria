@@ -181,26 +181,10 @@
       - MatterBinStockPart
       - CapacitorStockPart
       - ConveyorBeltAssembly
-      - IntercomElectronics
-      - FirelockElectronics
-      - DoorElectronics
-      - AirAlarmElectronics
-      - StationMapElectronics
-      - FireAlarmElectronics
-      - MailingUnitElectronics
-      - SignalTimerElectronics
-      - APCElectronics
-      - SMESMachineCircuitboard
-      - SubstationMachineCircuitboard
-      - WallmountSubstationElectronics
-      - CellRechargerCircuitboard
-      - BorgChargerCircuitboard
-      - WeaponCapacitorRechargerCircuitboard
       - HandheldStationMap
       - ClothingHeadHatWelding
       - WetFloorSign
       - ClothingHeadHatCone
-      - FreezerElectronics
   - type: EmagLatheRecipes
     emagStaticRecipes:
       - BoxLethalshot
@@ -457,6 +441,8 @@
     - CutterMachineCircuitboard
     - StationAnchorCircuitboard
     - SalvageMagnetMachineCircuitboard
+    - VacuumMachineMachineCircuitboard
+    - LithographMachineCircuitboard
     dynamicRecipes:
       - ThermomachineFreezerMachineCircuitBoard
       - HellfireFreezerMachineCircuitBoard
@@ -535,9 +521,8 @@
   - type: MaterialStorage
     whitelist:
       tags:
-        - Sheet
-        - RawMaterial
-        - Ingot
+        - RawCircuitBord
+        - ComponentCircuit
   - type: RequireProjectileTarget
 
 - type: entity
@@ -1226,6 +1211,8 @@
         - IngotSilver1
         - MaterialBananium1
         - MaterialDiamond
+        - MeltingCooper
+        - MeltingAluminium
 
 - type: entity
   parent: OreProcessor
@@ -1255,6 +1242,8 @@
       - IngotSilver1
       - MaterialBananium1
       - MaterialDiamond
+      - MeltingCooper
+      - MeltingAluminium
 
 - type: entity
   parent: BaseLathe

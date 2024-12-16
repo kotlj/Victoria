@@ -501,6 +501,15 @@
     - RecipeСhromeCrystall
     - RecipeSiCrystall
     - RecipeRSCrystall
+    - RecipeСeramicsMaterial
+    - RecipePlazСeramicsMaterial_1
+    - RecipePlazСeramicsMaterial_2
+    - RecipeSiСeramicsMaterial_1
+    - RecipeSiСeramicsMaterial_2
+    - RecipePolymerPitch
+    - RecipeFiberglass
+    - RecipeGethinax
+    - RecipeSiPlazMaterial
 #----------------------------------Рецепты на модули с кристаллами-----------------------
 - type: latheRecipe
   id: BSModuleRecipe

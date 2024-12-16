@@ -1,0 +1,447 @@
+#---------------------------------------------Материалы----------------------------------------------
+- type: Tag
+  id: RawMatElectronics
+#--------------------------------------Керамика------------------------------------------
+#------------------Сам-------------------------
+- type: entity
+  parent: CrystalOreBase
+  id: СeramicsCrystall
+  name: Керамика
+  suffix: Электроника, Full
+  components:
+  - type: Stack
+    stackType: СeramicsCrystall
+  - type: Sprite
+    sprite: Victoria/Electron/rawelectronics_mat.rsi
+    state: сeramics
+  - type: Extractable
+    grindableSolutionName: сeramcrystal
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      СeramicsMaterial: 1000
+  - type: Tag
+    tags:
+    - CrystalMaterial
+    - RawMatElectronics
+#------------------Стак--------------------------
+- type: stack
+  id: СeramicsCrystall
+  name: Керамика
+  icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: сeramics }
+  spawn: СeramicsCrystall1
+  maxCount: 30
+#------------------Один кристалл--------------------------
+- type: entity
+  parent: СeramicsCrystall
+  id: СeramicsCrystall1
+  suffix: Электроника, Single
+  components:
+  - type: Stack
+    count: 1  
+#----------------------------------материал----------------------------------
+- type: material
+  id: СeramicsMaterial
+  stackEntity: СeramicsCrystall1
+  name: Керамика
+  icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: сeramics }
+  price: 0.1    
+#------------------Рецепт--------------------------
+- type: latheRecipe
+  id: RecipeСeramicsMaterial
+  result: СeramicsCrystall1
+  completetime: 2
+  materials:
+    RawIron: 500
+    RawQuartz: 500
+#--------------------------------------Пласкерам------------------------------------------
+#------------------Сам-------------------------
+- type: entity
+  parent: CrystalOreBase
+  id: PlazСeramicsCrystall
+  name: Плазкерам
+  suffix: Электроника, Full
+  components:
+  - type: Stack
+    stackType: PlazСeramicsCrystall
+  - type: Sprite
+    sprite: Victoria/Electron/rawelectronics_mat.rsi
+    state: plazсeramics_crystal
+  - type: Extractable
+    grindableSolutionName: plazсeram
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      PlazСeramicsMaterial: 1000
+  - type: Tag
+    tags:
+    - CrystalMaterial
+    - RawMatElectronics
+#------------------Стак--------------------------
+- type: stack
+  id: PlazСeramicsCrystall
+  name: Плазкерам
+  icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: plazсeramics_crystal }
+  spawn: PlazСeramicsCrystall1
+  maxCount: 30
+#------------------Один кристалл--------------------------
+- type: entity
+  parent: PlazСeramicsCrystall
+  id: PlazСeramicsCrystall1
+  suffix: Электроника, Single
+  components:
+  - type: Stack
+    count: 1  
+#----------------------------------материал----------------------------------
+- type: material
+  id: PlazСeramicsMaterial
+  stackEntity: PlazСeramicsCrystall1
+  name: Плазкерам
+  icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: plazсeramics_crystal }
+  price: 0.2    
+#------------------Рецепт--------------------------
+- type: latheRecipe
+  id: RecipePlazСeramicsMaterial_1
+  result: PlazСeramicsCrystall1
+  completetime: 2
+  materials:
+    RawIron: 500
+    RawQuartz: 500
+    RawPlasma: 500
+    
+- type: latheRecipe
+  id: RecipePlazСeramicsMaterial_2
+  result: PlazСeramicsCrystall1
+  completetime: 3
+  materials:
+    СeramicsMaterial: 500
+    Plasma: 500
+#--------------------------------------Кремнекерам------------------------------------------
+#------------------Сам-------------------------
+- type: entity
+  parent: CrystalOreBase
+  id: SiСeramicsCrystall
+  name: Кремнекерам
+  suffix: Электроника, Full
+  components:
+  - type: Stack
+    stackType: SiСeramicsCrystall
+  - type: Sprite
+    sprite: Victoria/Electron/rawelectronics_mat.rsi
+    state: siсeramics_crystal
+  - type: Extractable
+    grindableSolutionName: siсeramcrystal
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      SiСeramicsMaterial: 1000
+  - type: Tag
+    tags:
+    - RawMatElectronics
+#------------------Стак--------------------------
+- type: stack
+  id: SiСeramicsCrystall
+  name: Кремнекерам
+  icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: siсeramics_crystal }
+  spawn: SiСeramicsCrystall1
+  maxCount: 30
+#------------------Один кристалл--------------------------
+- type: entity
+  parent: SiСeramicsCrystall
+  id: SiСeramicsCrystall1
+  suffix: Электроника, Single
+  components:
+  - type: Stack
+    count: 1  
+#----------------------------------материал----------------------------------
+- type: material
+  id: SiСeramicsMaterial
+  stackEntity: SiСeramicsCrystall1
+  name: Кремнекерам
+  icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: siсeramics_crystal }
+  price: 0.2    
+#------------------Рецепт--------------------------
+- type: latheRecipe
+  id: RecipeSiСeramicsMaterial_1
+  result: SiСeramicsCrystall1
+  completetime: 2
+  materials:
+    RawIron: 500
+    RawQuartz: 1000
+    
+- type: latheRecipe
+  id: RecipeSiСeramicsMaterial_2
+  result: SiСeramicsCrystall1
+  completetime: 3
+  materials:
+    СeramicsMaterial: 500
+    SiMaterial: 1000
+#--------------------------------------Углеродная смола------------------------------------------
+#------------------Сам-------------------------
+- type: entity
+  parent: CrystalOreBase
+  id: CarbonPitch
+  name: Углеродная смола
+  suffix: Электроника, Full
+  components:
+  - type: Stack
+    stackType: CarbonPitch
+  - type: Sprite
+    sprite: Victoria/Electron/rawelectronics_mat.rsi
+    state: carbonpitch
+  - type: Extractable
+    grindableSolutionName: carbonpitch
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      CarbonPitchMaterial: 1000
+  - type: Tag
+    tags:
+    - CrystalMaterial
+    - RawMatElectronics
+#------------------Стак--------------------------
+- type: stack
+  id: CarbonPitch
+  name: Углеродная смола
+  icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: carbonpitch }
+  spawn: CarbonPitch1
+  maxCount: 30
+#------------------Один кристалл--------------------------
+- type: entity
+  parent: CarbonPitch
+  id: CarbonPitch1
+  suffix: Электроника, Single
+  components:
+  - type: Stack
+    count: 1  
+#----------------------------------материал----------------------------------
+- type: material
+  id: CarbonPitchMaterial
+  stackEntity: CarbonPitch1
+  name: Углеродная смола
+  icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: carbonpitch }
+  price: 0    
+#------------------Рецепт--------------------------
+- type: reaction
+  id: CreateCarbonPitch
+  impact: Low
+  quantized: true
+  minTemp: 320
+  reactants:
+    Carbon:
+      amount: 2
+    Oil:
+      amount: 1
+  effects:
+    - !type:CreateEntityReactionEffect
+      entity: CarbonPitch1 
+#--------------------------------------Полимерная смола------------------------------------------      
+#------------------Сам-------------------------
+- type: entity
+  parent: CrystalOreBase
+  id: PolymerPitch
+  name: Полимерная смола
+  suffix: Электроника, Full
+  components:
+  - type: Stack
+    stackType: PolymerPitch
+  - type: Sprite
+    sprite: Victoria/Electron/rawelectronics_mat.rsi
+    state: polymerpitch
+  - type: Extractable
+    grindableSolutionName: polymerpitch
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      PolymerPitchMaterial: 1000
+  - type: Tag
+    tags:
+    - CrystalMaterial
+    - RawMatElectronics
+#------------------Стак--------------------------
+- type: stack
+  id: PolymerPitch
+  name: Полимерная смола
+  icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: polymerpitch }
+  spawn: PolymerPitch1
+  maxCount: 30
+#------------------Один кристалл--------------------------
+- type: entity
+  parent: PolymerPitch
+  id: PolymerPitch1
+  suffix: Электроника, Single
+  components:
+  - type: Stack
+    count: 1  
+#----------------------------------материал----------------------------------
+- type: material
+  id: PolymerPitchMaterial
+  stackEntity: PolymerPitch1
+  name: Полимерная смола
+  icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: polymerpitch }
+  price: 0    
+#------------------Рецепт--------------------------
+- type: latheRecipe
+  id: RecipePolymerPitch
+  result: PolymerPitch1
+  completetime: 2
+  materials:
+    CarbonPitchMaterial: 500
+    Plastic: 500
+#--------------------------------------Стеклотекстолит------------------------------------------
+#------------------Сам-------------------------
+- type: entity
+  parent: CrystalOreBase
+  id: Fiberglass
+  name: Стеклотекстолит
+  suffix: Электроника, Full
+  components:
+  - type: Stack
+    stackType: Fiberglass
+  - type: Sprite
+    sprite: Victoria/Electron/rawelectronics_mat.rsi
+    state: fiberglass
+  - type: Extractable
+    grindableSolutionName: fiberglass
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      FiberglassMaterial: 1000
+  - type: Tag
+    tags:
+    - RawMatElectronics
+#------------------Стак--------------------------
+- type: stack
+  id: Fiberglass
+  name: Стеклотекстолит
+  icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: fiberglass }
+  spawn: PolymerPitch1
+  maxCount: 30
+#------------------Один кристалл--------------------------
+- type: entity
+  parent: Fiberglass
+  id: Fiberglass1
+  suffix: Электроника, Single
+  components:
+  - type: Stack
+    count: 1  
+#----------------------------------материал----------------------------------
+- type: material
+  id: FiberglassMaterial
+  stackEntity: Fiberglass1
+  name: Стеклотекстолит
+  icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: fiberglass }
+  price: 0.15   
+#------------------Рецепт--------------------------
+- type: latheRecipe
+  id: RecipeFiberglass
+  result: Fiberglass1
+  completetime: 2
+  materials:
+    Cloth: 300
+    PolymerPitchMaterial: 300
+    Glass: 300
+#--------------------------------------Гетинакс------------------------------------------
+#------------------Сам-------------------------
+- type: entity
+  parent: CrystalOreBase
+  id: Gethinax
+  name: Гетинакс
+  suffix: Электроника, Full
+  components:
+  - type: Stack
+    stackType: Gethinax
+  - type: Sprite
+    sprite: Victoria/Electron/rawelectronics_mat.rsi
+    state: gethinax
+  - type: Extractable
+    grindableSolutionName: gethinax
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      GethinaxMaterial: 1000
+  - type: Tag
+    tags:
+    - RawMatElectronics
+#------------------Стак--------------------------
+- type: stack
+  id: Gethinax
+  name: Гетинакс
+  icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: gethinax }
+  spawn: PolymerPitch1
+  maxCount: 30
+#------------------Один кристалл--------------------------
+- type: entity
+  parent: Gethinax
+  id: Gethinax1
+  suffix: Электроника, Single
+  components:
+  - type: Stack
+    count: 1  
+#----------------------------------материал----------------------------------
+- type: material
+  id: GethinaxMaterial
+  stackEntity: Gethinax1
+  name: Гетинакс
+  icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: gethinax }
+  price: 0.05    
+#------------------Рецепт--------------------------
+- type: latheRecipe
+  id: RecipeGethinax
+  result: Gethinax1
+  completetime: 2
+  materials:
+    Paper: 500
+    CarbonPitchMaterial: 500
+#--------------------------------------Кремнеплаз------------------------------------------
+#------------------Сам-------------------------
+- type: entity
+  parent: CrystalOreBase
+  id: SiPlazCrystall
+  name: Кремнеплаз
+  suffix: Электроника, Full
+  components:
+  - type: Stack
+    stackType: SiPlazCrystall
+  - type: Sprite
+    sprite: Victoria/Electron/rawelectronics_mat.rsi
+    state: siplaz_crystal
+  - type: Extractable
+    grindableSolutionName: siplazrystal
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      SiPlazMaterial: 1000
+  - type: Tag
+    tags:
+    - RawMatElectronics
+#------------------Стак--------------------------
+- type: stack
+  id: SiPlazCrystall
+  name: Кремнеплаз
+  icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: siplaz_crystal }
+  spawn: SiСeramicsCrystall1
+  maxCount: 30
+#------------------Один кристалл--------------------------
+- type: entity
+  parent: SiPlazCrystall
+  id: SiPlazCrystall1
+  suffix: Электроника, Single
+  components:
+  - type: Stack
+    count: 1  
+#----------------------------------материал----------------------------------
+- type: material
+  id: SiPlazMaterial
+  stackEntity: SiPlazCrystall
+  name: Кремнеплаз
+  icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: siplaz_crystal }
+  price: 0.2    
+#------------------Рецепт--------------------------
+- type: latheRecipe
+  id: RecipeSiPlazMaterial
+  result: SiPlazCrystall1
+  completetime: 3
+  materials:
+    Plasma: 500
+    SiMaterial: 500

@@ -1,0 +1,43 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Sprite created by crazzy_pingvin",
+    "states": [
+        {
+            "name": "carbonpitch"
+        },
+		{
+            "name": "fiberglass"
+        },
+		{
+            "name": "gethinax"
+        },
+		{
+            "name": "plazсeramics_crystal"
+        },
+		{
+            "name": "polymerpitch"
+        },
+		{
+            "name": "siplaz_crystal"
+        },
+		{
+            "name": "siсeramics_crystal"
+        },
+		{
+            "name": "сeramics"
+        },
+		{
+		  "name": "inhand-left",
+		  "directions": 4
+		},
+		{
+		  "name": "inhand-right",
+		  "directions": 4
+		}
+    ]
+}
