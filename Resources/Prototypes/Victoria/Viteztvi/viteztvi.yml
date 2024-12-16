@@ -1446,7 +1446,7 @@
         110: Critical
         205: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ VitzEfreitorGear ]
   
@@ -1502,7 +1502,7 @@
         100: Critical
         200: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ VitzPilotGear ]
   
@@ -1558,7 +1558,7 @@
         115: Critical
         210: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ VitzStarshinaGear ]
   
@@ -1614,7 +1614,7 @@
         105: Critical
         205: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ VitzZvenGear ]
   
@@ -1670,7 +1670,7 @@
         100: Critical
         200: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ VitzMrHillGear]
   

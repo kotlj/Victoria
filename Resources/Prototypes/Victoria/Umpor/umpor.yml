@@ -1843,7 +1843,7 @@
         120: Critical
         210: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ UmporOfficerGear ]
     - type: NpcFactionMember
@@ -1909,7 +1909,7 @@
         110: Critical
         200: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ UmporSolderGear ]
     - type: NpcFactionMember
@@ -1974,7 +1974,7 @@
         110: Critical
         200: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ UmporEngenerGear ]
     - type: NpcFactionMember
@@ -2039,7 +2039,7 @@
         110: Critical
         200: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ UmporBilderGear ]
     - type: NpcFactionMember
@@ -2104,7 +2104,7 @@
         110: Critical
         200: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ UmporRadistGear ]
     - type: NpcFactionMember
@@ -2169,7 +2169,7 @@
         105: Critical
         200: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ UmporMedicGear ]
     - type: NpcFactionMember
@@ -2234,7 +2234,7 @@
         105: Critical
         200: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ UmporLogistGear ]
     - type: NpcFactionMember
