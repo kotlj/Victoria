@@ -3097,7 +3097,7 @@
         100: Critical
         200: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ MirtGrGear ]
   
@@ -3161,7 +3161,7 @@
         110: Critical
         220: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ MirtSoldGearAuto ]
   
@@ -3225,7 +3225,7 @@
         115: Critical
         230: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ MirtTgGearLMG ]
       
@@ -3289,7 +3289,7 @@
         115: Critical
         230: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ MirtOffiGear ]
   
@@ -3353,7 +3353,7 @@
         105: Critical
         210: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ MirtInkGear ]
   
@@ -3417,7 +3417,7 @@
         105: Critical
         210: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ MirtOffiInkGear ]
   
@@ -3481,7 +3481,7 @@
         105: Critical
         210: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ MirtRazGear ]
   

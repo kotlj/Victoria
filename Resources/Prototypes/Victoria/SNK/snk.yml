@@ -3582,7 +3582,7 @@
         100: Critical
         200: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ SNKSoldGear ]
     - type: NpcFactionMember
@@ -3647,7 +3647,7 @@
         105: Critical
         200: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ SNKOffiGear ]
     - type: NpcFactionMember
@@ -3712,7 +3712,7 @@
         105: Critical
         200: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ SNKEngeGear ]
     - type: NpcFactionMember
@@ -3777,7 +3777,7 @@
         110: Critical
         210: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ SNKMediGear ]
     - type: NpcFactionMember
@@ -3842,7 +3842,7 @@
         100: Critical
         200: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ SNKRadioGear ]
     - type: NpcFactionMember

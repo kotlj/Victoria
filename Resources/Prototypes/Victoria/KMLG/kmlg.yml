@@ -1469,7 +1469,7 @@
         100: Critical
         200: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 100
     - type: Loadout
       prototypes: [ KMLGGearCt ]
   
@@ -1524,7 +1524,7 @@
         100: Critical
         200: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 100
     - type: Loadout
       prototypes: [ KMLGGearCc ]
   
@@ -1579,7 +1579,7 @@
         100: Critical
         200: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 100
     - type: Loadout
       prototypes: [ KMLGGearRm ]
   
@@ -1634,7 +1634,7 @@
         100: Critical
         200: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 100
     - type: Loadout
       prototypes: [ KMLGGearE ]
   
@@ -1689,7 +1689,7 @@
         100: Critical
         200: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 100
     - type: Loadout
       prototypes: [ KMLGGearCe ]
   
@@ -1744,7 +1744,7 @@
         100: Critical
         200: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 100
     - type: Loadout
       prototypes: [ KMLGGearS ]
   
@@ -1799,7 +1799,7 @@
         100: Critical
         200: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 100
     - type: Loadout
       prototypes: [ KMLGGearCs ]
   
@@ -1854,7 +1854,7 @@
         100: Critical
         200: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 100
     - type: Loadout
       prototypes: [ KMLGGearSw ]
   
@@ -1909,7 +1909,7 @@
         100: Critical
         200: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 100
     - type: Loadout
       prototypes: [ KMLGGearP ]
   

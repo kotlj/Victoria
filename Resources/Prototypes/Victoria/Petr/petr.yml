@@ -1681,7 +1681,7 @@
         100: Critical
         200: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ PetrNovGear ]
   
@@ -1737,7 +1737,7 @@
         105: Critical
         200: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ PetrSoldGear ]
   
@@ -1793,7 +1793,7 @@
         100: Critical
         210: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ PetrSpecGear ]
   
@@ -1850,7 +1850,7 @@
         100: Critical
         210: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ PetrSaperGear ]
   
@@ -1906,7 +1906,7 @@
         105: Critical
         210: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ PetrOffiGear ]
   
@@ -1962,7 +1962,7 @@
         110: Critical
         210: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ PetrSerpGear ]
   
@@ -2018,7 +2018,7 @@
         110: Critical
         210: Dead
     - type: Stamina
-      critThreshold: 380
+      critThreshold: 120
     - type: Loadout
       prototypes: [ PetrMolotGear ]
   
