@@ -322,6 +322,15 @@
         - ReagentSlimeNorepinephricAcid
         - ReagentSlimeEphedrine
         - ReagentSlimeRobustHarvest
+        - ReagentSlimeToxinePM1
+        - ReagentSlimeToxinePM2
+        - ReagentSlimeToxinePM3
+        - ReagentSlimeToxineSM1
+        - ReagentSlimeToxineSM2
+        - ReagentSlimeToxineSM3
+        - ReagentSlimeToxineSA1
+        - ReagentSlimeToxineSA2
+        - ReagentSlimeToxineSA3
       chance: 1
 
 - type: entity

@@ -769,6 +769,15 @@
     - FoamingAgent
     - BuzzochloricBees
     - RobustHarvest
+    - ToxinePM1
+    - ToxinePM2
+    - ToxinePM3
+    - ToxineSM1
+    - ToxineSM2
+    - ToxineSM3
+    - ToxineSA1
+    - ToxineSA2
+    - ToxineSA3
     usefulChemicals:
     - Cryptobiolin
     - Dylovene

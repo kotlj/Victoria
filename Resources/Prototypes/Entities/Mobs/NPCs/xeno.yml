@@ -399,13 +399,13 @@
     animation: WeaponArcBite
     damage:
       types:
-        Piercing: 5
+        Piercing: 4
   - type: SolutionContainerManager
     solutions:
       melee:
         reagents:
-        - ReagentId: Toxin
-          Quantity: 50
+        - ReagentId: ToxinePM3
+          Quantity: 100
   - type: MeleeChemicalInjector
     solution: melee
   - type: Fixtures
