@@ -124,6 +124,14 @@
   - type: Sharp
   - type: TTS # Corvax-TTS
     voice: Rat
+  - type: SolutionContainerManager
+    solutions:
+      melee:
+        reagents:
+        - ReagentId: ToxineSA1
+          Quantity: 20
+  - type: MeleeChemicalInjector
+    solution: melee
 
 - type: entity
   id: MobRatKingBuff

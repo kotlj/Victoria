@@ -140,7 +140,7 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Blunt: 9
+        Blunt: 6
         Slash: 2
   - type: MovementSpeedModifier
     baseWalkSpeed: 3.5
@@ -167,6 +167,14 @@
       collection: FootstepBounce
   - type: ReplacementAccent
     accent: kangaroo
+  - type: SolutionContainerManager
+    solutions:
+      melee:
+        reagents:
+        - ReagentId: ToxineSA2
+          Quantity: 10
+  - type: MeleeChemicalInjector
+    solution: melee
 
 - type: entity
   id: MobKangarooSpaceSalvage
@@ -335,14 +343,15 @@
       animation: WeaponArcBite
       damage:
         types:
-          Piercing: 6
-          Poison: 4
+          Piercing: 5
     - type: SolutionContainerManager
       solutions:
         melee:
           reagents:
           - ReagentId: NorepinephricAcid
             Quantity: 90
+          - ReagentId: ToxinePM2
+            Quantity: 10
     - type: MeleeChemicalInjector
       solution: melee
       transferAmount: 6
