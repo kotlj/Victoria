@@ -61,36 +61,36 @@
         Blunt: 4
         Slash: 4
 #------------------------------------------------Ядовитый слайм (СМ2)------------------------------------
-# - type: entity
-  # name: Ядовитый слайм
-  # parent: MobAdultSlimes
-  # id: MobAdultSlimesToxi
-  # components:
-    # - type: Sprite
-      # sprite: Victoria/Toxi/toxi_slimes.rsi
-      # layers:
-      # - map: [ "enum.DamageStateVisualLayers.Base" ]
-        # state: toxi_adult_slime
-    # - type: DamageStateVisuals
-      # states:
-        # Alive:
-          # Base: toxi_adult_slime
-        # Dead:
-          # Base: toxi_adult_slime_dead
-    # - type: MeleeWeapon
-      # damage:
-        # types:
-          # Blunt: 2
-          # Structural: 4
-          # Cellular: 3
-    # - type: SolutionContainerManager
-      # solutions:
-        # melee:
-          # reagents:
-          # - ReagentId: ToxineSM2
-            # Quantity: 10
-    # - type: MeleeChemicalInjector
-      # solution: melee
+- type: entity
+  name: Ядовитый слайм
+  parent: MobAdultSlimes
+  id: MobAdultSlimesToxi
+  components:
+    - type: Sprite
+      sprite: Victoria/Toxi/toxi_slimes.rsi
+      layers:
+      - map: [ "enum.DamageStateVisualLayers.Base" ]
+        state: toxi_adult_slime
+    - type: DamageStateVisuals
+      states:
+        Alive:
+          Base: toxi_adult_slime
+        Dead:
+          Base: toxi_adult_slime_dead
+    - type: MeleeWeapon
+      damage:
+        types:
+          Blunt: 2
+          Structural: 4
+          Cellular: 3
+    - type: SolutionContainerManager
+      solutions:
+        melee:
+          reagents:
+          - ReagentId: ToxineSM2
+            Quantity: 10
+    - type: MeleeChemicalInjector
+      solution: melee
 #------------------------------------------------Ядожижа жижеаномы------------------------------
 #----------------------------------(ПМ1)---------------------------
 - type: entity
