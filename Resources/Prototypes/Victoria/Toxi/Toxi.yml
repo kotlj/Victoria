@@ -1,0 +1,1151 @@
+#------------------------------------------------------------------------ХИМИЯ--------------------------------------
+#--------------------------------------------Индикатор подтипа---------------------------
+#----------------------------сам реагент---------
+- type: reagent
+  id: SubtypeIndicator
+  name: Реагент-индикатор токсина
+  group: Toxicology
+  desc: Разлагает токсины в крови, давая возможность определять подтип токсина.
+  physicalDesc: Фиолетовое и очень лёгкое 
+  flavor: Солёное и вяжет
+  color: "#9578a0"
+  meltingPoint: -101.5
+  boilingPoint: -34.04
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Caustic: 2
+#--------------------------------------------сами токсины---------------------------
+#--------------------------------------природные-------------------
+#-----------------------опасный-------------------
+- type: reagent
+  id: ToxinePM1
+  name: PM-токсин
+  group: Toxicology
+  desc: Природный молекулярный токсин. 
+  physicalDesc: Зелёное и густое 
+  flavor: свежее и солёненькое
+  color: "#6abe30"
+  meltingPoint: -40.5
+  boilingPoint: 60
+  metabolisms:
+    Poison:
+      metabolismRate: 0.01
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.4
+#-----------------------средний-------------------
+- type: reagent
+  id: ToxinePM2
+  name: PM-токсин
+  group: Toxicology
+  desc: Природный молекулярный токсин. 
+  physicalDesc: Зелёное и густое 
+  flavor: свежее и солёненькое
+  color: "#6abe30"
+  meltingPoint: -40.5
+  boilingPoint: 60
+  metabolisms:
+    Poison:
+      metabolismRate: 0.01 
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.2
+#-----------------------лёгкий-------------------            
+- type: reagent
+  id: ToxinePM3
+  name: PM-токсин
+  group: Toxicology
+  desc: Природный молекулярный токсин. 
+  physicalDesc: Зелёное и густое
+  flavor: свежее и солёненькое
+  color: "#6abe30"
+  meltingPoint: -40.5
+  boilingPoint: 60
+  metabolisms:
+    Poison:
+      metabolismRate: 0.01
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.1
+#-------------------------------синтетические молекулярные----------
+#-----------------------опасный-------------------
+- type: reagent
+  id: ToxineSM1
+  name: SM-токсин
+  group: Toxicology
+  desc: Синтетический молекулярный токсин. 
+  physicalDesc: Голубое и мутноватое 
+  flavor: перехватывает дыхание
+  color: "#cbdbfc"
+  meltingPoint: -40.5
+  boilingPoint: 60
+  metabolisms:
+    Poison:
+      metabolismRate: 0.03
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.4
+#-----------------------средний-------------------
+- type: reagent
+  id: ToxineSM2
+  name: SM-токсин
+  group: Toxicology
+  desc: Синтетический молекулярный токсин. 
+  physicalDesc: Голубое и мутноватое 
+  flavor: перехватывает дыхание
+  color: "#cbdbfc"
+  meltingPoint: -40.5
+  boilingPoint: 60
+  metabolisms:
+    Poison:
+      metabolismRate: 0.03
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.2
+#-----------------------лёгкий-------------------               
+- type: reagent
+  id: ToxineSM3
+  name: SM-токсин
+  group: Toxicology
+  desc: Синтетический молекулярный токсин. 
+  physicalDesc: Голубое и мутноватое 
+  flavor: перехватывает дыхание
+  color: "#cbdbfc"
+  meltingPoint: -40.5
+  boilingPoint: 60
+  metabolisms:
+    Poison:
+      metabolismRate: 0.03
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.1
+#---------------------синтетические атомарные----------
+#-----------------------опасный-------------------
+- type: reagent
+  id: ToxineSA1
+  name: SA-токсин
+  group: Toxicology
+  desc: Синтетический атомарный токсин. 
+  physicalDesc: Блёклое 
+  flavor: сушит рот
+  color: "#847e87"
+  meltingPoint: -40.5
+  boilingPoint: 60
+  metabolisms:
+    Poison:
+      metabolismRate: 0.05
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.4
+#-----------------------средний-------------------           
+- type: reagent
+  id: ToxineSA2
+  name: SA-токсин
+  group: Toxicology
+  desc: Синтетический атомарный токсин. 
+  physicalDesc: Блёклое 
+  flavor: сушит рот
+  color: "#847e87"
+  meltingPoint: -40.5
+  boilingPoint: 60
+  metabolisms:
+    Poison:
+      metabolismRate: 0.05
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.2
+#-----------------------лёгкий-------------------             
+- type: reagent
+  id: ToxineSA3
+  name: SA-токсин
+  group: Toxicology
+  desc: Синтетический атомарный токсин. 
+  physicalDesc: Блёклое 
+  flavor: сушит рот
+  color: "#847e87"
+  meltingPoint: -40.5
+  boilingPoint: 60
+  metabolisms:
+    Poison:
+      metabolismRate: 0.05
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.1
+#--------------------------------------------смеси индикаторы---------------------------
+#-----------------------------сами реагенты---------------------------
+#----------------------альфа------------------- 
+- type: reagent
+  id: AlfaToxine
+  name: Альфа-токсин
+  group: Toxicology
+  desc: Жидкость показывающее нахождение токсина подтипа альфа.
+  physicalDesc: Красное с хлопьями остадка
+  flavor: едкое и противное
+  color: "#ac3232"
+  meltingPoint: -40.5
+  boilingPoint: 60
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 2
+            Caustic: 2
+#----------------------бета-------------------           
+- type: reagent
+  id: BetaToxine
+  name: Бета-токсин
+  group: Toxicology
+  desc: Жидкость показывающее нахождение токсина подтипа бета.
+  physicalDesc: Синее с тяжёлым осадком
+  flavor: кислое и мерзкое
+  color: "#5b6ee1"
+  meltingPoint: -40.5
+  boilingPoint: 60
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 1
+            Caustic: 3
+#----------------------гамма-------------------              
+- type: reagent
+  id: GammaToxine
+  name: Гамма-токсин
+  group: Toxicology
+  desc: Жидкость показывающее нахождение токсина подтипа гамма.
+  physicalDesc: Жёлтое и загущённое
+  flavor: горькое и отвратительное
+  color: "#fbf236"
+  meltingPoint: -40.5
+  boilingPoint: 60
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 3
+            Caustic: 1
+#--------------------------------------------Жижы от токсинов---------------------------
+#----------------------------закупаемый адсорбент---------
+- type: reagent
+  id: SupAdsorbent
+  name: Особый адсорбент
+  group: Toxicology
+  desc: В сочетании с определёнными веществами разлагает гамма-токсины, но сам по себе выводит яды из организма
+  physicalDesc: Синий, мутный, густой 
+  flavor: вяжет
+  color: "#010029"
+  meltingPoint: -101.5
+  boilingPoint: -34.04
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: -1.5
+#----------------------------сами реагенты---------
+#------------П Прикорин---------
+- type: reagent
+  id: Pricorine
+  name: Прикорин
+  group: Toxicology
+  desc: В сочетании с определёнными веществами разлагает природные токсины, но сам по себе может быть токсичным
+  physicalDesc: Грязноватое и вяжет 
+  flavor: вяжет
+  color: "#5D545F"
+  meltingPoint: -101.5
+  boilingPoint: -34.04
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 1
+#------------С Сикилит---------
+- type: reagent
+  id: Cikilite
+  name: Сикилит
+  group: Toxicology
+  desc: В сочетании с определёнными веществами разлагает синтетические токсины, но сам по себе может вызывать жар
+  physicalDesc: Розоватое и густое 
+  flavor: Вкусненькое, но островато
+  color: "#AC3E5F"
+  meltingPoint: -101.5
+  boilingPoint: -34.04
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Heat: 1
+            Poison: -1
+#------------А Атморин---------
+- type: reagent
+  id: Atmorine
+  name: Атморин
+  group: Toxicology
+  desc: В сочетании с определёнными веществами разлагает атомарные токсины, но и сам по себе выводит из организма яды
+  physicalDesc: Сливовое и загущёное
+  flavor: сухое и шипит
+  color: "#6E4D96"
+  meltingPoint: -101.5
+  boilingPoint: -34.04
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: -3
+#------------М Молитит---------
+- type: reagent
+  id: Molytite
+  name: Молитит
+  group: Toxicology
+  desc: В сочетании с определёнными веществами разлагает молекулярные токсины, но а сам по себе может способствовать заживлению ран
+  physicalDesc: Коричневое и плещущееся
+  flavor: оооочень мерзкое и горькое
+  color: "#593003"
+  meltingPoint: -101.5
+  boilingPoint: -34.04
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Blunt: -1
+            Piercing: -1
+            Slash: -1
+            Bloodloss: -2
+#------------1 Ватин---------
+- type: reagent
+  id: Vatine
+  name: Ватин
+  group: Toxicology
+  desc: В сочетании с определёнными веществами разлагает токсины альфа-подтипа, но а сам по себе способствует заживлению ожогов и выводу ядов
+  physicalDesc: Серовато-зелёная взвесь
+  flavor: гадкое, но с нежным послевкусием
+  color: "#69846D"
+  meltingPoint: -101.5
+  boilingPoint: -34.04
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Heat: -1
+            Poison: -1
+#------------2 Тунин---------
+- type: reagent
+  id: Tunine
+  name: Тунин
+  group: Toxicology
+  desc: В сочетании с определёнными веществами разлагает токсины бета-подтипа, но а сам по себе бесполезен к употреблению
+  physicalDesc: Красноватое с осадком
+  flavor: почти безвкусное
+  color: "#9A8989"
+  meltingPoint: -101.5
+  boilingPoint: -34.04
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Blunt: 0
+#------------3 Тирин---------
+- type: reagent
+  id: Teerine
+  name: Тирин
+  group: Toxicology
+  desc: В сочетании с определёнными веществами разлагает токсины гамма-подтипа, но а сам по себе может выводить из организма яды
+  physicalDesc: Пурпурный и густой
+  flavor: обволакивающий и неприятный
+  color: "#50004B"
+  meltingPoint: -101.5
+  boilingPoint: -34.04
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: -2
+#--------------------------------------------Лекарства от токсинов---------------------------
+#----------------------------сами реагенты---------
+#------------------Примован----------
+- type: reagent
+  id: Primovan
+  name: Примован
+  group: Toxicology
+  desc: Соединение способное расщиплять природные молекулярные токсины альфа-подтипа
+  physicalDesc: Мутная с хлопьями осадка
+  flavor: сущащий
+  color: "#605845"
+  meltingPoint: -101.5
+  boilingPoint: -34.04
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0
+#------------------Прилектун----------
+- type: reagent
+  id: Prilectune
+  name: Прилектун
+  group: Toxicology
+  desc: Соединение способное превращать природные молекулярные токсины бета-подтипа в синтетические молекулярные гама-подтипа
+  physicalDesc: Мутная взвесь
+  flavor: сущащий
+  color: "#705A4E"
+  meltingPoint: -101.5
+  boilingPoint: -34.04
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0
+#------------------Прикулрин----------
+- type: reagent
+  id: Priculrine
+  name: Прикулрин
+  group: Toxicology
+  desc: Соединение способное расщиплять природные молекулярные токсины гамма-подтипа на синтетические атомарные гамма-подтипа
+  physicalDesc: Красноватая взвесь
+  flavor: сущащий и горьковатый
+  color: "#572C3A"
+  meltingPoint: -101.5
+  boilingPoint: -34.04
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0
+#------------------Синмован----------
+- type: reagent
+  id: Sinmovan
+  name: Синмован
+  group: Toxicology
+  desc: Соединение способное расщиплять синтетические молекулярные токсины альфа-подтипа
+  physicalDesc: Кирпичненько и прозрачно
+  flavor: неожиданно освежающе
+  color: "#8C5E6D"
+  meltingPoint: -101.5
+  boilingPoint: -34.04
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0
+#------------------Синлектун----------
+- type: reagent
+  id: Sinlectune
+  name: Синлектун
+  group: Toxicology
+  desc: Соединение способное расщиплять синтетические молекулярные токсины бета-подтипа
+  physicalDesc: Красновато и прозрачно
+  flavor: удивительно освежающе
+  color: "#8C5E6D"
+  meltingPoint: -101.5
+  boilingPoint: -34.04
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0
+#------------------Синкулрин----------
+- type: reagent
+  id: Sinculrine
+  name: Синкулрин
+  group: Toxicology
+  desc: Соединение способное расщиплять синтетические молекулярные токсины гамма-подтипа
+  physicalDesc: Розовато и прозрачно
+  flavor: удивительно освежающе, но с горчинкой
+  color: "#733158"
+  meltingPoint: -101.5
+  boilingPoint: -34.04
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0
+#------------------Синатван----------
+- type: reagent
+  id: Sinatvan
+  name: Синатван
+  group: Toxicology
+  desc: Соединение способное расщиплять синтетические атомарные токсины альфа-подтипа
+  physicalDesc: Сливово и густо
+  flavor: увлажняюще и вкусно
+  color: "#815A76"
+  meltingPoint: -101.5
+  boilingPoint: -34.04
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0
+#------------------Синаттун----------
+- type: reagent
+  id: Sinattune
+  name: Синаттун
+  group: Toxicology
+  desc: Соединение способное расщиплять синтетические атомарные токсины бета-подтипа
+  physicalDesc: Фиолетово и густо
+  flavor: увлажняюще и вкусно
+  color: "#915C7F"
+  meltingPoint: -101.5
+  boilingPoint: -34.04
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0
+#------------------Синатрин----------
+- type: reagent
+  id: Sinatrine
+  name: Синатрин
+  group: Toxicology
+  desc: Соединение способное расщиплять синтетические атомарные токсины гамма-подтипа
+  physicalDesc: Тёмнорозово и густо
+  flavor: увлажняюще и вкусно, хотя и с горчинкой
+  color: "#792E6B"
+  meltingPoint: -101.5
+  boilingPoint: -34.04
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0
+#------------------------------------------------------------------------ОСНАЩЕНИЕ--------------------------------------
+#------------------------------------------ящик адсорбента и карготовар------------------
+- type: entity
+  suffix: Токсикология, Особый адсорбент
+  parent: Beaker
+  id: SupAdsorbentBeakerSmall
+  components:
+  - type: Label
+    currentLabel: Особый адсорбент
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 50
+        reagents:
+        - ReagentId: SupAdsorbent
+          Quantity: 50
+
+- type: entity
+  id: CrateSupAdsorbent
+  parent: CrateGenericSteel
+  name: Ящик с особым адсорбентом
+  description: Ящик с покупаемым адсорбентом для создания антитоксинов
+  components:
+    - type: StorageFill
+      contents:
+      - id: SupAdsorbentBeakerSmall
+      - id: SupAdsorbentBeakerSmall
+
+- type: cargoProduct
+  id: CrateSupAdsorbent
+  name: Ящик с особым адсорбентом
+  description: Ящик с покупаемым адсорбентом для создания антитоксинов
+  icon:
+    sprite: Victoria/Toxi/sign.rsi
+    state: virology
+  product: CrateSupAdsorbent
+  cost: 700
+  category: Service
+  group: market
+#------------------------------------------------------------------------РЕАКЦИИ--------------------------------------  
+#----------------------------получение------------
+- type: reaction
+  id: SubtypeIndicator
+  reactants:
+    Saline:
+      amount: 2
+    Carbon:
+      amount: 3
+    Chlorine:
+      amount: 1
+  products:
+    SubtypeIndicator: 6
+#-----------------------------реакция---------------------------
+#----------------------альфа------------------- 
+- type: reaction
+  id: AlfaToxinePM1
+  reactants:
+    SubtypeIndicator:
+      amount: 1
+    ToxinePM1:
+      amount: 1
+  products:
+    AlfaToxine: 2
+    
+- type: reaction
+  id: AlfaToxineSM1
+  reactants:
+    SubtypeIndicator:
+      amount: 1
+    ToxineSM1:
+      amount: 1
+  products:
+    AlfaToxine: 2
+    
+- type: reaction
+  id: AlfaToxineSA1
+  reactants:
+    SubtypeIndicator:
+      amount: 1
+    ToxineSA1:
+      amount: 1
+  products:
+    AlfaToxine: 2
+#----------------------бета------------------- 
+- type: reaction
+  id: BetaToxinePM2
+  reactants:
+    SubtypeIndicator:
+      amount: 1
+    ToxinePM2:
+      amount: 1
+  products:
+    BetaToxine: 2
+    
+- type: reaction
+  id: BetaToxineSM2
+  reactants:
+    SubtypeIndicator:
+      amount: 1
+    ToxineSM2:
+      amount: 1
+  products:
+    BetaToxine: 2
+    
+- type: reaction
+  id: BetaToxineSA2
+  reactants:
+    SubtypeIndicator:
+      amount: 1
+    ToxineSA2:
+      amount: 1
+  products:
+    BetaToxine: 2
+#----------------------гамма------------------- 
+- type: reaction
+  id: GammaToxinePM3
+  reactants:
+    SubtypeIndicator:
+      amount: 1
+    ToxinePM3:
+      amount: 1
+  products:
+    GammaToxine: 2
+    
+- type: reaction
+  id: GammaToxineSM3
+  reactants:
+    SubtypeIndicator:
+      amount: 1
+    ToxineSM3:
+      amount: 1
+  products:
+    GammaToxine: 2
+    
+- type: reaction
+  id: GammaToxineSA3
+  reactants:
+    SubtypeIndicator:
+      amount: 1
+    ToxineSA3:
+      amount: 1
+  products:
+    GammaToxine: 2
+#----------------------------получение жиж---------
+#------------П Прикорин---------
+- type: reaction
+  id: Pricorine
+  reactants:
+    Stellibinin:
+      amount: 2
+    Plasma:
+      amount: 1
+  products:
+    Pricorine: 3
+#------------С Сикилит---------
+- type: reaction
+  id: Cikilite
+  reactants:
+    Ipecac:
+      amount: 1
+    Plasma:
+      amount: 1
+  products:
+    Cikilite: 2
+#------------А Атморин---------
+- type: reaction
+  id: Atmorine
+  minTemp: 320
+  reactants:
+    Water:
+      amount: 1
+    Plasma:
+      amount: 1
+    Carbon:
+      amount: 1  
+  products:
+    Atmorine: 3
+#------------М Молитит---------
+- type: reaction
+  id: Molytite
+  reactants:
+    Iodine:
+      amount: 1
+    Iron:
+      amount: 1
+    Copper:
+      amount: 1  
+  products:
+    Molytite: 3
+#------------1 Ватин---------
+- type: reaction
+  id: Vatine
+  reactants:
+    Silicon:
+      amount: 1
+    Oxygen:
+      amount: 1
+    Aloe:
+      amount: 1  
+  products:
+    Vatine: 3
+#------------2 Тунин---------
+- type: reaction
+  id: Tunine
+  minTemp: 320
+  reactants:
+    Iron:
+      amount: 2
+    Hydrogen:
+      amount: 1  
+  products:
+    Tunine: 2
+#------------3 Тирин---------
+- type: reaction
+  id: Teerine
+  reactants:
+    SupAdsorbent:
+      amount: 1
+    Plasma:
+      amount: 1  
+  products:
+    Teerine: 2
+#----------------------------реакции получения---------
+#------------------Примован----------
+- type: reaction
+  id: Primovan
+  reactants:
+    Pricorine:
+      amount: 1
+    Molytite:
+      amount: 1
+    Vatine:
+      amount: 1  
+  products:
+    Primovan: 3
+#------------------Прилектун----------
+- type: reaction
+  id: Prilectune
+  reactants:
+    Pricorine:
+      amount: 1
+    Molytite:
+      amount: 1
+    Tunine:
+      amount: 1  
+  products:
+    Prilectune: 3
+#------------------Прикулрин----------
+- type: reaction
+  id: Priculrine
+  reactants:
+    Pricorine:
+      amount: 1
+    Molytite:
+      amount: 1
+    Teerine:
+      amount: 1  
+  products:
+    Priculrine: 3
+#------------------Синмован----------
+- type: reaction
+  id: Sinmovan
+  reactants:
+    Cikilite:
+      amount: 1
+    Molytite:
+      amount: 1
+    Vatine:
+      amount: 1  
+  products:
+    Sinmovan: 3
+#------------------Синлектун----------
+- type: reaction
+  id: Sinlectune
+  reactants:
+    Cikilite:
+      amount: 1
+    Molytite:
+      amount: 1
+    Tunine:
+      amount: 1  
+  products:
+    Sinlectune: 3
+#------------------Синкулрин----------
+- type: reaction
+  id: Sinculrine
+  reactants:
+    Cikilite:
+      amount: 1
+    Molytite:
+      amount: 1
+    Teerine:
+      amount: 1  
+  products:
+    Sinculrine: 3
+#------------------Синатван----------
+- type: reaction
+  id: Sinatvan
+  reactants:
+    Cikilite:
+      amount: 1
+    Atmorine:
+      amount: 1
+    Vatine:
+      amount: 1  
+  products:
+    Sinatvan: 3
+#------------------Синаттун----------
+- type: reaction
+  id: Sinattune
+  reactants:
+    Cikilite:
+      amount: 1
+    Atmorine:
+      amount: 1
+    Tunine:
+      amount: 1  
+  products:
+    Sinattune: 3
+#------------------Синатрин----------
+- type: reaction
+  id: Sinatrine
+  reactants:
+    Cikilite:
+      amount: 1
+    Atmorine:
+      amount: 1
+    Teerine:
+      amount: 1  
+  products:
+    Sinatrine: 3
+#--------------------------------------------Реакции лечения---------------------------
+#--------------------------------------природные-------------------
+#-----------------------опасный-------------------
+- type: reaction
+  id: TreatmentToxinePM1
+  reactants:
+    ToxinePM1:
+      amount: 1
+    Primovan:
+      amount: 1 
+  products:
+    Water: 2
+#-----------------------средний-------------------
+- type: reaction
+  id: TreatmentToxinePM2
+  reactants:
+    ToxinePM2:
+      amount: 2
+    Prilectune:
+      amount: 2 
+  products:
+    Water: 3
+    ToxineSM3: 1
+#-----------------------лёгкий-------------------
+- type: reaction
+  id: TreatmentToxinePM3
+  reactants:
+    ToxinePM3:
+      amount: 2
+    Priculrine:
+      amount: 2 
+  products:
+    Water: 3
+    ToxineSA3: 1
+#-------------------------------синтетические молекулярные----------
+#-----------------------опасный-------------------
+- type: reaction
+  id: TreatmentToxineSM1
+  reactants:
+    ToxineSM1:
+      amount: 1
+    Sinmovan:
+      amount: 1 
+  products:
+    Water: 2
+#-----------------------средний-------------------
+- type: reaction
+  id: TreatmentToxineSM2
+  reactants:
+    ToxineSM2:
+      amount: 1
+    Sinlectune:
+      amount: 1 
+  products:
+    Water: 2
+#-----------------------лёгкий------------------- 
+- type: reaction
+  id: TreatmentToxineSM3
+  reactants:
+    ToxineSM3:
+      amount: 1
+    Sinculrine:
+      amount: 1 
+  products:
+    Water: 2
+#---------------------синтетические атомарные----------
+#-----------------------опасный-------------------
+- type: reaction
+  id: TreatmentToxineSA1
+  reactants:
+    ToxineSA1:
+      amount: 1
+    Sinatvan:
+      amount: 1 
+  products:
+    Water: 2
+#-----------------------средний------------------- 
+- type: reaction
+  id: TreatmentToxineSA2
+  reactants:
+    ToxineSA2:
+      amount: 1
+    Sinattune:
+      amount: 1 
+  products:
+    Water: 2
+#-----------------------лёгкий------------------- 
+- type: reaction
+  id: TreatmentToxineSA3
+  reactants:
+    ToxineSA3:
+      amount: 1
+    Sinatrine:
+      amount: 1 
+  products:
+    Water: 2
+#------------------------------------------------------------------------ОСНАЩЕНИЕ--------------------------------------
+#------------------------------------------------------------одежда токсиколога--------------------------------
+#------------------------------------------комбинезон------------------
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformToxicology
+  name: Комбинезон токсиколога
+  suffix: Токсикология
+  description: Беленький комбинезон с нашивками токсиколога, которая очень помогает копаться в чужих желудках 
+  components:
+  - type: Sprite
+    sprite: Victoria/Toxi/Equipment/uniform_toxicology.rsi
+  - type: Clothing
+    sprite: Victoria/Toxi/Equipment/uniform_toxicology.rsi
+#------------------------------------------халат------------------
+- type: entity
+  parent: ClothingOuterStorageFoldableBase
+  id: ClothingOuterCoatLabToxicology
+  name: Халат токсиколога
+  suffix: Токсикология
+  description: Халат с гидрофобностью, который отталкивает в том числе и гадкие токсины.
+  components:
+  - type: Sprite
+    sprite: Victoria/Toxi/Equipment/labcoat_toxicology.rsi
+  - type: Clothing
+    sprite: Victoria/Toxi/Equipment/labcoat_toxicology.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Poison: 0.75
+#------------------------------------------рюкзак------------------
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackToxicology
+  name: Рюкзак токсиколога
+  suffix: Токсикология
+  description: Обычный мед.рюкзак, но с нашивками подотдела вирусологии.
+  components:
+  - type: Sprite
+    sprite: Victoria/Toxi/Equipment/backpack_toxicology.rsi
+#------------------------------------------биозащитный костюм токсиколога------------------
+- type: entity
+  parent: ClothingOuterBioGeneral
+  id: ClothingOuterBioToxicology
+  name: Биозащитный костюм
+  suffix: Токсикология
+  description: Костюм биологической защиты, надеваемый на одежду в расцвете подотдела токсикологии.
+  components:
+  - type: Sprite
+    sprite: Victoria/Toxi/Equipment/biodef_toxicology.rsi
+  - type: Clothing
+    sprite: Victoria/Toxi/Equipment/biodef_toxicology.rsi
+    
+- type: entity
+  parent: ClothingHeadHatHoodBioGeneral
+  id: ClothingHeadHatHoodBioToxicology
+  name: Биозащитный "капюшон"
+  suffix: Токсикология
+  description: Головной убор, являющийся дополнением к биозащитному костюму токсиколога
+  components:
+  - type: IdentityBlocker
+  - type: Sprite
+    sprite: Victoria/Toxi/Equipment/biodef_toxicology_helmet.rsi
+  - type: Clothing
+    sprite: Victoria/Toxi/Equipment/biodef_toxicology_helmet.rsi
+#-------------------------------------------------------------ящики и шкафы---------------------------------------
+#------------------------------------------шкаф с одеждой------------------
+- type: entity
+  id: WardrobeToxicologyFilled
+  suffix: Filled
+  parent: WardrobeWhite
+  name: Гардероб токсиколога
+  description: Одежда достойная ношения бесстрашных врачей-токсикологов.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingUniformToxicology
+      - id: ClothingOuterCoatLabToxicology
+      - id: ClothingBackpackToxicology
+      - id: ClothingOuterBioToxicology
+      - id: ClothingHeadHatHoodBioToxicology
+#-------------------------------------------------------------аппаратура-------------------------------------
+#------------------------------------------аппарат анализа-------------------------------------
+# - type: entity
+  # id: ToxicologyReagentGrinder
+  # parent: KitchenReagentGrinder
+  # name: Анализатор крови
+  # description: Устройство для анализа крови с возможностью измельчить и добавить некий реагент
+  # suffix: Токсикология
+  # components:
+  # - type: Sprite
+    # sprite: Victoria/Toxi/Devices/blood_analyzer.rsi
+  # - type: Machine
+    # board: ToxicologyReagentGrinderMachineCircuitboard
+    
+# - type: entity
+  # id: ToxicologyReagentGrinderMachineCircuitboard
+  # parent: BaseMachineCircuitboard
+  # name: Плата анализатора крови
+  # description: Плата управления устройством для анализа крови с возможностью измельчить и добавить некий реагент
+  # components:
+    # - type: MachineBoard
+      # prototype: ToxicologyReagentGrinder
+      # stackRequirements:
+        # MatterBin: 3
+        # Manipulator: 2
+      # tagRequirements:
+        # GlassBeaker:
+          # amount: 1
+          # defaultPrototype: Beaker
+#------------------------------------------шлюз-------------------------------------
+#---------------------обычный--------------------------
+- type: entity
+  parent: Airlock
+  id: AirlockToxicology
+  suffix: Токсикология
+  components:
+  - type: Sprite
+    sprite: Victoria/Toxi/Devices/airlock_virology.rsi
+
+- type: entity
+  parent: AirlockToxicology
+  id: AirlockToxicologyLocked
+  suffix: Токсикология, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMedical ]
+#---------------------стеклянный--------------------------
+- type: entity
+  parent: AirlockGlass
+  id: AirlockToxicologyGlass
+  suffix: Токсикология, Glass
+  components:
+  - type: Sprite
+    sprite: Victoria/Toxi/Devices/airlock_virology_glass.rsi
+    
+- type: entity
+  parent: AirlockToxicologyGlass
+  id: AirlockToxicologyGlassLocked
+  suffix: Токсикология, Glass, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMedical ]
+#----------------------------------------------настенный знак--------------------------      
+- type: entity
+  parent: BaseSign
+  id: SignToxicology
+  name: Знак "Токсикология"
+  description: Знак предупреждающий о том, что за стеной лечат от очень ядовитой жути.
+  components:
+  - type: Sprite
+    sprite: Victoria/Toxi/sign.rsi
+    state: virology    

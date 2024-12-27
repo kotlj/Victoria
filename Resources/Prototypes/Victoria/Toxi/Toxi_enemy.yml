@@ -1,0 +1,569 @@
+#------------------------------------------------Ядовитая Кудзу (ПМ2)------------------------------------
+- type: entity
+  id: ToxiKudzu
+  name: Ядовитая Кудзу
+  parent: Kudzu
+  description: A rapidly growing, dangerous plant. WHY ARE YOU STOPPING TO LOOK AT IT?!
+  components:
+    - type: MeleeSound
+      soundGroups:
+        Brute:
+          path:
+            "/Audio/Weapons/slash.ogg"
+    - type: Sprite
+      sprite: Victoria/Toxi/toxi_kudzu.rsi
+      state: kudzu_11
+      drawdepth: Overdoors
+    - type: Kudzu
+      growthTickChance: 0.3
+      spreadChance: 0.4
+    - type: SpeedModifierContacts
+      walkSpeedModifier: 0.2
+      sprintSpeedModifier: 0.2
+      ignoreWhitelist:
+        components:
+        - IgnoreKudzu
+    - type: SolutionContainerManager
+      solutions:
+        food:
+          reagents:
+          - ReagentId: ToxinePM2
+            Quantity: 5
+    - type: DamageContacts
+      damage:
+        types:
+          Piercing: 0.5
+      ignoreWhitelist:
+        tags:
+        - IgnoreKudzu
+#------------------------------------------------Ядовитый карп (СА3)------------------------------------
+- type: entity
+  name: Ядовитый карп
+  parent: BaseMobCarp
+  id: MobToxiCarp
+  components:
+  - type: Sprite
+    sprite: Victoria/Toxi/toxi_carp.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: alive
+  - type: SolutionContainerManager
+    solutions:
+      melee:
+        reagents:
+        - ReagentId: ToxineSA1
+          Quantity: 10
+  - type: MeleeChemicalInjector
+    solution: melee
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 4
+        Slash: 4
+#------------------------------------------------Ядовитый слайм (СМ2)------------------------------------
+- type: entity
+  name: Ядовитый слайм
+  parent: MobAdultSlimes
+  id: MobAdultSlimesToxi
+  components:
+    - type: Sprite
+      sprite: Victoria/Toxi/toxi_slimes.rsi
+      layers:
+      - map: [ "enum.DamageStateVisualLayers.Base" ]
+        state: toxi_adult_slime
+    - type: DamageStateVisuals
+      states:
+        Alive:
+          Base: toxi_adult_slime
+        Dead:
+          Base: toxi_adult_slime_dead
+    - type: MeleeWeapon
+      damage:
+        types:
+          Blunt: 2
+          Structural: 4
+          Cellular: 3
+    - type: SolutionContainerManager
+      solutions:
+        melee:
+          reagents:
+          - ReagentId: ToxineSM2
+            Quantity: 10
+    - type: MeleeChemicalInjector
+      solution: melee
+#------------------------------------------------Ядожижа жижеаномы------------------------------
+#----------------------------------(ПМ1)---------------------------
+- type: entity
+  id: ReagentSlimeToxinePM1
+  parent: ReagentSlime
+  name: химический слайм
+  suffix: ToxinePM1
+  components:
+  - type: Bloodstream
+    bloodReagent: ToxinePM1
+  - type: PointLight
+    color: "#6300cf"
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/elemental.rsi
+    layers:
+      - map: [ "enum.DamageStateVisualLayers.Base" ]
+        state: alive
+        color: "#6300cf"
+  - type: MeleeChemicalInjector
+    solution: bloodstream
+    transferAmount: 3
+#----------------------------------(ПМ2)---------------------------
+- type: entity
+  id: ReagentSlimeToxinePM2
+  parent: ReagentSlime
+  name: химический слайм
+  suffix: ToxinePM2
+  components:
+  - type: Bloodstream
+    bloodReagent: ToxinePM2
+  - type: PointLight
+    color: "#6300cf"
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/elemental.rsi
+    layers:
+      - map: [ "enum.DamageStateVisualLayers.Base" ]
+        state: alive
+        color: "#6300cf"
+  - type: MeleeChemicalInjector
+    solution: bloodstream
+    transferAmount: 3
+#----------------------------------(ПМ3)---------------------------
+- type: entity
+  id: ReagentSlimeToxinePM3
+  parent: ReagentSlime
+  name: химический слайм
+  suffix: ToxinePM3
+  components:
+  - type: Bloodstream
+    bloodReagent: ToxinePM3
+  - type: PointLight
+    color: "#6300cf"
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/elemental.rsi
+    layers:
+      - map: [ "enum.DamageStateVisualLayers.Base" ]
+        state: alive
+        color: "#6300cf"
+  - type: MeleeChemicalInjector
+    solution: bloodstream
+    transferAmount: 3
+#----------------------------------(СМ1)---------------------------
+- type: entity
+  id: ReagentSlimeToxineSM1
+  parent: ReagentSlime
+  name: химический слайм
+  suffix: ToxineSM1
+  components:
+  - type: Bloodstream
+    bloodReagent: ToxineSM1
+  - type: PointLight
+    color: "#6300cf"
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/elemental.rsi
+    layers:
+      - map: [ "enum.DamageStateVisualLayers.Base" ]
+        state: alive
+        color: "#6300cf"
+  - type: MeleeChemicalInjector
+    solution: bloodstream
+    transferAmount: 3
+#----------------------------------(СМ2)---------------------------
+- type: entity
+  id: ReagentSlimeToxineSM2
+  parent: ReagentSlime
+  name: химический слайм
+  suffix: ToxineSM2
+  components:
+  - type: Bloodstream
+    bloodReagent: ToxineSM2
+  - type: PointLight
+    color: "#6300cf"
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/elemental.rsi
+    layers:
+      - map: [ "enum.DamageStateVisualLayers.Base" ]
+        state: alive
+        color: "#6300cf"
+  - type: MeleeChemicalInjector
+    solution: bloodstream
+    transferAmount: 3
+#----------------------------------(СМ3)---------------------------
+- type: entity
+  id: ReagentSlimeToxineSM3
+  parent: ReagentSlime
+  name: химический слайм
+  suffix: ToxineSM3
+  components:
+  - type: Bloodstream
+    bloodReagent: ToxineSM3
+  - type: PointLight
+    color: "#6300cf"
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/elemental.rsi
+    layers:
+      - map: [ "enum.DamageStateVisualLayers.Base" ]
+        state: alive
+        color: "#6300cf"
+  - type: MeleeChemicalInjector
+    solution: bloodstream
+    transferAmount: 3
+#----------------------------------(СА1)---------------------------
+- type: entity
+  id: ReagentSlimeToxineSA1
+  parent: ReagentSlime
+  name: химический слайм
+  suffix: ToxineSA1
+  components:
+  - type: Bloodstream
+    bloodReagent: ToxineSA1
+  - type: PointLight
+    color: "#6300cf"
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/elemental.rsi
+    layers:
+      - map: [ "enum.DamageStateVisualLayers.Base" ]
+        state: alive
+        color: "#6300cf"
+  - type: MeleeChemicalInjector
+    solution: bloodstream
+    transferAmount: 3
+#----------------------------------(СА2)---------------------------
+- type: entity
+  id: ReagentSlimeToxineSA2
+  parent: ReagentSlime
+  name: химический слайм
+  suffix: ToxineSA2
+  components:
+  - type: Bloodstream
+    bloodReagent: ToxineSA2
+  - type: PointLight
+    color: "#6300cf"
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/elemental.rsi
+    layers:
+      - map: [ "enum.DamageStateVisualLayers.Base" ]
+        state: alive
+        color: "#6300cf"
+  - type: MeleeChemicalInjector
+    solution: bloodstream
+    transferAmount: 3
+#----------------------------------(СА3)---------------------------
+- type: entity
+  id: ReagentSlimeToxineSA3
+  parent: ReagentSlime
+  name: химический слайм
+  suffix: ToxineSA3
+  components:
+  - type: Bloodstream
+    bloodReagent: ToxineSA3
+  - type: PointLight
+    color: "#6300cf"
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/elemental.rsi
+    layers:
+      - map: [ "enum.DamageStateVisualLayers.Base" ]
+        state: alive
+        color: "#6300cf"
+  - type: MeleeChemicalInjector
+    solution: bloodstream
+    transferAmount: 3
+#------------------------------------------------Плевок токсианомы (СМ1)------------------------------------
+- type: entity
+  id: ProjectileToxiAnome
+  parent: BaseBullet
+  name: Заряд токсина
+  description: Воняет отвратно...
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Victoria\Toxi\toxi_anom.rsi
+  - type: SolutionContainerManager
+    solutions:
+      ammo:
+        reagents:
+        - ReagentId: ToxineSM1
+          Quantity: 10
+  - type: RefillableSolution
+    solution: ammo
+  - type: InjectableSolution
+    solution: ammo
+  - type: SolutionInjectOnEmbed
+    transferAmount: 10
+    solution: ammo
+  - type: SolutionTransfer
+    maxTransferAmount: 10
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 3
+#------------------------------------------------Токсиявка (СА3)------------------------------------
+- type: entity
+  parent: BaseMobFlesh
+  id: ToxiLeech
+  name: Токсиявка
+  description: Мелкая гадкая аморфная сущность состаящая из сгущёного токсина. Кусает не то чтобы больно, но тут же вкалывает токсин.
+  components:
+  - type: Sprite
+    sprite: Victoria\Toxi\toxi_monsters.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: toxileech
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: toxileech
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: Bloodstream
+    bloodReagent: ToxineSA1
+  - type: MeleeChemicalInjector
+    solution: bloodstream
+    transferAmount: 5
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    angle: 0
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Piercing: 0.5
+#------------------------------------------------Токситроль (СМ2)------------------------------------
+- type: entity
+  parent: BaseMobFlesh
+  id: ToxiTroll
+  name: Токситролль
+  description: Здоровая сущность из сгущённого токсина. Сурово бьёт и опасно отравляет.
+  components:
+  - type: Sprite
+    sprite: Victoria\Toxi\toxi_monsters.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: toxitroll
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: toxitroll
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: Bloodstream
+    bloodReagent: ToxineSM2
+  - type: MeleeChemicalInjector
+    solution: bloodstream
+    transferAmount: 15
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    angle: 0
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Blunt: 15
+#------------------------------------------------Ядро аномалии------------------------------------
+- type: entity
+  parent: BaseAnomalyCore
+  id: AnomalyCoreToxi
+  name: ядро токсичной аномалии
+  suffix: Toxi
+  components:
+  - type: Sprite
+    sprite: Structures/Specific/Anomalies/Cores/liquid_core.rsi
+  - type: PointLight
+    radius: 1.5
+    energy: 3.5
+    color: "#6300cf"
+    castShadows: false
+    
+- type: entity
+  parent: BaseAnomalyInertCore
+  id: AnomalyCoreToxiInert
+  name: ядро токсичной аномалии
+  suffix: Toxi, Inert
+  components:
+  - type: Sprite
+    sprite: Structures/Specific/Anomalies/Cores/liquid_core.rsi
+  - type: PointLight
+    radius: 1.5
+    energy: 3.5
+    color: "#6300cf"
+    castShadows: false
+#------------------------------------------------Токсичная аномалия (СМ1)------------------------------------
+- type: entity
+  id: AnomalyToxi
+  name: аномалия
+  parent: BaseAnomaly
+  suffix: Toxi
+  components:
+  - type: Sprite
+    sprite: Victoria\Toxi\toxi_anom.rsi
+    layers:
+    - state: anom
+      map: ["enum.AnomalyVisualLayers.Base"]
+    - state: pulse
+      map: ["enum.AnomalyVisualLayers.Animated"]
+      visible: false
+  - type: RandomSprite
+    selected: 
+      enum.AnomalyVisualLayers.Base:
+        anom: "#6300cf"
+      enum.AnomalyVisualLayers.Animated:
+        pulse: "#6300cf"
+  - type: PointLight
+    radius: 4.0
+    energy: 3.5
+    color: "#6300cf"
+  - type: BadFood
+  - type: Anomaly
+    corePrototype: AnomalyCoreToxi
+    coreInertPrototype: AnomalyCoreToxiInert
+    minPulseLength: 60
+    maxPulseLength: 120
+  - type: ProjectileAnomaly
+    projectilePrototype: ProjectileToxiAnome
+    minProjectiles: 4
+    maxProjectiles: 16
+  - type: EntitySpawnAnomaly
+    entries:
+    - settings:
+        spawnOnPulse: true
+        minAmount: 4
+        maxAmount: 6
+        minRange: 2
+        maxRange: 6
+      spawns:
+      - ToxiLeech
+    - settings:
+        spawnOnSuperCritical: true
+        minAmount: 1
+        maxAmount: 2
+        minRange: 4
+        maxRange: 10
+      spawns:
+      - ToxiTroll
+    - settings:
+        spawnOnSuperCritical: true
+        minAmount: 3
+        maxAmount: 5
+        minRange: 4
+        maxRange: 10
+      spawns:
+      - ToxiLeech
+  - type: SolutionContainerManager
+    solutions:
+      anomaly:
+        reagents:
+        - ReagentId: ToxineSM1
+          Quantity: 1000
+  - type: DamageOnInteract
+    damage:
+      types:
+        Poison: 10
+    popupText: Вы ощухаете порывы тошноты
+  - type: GasProducerAnomaly
+    releasedGas: 6
+    releaseOnMaxSeverity: true
+    spawnRadius: 0
+#------------------------------------------------Баночка токсина CA1 в апплинк--------------------------------
+#----------------------------------Сама банка---------------------------
+- type: entity
+  parent: Beaker
+  id: ToxineSA1BeakerSmall
+  name: мензурка
+  description: Используется для хранения среднего количества химикатов или растворов
+  suffix: ToxineSA1
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 50
+        reagents:
+        - ReagentId: ToxineSA1
+          Quantity: 20
+#----------------------------------Товар в аплинк---------------------------
+- type: listing
+  id: UplinkToxineSA1BeakerSmall
+  name: Токсин SA1
+  description: Синтетический Атомарный Альфа-токсин. Усваивается достаточно быстро, но серьёзно травит жертву. 20 юнитов.
+  productEntity: ToxineSA1BeakerSmall
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 2
+  cost:
+    Telecrystal: 3
+  categories:
+  - UplinkChemicals
+#------------------------------------------------Баночка токсина СМ1 в апплинк--------------------------------
+#----------------------------------Сама банка---------------------------
+- type: entity
+  parent: Beaker
+  id: ToxineSM1BeakerSmall
+  name: мензурка
+  description: Используется для хранения среднего количества химикатов или растворов
+  suffix: ToxineSM1
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 50
+        reagents:
+        - ReagentId: ToxineSM1
+          Quantity: 20
+#----------------------------------Товар в аплинк---------------------------
+- type: listing
+  id: UplinkToxineSM1BeakerSmall
+  name: Токсин SM1
+  description: Синтетический Молекулярный Альфа-токсин. Усваивается не слишком быстро, но серьёзно травит жертву. 20 юнитов.
+  productEntity: ToxineSM1BeakerSmall
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 3
+  cost:
+    Telecrystal: 4
+  categories:
+  - UplinkChemicals
+#------------------------------------------------Баночка токсина ПМ1 в апплинк--------------------------------
+#----------------------------------Сама банка---------------------------
+- type: entity
+  parent: Beaker
+  id: ToxinePM1BeakerSmall
+  name: мензурка
+  description: Используется для хранения среднего количества химикатов или растворов
+  suffix: ToxinePM1
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 50
+        reagents:
+        - ReagentId: ToxinePM1
+          Quantity: 20
+#----------------------------------Товар в аплинк---------------------------
+- type: listing
+  id: UplinkToxinePM1BeakerSmall
+  name: Токсин PM1
+  description: Природный Молекулярный Альфа-токсин. Усваивается очень долго и серьёзно травит жертву. 20 юнитов.
+  productEntity: ToxinePM1BeakerSmall
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 4
+  cost:
+    Telecrystal: 5
+  categories:
+  - UplinkChemicals

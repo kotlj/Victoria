@@ -2345,7 +2345,9 @@
   - type: SolutionContainerManager
     solutions:
       melee:
-        maxVol: 30
+        reagents:
+        - ReagentId: ToxinePM1
+          Quantity: 100
   - type: SolutionRegeneration
     solution: melee
     generated:
