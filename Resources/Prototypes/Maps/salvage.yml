@@ -145,6 +145,21 @@
   id: MediumHaulingShuttleWreck
   mapPath: /Maps/Salvage/hauling-shuttle.yml
   sizeString: salvage-map-wreck-size-medium
+  
+- type: salvageMap
+  id: MediumBrokenShattleKMLG
+  mapPath: /Maps/Salvage/victoria-broken-shattle-kmlg.yml
+  sizeString: salvage-map-wreck-size-medium
+  
+- type: salvageMap
+  id: MediumHouseSNK
+  mapPath: /Maps/Salvage/victoria-house-snk.yml
+  sizeString: salvage-map-wreck-size-medium
+  
+- type: salvageMap
+  id: MediumSalvageAsteroid
+  mapPath: /Maps/Salvage/victoria-salvage-asteroid.yml
+  sizeString: salvage-map-wreck-size-medium
 
 # """Large""" maps
 
