@@ -290,7 +290,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: Victoria\Toxi\toxi_anom.rsi
+    sprite: Victoria/Toxi/toxi_anom.rsi
   - type: SolutionContainerManager
     solutions:
       ammo:
@@ -318,7 +318,7 @@
   description: Мелкая гадкая аморфная сущность состаящая из сгущёного токсина. Кусает не то чтобы больно, но тут же вкалывает токсин.
   components:
   - type: Sprite
-    sprite: Victoria\Toxi\toxi_monsters.rsi
+    sprite: Victoria/Toxi/toxi_monsters.rsi
     layers:
     - map: [ "enum.DamageStateVisualLayers.Base" ]
       state: toxileech
@@ -351,7 +351,7 @@
   description: Здоровая сущность из сгущённого токсина. Сурово бьёт и опасно отравляет.
   components:
   - type: Sprite
-    sprite: Victoria\Toxi\toxi_monsters.rsi
+    sprite: Victoria/Toxi/toxi_monsters.rsi
     layers:
     - map: [ "enum.DamageStateVisualLayers.Base" ]
       state: toxitroll
@@ -412,7 +412,7 @@
   suffix: Toxi
   components:
   - type: Sprite
-    sprite: Victoria\Toxi\toxi_anom.rsi
+    sprite: Victoria/Toxi/toxi_anom.rsi
     layers:
     - state: anom
       map: ["enum.AnomalyVisualLayers.Base"]
