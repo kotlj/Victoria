@@ -1514,8 +1514,8 @@
   - type: RandomHumanoidSpawner
     settings: KMLGCtR
   - type: NpcFactionMember
-      factions:
-      - KMLG
+    factions:
+    - KMLG
 #---------------------------------старший снабженец----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
@@ -1578,8 +1578,8 @@
   - type: RandomHumanoidSpawner
     settings: KMLGCcR
   - type: NpcFactionMember
-      factions:
-      - KMLG
+    factions:
+    - KMLG
 #---------------------------------ремонтник----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
@@ -1642,8 +1642,8 @@
   - type: RandomHumanoidSpawner
     settings: KMLGRmR
   - type: NpcFactionMember
-      factions:
-      - KMLG
+    factions:
+    - KMLG
 #---------------------------------инженер----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
@@ -1706,8 +1706,8 @@
   - type: RandomHumanoidSpawner
     settings: KMLGER
   - type: NpcFactionMember
-      factions:
-      - KMLG
+    factions:
+    - KMLG
 #---------------------------------старший инженер----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
@@ -1770,8 +1770,8 @@
   - type: RandomHumanoidSpawner
     settings: KMLGCeR
   - type: NpcFactionMember
-      factions:
-      - KMLG
+    factions:
+    - KMLG
 #---------------------------------охранник----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
@@ -1834,8 +1834,8 @@
   - type: RandomHumanoidSpawner
     settings: KMLGSR
   - type: NpcFactionMember
-      factions:
-      - KMLG
+    factions:
+    - KMLG
 #---------------------------------сержант----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
@@ -1898,8 +1898,8 @@
   - type: RandomHumanoidSpawner
     settings: KMLGCsR
   - type: NpcFactionMember
-      factions:
-      - KMLG
+    factions:
+    - KMLG
 #---------------------------------сервисник----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
@@ -1962,8 +1962,8 @@
   - type: RandomHumanoidSpawner
     settings: KMLGSwR
   - type: NpcFactionMember
-      factions:
-      - KMLG
+    factions:
+    - KMLG
 #---------------------------------пилот----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
@@ -2026,5 +2026,5 @@
   - type: RandomHumanoidSpawner
     settings: KMLGPR
   - type: NpcFactionMember
-      factions:
-      - KMLG
+    factions:
+    - KMLG

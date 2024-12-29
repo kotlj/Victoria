@@ -1712,7 +1712,7 @@
     settings: PetrNovob
   - type: NpcFactionMember
     factions:
-      - Petr
+    - Petr
 #---------------------------------боевик----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
@@ -1775,8 +1775,8 @@
   - type: RandomHumanoidSpawner
     settings: PetrBoevi
   - type: NpcFactionMember
-      factions:
-      - Petr
+    factions:
+    - Petr
 #---------------------------------специалист-инженер----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
@@ -1839,8 +1839,8 @@
   - type: RandomHumanoidSpawner
     settings: PetrCpeci
   - type: NpcFactionMember
-      factions:
-      - Petr
+    factions:
+    - Petr
 #---------------------------------специалист-подрывник----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
@@ -1904,8 +1904,8 @@
   - type: RandomHumanoidSpawner
     settings: PetrSaper
   - type: NpcFactionMember
-      factions:
-      - Petr
+    factions:
+    - Petr
 #---------------------------------командир----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
@@ -1968,8 +1968,8 @@
   - type: RandomHumanoidSpawner
     settings: PetrOffi
   - type: NpcFactionMember
-      factions:
-      - Petr
+    factions:
+    - Petr
 #---------------------------------Серп----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
@@ -2032,8 +2032,8 @@
   - type: RandomHumanoidSpawner
     settings: PetrSerp
   - type: NpcFactionMember
-      factions:
-      - Petr
+    factions:
+    - Petr
 #---------------------------------Молот----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
@@ -2096,8 +2096,8 @@
   - type: RandomHumanoidSpawner
     settings: PetrMolot
   - type: NpcFactionMember
-      factions:
-      - Petr
+    factions:
+    - Petr
 #---------------------------------------------------------------Бумаги------------------------------------------------------------
 #-----------------------------------новобранец-----------------------------
 - type: entity

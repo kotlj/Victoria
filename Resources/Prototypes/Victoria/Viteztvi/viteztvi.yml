@@ -1483,8 +1483,8 @@
   - type: RandomHumanoidSpawner
     settings: VitzEfreitor
   - type: NpcFactionMember
-      factions:
-      - Vitz
+    factions:
+    - Vitz
 #---------------------------------пилот----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
@@ -1548,8 +1548,8 @@
   - type: RandomHumanoidSpawner
     settings: VitzPilot
   - type: NpcFactionMember
-      factions:
-      - Vitz
+    factions:
+    - Vitz
 #---------------------------------старшина----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
@@ -1613,8 +1613,8 @@
   - type: RandomHumanoidSpawner
     settings: VitzStarshina
   - type: NpcFactionMember
-      factions:
-      - Vitz
+    factions:
+    - Vitz
 #---------------------------------звеньевой----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
@@ -1678,8 +1678,8 @@
   - type: RandomHumanoidSpawner
     settings: VitzZven
   - type: NpcFactionMember
-      factions:
-      - Vitz
+    factions:
+    - Vitz
 #---------------------------------мистер Хилл----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
@@ -1742,8 +1742,8 @@
   - type: RandomHumanoidSpawner
     settings: VitzMrHill
   - type: NpcFactionMember
-      factions:
-      - Vitz
+    factions:
+    - Vitz
 #---------------------------------------------------------------Бумаги------------------------------------------------------------
 #-----------------------------------ефрейтор-----------------------------
 - type: entity
