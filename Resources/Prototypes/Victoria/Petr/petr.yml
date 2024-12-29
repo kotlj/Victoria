@@ -1711,7 +1711,7 @@
   - type: RandomHumanoidSpawner
     settings: PetrNovob
   - type: NpcFactionMember
-      factions:
+    factions:
       - Petr
 #---------------------------------боевик----------
 - type: randomHumanoidSettings
