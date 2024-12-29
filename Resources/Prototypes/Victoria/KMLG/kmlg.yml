@@ -489,11 +489,11 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.6
-        Slash: 0.6
-        Piercing: 0.6
-        Radiation: 0.4
-        Caustic: 0.3
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Radiation: 0.6
+        Caustic: 0.7
         Cold: 0.85
         Heat: 0.85
   - type: ClothingSpeedModifier
@@ -723,6 +723,8 @@
     tags:
     - KMLGAccess
     - External
+  - type: PresetIdCard
+    name: грузчик КМЛГ
 #------------------------------------карта старшего снабженца---------- 
 - type: entity
   parent: KMLGIDCard
@@ -738,6 +740,8 @@
     tags:
     - KMLGAccess
     - External
+  - type: PresetIdCard
+    name: ст.снабженец КМЛГ
 #------------------------------------карта ремонтника---------- 
 - type: entity
   parent: KMLGIDCard
@@ -753,6 +757,8 @@
     tags:
     - KMLGAccess
     - External
+  - type: PresetIdCard
+    name: ремонтник КМЛГ
 #------------------------------------карта инженера---------- 
 - type: entity
   parent: KMLGIDCard
@@ -768,6 +774,8 @@
     tags:
     - KMLGAccess
     - External
+  - type: PresetIdCard
+    name: инженер КМЛГ
 #------------------------------------карта старшего инженера---------- 
 - type: entity
   parent: KMLGIDCard
@@ -783,6 +791,8 @@
     tags:
     - KMLGAccess
     - External
+  - type: PresetIdCard
+    name: ст.инженер КМЛГ
 #------------------------------------карта охранника---------- 
 - type: entity
   parent: KMLGIDCard
@@ -798,6 +808,8 @@
     tags:
     - KMLGAccess
     - External
+  - type: PresetIdCard
+    name: охранник КМЛГ
 #------------------------------------карта сержанта-охранника---------- 
 - type: entity
   parent: KMLGIDCard
@@ -813,6 +825,8 @@
     tags:
     - KMLGAccess
     - External
+  - type: PresetIdCard
+    name: сержант-охранник КМЛГ
 #------------------------------------карта сервисника---------- 
 - type: entity
   parent: KMLGIDCard
@@ -828,6 +842,8 @@
     tags:
     - KMLGAccess
     - External
+  - type: PresetIdCard
+    name: сервисный работник КМЛГ
 #------------------------------------карта пилота---------- 
 - type: entity
   parent: KMLGIDCard
@@ -843,6 +859,8 @@
     tags:
     - KMLGAccess
     - External
+  - type: PresetIdCard
+    name: пилот КМЛГ
 #------------------------------------стандарт КПК---------- 
 - type: entity
   abstract: true
@@ -1451,6 +1469,9 @@
       nameSegments:
       - KMLGName
       - KMLGNameTwo
+    - type: NpcFactionMember
+      factions:
+      - KMLG
 
 - type: randomHumanoidSettings
   id: KMLGCtReady
@@ -1472,6 +1493,9 @@
       critThreshold: 100
     - type: Loadout
       prototypes: [ KMLGGearCt ]
+    - type: NpcFactionMember
+      factions:
+      - KMLG
   
 - type: entity
   name: Грузчик Космологистики Спавнер
@@ -1489,6 +1513,9 @@
     - KMLGNameTwo
   - type: RandomHumanoidSpawner
     settings: KMLGCtR
+  - type: NpcFactionMember
+    factions:
+    - KMLG
 #---------------------------------старший снабженец----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
@@ -1506,6 +1533,9 @@
       nameSegments:
       - KMLGName
       - KMLGNameTwo
+    - type: NpcFactionMember
+      factions:
+      - KMLG
 
 - type: randomHumanoidSettings
   id: KMLGCcReady
@@ -1527,6 +1557,9 @@
       critThreshold: 100
     - type: Loadout
       prototypes: [ KMLGGearCc ]
+    - type: NpcFactionMember
+      factions:
+      - KMLG
   
 - type: entity
   name: Старший снабженец Космологистики Спавнер
@@ -1544,6 +1577,9 @@
     - KMLGNameTwo
   - type: RandomHumanoidSpawner
     settings: KMLGCcR
+  - type: NpcFactionMember
+    factions:
+    - KMLG
 #---------------------------------ремонтник----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
@@ -1561,6 +1597,9 @@
       nameSegments:
       - KMLGName
       - KMLGNameTwo
+    - type: NpcFactionMember
+      factions:
+      - KMLG
 
 - type: randomHumanoidSettings
   id: KMLGRmReady
@@ -1582,6 +1621,9 @@
       critThreshold: 100
     - type: Loadout
       prototypes: [ KMLGGearRm ]
+    - type: NpcFactionMember
+      factions:
+      - KMLG
   
 - type: entity
   name: Ремонтник Космологистики Спавнер
@@ -1599,6 +1641,9 @@
     - KMLGNameTwo
   - type: RandomHumanoidSpawner
     settings: KMLGRmR
+  - type: NpcFactionMember
+    factions:
+    - KMLG
 #---------------------------------инженер----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
@@ -1616,6 +1661,9 @@
       nameSegments:
       - KMLGName
       - KMLGNameTwo
+    - type: NpcFactionMember
+      factions:
+      - KMLG
 
 - type: randomHumanoidSettings
   id: KMLGEReady
@@ -1637,6 +1685,9 @@
       critThreshold: 100
     - type: Loadout
       prototypes: [ KMLGGearE ]
+    - type: NpcFactionMember
+      factions:
+      - KMLG
   
 - type: entity
   name: Инженер Космологистики Спавнер
@@ -1654,6 +1705,9 @@
     - KMLGNameTwo
   - type: RandomHumanoidSpawner
     settings: KMLGER
+  - type: NpcFactionMember
+    factions:
+    - KMLG
 #---------------------------------старший инженер----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
@@ -1671,6 +1725,9 @@
       nameSegments:
       - KMLGName
       - KMLGNameTwo
+    - type: NpcFactionMember
+      factions:
+      - KMLG
 
 - type: randomHumanoidSettings
   id: KMLGCeReady
@@ -1692,6 +1749,9 @@
       critThreshold: 100
     - type: Loadout
       prototypes: [ KMLGGearCe ]
+    - type: NpcFactionMember
+      factions:
+      - KMLG
   
 - type: entity
   name: Старший инженер Космологистики Спавнер
@@ -1709,6 +1769,9 @@
     - KMLGNameTwo
   - type: RandomHumanoidSpawner
     settings: KMLGCeR
+  - type: NpcFactionMember
+    factions:
+    - KMLG
 #---------------------------------охранник----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
@@ -1726,6 +1789,9 @@
       nameSegments:
       - KMLGName
       - KMLGNameTwo
+    - type: NpcFactionMember
+      factions:
+      - KMLG
 
 - type: randomHumanoidSettings
   id: KMLGSReady
@@ -1747,6 +1813,9 @@
       critThreshold: 100
     - type: Loadout
       prototypes: [ KMLGGearS ]
+    - type: NpcFactionMember
+      factions:
+      - KMLG
   
 - type: entity
   name: Охранник Космологистики Спавнер
@@ -1764,6 +1833,9 @@
     - KMLGNameTwo
   - type: RandomHumanoidSpawner
     settings: KMLGSR
+  - type: NpcFactionMember
+    factions:
+    - KMLG
 #---------------------------------сержант----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
@@ -1781,6 +1853,9 @@
       nameSegments:
       - KMLGName
       - KMLGNameTwo
+    - type: NpcFactionMember
+      factions:
+      - KMLG
 
 - type: randomHumanoidSettings
   id: KMLGCsReady
@@ -1802,6 +1877,9 @@
       critThreshold: 100
     - type: Loadout
       prototypes: [ KMLGGearCs ]
+    - type: NpcFactionMember
+      factions:
+      - KMLG
   
 - type: entity
   name: Сержант Космологистики Спавнер
@@ -1819,6 +1897,9 @@
     - KMLGNameTwo
   - type: RandomHumanoidSpawner
     settings: KMLGCsR
+  - type: NpcFactionMember
+    factions:
+    - KMLG
 #---------------------------------сервисник----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
@@ -1836,6 +1917,9 @@
       nameSegments:
       - KMLGName
       - KMLGNameTwo
+    - type: NpcFactionMember
+      factions:
+      - KMLG
 
 - type: randomHumanoidSettings
   id: KMLGSwReady
@@ -1857,6 +1941,9 @@
       critThreshold: 100
     - type: Loadout
       prototypes: [ KMLGGearSw ]
+    - type: NpcFactionMember
+      factions:
+      - KMLG
   
 - type: entity
   name: Сервисный работник Космологистики Спавнер
@@ -1874,6 +1961,9 @@
     - KMLGNameTwo
   - type: RandomHumanoidSpawner
     settings: KMLGSwR
+  - type: NpcFactionMember
+    factions:
+    - KMLG
 #---------------------------------пилот----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
@@ -1891,6 +1981,9 @@
       nameSegments:
       - KMLGName
       - KMLGNameTwo
+    - type: NpcFactionMember
+      factions:
+      - KMLG
 
 - type: randomHumanoidSettings
   id: KMLGPReady
@@ -1912,6 +2005,9 @@
       critThreshold: 100
     - type: Loadout
       prototypes: [ KMLGGearP ]
+    - type: NpcFactionMember
+      factions:
+      - KMLG
   
 - type: entity
   name: Пилот Космологистики Спавнер
@@ -1929,3 +2025,6 @@
     - KMLGNameTwo
   - type: RandomHumanoidSpawner
     settings: KMLGPR
+  - type: NpcFactionMember
+    factions:
+    - KMLG

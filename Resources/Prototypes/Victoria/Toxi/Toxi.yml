@@ -3,11 +3,11 @@
 #----------------------------сам реагент---------
 - type: reagent
   id: SubtypeIndicator
-  name: Реагент-индикатор токсина
+  name: name-subtype-indicator
   group: Toxicology
-  desc: Разлагает токсины в крови, давая возможность определять подтип токсина.
-  physicalDesc: Фиолетовое и очень лёгкое 
-  flavor: Солёное и вяжет
+  desc: desc-subtype-indicator
+  physicalDesc: phy-desc-subtype-indicator
+  flavor: SubtypeIndicator
   color: "#9578a0"
   meltingPoint: -101.5
   boilingPoint: -34.04
@@ -18,16 +18,21 @@
         damage:
           types:
             Caustic: 2
+            
+- type: flavor
+  id: SubtypeIndicator
+  flavorType: Complex
+  description: fla-subtype-indicator
 #--------------------------------------------сами токсины---------------------------
 #--------------------------------------природные-------------------
 #-----------------------опасный-------------------
 - type: reagent
   id: ToxinePM1
-  name: PM-токсин
+  name: name-ToxinePM
   group: Toxicology
-  desc: Природный молекулярный токсин. 
-  physicalDesc: Зелёное и густое 
-  flavor: свежее и солёненькое
+  desc: desc-ToxinePM
+  physicalDesc: phy-desc-ToxinePM
+  flavor: ToxinePM
   color: "#6abe30"
   meltingPoint: -40.5
   boilingPoint: 60
@@ -39,14 +44,19 @@
         damage:
           types:
             Poison: 0.4
+            
+- type: flavor
+  id: ToxinePM
+  flavorType: Complex
+  description: fla-ToxinePM
 #-----------------------средний-------------------
 - type: reagent
   id: ToxinePM2
-  name: PM-токсин
+  name: name-ToxinePM
   group: Toxicology
-  desc: Природный молекулярный токсин. 
-  physicalDesc: Зелёное и густое 
-  flavor: свежее и солёненькое
+  desc: desc-ToxinePM 
+  physicalDesc: phy-desc-ToxinePM
+  flavor: ToxinePM
   color: "#6abe30"
   meltingPoint: -40.5
   boilingPoint: 60
@@ -61,11 +71,11 @@
 #-----------------------лёгкий-------------------            
 - type: reagent
   id: ToxinePM3
-  name: PM-токсин
+  name: name-ToxinePM
   group: Toxicology
-  desc: Природный молекулярный токсин. 
-  physicalDesc: Зелёное и густое
-  flavor: свежее и солёненькое
+  desc: desc-ToxinePM
+  physicalDesc: phy-desc-ToxinePM
+  flavor: ToxinePM
   color: "#6abe30"
   meltingPoint: -40.5
   boilingPoint: 60
@@ -81,11 +91,11 @@
 #-----------------------опасный-------------------
 - type: reagent
   id: ToxineSM1
-  name: SM-токсин
+  name: name-ToxineSM
   group: Toxicology
-  desc: Синтетический молекулярный токсин. 
-  physicalDesc: Голубое и мутноватое 
-  flavor: перехватывает дыхание
+  desc: desc-ToxineSM
+  physicalDesc: phy-desc-ToxineSM 
+  flavor: ToxineSM
   color: "#cbdbfc"
   meltingPoint: -40.5
   boilingPoint: 60
@@ -97,14 +107,19 @@
         damage:
           types:
             Poison: 0.4
+            
+- type: flavor
+  id: ToxineSM
+  flavorType: Complex
+  description: fla-ToxineSM
 #-----------------------средний-------------------
 - type: reagent
   id: ToxineSM2
-  name: SM-токсин
+  name: name-ToxineSM
   group: Toxicology
-  desc: Синтетический молекулярный токсин. 
-  physicalDesc: Голубое и мутноватое 
-  flavor: перехватывает дыхание
+  desc: desc-ToxineSM
+  physicalDesc: phy-desc-ToxineSM 
+  flavor: ToxineSM
   color: "#cbdbfc"
   meltingPoint: -40.5
   boilingPoint: 60
@@ -119,11 +134,11 @@
 #-----------------------лёгкий-------------------               
 - type: reagent
   id: ToxineSM3
-  name: SM-токсин
+  name: name-ToxineSM
   group: Toxicology
-  desc: Синтетический молекулярный токсин. 
-  physicalDesc: Голубое и мутноватое 
-  flavor: перехватывает дыхание
+  desc: desc-ToxineSM
+  physicalDesc: phy-desc-ToxineSM 
+  flavor: ToxineSM
   color: "#cbdbfc"
   meltingPoint: -40.5
   boilingPoint: 60
@@ -139,11 +154,11 @@
 #-----------------------опасный-------------------
 - type: reagent
   id: ToxineSA1
-  name: SA-токсин
+  name: name-ToxineSA 
   group: Toxicology
-  desc: Синтетический атомарный токсин. 
-  physicalDesc: Блёклое 
-  flavor: сушит рот
+  desc: desc-ToxineSA
+  physicalDesc: phy-desc-ToxineSA 
+  flavor: ToxineSA
   color: "#847e87"
   meltingPoint: -40.5
   boilingPoint: 60
@@ -155,14 +170,19 @@
         damage:
           types:
             Poison: 0.4
+            
+- type: flavor
+  id: ToxineSA
+  flavorType: Complex
+  description: fla-ToxineSA
 #-----------------------средний-------------------           
 - type: reagent
   id: ToxineSA2
-  name: SA-токсин
+  name: name-ToxineSA 
   group: Toxicology
-  desc: Синтетический атомарный токсин. 
-  physicalDesc: Блёклое 
-  flavor: сушит рот
+  desc: desc-ToxineSA
+  physicalDesc: phy-desc-ToxineSA 
+  flavor: ToxineSA
   color: "#847e87"
   meltingPoint: -40.5
   boilingPoint: 60
@@ -177,11 +197,11 @@
 #-----------------------лёгкий-------------------             
 - type: reagent
   id: ToxineSA3
-  name: SA-токсин
+  name: name-ToxineSA 
   group: Toxicology
-  desc: Синтетический атомарный токсин. 
-  physicalDesc: Блёклое 
-  flavor: сушит рот
+  desc: desc-ToxineSA
+  physicalDesc: phy-desc-ToxineSA 
+  flavor: ToxineSA
   color: "#847e87"
   meltingPoint: -40.5
   boilingPoint: 60
@@ -198,11 +218,11 @@
 #----------------------альфа------------------- 
 - type: reagent
   id: AlfaToxine
-  name: Альфа-токсин
+  name: name-AlfaToxine
   group: Toxicology
-  desc: Жидкость показывающее нахождение токсина подтипа альфа.
-  physicalDesc: Красное с хлопьями остадка
-  flavor: едкое и противное
+  desc: desc-AlfaToxine
+  physicalDesc: phy-desc-AlfaToxine
+  flavor: AlfaToxine
   color: "#ac3232"
   meltingPoint: -40.5
   boilingPoint: 60
@@ -214,14 +234,19 @@
           types:
             Poison: 2
             Caustic: 2
+            
+- type: flavor
+  id: AlfaToxine
+  flavorType: Complex
+  description: fla-AlfaToxine
 #----------------------бета-------------------           
 - type: reagent
   id: BetaToxine
-  name: Бета-токсин
+  name: name-BetaToxine
   group: Toxicology
-  desc: Жидкость показывающее нахождение токсина подтипа бета.
-  physicalDesc: Синее с тяжёлым осадком
-  flavor: кислое и мерзкое
+  desc: desc-BetaToxine
+  physicalDesc: phy-desc-BetaToxine
+  flavor: BetaToxine
   color: "#5b6ee1"
   meltingPoint: -40.5
   boilingPoint: 60
@@ -233,14 +258,19 @@
           types:
             Poison: 1
             Caustic: 3
+            
+- type: flavor
+  id: BetaToxine
+  flavorType: Complex
+  description: fla-BetaToxine
 #----------------------гамма-------------------              
 - type: reagent
   id: GammaToxine
-  name: Гамма-токсин
+  name: name-GammaToxine
   group: Toxicology
-  desc: Жидкость показывающее нахождение токсина подтипа гамма.
-  physicalDesc: Жёлтое и загущённое
-  flavor: горькое и отвратительное
+  desc: desc-GammaToxine
+  physicalDesc: phy-desc-GammaToxine
+  flavor: GammaToxine
   color: "#fbf236"
   meltingPoint: -40.5
   boilingPoint: 60
@@ -252,15 +282,20 @@
           types:
             Poison: 3
             Caustic: 1
+            
+- type: flavor
+  id: GammaToxine
+  flavorType: Complex
+  description: fla-GammaToxine
 #--------------------------------------------Жижы от токсинов---------------------------
 #----------------------------закупаемый адсорбент---------
 - type: reagent
   id: SupAdsorbent
-  name: Особый адсорбент
+  name: name-SupAdsorbent
   group: Toxicology
-  desc: В сочетании с определёнными веществами разлагает гамма-токсины, но сам по себе выводит яды из организма
-  physicalDesc: Синий, мутный, густой 
-  flavor: вяжет
+  desc: desc-SupAdsorbent
+  physicalDesc: phy-desc-SupAdsorbent
+  flavor: SupAdsorbent
   color: "#010029"
   meltingPoint: -101.5
   boilingPoint: -34.04
@@ -271,15 +306,20 @@
         damage:
           types:
             Poison: -1.5
+            
+- type: flavor
+  id: SupAdsorbent
+  flavorType: Complex
+  description: fla-SupAdsorbent
 #----------------------------сами реагенты---------
 #------------П Прикорин---------
 - type: reagent
   id: Pricorine
-  name: Прикорин
+  name: name-Pricorine
   group: Toxicology
-  desc: В сочетании с определёнными веществами разлагает природные токсины, но сам по себе может быть токсичным
-  physicalDesc: Грязноватое и вяжет 
-  flavor: вяжет
+  desc: desc-Pricorine
+  physicalDesc: phy-desc-Pricorine
+  flavor: Pricorine
   color: "#5D545F"
   meltingPoint: -101.5
   boilingPoint: -34.04
@@ -290,14 +330,19 @@
         damage:
           types:
             Poison: 1
+            
+- type: flavor
+  id: Pricorine
+  flavorType: Complex
+  description: fla-Pricorine
 #------------С Сикилит---------
 - type: reagent
   id: Cikilite
-  name: Сикилит
+  name: name-Cikilite
   group: Toxicology
-  desc: В сочетании с определёнными веществами разлагает синтетические токсины, но сам по себе может вызывать жар
-  physicalDesc: Розоватое и густое 
-  flavor: Вкусненькое, но островато
+  desc: desc-Cikilite
+  physicalDesc: phy-desc-Cikilite
+  flavor: Cikilite
   color: "#AC3E5F"
   meltingPoint: -101.5
   boilingPoint: -34.04
@@ -309,14 +354,19 @@
           types:
             Heat: 1
             Poison: -1
+            
+- type: flavor
+  id: Cikilite
+  flavorType: Complex
+  description: fla-Cikilite
 #------------А Атморин---------
 - type: reagent
   id: Atmorine
-  name: Атморин
+  name: name-Atmorine
   group: Toxicology
-  desc: В сочетании с определёнными веществами разлагает атомарные токсины, но и сам по себе выводит из организма яды
-  physicalDesc: Сливовое и загущёное
-  flavor: сухое и шипит
+  desc: desc-Atmorine
+  physicalDesc: phy-desc-Atmorine
+  flavor: Atmorine
   color: "#6E4D96"
   meltingPoint: -101.5
   boilingPoint: -34.04
@@ -327,14 +377,19 @@
         damage:
           types:
             Poison: -3
+            
+- type: flavor
+  id: Atmorine
+  flavorType: Complex
+  description: fla-Atmorine
 #------------М Молитит---------
 - type: reagent
   id: Molytite
-  name: Молитит
+  name: name-Molytite
   group: Toxicology
-  desc: В сочетании с определёнными веществами разлагает молекулярные токсины, но а сам по себе может способствовать заживлению ран
-  physicalDesc: Коричневое и плещущееся
-  flavor: оооочень мерзкое и горькое
+  desc: desc-Molytite
+  physicalDesc: phy-desc-Molytite
+  flavor: Molytite
   color: "#593003"
   meltingPoint: -101.5
   boilingPoint: -34.04
@@ -348,14 +403,19 @@
             Piercing: -1
             Slash: -1
             Bloodloss: -2
+            
+- type: flavor
+  id: Molytite
+  flavorType: Complex
+  description: fla-Molytite
 #------------1 Ватин---------
 - type: reagent
   id: Vatine
-  name: Ватин
+  name: name-Vatine
   group: Toxicology
-  desc: В сочетании с определёнными веществами разлагает токсины альфа-подтипа, но а сам по себе способствует заживлению ожогов и выводу ядов
-  physicalDesc: Серовато-зелёная взвесь
-  flavor: гадкое, но с нежным послевкусием
+  desc: desc-Vatine
+  physicalDesc: phy-desc-Vatine
+  flavor: Vatine
   color: "#69846D"
   meltingPoint: -101.5
   boilingPoint: -34.04
@@ -367,14 +427,19 @@
           types:
             Heat: -1
             Poison: -1
+            
+- type: flavor
+  id: Vatine
+  flavorType: Complex
+  description: fla-Vatine
 #------------2 Тунин---------
 - type: reagent
   id: Tunine
-  name: Тунин
+  name: name-Tunine
   group: Toxicology
-  desc: В сочетании с определёнными веществами разлагает токсины бета-подтипа, но а сам по себе бесполезен к употреблению
-  physicalDesc: Красноватое с осадком
-  flavor: почти безвкусное
+  desc: desc-Tunine
+  physicalDesc: phy-desc-Tunine
+  flavor: Tunine
   color: "#9A8989"
   meltingPoint: -101.5
   boilingPoint: -34.04
@@ -385,14 +450,19 @@
         damage:
           types:
             Blunt: 0
+            
+- type: flavor
+  id: Tunine
+  flavorType: Complex
+  description: fla-Tunine
 #------------3 Тирин---------
 - type: reagent
   id: Teerine
-  name: Тирин
+  name: name-Teerine
   group: Toxicology
-  desc: В сочетании с определёнными веществами разлагает токсины гамма-подтипа, но а сам по себе может выводить из организма яды
-  physicalDesc: Пурпурный и густой
-  flavor: обволакивающий и неприятный
+  desc: desc-Teerine
+  physicalDesc: phy-desc-Teerine
+  flavor: Teerine
   color: "#50004B"
   meltingPoint: -101.5
   boilingPoint: -34.04
@@ -403,16 +473,21 @@
         damage:
           types:
             Poison: -2
+            
+- type: flavor
+  id: Teerine
+  flavorType: Complex
+  description: fla-Teerine
 #--------------------------------------------Лекарства от токсинов---------------------------
 #----------------------------сами реагенты---------
 #------------------Примован----------
 - type: reagent
   id: Primovan
-  name: Примован
+  name: name-Primovan
   group: Toxicology
-  desc: Соединение способное расщиплять природные молекулярные токсины альфа-подтипа
-  physicalDesc: Мутная с хлопьями осадка
-  flavor: сущащий
+  desc: desc-Primovan
+  physicalDesc: phy-desc-Primovan
+  flavor: Primovan
   color: "#605845"
   meltingPoint: -101.5
   boilingPoint: -34.04
@@ -423,14 +498,19 @@
         damage:
           types:
             Poison: 0
+            
+- type: flavor
+  id: Primovan
+  flavorType: Complex
+  description: fla-Primovan          
 #------------------Прилектун----------
 - type: reagent
   id: Prilectune
-  name: Прилектун
+  name: name-Prilectune
   group: Toxicology
-  desc: Соединение способное превращать природные молекулярные токсины бета-подтипа в синтетические молекулярные гама-подтипа
-  physicalDesc: Мутная взвесь
-  flavor: сущащий
+  desc: desc-Prilectune
+  physicalDesc: phy-desc-Prilectune
+  flavor: Prilectune
   color: "#705A4E"
   meltingPoint: -101.5
   boilingPoint: -34.04
@@ -441,14 +521,19 @@
         damage:
           types:
             Poison: 0
+            
+- type: flavor
+  id: Prilectune
+  flavorType: Complex
+  description: fla-Prilectune            
 #------------------Прикулрин----------
 - type: reagent
   id: Priculrine
-  name: Прикулрин
+  name: name-Priculrine
   group: Toxicology
-  desc: Соединение способное расщиплять природные молекулярные токсины гамма-подтипа на синтетические атомарные гамма-подтипа
-  physicalDesc: Красноватая взвесь
-  flavor: сущащий и горьковатый
+  desc: desc-Priculrine
+  physicalDesc: phy-desc-Priculrine
+  flavor: Priculrine
   color: "#572C3A"
   meltingPoint: -101.5
   boilingPoint: -34.04
@@ -459,14 +544,19 @@
         damage:
           types:
             Poison: 0
+            
+- type: flavor
+  id: Priculrine
+  flavorType: Complex
+  description: fla-Priculrine           
 #------------------Синмован----------
 - type: reagent
   id: Sinmovan
-  name: Синмован
+  name: name-Sinmovan
   group: Toxicology
-  desc: Соединение способное расщиплять синтетические молекулярные токсины альфа-подтипа
-  physicalDesc: Кирпичненько и прозрачно
-  flavor: неожиданно освежающе
+  desc: desc-Sinmovan
+  physicalDesc: phy-desc-Sinmovan
+  flavor: Sinmovan
   color: "#8C5E6D"
   meltingPoint: -101.5
   boilingPoint: -34.04
@@ -477,14 +567,19 @@
         damage:
           types:
             Poison: 0
+            
+- type: flavor
+  id: Sinmovan
+  flavorType: Complex
+  description: fla-Sinmovan           
 #------------------Синлектун----------
 - type: reagent
   id: Sinlectune
-  name: Синлектун
+  name: name-Sinlectune
   group: Toxicology
-  desc: Соединение способное расщиплять синтетические молекулярные токсины бета-подтипа
-  physicalDesc: Красновато и прозрачно
-  flavor: удивительно освежающе
+  desc: desc-Sinlectune
+  physicalDesc: phy-desc-Sinlectune
+  flavor: Sinlectune
   color: "#8C5E6D"
   meltingPoint: -101.5
   boilingPoint: -34.04
@@ -495,14 +590,19 @@
         damage:
           types:
             Poison: 0
+            
+- type: flavor
+  id: Sinlectune
+  flavorType: Complex
+  description: fla-Sinlectune            
 #------------------Синкулрин----------
 - type: reagent
   id: Sinculrine
-  name: Синкулрин
+  name: name-Sinculrine
   group: Toxicology
-  desc: Соединение способное расщиплять синтетические молекулярные токсины гамма-подтипа
-  physicalDesc: Розовато и прозрачно
-  flavor: удивительно освежающе, но с горчинкой
+  desc: desc-Sinculrine
+  physicalDesc: phy-desc-Sinculrine
+  flavor: Sinculrine
   color: "#733158"
   meltingPoint: -101.5
   boilingPoint: -34.04
@@ -513,14 +613,19 @@
         damage:
           types:
             Poison: 0
+            
+- type: flavor
+  id: Sinculrine
+  flavorType: Complex
+  description: fla-Sinculrine           
 #------------------Синатван----------
 - type: reagent
   id: Sinatvan
-  name: Синатван
+  name: name-Sinatvan
   group: Toxicology
-  desc: Соединение способное расщиплять синтетические атомарные токсины альфа-подтипа
-  physicalDesc: Сливово и густо
-  flavor: увлажняюще и вкусно
+  desc: desc-Sinatvan
+  physicalDesc: phy-desc-Sinatvan
+  flavor: Sinatvan
   color: "#815A76"
   meltingPoint: -101.5
   boilingPoint: -34.04
@@ -531,14 +636,19 @@
         damage:
           types:
             Poison: 0
+            
+- type: flavor
+  id: Sinatvan
+  flavorType: Complex
+  description: fla-Sinatvan          
 #------------------Синаттун----------
 - type: reagent
   id: Sinattune
-  name: Синаттун
+  name: name-Sinatrine
   group: Toxicology
-  desc: Соединение способное расщиплять синтетические атомарные токсины бета-подтипа
-  physicalDesc: Фиолетово и густо
-  flavor: увлажняюще и вкусно
+  desc: desc-Sinatrine
+  physicalDesc: phy-desc-Sinatrine
+  flavor: Sinattune
   color: "#915C7F"
   meltingPoint: -101.5
   boilingPoint: -34.04
@@ -549,14 +659,19 @@
         damage:
           types:
             Poison: 0
+            
+- type: flavor
+  id: Sinattune
+  flavorType: Complex
+  description: fla-Sinattune           
 #------------------Синатрин----------
 - type: reagent
   id: Sinatrine
-  name: Синатрин
+  name: name-Sinattune
   group: Toxicology
-  desc: Соединение способное расщиплять синтетические атомарные токсины гамма-подтипа
-  physicalDesc: Тёмнорозово и густо
-  flavor: увлажняюще и вкусно, хотя и с горчинкой
+  desc: desc-Sinattune
+  physicalDesc: phy-desc-Sinattune
+  flavor: Sinatrine
   color: "#792E6B"
   meltingPoint: -101.5
   boilingPoint: -34.04
@@ -567,6 +682,11 @@
         damage:
           types:
             Poison: 0
+            
+- type: flavor
+  id: Sinatrine
+  flavorType: Complex
+  description: fla-Sinatrine           
 #------------------------------------------------------------------------ОСНАЩЕНИЕ--------------------------------------
 #------------------------------------------ящик адсорбента и карготовар------------------
 - type: entity

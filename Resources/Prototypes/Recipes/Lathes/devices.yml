@@ -143,7 +143,7 @@
     Steel: 2000
     Silver: 750
     Plasma: 1500
-    Uranium: 150
+    BSCrystalMaterial: 1000
 
 - type: latheRecipe
   id: ClothingBackpackSatchelHolding

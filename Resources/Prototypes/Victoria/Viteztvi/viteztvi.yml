@@ -844,6 +844,8 @@
     tags:
     - VitzAccessSolder
     - External
+  - type: PresetIdCard
+    name: стрелок Витезтви
 #------------------------------------карта старшина----------    
 - type: entity
   parent: VitzIDCard
@@ -859,6 +861,8 @@
     - VitzAccessSolder
     - VitzAccessOfficer
     - External
+  - type: PresetIdCard
+    name: старшина Витезтви
 #------------------------------------карта пилот----------     
 - type: entity
   parent: VitzIDCard
@@ -874,6 +878,8 @@
     - VitzAccessSolder
     - VitzAccessPilot
     - External
+  - type: PresetIdCard
+    name: пилот Витезтви
 #------------------------------------карта звеньевой----------     
 - type: entity
   parent: VitzIDCard
@@ -890,6 +896,8 @@
     - VitzAccessPilot
     - VitzAccessZven
     - External
+  - type: PresetIdCard
+    name: ком.звена Витезтви
 #------------------------------------мистер хилл----------     
 - type: entity
   parent: VitzIDCard
@@ -906,6 +914,8 @@
     - VitzAccessPilot
     - VitzAccessOfficer
     - External
+  - type: PresetIdCard
+    name: сотрудник Витезтви
 #------------------------------------стандарт КПК---------- 
 - type: entity
   abstract: true
@@ -1414,7 +1424,7 @@
 - type: randomHumanoidSettings
   speciesBlacklist: 
     - Diona
-    - Arachnid
+    - Vox
   id: VitzEfreitor
   randomizeName: false
   components:
@@ -1428,6 +1438,9 @@
       nameSegments:
       - VitzName-ef
       - VitzNameTwo
+    - type: NpcFactionMember
+      factions:
+      - Vitz
 
 - type: randomHumanoidSettings
   id: VitzEfreitorReady
@@ -1449,6 +1462,9 @@
       critThreshold: 120
     - type: Loadout
       prototypes: [ VitzEfreitorGear ]
+    - type: NpcFactionMember
+      factions:
+      - Vitz
   
 - type: entity
   name: Спавнер солдата Витезтви
@@ -1466,11 +1482,14 @@
     - VitzNameTwo
   - type: RandomHumanoidSpawner
     settings: VitzEfreitor
+  - type: NpcFactionMember
+    factions:
+    - Vitz
 #---------------------------------пилот----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
     - Diona
-    - Arachnid
+    - Vox
   id: VitzPilot
   randomizeName: false
   components:
@@ -1484,6 +1503,9 @@
       nameSegments:
       - VitzName-pi
       - VitzNameTwo
+    - type: NpcFactionMember
+      factions:
+      - Vitz
 
 - type: randomHumanoidSettings
   id: VitzPilotReady
@@ -1505,6 +1527,9 @@
       critThreshold: 120
     - type: Loadout
       prototypes: [ VitzPilotGear ]
+    - type: NpcFactionMember
+      factions:
+      - Vitz
   
 - type: entity
   name: Спавнер пилота Витезтви
@@ -1522,11 +1547,14 @@
     - VitzNameTwo
   - type: RandomHumanoidSpawner
     settings: VitzPilot
+  - type: NpcFactionMember
+    factions:
+    - Vitz
 #---------------------------------старшина----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
     - Diona
-    - Arachnid
+    - Vox
   id: VitzStarshina
   randomizeName: false
   components:
@@ -1540,6 +1568,9 @@
       nameSegments:
       - VitzName-st
       - VitzNameTwo
+    - type: NpcFactionMember
+      factions:
+      - Vitz
 
 - type: randomHumanoidSettings
   id: VitzStarshinaReady
@@ -1561,6 +1592,9 @@
       critThreshold: 120
     - type: Loadout
       prototypes: [ VitzStarshinaGear ]
+    - type: NpcFactionMember
+      factions:
+      - Vitz
   
 - type: entity
   name: Спавнер старшины Витезтви
@@ -1578,11 +1612,14 @@
     - VitzNameTwo
   - type: RandomHumanoidSpawner
     settings: VitzStarshina
+  - type: NpcFactionMember
+    factions:
+    - Vitz
 #---------------------------------звеньевой----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
     - Diona
-    - Arachnid
+    - Vox
   id: VitzZven
   randomizeName: false
   components:
@@ -1596,6 +1633,9 @@
       nameSegments:
       - VitzName-zv
       - VitzNameTwo
+    - type: NpcFactionMember
+      factions:
+      - Vitz
 
 - type: randomHumanoidSettings
   id: VitzZvenReady
@@ -1617,6 +1657,9 @@
       critThreshold: 120
     - type: Loadout
       prototypes: [ VitzZvenGear ]
+    - type: NpcFactionMember
+      factions:
+      - Vitz
   
 - type: entity
   name: Звеньевой Витезтви
@@ -1634,11 +1677,13 @@
     - VitzNameTwo
   - type: RandomHumanoidSpawner
     settings: VitzZven
+  - type: NpcFactionMember
+    factions:
+    - Vitz
 #---------------------------------мистер Хилл----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
-    - Diona
-    - Arachnid
+    - Vox
   id: VitzMrHill
   randomizeName: false
   components:
@@ -1652,6 +1697,9 @@
       nameSegments:
       - VitzName-mr
       - VitzNameTwoHill
+    - type: NpcFactionMember
+      factions:
+      - Vitz
 
 - type: randomHumanoidSettings
   id: VitzMrHillReady
@@ -1673,6 +1721,9 @@
       critThreshold: 120
     - type: Loadout
       prototypes: [ VitzMrHillGear]
+    - type: NpcFactionMember
+      factions:
+      - Vitz
   
 - type: entity
   name: Спавнер Мистера Хилла Витезтви
@@ -1690,6 +1741,9 @@
     - VitzNameTwoHill
   - type: RandomHumanoidSpawner
     settings: VitzMrHill
+  - type: NpcFactionMember
+    factions:
+    - Vitz
 #---------------------------------------------------------------Бумаги------------------------------------------------------------
 #-----------------------------------ефрейтор-----------------------------
 - type: entity

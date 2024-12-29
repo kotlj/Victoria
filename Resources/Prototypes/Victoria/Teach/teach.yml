@@ -117,7 +117,7 @@
 #-------------------------Роль--------------
 - type: job
   id: CargoTeacher
-  name: Бригадир
+  name: бригадир
   description: Строгий и грозный сотрудник отдела снабженая, что может служить Квартирмейсеру правой рукой, кулаком или личным оралом
   playTimeTracker: JobCargoTeacher
   requirements:
@@ -251,7 +251,7 @@
 #-------------------------Роль--------------
 - type: job
   id: EngTeacher
-  name: Ведущий инженер
+  name: ведущий инженер
   description: Опытный, но слегка заносчивый ведущий инженер, что является хорошим помощником Старшему инженеру
   playTimeTracker: JobEngTeacher
   requirements:
@@ -387,7 +387,7 @@
 #-------------------------Роль--------------
 - type: job
   id: SecTeacher
-  name: Инструктор
+  name: инструктор
   description: Суровый и бывалый сотрудник СБ, что решил посвятиь некоторое время передаче опыта молодому поколению
   playTimeTracker: JobSecTeacher
   requirements:
@@ -523,7 +523,7 @@
 #-------------------------Роль--------------
 - type: job
   id: SciTeacher
-  name: Доцент
+  name: доцент
   description: Умный профессиональный учёный, готов делится знаниями со всеми подряд
   playTimeTracker: JobSciTeacher
   requirements:
@@ -636,7 +636,7 @@
 #-------------------------Роль--------------
 - type: job
   id: MedTeacher
-  name: Мед.консультант
+  name: мед.консультант
   description: Профессиональный врач, занимающийся бумажной работой и наставлением менее опытных сотрудников
   playTimeTracker: JobMedTeacher
   requirements:
@@ -655,3 +655,64 @@
   - Chemistry
   - External
   - Maintenance
+#-------------------------------------------Спавнеры ролям----------------------------
+#-------------------------Бригадир--------------
+- type: entity
+  id: SpawnPointCargoTeacher
+  parent: SpawnPointJobBase
+  name: бригадир
+  components:
+  - type: SpawnPoint
+    job_id: CargoTeacher
+  - type: Sprite
+    layers:
+      - state: green
+      - state: qm
+#-------------------------Ведущий инженер--------------     
+- type: entity
+  id: SpawnPointEngTeacher
+  parent: SpawnPointJobBase
+  name: ведущий инженер
+  components:
+  - type: SpawnPoint
+    job_id: EngTeacher
+  - type: Sprite
+    layers:
+      - state: green
+      - state: seniorengineer
+#-------------------------Инструктор--------------
+- type: entity
+  id: SpawnPointSecTeacher
+  parent: SpawnPointJobBase
+  name: инструктор
+  components:
+  - type: SpawnPoint
+    job_id: SecTeacher
+  - type: Sprite
+    layers:
+      - state: green
+      - state: seniorofficer
+#-------------------------Доцент--------------
+- type: entity
+  id: SpawnPointSciTeacher
+  parent: SpawnPointJobBase
+  name: доцент
+  components:
+  - type: SpawnPoint
+    job_id: SciTeacher
+  - type: Sprite
+    layers:
+      - state: green
+      - state: roboticist
+#-------------------------Мед.Консультант--------------
+- type: entity
+  id: SpawnPointMedTeacher
+  parent: SpawnPointJobBase
+  name: мед.консультант
+  components:
+  - type: SpawnPoint
+    job_id: MedTeacher
+  - type: Sprite
+    layers:
+      - state: green
+      - state: geneticist

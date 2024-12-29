@@ -1775,7 +1775,7 @@
 - type: randomHumanoidSettings
   speciesBlacklist: 
     - Diona
-    - Arachnid
+    - Vox
   id: NoocVisR
   randomizeName: false
   components:
@@ -1841,7 +1841,7 @@
 - type: randomHumanoidSettings
   speciesBlacklist: 
     - Diona
-    - Arachnid
+    - Vox
   id: NoocSrR
   randomizeName: false
   components:
@@ -1906,7 +1906,7 @@
 - type: randomHumanoidSettings
   speciesBlacklist: 
     - Diona
-    - Arachnid
+    - Vox
   id: NoocSrMedR
   randomizeName: false
   components:
@@ -1972,7 +1972,7 @@
 - type: randomHumanoidSettings
   speciesBlacklist: 
     - Diona
-    - Arachnid
+    - Vox
   id: NoocNizR
   randomizeName: false
   components:
@@ -2191,6 +2191,8 @@
     tags:
     - NoocAccess
     - External
+  - type: PresetIdCard
+    name: ноократский выс.класс
 #------------------------------------карта среднего класса----------    
 - type: entity
   parent: NoocIDCard
@@ -2206,6 +2208,8 @@
     tags:
     - NoocAccess
     - External
+  - type: PresetIdCard
+    name: ноократский ср.класс
 #------------------------------------карта низкого класса----------     
 - type: entity
   parent: NoocIDCard
@@ -2221,6 +2225,8 @@
     tags:
     - NoocAccess
     - External
+  - type: PresetIdCard
+    name: ноократский низ.класс
 #------------------------------------стандарт КПК---------- 
 - type: entity
   abstract: true
@@ -3044,24 +3050,6 @@
       =============================================
       
                                   [italic]Место для печатей[/italic]
-#-------------------------------------Кто является противником-----------------------------------
-- type: npcFaction
-  id: NoocratyBot
-  hostile:
-  - SimpleHostile
-  - Xeno
-  - Zombie
-  - Umpor
-  - UmporBot
-  
-- type: npcFaction
-  id: Noocraty
-  hostile:
-  - SimpleHostile
-  - Xeno
-  - Zombie
-  - Umpor
-  - UmporBot
 #-----------------------------------аплинк--------------------------------
 #-----------------категории в аплинке------------
 - type: storeCategory

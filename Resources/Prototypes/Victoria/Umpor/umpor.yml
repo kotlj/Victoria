@@ -1227,6 +1227,8 @@
     tags:
     - UmporAccess
     - External
+  - type: PresetIdCard
+    name: умпорский мл.офицер
 #------------------------------------карта солдата----------    
 - type: entity
   parent: UmporIDCard
@@ -1242,6 +1244,8 @@
     tags:
     - UmporAccess
     - External
+  - type: PresetIdCard
+    name: умпорский стрелок
 #------------------------------------карта медика----------     
 - type: entity
   parent: UmporIDCard
@@ -1257,6 +1261,8 @@
     tags:
     - UmporAccess
     - External
+  - type: PresetIdCard
+    name: умпорский медик
 #------------------------------------карта инженера----------     
 - type: entity
   parent: UmporIDCard
@@ -1272,6 +1278,8 @@
     tags:
     - UmporAccess
     - External
+  - type: PresetIdCard
+    name: умпорский инженер
 #------------------------------------карта логиста---------- 
 - type: entity
   parent: UmporIDCard
@@ -1287,6 +1295,8 @@
     tags:
     - UmporAccess
     - External
+  - type: PresetIdCard
+    name: умпорский логист
 #------------------------------------стандарт КПК---------- 
 - type: entity
   abstract: true
@@ -1808,7 +1818,7 @@
 - type: randomHumanoidSettings
   speciesBlacklist: 
     - Diona
-    - Arachnid
+    - Vox
   id: UmporOfficerR
   randomizeName: false
   components:
@@ -1874,7 +1884,7 @@
 - type: randomHumanoidSettings
   speciesBlacklist: 
     - Diona
-    - Arachnid
+    - Vox
   id: UmporSolderR
   randomizeName: false
   components:
@@ -1939,7 +1949,7 @@
 - type: randomHumanoidSettings
   speciesBlacklist: 
     - Diona
-    - Arachnid
+    - Vox
   id: UmporEngenerR
   randomizeName: false
   components:
@@ -2004,7 +2014,7 @@
 - type: randomHumanoidSettings
   speciesBlacklist: 
     - Diona
-    - Arachnid
+    - Vox
   id: UmporBilderR
   randomizeName: false
   components:
@@ -2069,7 +2079,7 @@
 - type: randomHumanoidSettings
   speciesBlacklist: 
     - Diona
-    - Arachnid
+    - Vox
   id: UmporRadistR
   randomizeName: false
   components:
@@ -2134,7 +2144,7 @@
 - type: randomHumanoidSettings
   speciesBlacklist: 
     - Diona
-    - Arachnid
+    - Vox
   id: UmporMedicR
   randomizeName: false
   components:
@@ -2199,7 +2209,7 @@
 - type: randomHumanoidSettings
   speciesBlacklist: 
     - Diona
-    - Arachnid
+    - Vox
   id: UmporLogistR
   randomizeName: false
   components:
@@ -3078,36 +3088,6 @@
       =============================================
       
                                   [italic]Место для печатей[/italic]
-#-------------------------------------Кто является противником-----------------------------------
-- type: npcFaction
-  id: UmporBot
-  hostile:
-  - SimpleHostile
-  - Xeno
-  - Zombie
-  - Syndicate
-  - Revolutionary
-  - Noocraty
-  - NoocratyBot
-  - Dragon
-  friendly:
-  - UmporBot
-  - Umpor
-  
-- type: npcFaction
-  id: Umpor
-  hostile:
-  - SimpleHostile
-  - Xeno
-  - Zombie
-  - Syndicate
-  - Revolutionary
-  - Noocraty
-  - NoocratyBot
-  - Dragon
-  friendly:
-  - UmporBot
-  - Umpor
 #-------------------------------------Спавнер потеряных-----------------------------------  
 - type: entity
   name: name-of-LostUmporSpawner
