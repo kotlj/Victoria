@@ -33,9 +33,6 @@
       damage:
         types:
           Piercing: 0.5
-      ignoreWhitelist:
-        tags:
-        - IgnoreKudzu
 #------------------------------------------------Ядовитый карп (СА3)------------------------------------
 - type: entity
   name: Ядовитый карп
