@@ -1,0 +1,174 @@
+#-----------------------------------------------Умпорцы----------------------------------
+- type: npcFaction
+  id: UmporBot
+  hostile:
+  - SimpleHostile
+  - Xeno
+  - Zombie
+  - Syndicate
+  - Revolutionary
+  - Noocraty
+  - NoocratyBot
+  - Dragon
+  friendly:
+  - UmporBot
+  - Umpor
+  - Vitz
+  
+- type: npcFaction
+  id: Umpor
+  hostile:
+  - SimpleHostile
+  - Xeno
+  - Zombie
+  - Syndicate
+  - Revolutionary
+  - Noocraty
+  - NoocratyBot
+  - Dragon
+  friendly:
+  - UmporBot
+  - Umpor
+  - Vitz
+#-----------------------------------------------Ноократы----------------------------------  
+- type: npcFaction
+  id: NoocratyBot
+  hostile:
+  - SimpleHostile
+  - Xeno
+  - Zombie
+  - Umpor
+  - UmporBot
+  - SNKBot
+  - SNK
+  - Petr
+  friendly:
+  - Mirt
+  - KMLG
+  - Noocraty
+  - NoocratyBot
+  
+- type: npcFaction
+  id: Noocraty
+  hostile:
+  - SimpleHostile
+  - Xeno
+  - Zombie
+  - Umpor
+  - UmporBot
+  - SNKBot
+  - SNK
+  - Petr
+  friendly:
+  - Mirt
+  - KMLG
+  - Noocraty
+  - NoocratyBot
+#-----------------------------------------------Витезтви----------------------------------
+- type: npcFaction
+  id: Vitz
+  hostile:
+  - SimpleHostile
+  - Xeno
+  - Zombie
+  - Syndicate
+  - Revolutionary
+  - Dragon
+  - Petr
+  friendly:
+  - UmporBot
+  - Umpor
+  - NanoTrasen
+  - PetsNT
+  - KMLG
+  - Vitz
+#-----------------------------------------------СНК----------------------------------
+- type: npcFaction
+  id: SNKBot
+  hostile:
+  - SimpleHostile
+  - Xeno
+  - Zombie
+  - Dragon
+  - Vitz
+  - Noocraty
+  - NoocratyBot
+  - NanoTrasen
+  - Petr
+  friendly:
+  - SNKBot
+  - SNK
+  
+- type: npcFaction
+  id: SNK
+  hostile:
+  - SimpleHostile
+  - Xeno
+  - Zombie
+  - Dragon
+  - Vitz
+  - Noocraty
+  - NoocratyBot
+  - NanoTrasen
+  - Petr
+  friendly:
+  - SNKBot
+  - SNK
+#-----------------------------------------------Петрищевцы----------------------------------
+- type: npcFaction
+  id: Petr
+  hostile:
+  - SimpleHostile
+  - Xeno
+  - NanoTrasen
+  - Syndicate
+  - Passive
+  - PetsNT
+  - Zombie
+  - Noocraty
+  - NoocratyBot
+  - UmporBot
+  - Umpor
+  - SNKBot
+  - SNK
+  - Vitz
+  - Mirt
+  - KMLG
+  friendly:
+  - Revolutionary
+  - Petr
+#-----------------------------------------------Миртанийцы----------------------------------
+- type: npcFaction
+  id: Mirt
+  hostile:
+  - SimpleHostile
+  - Xeno
+  - Zombie
+  - Syndicate
+  - Revolutionary
+  - Dragon
+  - Petr
+  friendly:
+  - Noocraty
+  - NoocratyBot
+  - Mirt
+  - KMLG
+#-----------------------------------------------Космологистика----------------------------------
+- type: npcFaction
+  id: KMLG
+  hostile:
+  - SimpleHostile
+  - Xeno
+  - Zombie
+  - Syndicate
+  - Revolutionary
+  - Dragon
+  - Petr
+  - SNKBot
+  - SNK
+  friendly:
+  - Noocraty
+  - NoocratyBot
+  - NanoTrasen
+  - PetsNT
+  - Vitz

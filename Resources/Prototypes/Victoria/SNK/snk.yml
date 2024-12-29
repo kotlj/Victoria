@@ -2930,6 +2930,8 @@
     tags:
     - SNKAccess
     - External
+  - type: PresetIdCard
+    name: стрелок СНК
 #------------------------------------карта командира----------    
 - type: entity
   parent: SNKIDCard
@@ -2945,6 +2947,8 @@
     tags:
     - SNKAccess
     - External
+  - type: PresetIdCard
+    name: командир СНК
 #------------------------------------карта медика---------- 
 - type: entity
   parent: SNKIDCard
@@ -2960,6 +2964,8 @@
     tags:
     - SNKAccess
     - External
+  - type: PresetIdCard
+    name: медик СНК
 #------------------------------------карта инженера----------    
 - type: entity
   parent: SNKIDCard
@@ -2975,6 +2981,8 @@
     tags:
     - SNKAccess
     - External
+  - type: PresetIdCard
+    name: техник СНК
 #------------------------------------стандарт КПК---------- 
 - type: entity
   abstract: true
@@ -3520,34 +3528,12 @@
   - Миека
   - Сипи
   - Соат
-#-------------------------------------Кто является противником-----------------------------------
-- type: npcFaction
-  id: SNKBot
-  hostile:
-  - SimpleHostile
-  - Xeno
-  - Zombie
-  - Dragon
-  friendly:
-  - SNKBot
-  - SNK
-  
-- type: npcFaction
-  id: SNK
-  hostile:
-  - SimpleHostile
-  - Xeno
-  - Zombie
-  - Dragon
-  friendly:
-  - SNKBot
-  - SNK
 #-------------------------------------хуй знает что это, но вот оно работает и ладно---------------------------
 #---------------------------------солдат----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
     - Diona
-    - Arachnid
+    - Vox
   id: SNKSolderR
   randomizeName: false
   components:
@@ -3612,7 +3598,7 @@
 - type: randomHumanoidSettings
   speciesBlacklist: 
     - Diona
-    - Arachnid
+    - Vox
   id: SNKOffiR
   randomizeName: false
   components:
@@ -3677,7 +3663,7 @@
 - type: randomHumanoidSettings
   speciesBlacklist: 
     - Diona
-    - Arachnid
+    - Vox
   id: SNKEngenerR
   randomizeName: false
   components:
@@ -3742,7 +3728,7 @@
 - type: randomHumanoidSettings
   speciesBlacklist: 
     - Diona
-    - Arachnid
+    - Vox
   id: SNKMedicR
   randomizeName: false
   components:
@@ -3807,7 +3793,7 @@
 - type: randomHumanoidSettings
   speciesBlacklist: 
     - Diona
-    - Arachnid
+    - Vox
   id: SNKRadistR
   randomizeName: false
   components:

@@ -7,6 +7,16 @@
     - PetsNT
     - Zombie
     - Revolutionary
+    - UmporBot
+    - Umpor
+    - Noocraty
+    - NoocratyBot
+    - Petr
+    - Vitz
+    - SNKBot
+    - SNK
+    - Mirt
+    - KMLG
 
 - type: npcFaction
   id: NanoTrasen
@@ -16,6 +26,13 @@
   - Xeno
   - Zombie
   - Revolutionary
+  friendly:
+  - UmporBot
+  - Umpor
+  - Noocraty
+  - NoocratyBot
+  - Vitz
+  - KMLG
 
 - type: npcFaction
   id: Mouse
@@ -42,6 +59,16 @@
   - PetsNT
   - Zombie
   - Revolutionary
+  - UmporBot
+  - Umpor
+  - Noocraty
+  - NoocratyBot
+  - Petr
+  - Vitz
+  - SNKBot
+  - SNK
+  - Mirt
+  - KMLG
 
 - type: npcFaction
   id: SimpleNeutral
@@ -54,6 +81,10 @@
   - Xeno
   - PetsNT
   - Zombie
+  - UmporBot
+  - Umpor
+  - Vitz
+  - KMLG
 
 - type: npcFaction
   id: Xeno
@@ -64,6 +95,16 @@
   - PetsNT
   - Zombie
   - Revolutionary
+  - UmporBot
+  - Umpor
+  - Noocraty
+  - NoocratyBot
+  - Petr
+  - Vitz
+  - SNKBot
+  - SNK
+  - Mirt
+  - KMLG
 
 - type: npcFaction
   id: Zombie
@@ -75,6 +116,16 @@
   - Passive
   - PetsNT
   - Revolutionary
+  - UmporBot
+  - Umpor
+  - Noocraty
+  - NoocratyBot
+  - Petr
+  - Vitz
+  - SNKBot
+  - SNK
+  - Mirt
+  - KMLG
 
 - type: npcFaction
   id: Revolutionary
@@ -83,3 +134,12 @@
   - Zombie
   - SimpleHostile
   - Dragon
+  - UmporBot
+  - Umpor
+  - Noocraty
+  - NoocratyBot
+  - Vitz
+  - SNKBot
+  - SNK
+  - Mirt
+  - KMLG

@@ -2406,6 +2406,8 @@
     tags:
     - MirtAccess
     - External
+  - type: PresetIdCard
+    name: миртанийский офицер
 #------------------------------------карта солдата----------    
 - type: entity
   parent: MirtIDCard
@@ -2421,6 +2423,8 @@
     tags:
     - MirtAccess
     - External
+  - type: PresetIdCard
+    name: миртанийский воин
 #------------------------------------карта инквизитора----------     
 - type: entity
   parent: MirtIDCard
@@ -2436,6 +2440,8 @@
     tags:
     - MirtAccess
     - External
+  - type: PresetIdCard
+    name: миртанийский инквизитор
 #------------------------------------карта старшего инквизитора------------------
 - type: entity
   parent: MirtIDCard
@@ -2451,6 +2457,8 @@
     tags:
     - MirtAccess
     - External
+  - type: PresetIdCard
+    name: миртанийский ст.инквизитор
 #------------------------------------------связь----------------------------------------  
 #-----------------------------канал----------------------------------------  
 - type: radioChannel
@@ -3043,19 +3051,6 @@
   - Грофт
   - Сник
   - Магевер
-#-------------------------------------хуй знает что это, но вот оно работает и ладно---------------------------
-- type: npcFaction
-  id: Mirt
-  hostile:
-  - SimpleHostile
-  - Xeno
-  - Zombie
-  - Syndicate
-  - Revolutionary
-  - Dragon
-  friendly:
-  - Noocraty
-  - NoocratyBot
 #---------------------------------ополченец----------
 - type: randomHumanoidSettings
   speciesBlacklist: 
