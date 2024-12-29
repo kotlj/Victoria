@@ -472,7 +472,7 @@
     damage:
       types:
         Poison: 10
-    popupText: Вы ощухаете порывы тошноты
+    popupText: popupText-AnomalyToxi
   - type: GasProducerAnomaly
     releasedGas: 6
     releaseOnMaxSeverity: true
