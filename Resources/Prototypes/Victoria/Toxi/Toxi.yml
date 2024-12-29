@@ -319,7 +319,7 @@
   group: Toxicology
   desc: desc-Pricorine
   physicalDesc: phy-desc-Pricorine
-  flavor: fla-Pricorine
+  flavor: Pricorine
   color: "#5D545F"
   meltingPoint: -101.5
   boilingPoint: -34.04
@@ -342,7 +342,7 @@
   group: Toxicology
   desc: desc-Cikilite
   physicalDesc: phy-desc-Cikilite
-  flavor: fla-Cikilite
+  flavor: Cikilite
   color: "#AC3E5F"
   meltingPoint: -101.5
   boilingPoint: -34.04
@@ -389,7 +389,7 @@
   group: Toxicology
   desc: desc-Molytite
   physicalDesc: phy-desc-Molytite
-  flavor: fla-Molytite
+  flavor: Molytite
   color: "#593003"
   meltingPoint: -101.5
   boilingPoint: -34.04
