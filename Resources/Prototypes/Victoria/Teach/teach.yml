@@ -4,7 +4,7 @@
   parent: ClothingUniformSkirtBase
   id: CargoTeacherUniform
   name: Комбинезон бригадира
-  suffix: Ведущие
+  suffix: Наставники
   description: Прочный и практичный комбинезон бригадира отдела снабжения НаноТрейзен
   components:
   - type: Sprite
@@ -16,7 +16,7 @@
   parent: ClothingNeckBase
   id: MantelTeacher
   name: Мантия наставника
-  suffix: Ведущие
+  suffix: Наставники
   description: Это статусная накидка на плечи демонстрирует, что сотрудник является не просто хорошим специалистом в своей сфере, но и способен успешно учить других
   components:
   - type: Sprite
@@ -29,7 +29,7 @@
 - type: entity
   parent: DoorElectronics
   id: DoorElectronicsTeacherAccess
-  suffix: Ведущие, Locked
+  suffix: Наставники, Locked
   components:
   - type: AccessReader
     access: [["Teacher"]]
@@ -38,7 +38,7 @@
   parent: Airlock
   id: AirlockCargoTeatcherLocked
   name: Шлюз
-  suffix: Ведущие, Locked
+  suffix: Наставники, Locked
   description: Он открывается, он закрывается, он может вас раздавить
   components:
   - type: ContainerFill
@@ -51,7 +51,7 @@
   parent: AirlockGlass
   id: AirlockCargoTeatcherLockedGlass
   name: Стеклянный шлюз
-  suffix: Ведущие, Locked
+  suffix: Наставники, Locked
   description: Он открывается, он закрывается, он может вас раздавить
   components:
   - type: ContainerFill
@@ -67,7 +67,7 @@
   id: CargoTeacherIDCard
   name: ID-карта бригадира
   description: Даёт доступы в отделы Снабжения и Утилизации, а так же к помещениям наставников
-  suffix: Ведущие
+  suffix: Наставники
   components:
   - type: Sprite
     sprite: Victoria/Teach/id_cards_teacher.rsi
@@ -81,7 +81,7 @@
   parent: BasePDA
   id: PDACargoTeacher
   name: КПК бригадира
-  suffix: Ведущие
+  suffix: Наставники
   description: Этот КПК так и подначивает на всех наорать и всех построить
   components:
     - type: Sprite
@@ -142,7 +142,7 @@
   parent: ClothingUniformSkirtBase
   id: EngTeacherUniform
   name: Комбинезон ведущего инженера
-  suffix: Ведущие
+  suffix: Наставники
   description: Прочный и практичный комбинезон ведущего инженера
   components:
   - type: Sprite
@@ -155,7 +155,7 @@
   parent: Airlock
   id: AirlockEngTeatcherLocked
   name: Шлюз
-  suffix: Ведущие, Locked
+  suffix: Наставники, Locked
   description: Он открывается, он закрывается, он может вас раздавить
   components:
   - type: ContainerFill
@@ -168,7 +168,7 @@
   parent: AirlockGlass
   id: AirlockEngTeatcherLockedGlass
   name: Стеклянный шлюз
-  suffix: Ведущие, Locked
+  suffix: Наставники, Locked
   description: Он открывается, он закрывается, он может вас раздавить
   components:
   - type: ContainerFill
@@ -184,7 +184,7 @@
   id: EngTeacherIDCard
   name: ID-карта ведущего инженера
   description: Даёт доступы в отделы Инженеров и Атмосферной техники, а так же к помещениям наставников
-  suffix: Ведущие
+  suffix: Наставники
   components:
   - type: Sprite
     sprite: Victoria/Teach/id_cards_teacher.rsi
@@ -214,7 +214,7 @@
   parent: ClothingHeadBase
   id: EngTeacherBeret
   name: Берет ведущего инженера
-  suffix: Ведущие
+  suffix: Наставники
   description: Берет действиетельно опытного и заслуженного инженера
   components:
   - type: Sprite
@@ -276,7 +276,7 @@
   parent: ClothingUniformSkirtBase
   id: SecTeacherUniform
   name: Форма инструктора СБ
-  suffix: Ведущие
+  suffix: Наставники
   description: Крепкая и очень красивая. Привлекает к себе дамочек и заставляет боятся кадетов
   components:
   - type: Sprite
@@ -289,7 +289,7 @@
   parent: Airlock
   id: AirlockSecTeatcherLocked
   name: Шлюз
-  suffix: Ведущие, Locked
+  suffix: Наставники, Locked
   description: Он открывается, он закрывается, он может вас раздавить
   components:
   - type: ContainerFill
@@ -302,7 +302,7 @@
   parent: AirlockGlass
   id: AirlockSecTeatcherLockedGlass
   name: Стеклянный шлюз
-  suffix: Ведущие, Locked
+  suffix: Наставники, Locked
   description: Он открывается, он закрывается, он может вас раздавить
   components:
   - type: ContainerFill
@@ -318,7 +318,7 @@
   id: SecTeacherIDCard
   name: ID-карта инструктора СБ
   description: Даёт доступы в Бриг и зоны Службы безопасности, а так же в помещения наставников
-  suffix: Ведущие
+  suffix: Наставники
   components:
   - type: Sprite
     sprite: Victoria/Teach/id_cards_teacher.rsi
@@ -348,7 +348,7 @@
   parent: ClothingHeadBase
   id: SecTeacherCap
   name: Фуражка инструктора СБ
-  suffix: Ведущие
+  suffix: Наставники
   description: Фуражка сотрудника, который утвержает, что он "теперь твой папа, мама и господин инструктор!"
   components:
   - type: Sprite
@@ -419,7 +419,7 @@
   parent: ClothingUniformSkirtBase
   id: SciTeacherUniform
   name: Форма инструктора СБ
-  suffix: Ведущие
+  suffix: Наставники
   description: Крепкая и очень красивая. Привлекает к себе дамочек и заставляет боятся кадетов
   components:
   - type: Sprite
@@ -432,7 +432,7 @@
   parent: Airlock
   id: AirlockSciTeatcherLocked
   name: Шлюз
-  suffix: Ведущие, Locked
+  suffix: Наставники, Locked
   description: Он открывается, он закрывается, он может вас раздавить
   components:
   - type: ContainerFill
@@ -445,7 +445,7 @@
   parent: AirlockGlass
   id: AirlockSciTeatcherLockedGlass
   name: Стеклянный шлюз
-  suffix: Ведущие, Locked
+  suffix: Наставники, Locked
   description: Он открывается, он закрывается, он может вас раздавить
   components:
   - type: ContainerFill
@@ -461,7 +461,7 @@
   id: SciTeacherIDCard
   name: ID-карта доцента
   description: Даёт доступы в отдел Департамента Науки и Разработки, а так же к помещениям наставников
-  suffix: Ведущие
+  suffix: Наставники
   components:
   - type: Sprite
     sprite: Victoria/Teach/id_cards_teacher.rsi
@@ -491,7 +491,7 @@
   parent: ClothingOuterCoatLab
   id: ClothingOuterCoatLabTeacher
   name: Лабораторный халат
-  suffix: Ведущие
+  suffix: Наставники
   description: Одевается поверх основной одежды дабы продемонстрировать статус опытного сотрудника и статус наставника
   components:
   - type: Sprite
@@ -544,7 +544,7 @@
   parent: ClothingUniformSkirtBase
   id: MedTeacherUniform
   name: Форма мед.консультанта
-  suffix: Ведущие
+  suffix: Наставники
   description: Очень чистая и почти стерильная. От неё так и веет здоровьем вперемешку с цинизмом
   components:
   - type: Sprite
@@ -556,7 +556,7 @@
   parent: Airlock
   id: AirlockMedTeatcherLocked
   name: Шлюз
-  suffix: Ведущие, Locked
+  suffix: Наставники, Locked
   description: Он открывается, он закрывается, он может вас раздавить
   components:
   - type: ContainerFill
@@ -569,7 +569,7 @@
   parent: AirlockGlass
   id: AirlockMedTeatcherLockedGlass
   name: Стеклянный шлюз
-  suffix: Ведущие, Locked
+  suffix: Наставники, Locked
   description: Он открывается, он закрывается, он может вас раздавить
   components:
   - type: ContainerFill
@@ -585,7 +585,7 @@
   id: MedTeacherIDCard
   name: ID-карта мед.консультанта
   description: Даёт доступы в помещения Медбея, Морг и лабораторию Химии, а так же к помещениям наставников
-  suffix: Ведущие
+  suffix: Наставники
   components:
   - type: Sprite
     sprite: Victoria/Teach/id_cards_teacher.rsi
@@ -716,3 +716,26 @@
     layers:
       - state: green
       - state: geneticist
+#-------------------------------------------Шлюзы----------------------------
+#------------------------------------закрытый шлюз---------- 
+- type: entity
+  parent: Airlock
+  id: AirlockTeacherLocked
+  name: Шлюз
+  suffix: Наставники, Locked
+  description: Он открывается, он закрывается, он может вас раздавить
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsTeacherAccess ]
+#------------------------------------закрытый стеклянный шлюз---------- 
+- type: entity
+  parent: AirlockGlass
+  id: AirlockTeacherGlassLocked
+  name: Стеклянный шлюз
+  suffix: Наставники, Locked
+  description: Он открывается, он закрывается, он может вас раздавить
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsTeacherAccess ]  
