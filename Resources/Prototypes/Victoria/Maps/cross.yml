@@ -55,6 +55,7 @@
             Paramedic: [ 1, 1 ]
             StationAi: [ 1, 1 ]
             Borg: [ 3, 3 ]
+            #teacher
             CargoTeacher: [ 1, 1 ]
             EngTeacher: [ 1, 1 ]
             SecTeacher: [ 1, 1 ]

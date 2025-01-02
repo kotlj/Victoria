@@ -62,3 +62,9 @@
             #silicon
             StationAi: [ 1, 1 ]
             Borg: [ 1, 1 ]
+            #teacher
+            CargoTeacher: [ 1, 1 ]
+            EngTeacher: [ 1, 1 ]
+            SecTeacher: [ 1, 1 ]
+            SciTeacher: [ 1, 1 ]
+            MedTeacher: [ 1, 1 ]
