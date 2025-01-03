@@ -1,0 +1,26 @@
+# General goals
+- type: stationGoal
+  id: ProtectiveField
+  text: station-goal-protective-field
+  minPlayers: 40
+
+- type: stationGoal
+  id: ExpansionDormitories
+  text: station-goal-expansion-dormitories
+  
+- type: stationGoal
+  id: TrainingArea
+  text: station-goal-training-area
+  minPlayers: 40
+  
+- type: stationGoal
+  id: ColonySupply
+  text: station-goal-colony-supply
+
+- type: stationGoal
+  id: CombinedMedications
+  text: station-goal-combined-medications
+
+- type: stationGoal
+  id: StudyingAnomalies
+  text: station-goal-studying-anomalies

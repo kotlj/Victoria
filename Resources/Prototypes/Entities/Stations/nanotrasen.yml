@@ -10,7 +10,7 @@
   id: StandardNanotrasenStation
   parent:
     - BaseStation
-    - BaseStationGoal # Corvax
+    - BaseStationGoalVictoria # Victoria
     - BaseStationNews
     - BaseStationCargo
     - BaseStationJobsSpawning
