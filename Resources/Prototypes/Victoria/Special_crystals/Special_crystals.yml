@@ -72,6 +72,7 @@
   parent: CrystalOreBase
   id: SpaceBSCrystall
   name: Блюспейс кристалл
+  description: Синие и высокоэнергетические. Весьма дорогие и очень важные.
   suffix: Особые кристаллы, Full
   components:
   - type: Stack
@@ -166,6 +167,7 @@
   parent: CrystalOreBase
   id: SpaceCosmCrystall
   name: Кристалл космеция
+  description: Белёсые и высокоэнергетические. Порядком дорогие и важные.
   suffix: Особые кристаллы, Full
   components:
   - type: Stack
@@ -231,6 +233,7 @@
   parent: CrystalOreBase
   id: SapphireCrystall
   name: Сапфир
+  description: Драгоценный камень... любимец знатных дам и... инженеров-электронщиков.
   suffix: Особые кристаллы, Full
   components:
   - type: Stack
@@ -288,6 +291,7 @@
   parent: CrystalOreBase
   id: СhromeCrystall
   name: Хром
+  description: Странный метал. Белёсый, хрупкий, но весьма стойкий.
   suffix: Особые кристаллы, Full
   components:
   - type: Stack
@@ -325,6 +329,7 @@
   parent: CrystalOreBase
   id: SiCrystall
   name: Булька Кремния
+  description: Дешёвый, простой, удобный! Это кремний, это электроника.
   suffix: Особые кристаллы, Full
   components:
   - type: Stack
