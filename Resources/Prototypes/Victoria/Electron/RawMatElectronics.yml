@@ -7,6 +7,7 @@
   parent: CrystalOreBase
   id: СeramicsCrystall
   name: Керамика
+  description: Твёрдые листы гладкие на ощупь, но поцарапанные на вид, которые используются для производства электроники.
   suffix: Электроника, Full
   components:
   - type: Stack
@@ -60,6 +61,7 @@
   parent: CrystalOreBase
   id: PlazСeramicsCrystall
   name: Плазкерам
+  description: Твёрдые листы гладкие на ощупь, но поцарапанные на вид, которые используются для производства электроники.
   suffix: Электроника, Full
   components:
   - type: Stack
@@ -122,6 +124,7 @@
   parent: CrystalOreBase
   id: SiСeramicsCrystall
   name: Кремнекерам
+  description: Твёрдые листы гладкие на ощупь, но поцарапанные на вид, которые используются для производства электроники.
   suffix: Электроника, Full
   components:
   - type: Stack
@@ -182,6 +185,7 @@
   parent: CrystalOreBase
   id: CarbonPitch
   name: Углеродная смола
+  description: Пока ещё твёрдая, но в нужно аппаратуре станет жидкой, пропитывающей, скрепляющией и изолирующей.
   suffix: Электроника, Full
   components:
   - type: Stack
@@ -241,6 +245,7 @@
   parent: CrystalOreBase
   id: PolymerPitch
   name: Полимерная смола
+  description: Пока ещё твёрдая, но в нужно аппаратуре станет жидкой, пропитывающей, скрепляющией и изолирующей.
   suffix: Электроника, Full
   components:
   - type: Stack
@@ -294,6 +299,7 @@
   parent: CrystalOreBase
   id: Fiberglass
   name: Стеклотекстолит
+  description: Твёрдые листы гладкие на ощупь, но поцарапанные на вид, которые используются для производства электроники.
   suffix: Электроника, Full
   components:
   - type: Stack
@@ -347,6 +353,7 @@
   parent: CrystalOreBase
   id: Gethinax
   name: Гетинакс
+  description: Твёрдые листы гладкие на ощупь, но поцарапанные на вид, которые используются для производства электроники.
   suffix: Электроника, Full
   components:
   - type: Stack
@@ -399,6 +406,7 @@
   parent: CrystalOreBase
   id: SiPlazCrystall
   name: Кремнеплаз
+  description: Твёрдые листы гладкие на ощупь, но поцарапанные на вид, которые используются для производства электроники.
   suffix: Электроника, Full
   components:
   - type: Stack

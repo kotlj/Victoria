@@ -7,6 +7,7 @@
   parent: CrystalOreBase
   id: OreCooper
   name: Медная руда
+  description: Мягкая и переливчатая.
   suffix: Электроника, Full
   components:
   - type: Stack
@@ -19,7 +20,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      RawCooper: 400
+      RawCooper: 100
   - type: SolutionContainerManager
     solutions:
       ironore:
@@ -86,8 +87,8 @@
   result: Cooper1
   completetime: 2
   materials:
-    RawCooper: 2000
-    Coal: 200     
+    RawCooper: 30
+    Coal: 30    
 #------------------Сам-------------------------
 - type: entity
   parent: CrystalOreBase
@@ -149,6 +150,7 @@
   parent: CrystalOreBase
   id: OreAluminium
   name: Алюминиевая руда
+  description: Мягкая и переливчатая.
   suffix: Электроника, Full
   components:
   - type: Stack
@@ -161,7 +163,7 @@
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      RawAluminium: 400
+      RawAluminium: 100
   - type: SolutionContainerManager
     solutions:
       ironore:
@@ -228,8 +230,8 @@
   result: Aluminium1
   completetime: 2
   materials:
-    RawAluminium: 2000
-    Coal: 200     
+    RawAluminium: 30
+    Coal: 20     
 #------------------Сам-------------------------
 - type: entity
   parent: CrystalOreBase
@@ -291,6 +293,7 @@
   parent: CrystalOreBase
   id: SapphireCircuitBord
   name: Сапфирная плата
+  description: Нарезанная метализированная плата для производства полноценной электронной платы.
   suffix: Электроника, Full
   components:
   - type: Stack
@@ -343,6 +346,7 @@
   parent: SapphireCircuitBord
   id: PlazСeramicsCircuitBord
   name: Плазкерамовая плата
+  description: Нарезанная метализированная плата для производства полноценной электронной платы.
   components:
   - type: Stack
     stackType: PlazСeramicsCircuitBord
@@ -389,6 +393,7 @@
   parent: SapphireCircuitBord
   id: SiСeramicsCircuitBord
   name: Кремнекерамовая плата
+  description: Нарезанная метализированная плата для производства полноценной электронной платы.
   components:
   - type: Stack
     stackType: SiСeramicsCircuitBord
@@ -435,6 +440,7 @@
   parent: SapphireCircuitBord
   id: FiberglassCircuitBord
   name: Стеклотекстолитная плата
+  description: Нарезанная метализированная плата для производства полноценной электронной платы.
   components:
   - type: Stack
     stackType: FiberglassCircuitBord
@@ -481,6 +487,7 @@
   parent: SapphireCircuitBord
   id: GethinaxCircuitBord
   name: Гетинаксная плата
+  description: Нарезанная метализированная плата для производства полноценной электронной платы.
   components:
   - type: Stack
     stackType: GethinaxCircuitBord
@@ -527,6 +534,7 @@
   parent: SapphireCircuitBord
   id: SiPlazCircuitBord
   name: Кремнеплазовая плата
+  description: Нарезанная метализированная плата для производства полноценной электронной платы.
   components:
   - type: Stack
     stackType: SiPlazCircuitBord
