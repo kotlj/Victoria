@@ -7918,7 +7918,7 @@ entities:
       pos: 60.5,-26.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -39580.816
+      secondsUntilStateChange: -39957.586
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -8968,7 +8968,7 @@ entities:
       pos: -8.5,0.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -24965.73
+      secondsUntilStateChange: -25342.5
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -139327,6 +139327,127 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 75.475815,-44.644817
       parent: 2
+- proto: WarpPointBombing
+  entities:
+  - uid: 22116
+    components:
+    - type: Transform
+      pos: 0.5,12.5
+      parent: 2
+    - type: WarpPoint
+      location: Мостик
+  - uid: 22117
+    components:
+    - type: Transform
+      pos: -17.5,7.5
+      parent: 2
+    - type: WarpPoint
+      location: Глава Персонала
+  - uid: 22118
+    components:
+    - type: Transform
+      pos: -11.5,-17.5
+      parent: 2
+    - type: WarpPoint
+      location: Подотдел робототехники
+  - uid: 22119
+    components:
+    - type: Transform
+      pos: -17.5,-35.5
+      parent: 2
+    - type: WarpPoint
+      location: Западная приёмная Карго
+  - uid: 22120
+    components:
+    - type: Transform
+      pos: -3.5,-35.5
+      parent: 2
+    - type: WarpPoint
+      location: Склад Карго
+  - uid: 22121
+    components:
+    - type: Transform
+      pos: 3.5,-46.5
+      parent: 2
+    - type: WarpPoint
+      location: Южная приёмная Карго
+  - uid: 22122
+    components:
+    - type: Transform
+      pos: 38.5,-32.5
+      parent: 2
+    - type: WarpPoint
+      location: Инженерный склад электроники
+  - uid: 22123
+    components:
+    - type: Transform
+      pos: 34.5,-12.5
+      parent: 2
+    - type: WarpPoint
+      location: Инженерный грузовой шлюз
+  - uid: 22124
+    components:
+    - type: Transform
+      pos: 54.5,-40.5
+      parent: 2
+    - type: WarpPoint
+      location: Помещение конденсации газов
+  - uid: 22125
+    components:
+    - type: Transform
+      pos: 70.5,-18.5
+      parent: 2
+    - type: WarpPoint
+      location: Театр
+  - uid: 22126
+    components:
+    - type: Transform
+      pos: 77.5,8.5
+      parent: 2
+    - type: WarpPoint
+      location: ВИП бар
+  - uid: 22127
+    components:
+    - type: Transform
+      pos: 51.5,27.5
+      parent: 2
+    - type: WarpPoint
+      location: Бригмедбей
+  - uid: 22128
+    components:
+    - type: Transform
+      pos: 54.5,41.5
+      parent: 2
+    - type: WarpPoint
+      location: Комната улик детектива
+  - uid: 22129
+    components:
+    - type: Transform
+      pos: 74.5,28.5
+      parent: 2
+    - type: WarpPoint
+      location: Гидропоника пермабрига
+  - uid: 22130
+    components:
+    - type: Transform
+      pos: 22.5,44.5
+      parent: 2
+    - type: WarpPoint
+      location: EVA
+  - uid: 22131
+    components:
+    - type: Transform
+      pos: -1.5,49.5
+      parent: 2
+    - type: WarpPoint
+      location: Игровой стол Дорм
+  - uid: 22132
+    components:
+    - type: Transform
+      pos: -3.5,30.5
+      parent: 2
+    - type: WarpPoint
+      location: КПП прибытия-отбытия
 - proto: WaterCooler
   entities:
   - uid: 6398
