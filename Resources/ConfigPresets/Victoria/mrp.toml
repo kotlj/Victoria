@@ -22,8 +22,8 @@ arrivals_map = "/Maps/Misc/corvax_terminal.yml"
 auto_call_time = 150
 
 [vote]
-restart_required_ratio = 0.85
-same_type_timeout = 300.0
+restart_required_ratio = 0.6
+same_type_timeout = 200.0
 timerrestart = 30
 preset_enabled = false
 restart_enabled = false

@@ -1,7 +1,7 @@
 #---------------------------------------------Основы плат----------------------------------------------
 - type: Tag
   id: RawCircuitBord
-#--------------------------------------Медь------------------------------------------
+#--------------------------------------медь------------------------------------------
 #------------------Сама руда-------------------------
 - type: entity
   parent: CrystalOreBase
@@ -33,7 +33,7 @@
 #------------------Стак--------------------------
 - type: stack
   id: OreCooper
-  name: Медная руда
+  name: медная руда
   icon: { sprite: Victoria/Electron/ore_electronic.rsi, state: cooper }
   spawn: OreCooper1
   maxCount: 30
@@ -49,7 +49,7 @@
 - type: material
   id: RawCooper
   stackEntity: OreCooper1
-  name: Медная руда
+  name: медная руда
   icon: { sprite: Victoria/Electron/ore_electronic.rsi, state: cooper }
   price: 0.1 
 #-----------------------------------руда--------------------------
@@ -62,6 +62,7 @@
 - type: entity
   id: WallRockCooper
   parent: CrystalWallRock
+  name: камень
   description: Месторождение меди
   suffix: Электроника
   components:
@@ -93,7 +94,7 @@
 - type: entity
   parent: CrystalOreBase
   id: Cooper
-  name: Медь
+  name: медь
   suffix: Электроника, Full
   components:
   - type: Stack
@@ -113,7 +114,7 @@
 #------------------Стак--------------------------
 - type: stack
   id: Cooper
-  name: Медь
+  name: медь
   icon: { sprite: Victoria/Electron/contact_crystal.rsi, state: cooper }
   spawn: Cooper1
   maxCount: 30
@@ -129,7 +130,7 @@
 - type: material
   id: CooperMaterial
   stackEntity: Cooper1
-  name: Медь
+  name: медь
   icon: { sprite: Victoria/Electron/contact_crystal.rsi, state: cooper }
   price: 0.1   
 #------------------Рецепт--------------------------
@@ -144,7 +145,7 @@
   effects:
     - !type:CreateEntityReactionEffect
       entity: Cooper1
-#--------------------------------------Алюминий------------------------------------------
+#--------------------------------------алюминий------------------------------------------
 #------------------Сама руда-------------------------
 - type: entity
   parent: CrystalOreBase
@@ -176,7 +177,7 @@
 #------------------Стак--------------------------
 - type: stack
   id: OreAluminium
-  name: Алюминиевая руда
+  name: алюминиевая руда
   icon: { sprite: Victoria/Electron/ore_electronic.rsi, state: aluminium }
   spawn: OreAluminium1
   maxCount: 30
@@ -192,7 +193,7 @@
 - type: material
   id: RawAluminium
   stackEntity: OreAluminium1
-  name: Алюминиевая руда
+  name: алюминиевая руда
   icon: { sprite: Victoria/Electron/ore_electronic.rsi, state: aluminium }
   price: 0.1 
 #-----------------------------------руда--------------------------
@@ -205,6 +206,7 @@
 - type: entity
   id: WallRockAluminium
   parent: CrystalWallRock
+  name: камень
   description: Месторождение алюминия
   suffix: Электроника
   components:
@@ -236,7 +238,7 @@
 - type: entity
   parent: CrystalOreBase
   id: Aluminium
-  name: Алюминий
+  name: алюминий
   suffix: Электроника, Full
   components:
   - type: Stack
@@ -256,7 +258,7 @@
 #------------------Стак--------------------------
 - type: stack
   id: Aluminium
-  name: Алюминий
+  name: алюминий
   icon: { sprite: Victoria/Electron/contact_crystal.rsi, state: aluminium }
   spawn: Aluminium1
   maxCount: 30
@@ -272,7 +274,7 @@
 - type: material
   id: AluminiumMaterial
   stackEntity: Aluminium1
-  name: Алюминий
+  name: алюминий
   icon: { sprite: Victoria/Electron/contact_crystal.rsi, state: aluminium }
   price: 0.1   
 #------------------Рецепт--------------------------
