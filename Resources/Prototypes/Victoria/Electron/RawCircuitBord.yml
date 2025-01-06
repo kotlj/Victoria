@@ -6,7 +6,7 @@
 - type: entity
   parent: CrystalOreBase
   id: OreCooper
-  name: Медная руда
+  name: медная руда
   description: Мягкая и переливчатая.
   suffix: Электроника, Full
   components:
@@ -149,7 +149,7 @@
 - type: entity
   parent: CrystalOreBase
   id: OreAluminium
-  name: Алюминиевая руда
+  name: алюминиевая руда
   description: Мягкая и переливчатая.
   suffix: Электроника, Full
   components:
@@ -292,7 +292,7 @@
 - type: entity
   parent: CrystalOreBase
   id: SapphireCircuitBord
-  name: Сапфирная плата
+  name: сапфирная плата
   description: Нарезанная метализированная плата для производства полноценной электронной платы.
   suffix: Электроника, Full
   components:
