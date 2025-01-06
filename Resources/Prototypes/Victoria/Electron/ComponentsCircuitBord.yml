@@ -7,6 +7,7 @@
   parent: CrystalOreBase
   id: DigitalCircuit
   name: Цифровые компоненты
+  description: Маленький чёрный квадратный "жук" с металлическими ножками, который может УПРАВЛЯТЬ МИРОМ!
   suffix: Электроника, Full
   components:
   - type: Stack
@@ -60,6 +61,7 @@
   parent: DigitalCircuit
   id: AnalogCircuit
   name: Аналоговые компоненты
+  description: Маленький чёрный квадратный "жук" с металлическими ножками, который может УПРАВЛЯТЬ МИРОМ!
   suffix: Электроника, Full
   components:
   - type: Stack
@@ -107,6 +109,7 @@
   parent: DigitalCircuit
   id: PulseCircuit
   name: Импульсные компоненты
+  description: Маленький чёрный квадратный "жук" с металлическими ножками, который может УПРАВЛЯТЬ МИРОМ!
   suffix: Электроника, Full
   components:
   - type: Stack
@@ -155,6 +158,7 @@
   parent: DigitalCircuit
   id: PowerCircuit
   name: Силовые компоненты
+  description: Маленький чёрный квадратный "жук" с металлическими ножками, который может УПРАВЛЯТЬ МИРОМ!
   suffix: Электроника, Full
   components:
   - type: Stack
@@ -202,6 +206,7 @@
   parent: DigitalCircuit
   id: ProgrammableCircuit
   name: ПЛИС компоненты
+  description: Маленький чёрный квадратный "жук" с металлическими ножками, который может УПРАВЛЯТЬ МИРОМ!
   suffix: Электроника, Full
   components:
   - type: Stack
@@ -250,6 +255,7 @@
   parent: DigitalCircuit
   id: MicrowaveCircuit
   name: СВЧ компоненты
+  description: Здоровая металлическая... фигня... нужна для микроволновки.
   suffix: Электроника, Full
   components:
   - type: Stack
@@ -298,6 +304,7 @@
   parent: DigitalCircuit
   id: DiscreteCircuit
   name: Дискретные компоненты
+  description: Маленький чёрный квадратный "жук" с металлическими ножками, который может УПРАВЛЯТЬ МИРОМ!
   suffix: Электроника, Full
   components:
   - type: Stack

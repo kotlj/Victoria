@@ -3119,8 +3119,8 @@
   parent: EventHumanoid
   components:
     - type: GhostRole
-      name: name-of-LostUmpor
-      description: description-of-LostUmpor
+      name: Потрёпаный умпорец
+      description: Ваш шаттл подбили в бою, навигация дала сбой и вас отшвырнуло в район НТ. Прилетите на станцию к своим партнёрам, попросите поучиться навыкам. 
       rules: ghost-role-information-nonantagonist-rules
       raffle:
         settings: short

@@ -6,7 +6,8 @@
 - type: entity
   parent: CrystalOreBase
   id: СeramicsCrystall
-  name: Керамика
+  name: керамика
+  description: Твёрдые листы гладкие на ощупь, но поцарапанные на вид, которые используются для производства электроники.
   suffix: Электроника, Full
   components:
   - type: Stack
@@ -59,7 +60,8 @@
 - type: entity
   parent: CrystalOreBase
   id: PlazСeramicsCrystall
-  name: Плазкерам
+  name: плазкерам
+  description: Твёрдые листы гладкие на ощупь, но поцарапанные на вид, которые используются для производства электроники.
   suffix: Электроника, Full
   components:
   - type: Stack
@@ -121,7 +123,8 @@
 - type: entity
   parent: CrystalOreBase
   id: SiСeramicsCrystall
-  name: Кремнекерам
+  name: кремнекерам
+  description: Твёрдые листы гладкие на ощупь, но поцарапанные на вид, которые используются для производства электроники.
   suffix: Электроника, Full
   components:
   - type: Stack
@@ -181,7 +184,8 @@
 - type: entity
   parent: CrystalOreBase
   id: CarbonPitch
-  name: Углеродная смола
+  name: углеродная смола
+  description: Пока ещё твёрдая, но в нужно аппаратуре станет жидкой, пропитывающей, скрепляющией и изолирующей.
   suffix: Электроника, Full
   components:
   - type: Stack
@@ -240,7 +244,8 @@
 - type: entity
   parent: CrystalOreBase
   id: PolymerPitch
-  name: Полимерная смола
+  name: полимерная смола
+  description: Пока ещё твёрдая, но в нужно аппаратуре станет жидкой, пропитывающей, скрепляющией и изолирующей.
   suffix: Электроника, Full
   components:
   - type: Stack
@@ -293,7 +298,8 @@
 - type: entity
   parent: CrystalOreBase
   id: Fiberglass
-  name: Стеклотекстолит
+  name: стеклотекстолит
+  description: Твёрдые листы гладкие на ощупь, но поцарапанные на вид, которые используются для производства электроники.
   suffix: Электроника, Full
   components:
   - type: Stack
@@ -346,7 +352,8 @@
 - type: entity
   parent: CrystalOreBase
   id: Gethinax
-  name: Гетинакс
+  name: гетинакс
+  description: Твёрдые листы гладкие на ощупь, но поцарапанные на вид, которые используются для производства электроники.
   suffix: Электроника, Full
   components:
   - type: Stack
@@ -398,7 +405,8 @@
 - type: entity
   parent: CrystalOreBase
   id: SiPlazCrystall
-  name: Кремнеплаз
+  name: кремнеплаз
+  description: Твёрдые листы гладкие на ощупь, но поцарапанные на вид, которые используются для производства электроники.
   suffix: Электроника, Full
   components:
   - type: Stack

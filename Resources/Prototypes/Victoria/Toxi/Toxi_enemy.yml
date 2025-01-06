@@ -3,7 +3,7 @@
   id: ToxiKudzu
   name: Ядовитая Кудзу
   parent: Kudzu
-  description: A rapidly growing, dangerous plant. WHY ARE YOU STOPPING TO LOOK AT IT?!
+  description: Не пучи глаза! Оно растёт и уже с шипами!
   components:
     - type: MeleeSound
       soundGroups:
@@ -36,6 +36,7 @@
 #------------------------------------------------Ядовитый карп (СА3)------------------------------------
 - type: entity
   name: Ядовитый карп
+  description: Мерзкая жуть. С его зубов капает жижа...
   parent: BaseMobCarp
   id: MobToxiCarp
   components:
@@ -61,6 +62,7 @@
 - type: entity
   name: Ядовитый слайм
   parent: MobAdultSlimes
+  description: Мерзкая жуть. С его зубов капает жижа...
   id: MobAdultSlimesToxi
   components:
     - type: Sprite
@@ -94,6 +96,7 @@
   id: ReagentSlimeToxinePM1
   parent: ReagentSlime
   name: химический слайм
+  description: Теперь оно ещё и с токсинами...
   suffix: ToxinePM1
   components:
   - type: Bloodstream
@@ -115,6 +118,7 @@
   id: ReagentSlimeToxinePM2
   parent: ReagentSlime
   name: химический слайм
+  description: Теперь оно ещё и с токсинами...
   suffix: ToxinePM2
   components:
   - type: Bloodstream
@@ -136,6 +140,7 @@
   id: ReagentSlimeToxinePM3
   parent: ReagentSlime
   name: химический слайм
+  description: Теперь оно ещё и с токсинами...
   suffix: ToxinePM3
   components:
   - type: Bloodstream
@@ -157,6 +162,7 @@
   id: ReagentSlimeToxineSM1
   parent: ReagentSlime
   name: химический слайм
+  description: Теперь оно ещё и с токсинами...
   suffix: ToxineSM1
   components:
   - type: Bloodstream
@@ -178,6 +184,7 @@
   id: ReagentSlimeToxineSM2
   parent: ReagentSlime
   name: химический слайм
+  description: Теперь оно ещё и с токсинами...
   suffix: ToxineSM2
   components:
   - type: Bloodstream
@@ -199,6 +206,7 @@
   id: ReagentSlimeToxineSM3
   parent: ReagentSlime
   name: химический слайм
+  description: Теперь оно ещё и с токсинами...
   suffix: ToxineSM3
   components:
   - type: Bloodstream
@@ -220,6 +228,7 @@
   id: ReagentSlimeToxineSA1
   parent: ReagentSlime
   name: химический слайм
+  description: Теперь оно ещё и с токсинами...
   suffix: ToxineSA1
   components:
   - type: Bloodstream
@@ -241,6 +250,7 @@
   id: ReagentSlimeToxineSA2
   parent: ReagentSlime
   name: химический слайм
+  description: Теперь оно ещё и с токсинами...
   suffix: ToxineSA2
   components:
   - type: Bloodstream
@@ -262,6 +272,7 @@
   id: ReagentSlimeToxineSA3
   parent: ReagentSlime
   name: химический слайм
+  description: Теперь оно ещё и с токсинами...
   suffix: ToxineSA3
   components:
   - type: Bloodstream

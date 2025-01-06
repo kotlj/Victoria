@@ -62013,6 +62013,9 @@ entities:
     - type: Transform
       pos: -19.5,39.5
       parent: 2
+    - type: Door
+      secondsUntilStateChange: -337.57867
+      state: Closing
     - type: DeviceNetwork
       deviceLists:
       - 5068
@@ -117217,7 +117220,7 @@ entities:
       pos: -52.5,29.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -13223.307
+      secondsUntilStateChange: -13936.375
       state: Opening
 - proto: SpaceVillainArcade
   entities:
@@ -140519,6 +140522,124 @@ entities:
     - type: Transform
       pos: 45.5,-44.5
       parent: 2
+- proto: WarpPointBombing
+  entities:
+  - uid: 22849
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -3.5,-2.5
+      parent: 2
+    - type: WarpPoint
+      location: Мостик
+  - uid: 22850
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -14.5,-10.5
+      parent: 2
+    - type: WarpPoint
+      location: Глава Персонала
+  - uid: 22851
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -10.5,-26.5
+      parent: 2
+    - type: WarpPoint
+      location: Кухня
+  - uid: 22852
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -30.5,0.5
+      parent: 2
+    - type: WarpPoint
+      location: Приёмная РНД
+  - uid: 22853
+    components:
+    - type: Transform
+      pos: -44.5,-34.5
+      parent: 2
+    - type: WarpPoint
+      location: Подотдел ксеноархеологии
+  - uid: 22854
+    components:
+    - type: Transform
+      pos: -35.5,33.5
+      parent: 2
+    - type: WarpPoint
+      location: Комната отдыха охраны
+  - uid: 22855
+    components:
+    - type: Transform
+      pos: -17.5,45.5
+      parent: 2
+    - type: WarpPoint
+      location: Бриффинг-залл СБ
+  - uid: 22856
+    components:
+    - type: Transform
+      pos: -12.5,33.5
+      parent: 2
+    - type: WarpPoint
+      location: Северная камера пермабрига
+  - uid: 22857
+    components:
+    - type: Transform
+      pos: 11.5,-48.5
+      parent: 2
+    - type: WarpPoint
+      location: Электрощитовая
+  - uid: 22858
+    components:
+    - type: Transform
+      pos: 36.5,-26.5
+      parent: 2
+    - type: WarpPoint
+      location: Кабинет АВД
+  - uid: 22859
+    components:
+    - type: Transform
+      pos: 75.5,-24.5
+      parent: 2
+    - type: WarpPoint
+      location: Хирургия
+  - uid: 22860
+    components:
+    - type: Transform
+      pos: 56.5,51.5
+      parent: 2
+    - type: WarpPoint
+      location: Зона отдыха утилизаторов
+  - uid: 22861
+    components:
+    - type: Transform
+      pos: 52.5,26.5
+      parent: 2
+    - type: WarpPoint
+      location: КПП отбытия
+  - uid: 22862
+    components:
+    - type: Transform
+      pos: 84.5,12.5
+      parent: 2
+    - type: WarpPoint
+      location: Малая EVA
+  - uid: 22863
+    components:
+    - type: Transform
+      pos: 8.5,-31.5
+      parent: 2
+    - type: WarpPoint
+      location: Большая EVA
+  - uid: 22864
+    components:
+    - type: Transform
+      pos: -0.5,-19.5
+      parent: 2
+    - type: WarpPoint
+      location: Тир
 - proto: WaterCooler
   entities:
   - uid: 14691
@@ -141404,7 +141525,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -12391.86
+      secondsUntilStateChange: -13104.929
       state: Opening
   - uid: 5752
     components:
