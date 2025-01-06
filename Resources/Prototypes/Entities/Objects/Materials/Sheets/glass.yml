@@ -14,6 +14,7 @@
     price: 0
   - type: Tag
     tags:
+    - CrystalMaterial
     - Sheet
   - type: Material
   - type: Damageable
@@ -85,9 +86,6 @@
         reagents:
         - ReagentId: Silicon
           Quantity: 10
-  - type: Tag
-    tags:
-      - CrystalMaterial
 
 - type: entity
   parent: SheetGlass

@@ -692,6 +692,8 @@
 - type: entity
   suffix: Токсикология, Особый адсорбент
   parent: Beaker
+  name: мензурка
+  description: Используется для хранения среднего количества химикатов или растворов
   id: SupAdsorbentBeakerSmall
   components:
   - type: Label

@@ -113,6 +113,7 @@
 - type: entity
   id: WallRockBS
   parent: CrystalWallRock
+  name: камень
   description: Месторождение блюспейс-кристаллов
   suffix: Особые кристаллы
   components:
@@ -142,6 +143,7 @@
 - type: entity
   id: WallRockRS
   parent: CrystalWallRock
+  name: камень
   description: Месторождение редспейс-кристаллов
   suffix: Особые кристаллы
   components:
@@ -207,6 +209,7 @@
 - type: entity
   id: WallRockCosm
   parent: CrystalWallRock
+  name: камень
   description: Месторождение кристаллов Космеция
   suffix: Особые кристаллы
   components:
@@ -230,7 +233,7 @@
 - type: entity
   parent: CrystalOreBase
   id: SapphireCrystall
-  name: Сапфир
+  name: сапфир
   suffix: Особые кристаллы, Full
   components:
   - type: Stack
@@ -256,7 +259,7 @@
 #------------------Стак--------------------------
 - type: stack
   id: SapphireCrystall
-  name: Сапфир
+  name: сапфир
   icon: { sprite: Victoria/Special_crystals/sap_crystal.rsi, state: sap_crystal }
   spawn: SapphireCrystall1
   maxCount: 10
@@ -287,7 +290,7 @@
 - type: entity
   parent: CrystalOreBase
   id: СhromeCrystall
-  name: Хром
+  name: хром
   suffix: Особые кристаллы, Full
   components:
   - type: Stack
@@ -324,7 +327,7 @@
 - type: entity
   parent: CrystalOreBase
   id: SiCrystall
-  name: Булька Кремния
+  name: булька кремния
   suffix: Особые кристаллы, Full
   components:
   - type: Stack
@@ -350,7 +353,7 @@
 #------------------Стак--------------------------
 - type: stack
   id: SiCrystall
-  name: Булька Кремния
+  name: булька кремния
   icon: { sprite: Victoria/Special_crystals/si_crystal.rsi, state: si_crystal }
   spawn: SiCrystall1
   maxCount: 5
@@ -379,42 +382,42 @@
 - type: material
   id: BSCrystalMaterial
   stackEntity: SpaceBSCrystall1
-  name: БС-кристаллы
+  name: бс-кристаллы
   icon: { sprite: Victoria/Special_crystals/bs_crystal.rsi, state: bs_crystal }
   price: 10
 #----------------------------------РС--------------------------------
 - type: material
   id: RSCrystalMaterial
   stackEntity: Telecrystal1
-  name: Редспейс-кристаллы
+  name: редспейс-кристаллы
   icon: { sprite: Objects/Specific/Syndicate/telecrystal.rsi, state: telecrystal }
   price: 12
 #----------------------------------Космеций--------------------------------
 - type: material
   id: CosmCrystalMaterial
   stackEntity: SpaceCosmCrystall1
-  name: Космеций
+  name: космеций
   icon: { sprite: Victoria/Special_crystals/cosm_crystal.rsi, state: cosm_crystal }
   price: 5
 #----------------------------------сапфир----------------------------------
 - type: material
   id: SapphireMaterial
   stackEntity: SapphireCrystall1
-  name: Сапфир
+  name: сапфир
   icon: { sprite: Victoria/Special_crystals/sap_crystal.rsi, state: sap_crystal }
   price: 5
 #----------------------------------хром----------------------------------
 - type: material
   id: СhromeMaterial
   stackEntity: СhromeCrystall1
-  name: Хром
+  name: хром
   icon: { sprite: Victoria/Special_crystals/chrome_crystal.rsi, state: chrome_crystal }
   price: 2
 #----------------------------------кремний----------------------------------
 - type: material
   id: SiMaterial
   stackEntity: SiCrystall1
-  name: Кремний
+  name: кремний
   icon: { sprite: Victoria/Special_crystals/si_crystal.rsi, state: si_crystal }
   price: 0.1
 #-----------------------------------------------------Трансмутатор--------------------------------
