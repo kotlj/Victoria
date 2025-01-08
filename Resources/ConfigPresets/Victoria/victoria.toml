@@ -5,6 +5,10 @@ map_pool = "VictoriaDefaultMapPool"
 maxplayers = 120
 soft_max_players = 100
 map_rotation = true
+role_timers = false
+
+[vievport]
+maximum_width = 29
 
 [game.panic_bunker]
 enabled = false
@@ -16,7 +20,7 @@ enable_without_admins = false
 disable_with_admins = false
 
 [rules]
-time = 180.0
+time = 90
 
 [hub]
 advertise = true
