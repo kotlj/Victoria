@@ -7,6 +7,9 @@ soft_max_players = 100
 map_rotation = true
 role_timers = false
 
+[server]
+rules_file = "VictoriaRuleset"
+
 [vievport]
 maximum_width = 29
 
