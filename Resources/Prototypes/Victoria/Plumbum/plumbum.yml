@@ -209,7 +209,7 @@
     key: walls
     base: solid
   - type: RadiationBlocker
-    resistance: 2
+    resistance: 4
 #---------------------------сборка-------------------------------------
 - type: construction
   name: Plumbum wall

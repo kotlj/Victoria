@@ -53,7 +53,7 @@
   - type: RadiationBlocker
     resistance: 5
   - type: RadiationBlocker
-    resistance: 0.5
+    resistance: 1
 
 - type: entity
   id: UraniumReinforcedWindowDirectional
@@ -111,7 +111,7 @@
   - type: RadiationBlocker
     resistance: 2.5
   - type: RadiationBlocker
-    resistance: 0.3
+    resistance: 0.5
 
 - type: entity
   parent: ReinforcedUraniumWindow

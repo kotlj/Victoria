@@ -83,6 +83,8 @@
   - type: IconSmooth
     key: bricks
     base: brick
+  - type: RadiationBlocker
+    resistance: 1
 
 - type: entity
   parent: BaseWall
@@ -329,7 +331,7 @@
     key: walls
     base: gold
   - type: RadiationBlocker
-    resistance: 2
+    resistance: 3
 
 - type: entity
   parent: BaseWall

@@ -35,7 +35,7 @@
     price: 100
   - type: BlockWeather
   - type: RadiationBlocker
-    resistance: 0.3
+    resistance: 1.5
 
 - type: entity
   id: PlastitaniumWindowSquareBase
@@ -63,7 +63,7 @@
         layer:
         - GlassLayer
   - type: RadiationBlocker
-    resistance: 0.3
+    resistance: 0.8
 
 - type: entity
   id: PlastitaniumWindowIndestructible
