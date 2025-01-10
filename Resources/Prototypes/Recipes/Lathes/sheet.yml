@@ -4,7 +4,7 @@
   completetime: 0
   materials:
     RawIron: 30
-    Coal: 30
+    Coal: 10
 
 - type: latheRecipe
   id: SheetSteel30
@@ -12,7 +12,7 @@
   completetime: 2
   materials:
     RawIron: 900
-    Coal: 900
+    Coal: 300
 
 - type: latheRecipe
   id: SheetGlass1
@@ -35,16 +35,16 @@
   materials:
     RawQuartz: 50
     RawIron: 30
-    Coal: 15
+    Coal: 25
 
 - type: latheRecipe
   id: SheetRGlass30
   result: SheetRGlass
   completetime: 2
   materials:
-    RawQuartz: 500
-    RawIron: 300
-    Coal: 500
+    RawQuartz: 1500
+    RawIron: 900
+    Coal: 750
 
 - type: latheRecipe
   id: SheetPGlass1
@@ -70,7 +70,7 @@
     RawQuartz: 30
     RawPlasma: 30
     RawIron: 50
-    Coal: 15
+    Coal: 40
 
 - type: latheRecipe
   id: SheetRPGlass30
@@ -80,7 +80,7 @@
     RawQuartz: 3000
     RawPlasma: 3000
     RawIron: 1500
-    Coal: 500
+    Coal: 1200
 
 - type: latheRecipe
   id: SheetPlasma1
@@ -103,7 +103,7 @@
   materials:
     RawPlasma: 30
     RawIron: 60 #Twice as durable as steel, Twice the material cost
-    Coal: 30
+    Coal: 10
 
 - type: latheRecipe
   id: SheetPlasteel30
@@ -112,7 +112,7 @@
   materials:
     RawPlasma: 900
     RawIron: 1800 #Twice as durable as steel, Twice the material cost
-    Coal: 900
+    Coal: 300
 
 - type: latheRecipe
   id: SheetUranium30
