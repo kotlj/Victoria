@@ -1,0 +1,339 @@
+#------------------Рецепт--------------------------
+- type: reaction
+  id: CreatePlumbum
+  impact: Low
+  quantized: true
+  minTemp: 400
+  reactants:
+    Lead:
+      amount: 20
+  effects:
+    - !type:CreateEntityReactionEffect
+      entity: SheetPlumbum1
+#----------------------------------------------сама руда-------------------------------------
+- type: entity
+  parent: CrystalOreBase
+  id: OrePlumbum
+  name: свинцовая руда
+  description: Мягкая, светленькая и переливчатая.
+  suffix: Full
+  components:
+  - type: Stack
+    stackType: OrePlumbum
+  - type: Sprite
+    sprite: Victoria/Electron/ore_electronic.rsi
+    state: plumbum
+  - type: Extractable
+    grindableSolutionName: lead
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      RawPlumbum: 100
+  - type: SolutionContainerManager
+    solutions:
+      ironore:
+        reagents:
+        - ReagentId: Lead
+          Quantity: 40
+  - type: Tag
+    tags:
+    - Ore
+    - CrystalMaterial
+    
+- type: weightedRandomOre
+  id: RandomOreUranium
+  weights:
+    OreUranium: 3
+    OrePlumbum: 4
+#----------------------------------------------стак руды-------------------------------------
+- type: stack
+  id: OrePlumbum
+  name: свинцовая руда
+  icon: { sprite: Victoria/Electron/ore_electronic.rsi, state: plumbum }
+  spawn: OrePlumbum1
+  maxCount: 30
+#----------------------------------------------единица руды-------------------------------------
+- type: entity
+  parent: OrePlumbum
+  id: OrePlumbum1
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1  
+#----------------------------------------------материал руды-------------------------------------
+- type: material
+  id: RawPlumbum
+  stackEntity: OrePlumbum1
+  name: свинцовая руда
+  icon: { sprite: Victoria/Electron/ore_electronic.rsi, state: plumbum }
+  price: 0.1 
+#----------------------------------------------рудность руды-------------------------------------
+- type: ore
+  id: OrePlumbum
+  oreEntity: OrePlumbum1
+  minOreYield: 2
+  maxOreYield: 6
+#----------------------------------------------переплавка-------------------------------------
+- type: latheRecipe
+  id: MeltingPlumbum
+  result: Plumbum1
+  completetime: 2
+  materials:
+    RawPlumbum: 30
+    Coal: 30  
+#----------------------------------------------лист-------------------------------------
+- type: entity
+  parent: SheetMetalBase
+  id: SheetPlumbum
+  name: свинец
+  suffix: Full
+  components:
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      PlumbumMaterial: 100
+  - type: Stack
+    stackType: Plumbum
+    baseLayer: base
+    layerStates:
+    - plumbum
+    - plumbum_2
+    - plumbum_3
+  - type: Sprite
+    sprite: Victoria/Plumbum/plumbum_sheet.rsi
+    state: plumbum_3
+    layers:
+    - state: plumbum_3
+      map: ["base"]
+  - type: Item
+    heldPrefix: plumbum
+  - type: Appearance
+  - type: FloorTile
+    outputs:
+    - Plating
+  - type: Extractable
+    grindableSolutionName: plumbum
+  - type: Tag
+    tags:
+    - Sheet
+    - Metal
+    - CrystalMaterial
+#----------------------------------------------стак листов-------------------------------------
+- type: stack
+  id: Plumbum
+  name: листы свинца
+  icon: { sprite: Victoria/Plumbum/plumbum_sheet.rsi, state: plumbum }
+  spawn: SheetPlumbum1
+  maxCount: 30
+#----------------------------------------------один лист-------------------------------------
+- type: entity
+  parent: SheetPlumbum
+  id: SheetPlumbum1
+  suffix: Single
+  components:
+  - type: Sprite
+    state: plumbum
+  - type: Stack
+    stackType: Plumbum
+    count: 1  
+#----------------------------------------------материал листа-------------------------------------
+- type: material
+  id: PlumbumMaterial
+  stackEntity: SheetPlumbum1
+  name: свинец
+  icon: { sprite: Victoria/Plumbum/plumbum_sheet.rsi, state: plumbum }
+  price: 0.1   
+#----------------------------------------------свинец - золото-------------------------------------
+#---------------------------руда-------------------------------------
+- type: latheRecipe
+  id: GoldOreTransmutator
+  result: GoldOre1
+  completetime: 1
+  materials:
+    RawPlumbum: 100
+    RSCrystalMaterial: 100
+#---------------------------листы-------------------------------------
+- type: latheRecipe
+  id: GoldTransmutator
+  result: IngotGold1
+  completetime: 2
+  materials:
+    PlumbumMaterial: 500
+    RSCrystalMaterial: 500
+#----------------------------------------------стена-------------------------------------
+#---------------------------сама стена-------------------------------------
+- type: entity
+  parent: BaseWall
+  id: WallPlumbum
+  name: свинцовая стена
+  description: Менее прочная чем сталь, но лучше держит радиацию.
+  components:
+  - type: Tag
+    tags:
+      - Wall
+  - type: Sprite
+    sprite: Victoria/Plumbum/plumbum_wall.rsi
+  - type: WallReplacementMarker
+  - type: Construction
+    graph: Girder
+    node: wallPlumbum
+  - type: Icon
+    sprite: Victoria/Plumbum/plumbum_wall.rsi
+  - type: RCDDeconstructable
+    cost: 6
+    delay: 8
+    fx: EffectRCDDeconstruct8
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+      - !type:ChangeConstructionNodeBehavior
+        node: girder
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: IconSmooth
+    key: walls
+    base: solid
+  - type: RadiationBlocker
+    resistance: 0.8
+#---------------------------сборка-------------------------------------
+- type: construction
+  name: Plumbum wall
+  id: WallPlumbum
+  graph: Girder
+  startNode: start
+  targetNode: wallPlumbum
+  category: construction-category-structures
+  icon:
+    sprite: Victoria/Plumbum/plumbum_wall.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+#----------------------------------------------направленная стена-------------------------------------
+#---------------------------сама стена-------------------------------------
+# - type: entity
+  # id: WallPlumbumDirectional
+  # parent: BaseWall
+  # name: направленная свинцовая стенка
+  # description: Тонкая, мягкая, защищает от радиации.
+  # placement:
+    # mode: SnapgridCenter
+    # snap:
+    # - Window
+  # components:
+  # - type: WallMount
+    # arc: 360 # interact despite grilles
+  # - type: Tag
+    # tags:
+      # - Wall
+  # - type: Sprite
+    # drawdepth: Mobs
+    # sprite: Victoria/Plumbum/plumbum_wall_dir.rsi
+    # state: plumbum
+  # - type: Icon
+    # sprite: Victoria/Plumbum/plumbum_wall_dir.rsi
+    # state: plumbum
+  # - type: Physics
+  # - type: Fixtures
+    # fixtures:
+      # fix1:
+        # shape:
+          # !type:PhysShapeAabb
+          # bounds: "-0.49,-0.49,0.49,-0.36"
+        # mask:
+        # - FullTileMask
+        # layer:
+        # - WallLayer
+        # density: 1000
+  # - type: Damageable
+    # damageContainer: StructuralInorganic
+    # damageModifierSet: StructuralMetallic
+  # - type: Destructible
+    # thresholds:
+    # - trigger:
+        # !type:DamageTrigger
+        # damage: 100
+      # behaviors:
+      # - !type:DoActsBehavior
+        # acts: ["Destruction"]
+      # - !type:PlaySoundBehavior
+        # sound:
+          # collection: MetalSlam
+    # - trigger:
+        # !type:DamageTrigger
+        # damage: 50
+      # behaviors:
+      # - !type:PlaySoundBehavior
+        # sound:
+          # collection: MetalSlam
+      # - !type:ChangeConstructionNodeBehavior
+        # node: girder
+      # - !type:DoActsBehavior
+        # acts: ["Destruction"]
+  # - type: Airtight
+    # noAirWhenFullyAirBlocked: false
+    # airBlockedDirection:
+    # - South
+  # - type: Construction
+    # graph: WindowDirectional
+    # node: wallPlumbumDirectional
+  # - type: Appearance
+  # - type: RadiationBlocker
+    # resistance: 0.4
+#---------------------------сборка-------------------------------------
+# - type: construction
+  # name: Directional plumbum wall
+  # id: WallPlumbumDirectional
+  # graph: WindowDirectional
+  # startNode: start
+  # targetNode: wallPlumbumDirectional
+  # category: construction-category-structures
+  # description: Clear.
+  # canBuildInImpassable: true
+  # conditions:
+    # - !type:EmptyOrWindowValidInTile
+    # - !type:NoWindowsInTile
+  # icon:
+    # sprite: Victoria/Plumbum/plumbum_wall_dir.rsi
+    # state: plumbum
+  # objectType: Structure
+  # placementMode: SnapgridCenter
+#----------------------------------------------товар-------------------------------------
+- type: entity
+  id: CrateMaterialPlumbum
+  parent: CrateGenericSteel
+  name: ящик листов свинца
+  description: 90 листов свинца
+  components:
+  - type: StorageFill
+    contents:
+      - id: SheetPlumbum
+        amount: 3
+        
+- type: cargoProduct
+  id: MaterialPlumbum
+  icon:
+    sprite: Victoria/Plumbum/plumbum_sheet.rsi
+    state: plumbum_3
+  product: CrateMaterialPlumbum
+  cost: 1500
+  category: cargoproduct-category-name-materials
+  group: market

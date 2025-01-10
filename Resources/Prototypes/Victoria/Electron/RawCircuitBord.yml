@@ -57,8 +57,14 @@
   id: OreCooper
   oreEntity: OreCooper1
   minOreYield: 2
-  maxOreYield: 6
+  maxOreYield: 4
 #-----------------------------------Сам камень с "рудой"--------------------------
+- type: weightedRandomOre
+  id: RandomOreCooper
+  weights:
+    OreCooper: 3
+    OrePlumbum: 2
+
 - type: entity
   id: WallRockCooper
   parent: CrystalWallRock
@@ -68,7 +74,7 @@
   components:
     - type: OreVein
       oreChance: 1.0
-      currentOre: OreCooper
+      oreRarityPrototypeId: RandomOreCooper
     - type: Sprite
       sprite: Victoria/Electron/electronic_rock.rsi
       layers:

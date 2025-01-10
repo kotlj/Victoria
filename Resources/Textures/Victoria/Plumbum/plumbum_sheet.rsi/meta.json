@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-SA-3.0",
+  "copyright": "Sprite created by crazzy_pingvin",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "plumbum"
+    },
+    {
+      "name": "plumbum_2"
+    },
+    {
+      "name": "plumbum_3"
+    },
+    {
+      "name": "plumbum-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "plumbum-inhand-right",
+      "directions": 4
+    }
+  ]
+}

@@ -261,7 +261,7 @@
   components:
     - type: OreVein
       oreChance: 1.0
-      currentOre: OreUranium
+      oreRarityPrototypeId: RandomOreUranium
     - type: Sprite
       layers:
         - state: rock_asteroid

@@ -45,6 +45,12 @@
             - material: ClockworkGlass
               amount: 1
               doAfter: 3
+              
+        - to: wallPlumbumDirectional
+          steps:
+            - material: Plumbum
+              amount: 1
+              doAfter: 2
 
     - node: windowDirectional
       entity: WindowDirectional
@@ -173,3 +179,20 @@
               doAfter: 2
             - tool: Anchoring
               doAfter: 3
+              
+    - node: wallPlumbumDirectional
+      entity: WallPlumbumDirectional
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetPlumbum1
+              amount: 1
+            - !type:DeleteEntity {}
+          steps:
+            - tool: Screwing
+              doAfter: 1
+            - tool: Anchoring
+              doAfter: 2
+              
+    

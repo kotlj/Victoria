@@ -71,7 +71,7 @@
 - type: entity
   parent: CrystalOreBase
   id: SpaceBSCrystall
-  name: Блюспейс кристалл
+  name: блюспейс кристалл
   description: Синие и высокоэнергетические. Весьма дорогие и очень важные.
   suffix: Особые кристаллы, Full
   components:
@@ -168,7 +168,7 @@
 - type: entity
   parent: CrystalOreBase
   id: SpaceCosmCrystall
-  name: Кристалл космеция
+  name: кристалл космеция
   description: Белёсые и высокоэнергетические. Порядком дорогие и важные.
   suffix: Особые кристаллы, Full
   components:
@@ -461,7 +461,7 @@
 - type: entity
   id: TransmutatorMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: Плата трансмутатора
+  name: плата трансмутатора
   description: Электронная плата, необходимая для работы трансмутатора
   components:
     - type: MachineBoard
@@ -518,6 +518,8 @@
     - RecipeFiberglass
     - RecipeGethinax
     - RecipeSiPlazMaterial
+    - GoldOreTransmutator
+    - GoldTransmutator
 #----------------------------------Рецепты на модули с кристаллами-----------------------
 - type: latheRecipe
   id: BSModuleRecipe
@@ -627,5 +629,3 @@
       size: Small
     - type: Stack
       stackType: CMCoreStack  
-
-#--Удалить покупку движков
