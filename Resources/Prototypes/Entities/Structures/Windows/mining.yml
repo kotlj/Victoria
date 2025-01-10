@@ -50,6 +50,8 @@
       sprite: Structures/Windows/cracks.rsi
   - type: StaticPrice
     price: 100
+  - type: RadiationBlocker
+    resistance: 0.3
 
 - type: entity
   parent: ShuttleWindow
@@ -92,3 +94,5 @@
   - type: DamageVisuals
     damageOverlay:
       sprite: Structures/Windows/cracks_diagonal.rsi
+  - type: RadiationBlocker
+    resistance: 0.3

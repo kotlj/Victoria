@@ -34,6 +34,8 @@
   - type: StaticPrice
     price: 100
   - type: BlockWeather
+  - type: RadiationBlocker
+    resistance: 0.3
 
 - type: entity
   id: PlastitaniumWindowSquareBase
@@ -60,6 +62,8 @@
         - FullTileMask
         layer:
         - GlassLayer
+  - type: RadiationBlocker
+    resistance: 0.3
 
 - type: entity
   id: PlastitaniumWindowIndestructible
@@ -146,6 +150,8 @@
     airBlockedDirection:
     - South
     - East
+  - type: RadiationBlocker
+    resistance: 0.3
 
 - type: entity
   id: PlastitaniumWindowDiagonalIndestructible
