@@ -185,6 +185,9 @@
       - ClothingHeadHatWelding
       - WetFloorSign
       - ClothingHeadHatCone
+      - FloorGreenCircuit
+      - FloorBlueCircuit
+      - FloorRedCircuit
   - type: EmagLatheRecipes
     emagStaticRecipes:
       - BoxLethalshot
@@ -432,9 +435,6 @@
     - HotplateMachineCircuitboard
     - PrinterDocMachineCircuitboard # Corvax-Printer
     - UniformPrinterMachineCircuitboard
-    - FloorGreenCircuit
-    - FloorBlueCircuit
-    - FloorRedCircuit
     - MicrowaveMachineCircuitboard
     - ReagentGrinderMachineCircuitboard
     - ElectricGrillMachineCircuitboard
