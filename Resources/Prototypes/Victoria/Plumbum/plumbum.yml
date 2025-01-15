@@ -76,7 +76,7 @@
 #----------------------------------------------переплавка-------------------------------------
 - type: latheRecipe
   id: MeltingPlumbum
-  result: Plumbum1
+  result: Plumbum
   completetime: 2
   materials:
     RawPlumbum: 30
