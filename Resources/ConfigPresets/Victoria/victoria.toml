@@ -11,7 +11,7 @@ role_timers = false
 rules_file = "VictoriaRuleset"
 
 [viewport]
-maximum_width = 26
+maximum_width = 29
 
 [game.panic_bunker]
 enabled = false
