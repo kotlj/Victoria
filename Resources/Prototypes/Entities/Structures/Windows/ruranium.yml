@@ -51,8 +51,6 @@
   - type: StaticPrice
     price: 215
   - type: RadiationBlocker
-    resistance: 5
-  - type: RadiationBlocker
     resistance: 1
 
 - type: entity
@@ -108,8 +106,6 @@
         acts: [ "Destruction" ]
   - type: StaticPrice
     price: 110
-  - type: RadiationBlocker
-    resistance: 2.5
   - type: RadiationBlocker
     resistance: 0.5
 

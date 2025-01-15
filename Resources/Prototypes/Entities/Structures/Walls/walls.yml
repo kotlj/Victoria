@@ -1395,7 +1395,7 @@
       sprite: Structures/Magic/forcewall.rsi
       state: forcewall
     - type: RadiationBlocker
-    resistance: 0.9
+      resistance: 0.9
 
 - type: entity
   parent: BaseWall
