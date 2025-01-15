@@ -180,19 +180,19 @@
             - tool: Anchoring
               doAfter: 3
               
-    - node: wallPlumbumDirectional
-      entity: WallPlumbumDirectional
-      edges:
-        - to: start
-          completed:
-            - !type:SpawnPrototype
-              prototype: SheetPlumbum1
-              amount: 1
-            - !type:DeleteEntity {}
-          steps:
-            - tool: Screwing
-              doAfter: 1
-            - tool: Anchoring
-              doAfter: 2
-              
-    
+#    - node: wallPlumbumDirectional
+#      entity: WallPlumbumDirectional
+#      edges:
+#        - to: start
+#          completed:
+#            - !type:SpawnPrototype
+#              prototype: SheetPlumbum1
+#              amount: 1
+#            - !type:DeleteEntity {}
+#          steps:
+#            - tool: Screwing
+#              doAfter: 1
+#            - tool: Anchoring
+#              doAfter: 2
+#              
+#    

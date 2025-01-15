@@ -52,261 +52,261 @@
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule0.xml"
 
-  - type: guideEntry
+- type: guideEntry
   id: VictoriaRule01
   name: Правило 0.1
-  priority: 1
+  priority: 2
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule0.1.xml"
 
 - type: guideEntry
   id: VictoriaRule02
   name: Правило 0.2
-  priority: 1
+  priority: 3
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule0.2.xml"
 
 - type: guideEntry
   id: VictoriaRule03
   name: Правило 0.3
-  priority: 1
+  priority: 4
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule0.3.xml"
 
 - type: guideEntry
   id: VictoriaRule04
   name: Правило 0.4
-  priority: 1
+  priority: 5
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule0.4.xml"
 
 - type: guideEntry
   id: VictoriaRule05
   name: Правило 0.5
-  priority: 1
+  priority: 6
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule0.5.xml"
 
 - type: guideEntry
   id: VictoriaRule1
   name: Правило 1
-  priority: 2
+  priority: 7
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule1.xml"
 
 - type: guideEntry
   id: VictoriaRule11
   name: Правило 1.1
-  priority: 2
+  priority: 8
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule1.1.xml"
 
 - type: guideEntry
   id: VictoriaRule12
   name: Правило 1.2
-  priority: 2
+  priority: 9
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule1.2.xml"
 
 - type: guideEntry
   id: VictoriaRule2
   name: Правило 2
-  priority: 3
+  priority: 10
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule2.xml"
 
 - type: guideEntry
   id: VictoriaRule21
   name: Правило 2.1
-  priority: 3
+  priority: 11
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule2.1.xml"
 
 - type: guideEntry
   id: VictoriaRule22
   name: Правило 2.2
-  priority: 3
+  priority: 12
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule2.2.xml"
 
 - type: guideEntry
   id: VictoriaRule23
   name: Правило 2.3
-  priority: 3
+  priority: 13
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule2.3.xml"
 
 - type: guideEntry
   id: VictoriaRule24
   name: Правило 2.4
-  priority: 3
+  priority: 14
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule2.4.xml"
 
 - type: guideEntry
   id: VictoriaRule25
   name: Правило 2.5
-  priority: 3
+  priority: 15
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule2.5.xml"
 
 - type: guideEntry
   id: VictoriaRule26
   name: Правило 2.6
-  priority: 3
+  priority: 16
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule2.6.xml"
 
 - type: guideEntry
   id: VictoriaRule27
   name: Правило 2.7
-  priority: 3
+  priority: 17
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule2.7.xml"
 
 - type: guideEntry
   id: VictoriaRule28
   name: Правило 2.8
-  priority: 3
+  priority: 18
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule2.8.xml"
 
 - type: guideEntry
   id: VictoriaRule3
   name: Правило 3
-  priority: 4
+  priority: 19
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule3.xml"
 
 - type: guideEntry
   id: VictoriaRule31
   name: Правило 3.1
-  priority: 5
+  priority: 20
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule3.1.xml"
 
 - type: guideEntry
   id: VictoriaRule32
   name: Правило 3.2
-  priority: 6
+  priority: 21
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule3.2.xml"
 
 - type: guideEntry
   id: VictoriaRule33
   name: Правило 3.3
-  priority: 7
+  priority: 22
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule3.3.xml"
 
 - type: guideEntry
   id: VictoriaRule34
   name: Правило 3.4
-  priority: 8
+  priority: 23
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule3.4.xml"
 
 - type: guideEntry
   id: VictoriaRule35
   name: Правило 3.5
-  priority: 9
+  priority: 24
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule3.5.xml"
 
 - type: guideEntry
   id: VictoriaRule36
   name: Правило 3.6
-  priority: 10
+  priority: 25
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule3.6.xml"
 
 - type: guideEntry
   id: VictoriaRule4
   name: Правило 4
-  priority: 14
+  priority: 26
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule4.xml"
 
 - type: guideEntry
   id: VictoriaRule41
   name: Правило 4.1
-  priority: 14
+  priority: 27
   ruleEntry: true
-  text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule4.1.xml
+  text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule4.1.xml"
 
 - type: guideEntry
   id: VictoriaRule42
   name: Правило 4.2
-  priority: 14
+  priority: 28
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule4.2.xml"
 
 - type: guideEntry
   id: VictoriaRule43
   name: Правило 4.3
-  priority: 14
+  priority: 29
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule4.3.xml"
 
 - type: guideEntry
   id: VictoriaRule44
   name: Правило 4.4
-  priority: 14
+  priority: 30
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule4.4.xml"
 
 - type: guideEntry
   id: VictoriaRule5
   name: Правило 5
-  priority: 14
+  priority: 31
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule5.xml"
 
 - type: guideEntry
   id: VictoriaRule51
   name: Правило 5.1
-  priority: 14
+  priority: 32
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule5.1.xml"
 
 - type: guideEntry
   id: VictoriaRule52
   name: Правило 5.2
-  priority: 14
+  priority: 33
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule5.2.xml"
 
 - type: guideEntry
   id: VictoriaRule53
   name: Правило 5.3
-  priority: 14
+  priority: 34
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule5.3.xml"
 
 - type: guideEntry
   id: VictoriaRule54
   name: Правило 5.4
-  priority: 14
+  priority: 35
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule5.4.xml"
 
 - type: guideEntry
   id: VictoriaRule6
   name: Правило 6
-  priority: 15
+  priority: 36
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule6.xml"
 
 - type: guideEntry
   id: VictoriaRule61
   name: Правило 6.1
-  priority: 15
+  priority: 37
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule6.1.xml"
 
 - type: guideEntry
   id: VictoriaRule62
   name: Правило 6.2
-  priority: 15
+  priority: 38
   ruleEntry: true
   text: "/ServerInfo/Victoria/Guidebook/ServerRules/Rule6.2.xml"

@@ -541,8 +541,8 @@
           collection: MetalSlam
       - !type:DoActsBehavior
         acts: ["Destruction"]
-    - type: RadiationBlocker
-      resistance: 0.4
+  - type: RadiationBlocker
+    resistance: 0.4
 
 - type: entity
   id: WallPlastitaniumDiagonalIndestructible
