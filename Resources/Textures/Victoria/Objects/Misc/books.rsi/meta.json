@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-SA-3.0",
+  "copyright": "Sprite created by DruByLife",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "book_BookMaterialsScience2"
+    },
+    {
+      "name": "book_BookLogicToxy"
+    },
+    {
+      "name": "book_BaseElectro"
+    },
+    {
+      "name": "book_CookingBase"
+    },
+    {
+      "name": "book_DrinksBase"
+    },
+    {
+      "name": "book_KorpKodex"
+    },
+    {
+      "name": "book_MedOsn"
+    },
+    {
+      "name": "book_Robototech"
+    },
+    {
+      "name": "book_SingElectro"
+    },
+    {
+      "name": "book_TeslaElectro"
+    },
+    {
+      "name": "book_LE"
+    }
+  ]
+}

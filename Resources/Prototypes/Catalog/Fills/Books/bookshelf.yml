@@ -58,8 +58,8 @@
       - id: BookTruth
       - id: BookWatched
       - id: BookWorld
-      - id: BookBusido # Corvax-Books
-    # Corvax-Lore-Start
+      - id: BookBusido
+      # Corvax-Books
     - !type:GroupSelector
       rolls: !type:RangeNumberSelector
         range: 0, 2
@@ -94,7 +94,22 @@
         - id: BookMBS1
         - id: BookMBS2
         - id: BookImplants
-    # Corvax-Lore-End
+    # Victoria_Books_learn   
+    - !type:GroupSelector
+      rolls: !type:RangeNumberSelector
+        range: 0, 2
+      children:
+        - id: BookMaterialsScience2
+        - id: BookLogicToxy
+        - id: BookBaseElectro
+        - id: BookCookingBase
+        - id: BookDrinksBase
+        - id: BookKorpKodex
+        - id: BookMedOsn
+        - id: BookRobototech
+        - id: BookSingElectro
+        - id: BookTeslaElectro
+    # Victoria_Books_learn
 
 - type: entity
   id: BookshelfFilled
