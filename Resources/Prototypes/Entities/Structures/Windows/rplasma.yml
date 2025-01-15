@@ -11,8 +11,6 @@
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: RGlass
-  - type: RadiationBlocker
-    resistance: 4
   - type: Destructible
     thresholds:
     - trigger:
@@ -55,6 +53,8 @@
       sprite: Structures/Windows/cracks.rsi
   - type: StaticPrice
     price: 132
+  - type: RadiationBlocker
+    resistance: 1.5
 
 - type: entity
   id: PlasmaReinforcedWindowDirectional
@@ -82,8 +82,6 @@
     trackAllDamage: true
     damageOverlay:
       sprite: Structures/Windows/cracks_directional.rsi
-  - type: RadiationBlocker
-    resistance: 2
   - type: Destructible
     thresholds:
     - trigger:
@@ -111,6 +109,8 @@
         acts: [ "Destruction" ]
   - type: StaticPrice
     price: 66
+  - type: RadiationBlocker
+    resistance: 0.8
 
 - type: entity
   parent: ReinforcedPlasmaWindow

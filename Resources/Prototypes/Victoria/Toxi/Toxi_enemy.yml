@@ -62,7 +62,7 @@
 - type: entity
   name: Ядовитый слайм
   parent: MobAdultSlimes
-  description: Мерзкая жуть. С его зубов капает жижа...
+  description: Токсичное желе? Нет, оно не хамит, оно...
   id: MobAdultSlimesToxi
   components:
     - type: Sprite

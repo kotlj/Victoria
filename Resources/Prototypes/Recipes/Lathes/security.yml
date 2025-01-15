@@ -198,21 +198,24 @@
   id: MagazinePistolEmpty
   result: MagazinePistolEmpty
   materials:
-    Steel: 25
+    Steel: 15
+    PlumbumMaterial: 10
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: MagazinePistol
   result: MagazinePistol
   materials:
-    Steel: 145
+    Steel: 100
+    PlumbumMaterial: 45
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: MagazinePistolPractice
   result: MagazinePistolPractice
   materials:
-    Steel: 85
+    Steel: 65
+    PlumbumMaterial: 20
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
@@ -243,7 +246,8 @@
   id: MagazinePistolSubMachineGun
   result: MagazinePistolSubMachineGun
   materials:
-    Steel: 300
+    Steel: 230
+    PlumbumMaterial: 70
 
 - type: latheRecipe
   parent: BaseEmptyAmmoRecipe
@@ -257,21 +261,24 @@
   id: MagazinePistolSubMachineGunTopMounted
   result: MagazinePistolSubMachineGunTopMounted
   materials:
-    Steel: 300
+    Steel: 230
+    PlumbumMaterial: 70
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: MagazineBoxPistol
   result: MagazineBoxPistol
   materials:
-    Steel: 600
+    Steel: 450
+    PlumbumMaterial: 150
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: MagazineBoxMagnum
   result: MagazineBoxMagnum
   materials:
-    Steel: 240
+    Steel: 150
+    PlumbumMaterial: 90
 
 - type: latheRecipe
   parent: BaseEmptyAmmoRecipe
@@ -285,7 +292,8 @@
   id: MagazineRifle
   result: MagazineRifle
   materials:
-    Steel: 475
+    Steel: 325
+    PlumbumMaterial: 150
 
 
 - type: latheRecipe
@@ -293,7 +301,8 @@
   id: MagazineRiflePractice
   result: MagazineRiflePractice
   materials:
-    Steel: 175
+    Steel: 100
+    PlumbumMaterial: 75
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
@@ -324,14 +333,16 @@
   id: MagazineLightRifle
   result: MagazineLightRifle
   materials:
-    Steel: 565
+    Steel: 365
+    PlumbumMaterial: 200
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: MagazineLightRiflePractice
   result: MagazineLightRiflePractice
   materials:
-    Steel: 205
+    Steel: 130
+    PlumbumMaterial: 75
 
 
 - type: latheRecipe
@@ -356,21 +367,24 @@
   id: MagazineBoxRifle
   result: MagazineBoxRifle
   materials:
-    Steel: 750
+    Steel: 500
+    PlumbumMaterial: 250
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: MagazineBoxLightRifle
   result: MagazineBoxLightRifle
   materials:
-    Steel: 900
+    Steel: 650
+    PlumbumMaterial: 250
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: BoxLethalshot
   result: BoxLethalshot
   materials:
-    Steel: 320
+    Steel: 240
+    PlumbumMaterial: 80
 
 - type: latheRecipe
   parent: BaseAmmoRecipe

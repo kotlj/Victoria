@@ -416,6 +416,9 @@
     idleState: icon
     runningState: building
     staticRecipes:
+    - SMESMachineCircuitboard
+    - SubstationMachineCircuitboard
+    - APCElectronics
     - ProtolatheMachineCircuitboard
     - AutolatheMachineCircuitboard
     - CircuitImprinterMachineCircuitboard

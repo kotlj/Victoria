@@ -39,6 +39,17 @@
             - material: Steel
               amount: 2
               doAfter: 2
+              
+        - to: wallPlumbum
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          conditions:
+            - !type:EntityAnchored {}
+          steps:
+            - material: Plumbum
+              amount: 2
+              doAfter: 2
 
         - to: reinforcedGirder
           completed:
@@ -168,6 +179,18 @@
           completed:
             - !type:GivePrototype
               prototype: SheetSteel1
+              amount: 2
+          steps:
+            - tool: Welding
+              doAfter: 10
+              
+    - node: wallPlumbum
+      entity: WallPlumbum
+      edges:
+        - to: girder
+          completed:
+            - !type:GivePrototype
+              prototype: SheetPlumbum1
               amount: 2
           steps:
             - tool: Welding

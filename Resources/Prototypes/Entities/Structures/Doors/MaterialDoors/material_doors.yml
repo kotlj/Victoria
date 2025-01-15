@@ -162,6 +162,8 @@
   - type: Construction
     graph: DoorGraph
     node: plasmaDoor
+  - type: RadiationBlocker
+    resistance: 0.3
 
 - type: entity
   id: GoldDoor
@@ -177,6 +179,8 @@
   - type: Construction
     graph: DoorGraph
     node: goldDoor
+  - type: RadiationBlocker
+    resistance: 0.5
 
 - type: entity
   id: SilverDoor

@@ -6,7 +6,7 @@
 - type: entity
   parent: CrystalOreBase
   id: DigitalCircuit
-  name: Цифровые компоненты
+  name: цифровые компоненты
   description: Маленький чёрный квадратный "жук" с металлическими ножками, который может УПРАВЛЯТЬ МИРОМ!
   suffix: Электроника, Full
   components:
@@ -60,7 +60,7 @@
 - type: entity
   parent: DigitalCircuit
   id: AnalogCircuit
-  name: Аналоговые компоненты
+  name: аналоговые компоненты
   description: Маленький чёрный квадратный "жук" с металлическими ножками, который может УПРАВЛЯТЬ МИРОМ!
   suffix: Электроника, Full
   components:
@@ -108,7 +108,7 @@
 - type: entity
   parent: DigitalCircuit
   id: PulseCircuit
-  name: Импульсные компоненты
+  name: импульсные компоненты
   description: Маленький чёрный квадратный "жук" с металлическими ножками, который может УПРАВЛЯТЬ МИРОМ!
   suffix: Электроника, Full
   components:
@@ -157,7 +157,7 @@
 - type: entity
   parent: DigitalCircuit
   id: PowerCircuit
-  name: Силовые компоненты
+  name: силовые компоненты
   description: Маленький чёрный квадратный "жук" с металлическими ножками, который может УПРАВЛЯТЬ МИРОМ!
   suffix: Электроника, Full
   components:
@@ -303,7 +303,7 @@
 - type: entity
   parent: DigitalCircuit
   id: DiscreteCircuit
-  name: Дискретные компоненты
+  name: дискретные компоненты
   description: Маленький чёрный квадратный "жук" с металлическими ножками, который может УПРАВЛЯТЬ МИРОМ!
   suffix: Электроника, Full
   components:

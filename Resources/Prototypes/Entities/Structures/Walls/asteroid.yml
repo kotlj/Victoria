@@ -48,6 +48,8 @@
           path: /Audio/Effects/break_stone.ogg
           params:
             volume: -6
+  - type: RadiationBlocker
+    resistance: 0.7
 
 # Ore veins
 - type: entity
@@ -261,7 +263,7 @@
   components:
     - type: OreVein
       oreChance: 1.0
-      currentOre: OreUranium
+      oreRarityPrototypeId: RandomOreUranium
     - type: Sprite
       layers:
         - state: rock_asteroid
