@@ -1,0 +1,147 @@
+#-----------------------------------------------схема сканнера----------------------------------------
+- type: Tag
+  id: MachineCircuitboardCosmScanner
+
+- type: stack
+  id: MachineCircuitboardCosmScannerStack
+  name: Плата Редспейс-сканнера
+  icon: { sprite: Objects/Misc/module.rsi, state: science }
+  spawn: MachineCircuitboardCosmScanner
+  maxCount: 1
+
+- type: material
+  id: MachineCircuitboardCosmScannerMaterial
+  stackEntity: CMCoreStack
+  name: Плата Редспейс-сканнера
+  icon: { sprite: Objects/Misc/module.rsi, state: science }
+  price: 1 
+
+- type: entity
+  id: MachineCircuitboardCosmScanner
+  parent: CrystalOreBase
+  name: Плата Редспейс-сканнера
+  description: Электронная плата для системы управления космециевым сканнером.
+  suffix: Космециевая машина
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/module.rsi
+      state: science
+    - type: Tag
+      tags:
+        - MachineCircuitboardCosmScanner
+    - type: Item
+      size: Small
+    - type: Stack
+      stackType: MachineCircuitboardCosmScannerStack
+      count: 1 
+    - type: PhysicalComposition
+      materialComposition:
+        MachineCircuitboardCosmScannerMaterial: 1000   
+    - type: Material  
+#-----------------------------------------------основа сканнера----------------------------------------  
+- type: entity
+  id: CosmScannerBase
+  parent: BaseStructureDynamic
+  name: Основа Редспейс-сканнера
+  description: Все основные системы космециевого сканнера распологаются тут, но не хватает верхнего силового модуля.
+  suffix: Не маппить!, Космециевая машина
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Transform
+    anchored: true
+    noRot: false
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 60
+        mask:
+        - MachineMask
+        layer:
+        - GlassAirlockLayer
+  - type: InteractionOutline
+  - type: Construction
+    graph: Machine
+    node: cosmMachineScannereBase
+  - type: Sprite
+    sprite: Victoria/Cosm_machine/cosm_machine.rsi
+    state: scanner_base
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors: #excess damage, don't spawn entities.
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 350
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak 
+#-----------------------------------------------сканнер----------------------------------------
+- type: entity
+  id: CosmScanner
+  parent: BaseMachine
+  name: Редспейс-сканнер
+  description: Крупный сканнер совместной разработки НаноТрейзен и Космологистики, который используется для накопление существенного количества энергии в космециевых ядрах.
+  suffix: Не маппить!, Космециевая машина
+  components:
+    - type: AmbientSound
+      volume: -7
+      range: 3
+      sound:
+        path: /Audio/Ambience/Objects/periodic_beep.ogg
+    - type: Sprite
+      sprite: Victoria/Cosm_machine/cosm_machine.rsi
+      layers:
+      - state: scanner
+      - state: rs
+        shader: unshaded
+    - type: ExtensionCableReceiver
+    - type: ApcPowerReceiver
+      powerLoad: 1500
+    - type: ActivatableUI
+      key: enum.ResearchClientUiKey.Key
+    - type: ActivatableUIRequiresPower
+    - type: UserInterface
+      interfaces:
+        enum.ResearchClientUiKey.Key:
+          type: ResearchClientBoundUserInterface
+    - type: Appearance
+    - type: GenericVisualizer
+      visuals:
+        enum.PowerDeviceVisuals.Powered:
+          enum.PowerDeviceVisualLayers.Powered:
+            True: {visible: true}
+            False: {visible: false}
+    - type: ResearchClient
+    - type: ResearchPointSource
+      pointspersecond: 7
+      active: true
+    - type: Construction
+      graph: Machine
+      node: cosmScanner  
+    - type: StaticPrice
+      price: 5000  
+    - type: PointLight
+      radius: 1.5
+      energy: 1.6
+      color: "#6e0d0d"
+      castShadows: false      

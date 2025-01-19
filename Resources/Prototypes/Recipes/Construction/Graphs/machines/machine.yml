@@ -64,6 +64,23 @@
           steps:
             - tool: Screwing
               doAfter: 0.5
+              
+        - to: machineCosm
+          conditions:
+            - !type:EntityAnchored
+            - !type:MachineFrameComplete
+              guideIconBoard:
+                sprite: Objects/Misc/module.rsi
+                state: id_mod
+              guideIconParts:
+                sprite: Objects/Misc/stock_parts.rsi
+                state: scan_module
+          steps:
+            - material: Steel
+              amount: 5
+              doAfter: 1
+            - tool: Screwing
+              doAfter: 0.5
 
         - to: machineFrame
           conditions:
@@ -104,7 +121,277 @@
           steps:
             - tool: Prying
               doAfter: 2
-
+              
+        - to: machineCosm
+          steps:
+            - tool: Screwing
+              doAfter: 2
+            - material: Steel
+              amount: 5
+              doAfter: 1
+            - tool: Screwing
+              doAfter: 2            
+    
+    - node: machineCosm
+      entity: !type:BoardNodeEntity { container: machine_board }
+      edges:
+        - to: machineFrame
+          completed:
+            - !type:RaiseEvent
+              event: !type:MachineDeconstructedEvent
+              broadcast: false
+          conditions:
+            - !type:EntityAnchored
+            - !type:WirePanel
+          steps:
+            - tool: Prying
+              doAfter: 2
+    
+        - to: cosmMachineAccumeBase
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          conditions:
+            - !type:EntityAnchored {}
+          steps:
+            - material: MachineCircuitboardCosmAccumStack
+              amount: 1
+              doAfter: 2
+            - material: Steel
+              amount: 15
+              doAfter: 10
+            - material: Cooper
+              amount: 5
+              doAfter: 2
+            - tool: Welding
+              doAfter: 5
+            - tool: Screwing
+              doAfter: 5
+            - material: CMCoreStack
+              amount: 1
+              doAfter: 2 
+            - material: CableMV
+              amount: 5
+              doAfter: 3
+            - material: CMCoreStack
+              amount: 1
+              doAfter: 2
+            - material: Capacitor
+              amount: 5
+              doAfter: 3 
+            - tool: Screwing
+              doAfter: 5               
+            - material: CMCoreStack
+              amount: 1
+              doAfter: 2 
+            - material: CableMV
+              amount: 5
+              doAfter: 3
+            - material: CMCoreStack
+              amount: 1
+              doAfter: 2 
+            - material: Capacitor
+              amount: 5
+              doAfter: 3
+            - tool: Screwing
+              doAfter: 5
+            - material: Steel
+              amount: 5
+              doAfter: 2
+            - material: СhromeCrystall
+              amount: 10
+              doAfter: 5
+            - tool: Welding
+              doAfter: 5
+            - material: CableMV
+              amount: 20
+              doAfter: 10
+            - tool: Screwing
+              doAfter: 5
+            - material: ReinforcedGlass
+              amount: 10
+              doAfter: 5
+            - tool: Screwing
+              doAfter: 5
+            - material: Plastic
+              amount: 20
+              doAfter: 7
+            - tool: Screwing
+              doAfter: 5
+              
+        - to: cosmMachineBeaconBase
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          conditions:
+            - !type:EntityAnchored {}
+          steps:
+            - material: MachineCircuitboardCosmBeaconStack
+              amount: 1
+              doAfter: 2
+            - material: Steel
+              amount: 10
+              doAfter: 10
+            - material: Cooper
+              amount: 10
+              doAfter: 2
+            - tool: Welding
+              doAfter: 7
+            - tool: Screwing
+              doAfter: 2
+            - material: BSModuleStack
+              amount: 1
+              doAfter: 2 
+            - material: Cable
+              amount: 5
+              doAfter: 3
+            - material: Capacitor
+              amount: 1
+              doAfter: 1
+            - material: BSModuleStack
+              amount: 1
+              doAfter: 2 
+            - material: Cable
+              amount: 5
+              doAfter: 3
+            - material: BSModuleStack
+              amount: 1
+              doAfter: 2
+            - tool: Screwing
+              doAfter: 5 
+            - material: Capacitor
+              amount: 4
+              doAfter: 3
+            - tool: Screwing
+              doAfter: 5              
+            - material: BSModuleStack
+              amount: 1
+              doAfter: 2 
+            - material: Cable
+              amount: 5
+              doAfter: 3
+            - material: Capacitor
+              amount: 1
+              doAfter: 1
+            - material: BSModuleStack
+              amount: 1
+              doAfter: 2 
+            - material: Cable
+              amount: 5
+              doAfter: 3
+            - material: BSModuleStack
+              amount: 1
+              doAfter: 2
+            - tool: Screwing
+              doAfter: 5 
+            - material: Capacitor
+              amount: 4
+              doAfter: 3
+            - tool: Screwing
+              doAfter: 5 
+            - material: Steel
+              amount: 5
+              doAfter: 2
+            - material: Cable
+              amount: 30
+              doAfter: 10
+            - material: ReinforcedGlass
+              amount: 20
+              doAfter: 5
+            - tool: Screwing
+              doAfter: 5
+            - material: Plastic
+              amount: 20
+              doAfter: 7
+            - tool: Screwing
+              doAfter: 5
+              
+        - to: cosmMachineScannerBase
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          conditions:
+            - !type:EntityAnchored {}
+          steps:
+            - material: MachineCircuitboardCosmScannerStack
+              amount: 1
+              doAfter: 2
+            - material: Steel
+              amount: 20
+              doAfter: 10
+            - material: Cooper
+              amount: 5
+              doAfter: 2
+            - tool: Welding
+              doAfter: 7
+            - tool: Screwing
+              doAfter: 2
+            - material: RSModuleStack
+              amount: 1
+              doAfter: 2 
+            - material: Cable
+              amount: 5
+              doAfter: 3
+            - material: Capacitor
+              amount: 1
+              doAfter: 1
+            - material: BSModuleStack
+              amount: 1
+              doAfter: 2 
+            - material: Cable
+              amount: 5
+              doAfter: 3
+            - tool: Screwing
+              doAfter: 5 
+            - material: Capacitor
+              amount: 4
+              doAfter: 3
+            - tool: Screwing
+              doAfter: 5              
+            - material: RSModuleStack
+              amount: 1
+              doAfter: 2 
+            - material: Cable
+              amount: 5
+              doAfter: 3
+            - material: Capacitor
+              amount: 1
+              doAfter: 1
+            - material: BSModuleStack
+              amount: 1
+              doAfter: 2 
+            - material: Cable
+              amount: 5
+              doAfter: 3
+            - tool: Screwing
+              doAfter: 5 
+            - material: Capacitor
+              amount: 4
+              doAfter: 3
+            - tool: Screwing
+              doAfter: 5 
+            - material: Steel
+              amount: 5
+              doAfter: 2
+            - material: СhromeCrystall
+              amount: 5
+              doAfter: 2
+            - tool: Welding
+              doAfter: 5
+            - material: Cable
+              amount: 20
+              doAfter: 7
+            - material: ReinforcedGlass
+              amount: 20
+              doAfter: 7
+            - tool: Screwing
+              doAfter: 5
+            - material: Plastic
+              amount: 10
+              doAfter: 4
+            - tool: Screwing
+              doAfter: 5
+                      
     - node: destroyedMachineFrame
       entity: MachineFrameDestroyed
       edges:
@@ -117,3 +404,284 @@
               prototype: SheetSteel1
               amount: 3
             - !type:DeleteEntity {}
+            
+    - node: cosmMachineAccumeBase
+      entity: CosmAccumBase
+      actions:
+        - !type:AddContainer
+          container: machine_parts
+        - !type:AddContainer
+          container: machine_board
+        - !type:MachineFrameRegenerateProgress
+      edges:
+        - to: machineCosm
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 20
+            - !type:SpawnPrototype
+              prototype: Cooper1
+              amount: 5
+            - !type:SpawnPrototype
+              prototype: MachineCircuitboardCosmAccum
+              amount: 1
+            - !type:SpawnPrototype
+              prototype: CMCore
+              amount: 4
+            - !type:SpawnPrototype
+              prototype: СhromeCrystall1
+              amount: 10
+            - !type:SpawnPrototype
+              prototype: CapacitorStockPart
+              amount: 10
+            - !type:SpawnPrototype
+              prototype: CableMVStack10
+              amount: 1
+            - !type:SpawnPrototype
+              prototype: SheetRGlass1
+              amount: 10
+            - !type:SpawnPrototype
+              prototype: SheetPlastic1
+              amount: 20
+          conditions:
+            - !type:EntityAnchored
+            - !type:WirePanel
+          steps:
+            - tool: Prying
+              doAfter: 2
+              
+        - to: cosmAccume
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          conditions:
+            - !type:EntityAnchored {}
+          steps:
+            - material: Steel
+              amount: 10
+              doAfter: 3
+            - tool: Screwing
+              doAfter: 5
+            - material: Cooper
+              amount: 5
+              doAfter: 2
+            - tool: Welding
+              doAfter: 5
+            - material: CableHV
+              amount: 10
+              doAfter: 3
+            - material: Capacitor
+              amount: 5
+              doAfter: 3
+            - tool: Screwing
+              doAfter: 5
+              
+    - node: cosmMachineBeaconBase
+      entity: CosmBeaconBase
+      actions:
+        - !type:AddContainer
+          container: machine_parts
+        - !type:AddContainer
+          container: machine_board
+        - !type:MachineFrameRegenerateProgress
+      edges:
+        - to: machineCosm
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 15
+            - !type:SpawnPrototype
+              prototype: Cooper1
+              amount: 10
+            - !type:SpawnPrototype
+              prototype: MachineCircuitboardCosmBeacon
+              amount: 1
+            - !type:SpawnPrototype
+              prototype: BSModule
+              amount: 6
+            - !type:SpawnPrototype
+              prototype: CapacitorStockPart
+              amount: 10
+            - !type:SpawnPrototype
+              prototype: CableApcStack10
+              amount: 4
+            - !type:SpawnPrototype
+              prototype: SheetRGlass1
+              amount: 20
+            - !type:SpawnPrototype
+              prototype: SheetPlastic1
+              amount: 20
+          conditions:
+            - !type:EntityAnchored
+            - !type:WirePanel
+          steps:
+            - tool: Prying
+              doAfter: 2
+              
+        - to: cosmBeacon
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          conditions:
+            - !type:EntityAnchored {}
+          steps:
+            - material: Steel
+              amount: 10
+              doAfter: 3
+            - tool: Screwing
+              doAfter: 5
+            - material: Cooper
+              amount: 10
+              doAfter: 2
+            - tool: Welding
+              doAfter: 5
+            - material: Capacitor
+              amount: 10
+              doAfter: 5
+            - tool: Screwing
+              doAfter: 5
+              
+    - node: cosmMachineScannerBase
+      entity: CosmScannerBase
+      actions:
+        - !type:AddContainer
+          container: machine_parts
+        - !type:AddContainer
+          container: machine_board
+        - !type:MachineFrameRegenerateProgress
+      edges:
+        - to: machineCosm
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 25
+            - !type:SpawnPrototype
+              prototype: Cooper1
+              amount: 10
+            - !type:SpawnPrototype
+              prototype: MachineCircuitboardCosmBeacon
+              amount: 1
+            - !type:SpawnPrototype
+              prototype: BSModule
+              amount: 2
+            - !type:SpawnPrototype
+              prototype: RSModule
+              amount: 2
+            - !type:SpawnPrototype
+              prototype: CapacitorStockPart
+              amount: 10
+            - !type:SpawnPrototype
+              prototype: CableApcStack10
+              amount: 2
+            - !type:SpawnPrototype
+              prototype: SheetRGlass1
+              amount: 20
+            - !type:SpawnPrototype
+              prototype: SheetPlastic1
+              amount: 10
+            - !type:SpawnPrototype
+              prototype: СhromeCrystall1
+              amount: 5
+          conditions:
+            - !type:EntityAnchored
+            - !type:WirePanel
+          steps:
+            - tool: Prying
+              doAfter: 2
+              
+        - to: cosmScanner
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          conditions:
+            - !type:EntityAnchored {}
+          steps:
+            - material: Steel
+              amount: 20
+              doAfter: 10
+            - tool: Screwing
+              doAfter: 5
+            - material: Cooper
+              amount: 5
+              doAfter: 2
+            - tool: Welding
+              doAfter: 5
+            - material: Capacitor
+              amount: 5
+              doAfter: 5
+            - material: RSModuleStack
+              amount: 1
+              doAfter: 1 
+            - tool: Screwing
+              doAfter: 5
+              
+    - node: cosmAccume
+      entity: CosmAccumulator
+      edges:
+        - to: cosmMachineAccumeBase
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 10
+            - !type:SpawnPrototype
+              prototype: Cooper1
+              amount: 5
+            - !type:SpawnPrototype
+              prototype: CapacitorStockPart
+              amount: 5
+            - !type:SpawnPrototype
+              prototype: CableHVStack10
+              amount: 10
+          conditions:
+            - !type:EntityAnchored
+            - !type:WirePanel
+          steps:
+            - tool: Prying
+              doAfter: 2
+              
+    - node: cosmBeacon
+      entity: CosmBeaconulator
+      edges:
+        - to: cosmMachineBeaconBase
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 10
+            - !type:SpawnPrototype
+              prototype: Cooper1
+              amount: 10
+            - !type:SpawnPrototype
+              prototype: CapacitorStockPart
+              amount: 10
+          conditions:
+            - !type:EntityAnchored
+            - !type:WirePanel
+          steps:
+            - tool: Prying
+              doAfter: 2
+              
+    - node: cosmScanner
+      entity: CosmScanner
+      edges:
+        - to: cosmMachineScannerBase
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 20
+            - !type:SpawnPrototype
+              prototype: Cooper1
+              amount: 5
+            - !type:SpawnPrototype
+              prototype: CapacitorStockPart
+              amount: 5
+            - !type:SpawnPrototype
+              prototype: RSModule
+              amount: 1
+          conditions:
+            - !type:EntityAnchored
+            - !type:WirePanel
+          steps:
+            - tool: Prying
+              doAfter: 2
+              
+

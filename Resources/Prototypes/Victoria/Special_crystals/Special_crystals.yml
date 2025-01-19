@@ -557,7 +557,14 @@
   name: Блюспейс-модуль
   icon: { sprite: Victoria/Special_crystals/module.rsi, state: bs_module }
   spawn: BSModule
-  maxCount: 1
+  maxCount: 6
+
+- type: material
+  id: BSModuleMaterial
+  stackEntity: BSModuleStack
+  name: Блюспейс-модуль
+  icon: { sprite: Victoria/Special_crystals/module.rsi, state: bs_module }
+  price: 6
 
 - type: entity
   id: BSModule
@@ -575,16 +582,24 @@
       size: Small
     - type: Stack
       stackType: BSModuleStack  
+      count: 1 
 #------------------РС-модуль---------------------------------      
 - type: Tag
   id: RSModule
 
 - type: stack
   id: RSModuleStack
-  name: Блюспейс-модуль
+  name: Редспейс-модуль
   icon: { sprite: Victoria/Special_crystals/module.rsi, state: rs_module }
   spawn: RSModule
-  maxCount: 1
+  maxCount: 6
+  
+- type: material
+  id: RSModuleMaterial
+  stackEntity: RSModuleStack
+  name: Редспейс-модуль
+  icon: { sprite: Victoria/Special_crystals/module.rsi, state: rs_module }
+  price: 6
 
 - type: entity
   id: RSModule
@@ -602,6 +617,7 @@
       size: Small
     - type: Stack
       stackType: RSModuleStack  
+      count: 1 
 #------------------Ядро космеция---------------------------------     
 - type: Tag
   id: CMCore
@@ -611,7 +627,14 @@
   name: Ядро космеция
   icon: { sprite: Victoria/Special_crystals/module.rsi, state: cosm_core }
   spawn: CMCore
-  maxCount: 1
+  maxCount: 6
+  
+- type: material
+  id: CMCoreMaterial
+  stackEntity: CMCoreStack
+  name: Ядро космеция
+  icon: { sprite: Victoria/Special_crystals/module.rsi, state: cosm_core }
+  price: 6 
 
 - type: entity
   id: CMCore
@@ -629,3 +652,4 @@
       size: Small
     - type: Stack
       stackType: CMCoreStack  
+      count: 1 

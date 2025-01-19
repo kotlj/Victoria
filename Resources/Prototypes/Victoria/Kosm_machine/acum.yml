@@ -1,0 +1,292 @@
+#-----------------------------------------------аккумулятор----------------------------------------
+- type: entity
+  id: CosmAccumulator
+  parent: BaseMachine
+  name: Космециевый аккумулятор
+  description: Крупный аккумулятор совместной разработки НаноТрейзен и Накамура Инжениринг, который используется для накопление существенного количества энергии в космециевых ядрах.
+  suffix: Не маппить!, Космециевая машина
+  components:
+    - type: AmbientSound
+      volume: -7
+      range: 3
+      sound:
+        path: /Audio/Ambience/Objects/periodic_beep.ogg
+    - type: Sprite
+      sprite: Victoria/Cosm_machine/cosm_machine.rsi
+      snapCardinals: true
+      layers:
+        - state: acum
+        - map: ["enum.SmesVisualLayers.Charge"]
+          state: "smes-og1"
+          shader: unshaded
+          visible: false
+        - map: ["enum.SmesVisualLayers.Input"]
+          state: "smes-og1"
+          shader: unshaded
+        - map: ["enum.SmesVisualLayers.Output"]
+          state: "smes-og1"
+          shader: unshaded
+    - type: Smes
+    - type: Appearance
+    - type: Battery
+      startingCharge: 0
+      maxCharge: 40000000
+      pricePerJoule: 0.000583
+    - type: ExaminableBattery
+    - type: NodeContainer
+      examinable: true
+      nodes:
+        input:
+          !type:CableTerminalPortNode
+          nodeGroupID: HVPower
+        output:
+          !type:CableDeviceNode
+          nodeGroupID: HVPower
+    - type: BatteryDischarger
+      voltage: High
+      node: output
+    - type: BatteryCharger
+      voltage: High
+      node: input
+    - type: PowerNetworkBattery
+      maxSupply: 200000
+      maxChargeRate: 6600
+      supplyRampTolerance: 5000
+      supplyRampRate: 1500
+    - type: PointLight
+      radius: 1.5
+      energy: 1.6
+      color: "#c9c042"
+      castShadows: false
+    - type: WiresPanel
+    - type: PowerMonitoringDevice
+      group: SMES
+      sourceNode: input
+      loadNode: output
+      collectionName: acum
+      sprite: Victoria/Cosm_machine/cosm_machine.rsi
+      layers:
+        - state: acum
+        - state: smes-og5
+    - type: StationInfiniteBatteryTarget
+    - type: Electrified
+      onHandInteract: false
+      onInteractUsing: false
+      onBump: false
+      requirePower: true
+      highVoltageNode: input
+      mediumVoltageNode: output
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: StructuralMetallicStrong
+    - type: BatterySensor
+    - type: DeviceNetwork
+      deviceNetId: AtmosDevices
+      receiveFrequencyId: AtmosMonitor
+      transmitFrequencyId: AtmosMonitor
+      prefix: device-address-prefix-smes
+      sendBroadcastAttemptEvent: true
+      examinableAddress: true
+    - type: WiredNetworkConnection
+    - type: Construction
+      graph: Machine
+      node: cosmAccume    
+#-----------------------------------------------основа аккумулятора----------------------------------------      
+- type: entity
+  id: CosmAccumBase
+  parent: BaseStructureDynamic
+  name: Основа космециевого аккумулятора
+  description: Все основные системы космециевого аккумулятора распологаются тут, но не хватает верхнего силового модуля.
+  suffix: Не маппить!, Космециевая машина
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Transform
+    anchored: true
+    noRot: false
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 60
+        mask:
+        - MachineMask
+        layer:
+        - GlassAirlockLayer
+  - type: InteractionOutline
+  - type: Construction
+    graph: Machine
+    node: cosmMachineAccumeBase
+  - type: Sprite
+    sprite: Victoria/Cosm_machine/cosm_machine.rsi
+    state: acum_base
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors: #excess damage, don't spawn entities.
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 350
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+#-----------------------------------------------база космециевых машин----------------------------------------
+- type: entity
+  id: CosmMachineBase
+  parent: [ BaseMachine, ConstructibleMachine ]
+  name: База космециевой машины
+  description: Корпус, база управления и накопитель энергии для любой космециевой машины.
+  suffix: Космециевая машина
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.25,-0.5,0.25,0.5"
+          density: 190
+          mask:
+          - MachineMask
+          layer:
+          - MachineLayer
+    - type: Clickable
+    - type: InteractionOutline
+    - type: Anchorable
+    - type: Rotatable
+    - type: Pullable
+    - type: Construction
+      graph: Machine
+      node: machineCosm
+      defaultTarget: machineCosm
+      containers:
+        - machine_board
+        - machine_parts
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: Metallic
+    - type: Destructible
+      thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 250
+        behaviors:
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+        - !type:ChangeConstructionNodeBehavior
+          node: missingWires
+        - !type:DoActsBehavior
+          acts: ["Destruction"]
+    - type: MachineFrame
+    - type: ContainerContainer
+      containers:
+        machine_board: !type:Container
+        machine_parts: !type:Container
+    - type: Sprite
+      sprite: Victoria/Cosm_machine/cosm_machine.rsi
+      state: base
+      snapCardinals: true
+    - type: Appearance
+    - type: Machine
+      board: MachineCircuitboardCosmMachine
+#-----------------------------------------------схема базы космециевых машин----------------------------------------
+- type: entity
+  id: MachineCircuitboardCosmMachine
+  parent: BaseMachineCircuitboard
+  name: Плата базы космециевой машины
+  description: Электронная плата для системы управления космециевой машины.
+  suffix: Космециевая машина
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/module.rsi
+      state: science
+    - type: MachineBoard
+      prototype: CosmMachineBase
+      stackRequirements:
+        Capacitor: 10
+        CableHV: 30
+        Cable: 30
+      componentRequirements:
+        PowerCell:
+          amount: 4
+          defaultPrototype: PowerCellHigh
+#-----------------------------------------------схема аккумулятор----------------------------------------
+- type: Tag
+  id: MachineCircuitboardCosmAccum
+
+- type: stack
+  id: MachineCircuitboardCosmAccumStack
+  name: Плата космециевого аккумулятора
+  icon: { sprite: Objects/Misc/module.rsi, state: science }
+  spawn: MachineCircuitboardCosmAccum
+  maxCount: 1
+
+- type: material
+  id: MachineCircuitboardCosmAccumMaterial
+  stackEntity: CMCoreStack
+  name: Плата космециевого аккумулятора
+  icon: { sprite: Objects/Misc/module.rsi, state: science }
+  price: 1 
+
+- type: entity
+  id: MachineCircuitboardCosmAccum
+  parent: CrystalOreBase
+  name: Плата космециевого аккумулятора
+  description: Электронная плата для системы управления космециевым аккумулятором.
+  suffix: Космециевая машина
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/module.rsi
+      state: science
+    - type: Tag
+      tags:
+        - MachineCircuitboardCosmAccum
+    - type: Item
+      size: Small
+    - type: Stack
+      stackType: MachineCircuitboardCosmAccumStack
+      count: 1 
+    - type: PhysicalComposition
+      materialComposition:
+        MachineCircuitboardCosmAccumMaterial: 1000   
+    - type: Material   
+    
+#-----------------------------------------------исследование----------------------------------------
+- type: technology
+  id: CosmMachines
+  name: Космециевые машины
+  icon:
+    sprite: Victoria/Cosm_machine/cosm_machine.rsi
+    state: acum
+  discipline: Experimental
+  tier: 1
+  cost: 7000
+  recipeUnlocks:
+  - MachineCircuitboardCosmScanner
+  - MachineCircuitboardCosmBeacon
+  - MachineCircuitboardCosmAccum
+  - MachineCircuitboardCosmMachine
