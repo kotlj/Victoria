@@ -245,7 +245,7 @@
 
 - type: material
   id: MachineCircuitboardCosmAccumMaterial
-  stackEntity: CMCoreStack
+  stackEntity: MachineCircuitboardCosmAccum
   name: Плата космециевого аккумулятора
   icon: { sprite: Objects/Misc/module.rsi, state: science }
   price: 1 
@@ -276,7 +276,7 @@
 #-----------------------------------------------исследование----------------------------------------
 - type: technology
   id: CosmMachines
-  name: Космециевые машины
+  name: research-technology-cosm-machines
   icon:
     sprite: Victoria/Cosm_machine/cosm_machine.rsi
     state: acum
