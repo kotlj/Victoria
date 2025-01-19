@@ -561,7 +561,7 @@
 
 - type: material
   id: BSModuleMaterial
-  stackEntity: BSModuleStack
+  stackEntity: BSModule
   name: Блюспейс-модуль
   icon: { sprite: Victoria/Special_crystals/module.rsi, state: bs_module }
   price: 6
@@ -596,7 +596,7 @@
   
 - type: material
   id: RSModuleMaterial
-  stackEntity: RSModuleStack
+  stackEntity: RSModule
   name: Редспейс-модуль
   icon: { sprite: Victoria/Special_crystals/module.rsi, state: rs_module }
   price: 6
@@ -631,7 +631,7 @@
   
 - type: material
   id: CMCoreMaterial
-  stackEntity: CMCoreStack
+  stackEntity: CMCore
   name: Ядро космеция
   icon: { sprite: Victoria/Special_crystals/module.rsi, state: cosm_core }
   price: 6 

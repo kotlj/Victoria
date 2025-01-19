@@ -65,9 +65,7 @@
       loadNode: output
       collectionName: acum
       sprite: Victoria/Cosm_machine/cosm_machine.rsi
-      layers:
-        - state: acum
-        - state: smes-og5
+      state: acum
     - type: StationInfiniteBatteryTarget
     - type: Electrified
       onHandInteract: false
