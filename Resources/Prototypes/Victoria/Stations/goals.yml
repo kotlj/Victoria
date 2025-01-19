@@ -24,3 +24,7 @@
 - type: stationGoal
   id: StudyingAnomalies
   text: station-goal-studying-anomalies
+  
+- type: stationGoal
+  id: AccumulationElectricity
+  text: station-goal-accumulation-electricity

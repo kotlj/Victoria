@@ -354,7 +354,7 @@
   description: Электронная плата, необходимая для работы литографа
   components:
     - type: MachineBoard
-      prototype: Transmutator
+      prototype: Lithograph
       stackRequirements:
         MatterBin: 2
         Manipulator: 2

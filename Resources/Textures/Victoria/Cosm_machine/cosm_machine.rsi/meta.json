@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-SA-3.0",
+  "copyright": "Sprite created by crazzy_pingvin",
+  "size": {
+    "x": 32,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "acum"
+    },
+    {
+      "name": "acum_base"
+    },
+    {
+      "name": "base"
+    },
+    {
+      "name": "beacon"
+    },
+    {
+      "name": "beacon_base"
+    },
+    {
+      "name": "scanner"
+    },
+    {
+      "name": "scanner_base"
+    },
+    {
+      "name": "smes-og1"
+    },
+    {
+      "name": "smes-og2"
+    },
+    {
+      "name": "smes-og3"
+    },
+    {
+      "name": "smes-og4"
+    },
+    {
+      "name": "smes-og5"
+    },
+    {
+      "name": "bs"
+    },
+    {
+      "name": "rs"
+    },
+    {
+      "name": "smes-oc0"
+    },
+    {
+      "name": "smes-oc1",
+      "delays": [
+        [
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "smes-oc2",
+      "delays": [
+        [
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "smes-op0"
+    },
+    {
+      "name": "smes-op1",
+      "delays": [
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "smes-op2"
+    }
+  ]
+}

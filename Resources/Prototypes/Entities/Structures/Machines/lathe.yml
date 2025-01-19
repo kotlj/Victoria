@@ -447,6 +447,10 @@
     - VacuumMachineMachineCircuitboard
     - LithographMachineCircuitboard
     dynamicRecipes:
+      - MachineCircuitboardCosmScanner
+      - MachineCircuitboardCosmBeacon
+      - MachineCircuitboardCosmAccum
+      - MachineCircuitboardCosmMachine
       - ThermomachineFreezerMachineCircuitBoard
       - HellfireFreezerMachineCircuitBoard
       - PortableScrubberMachineCircuitBoard

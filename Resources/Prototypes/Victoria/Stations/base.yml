@@ -4,6 +4,7 @@
   components:
     - type: StationGoal
       goals:
+      - AccumulationElectricity
       - ProtectiveField
       - ExpansionDormitories
       - TrainingArea

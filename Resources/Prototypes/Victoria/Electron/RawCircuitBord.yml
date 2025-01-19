@@ -97,6 +97,7 @@
     RawCooper: 30
     Coal: 30    
 #------------------Сам-------------------------
+#------------------Сам-------------------------
 - type: entity
   parent: CrystalOreBase
   id: Cooper
@@ -131,7 +132,8 @@
   suffix: Электроника, Single
   components:
   - type: Stack
-    count: 1  
+    stackType: Cooper
+    count: 1 
 #----------------------------------материал----------------------------------
 - type: material
   id: CooperMaterial
@@ -591,7 +593,7 @@
   description: Электронная плата, необходимая для работы вакуумного станка
   components:
     - type: MachineBoard
-      prototype: Transmutator
+      prototype: VacuumMachine
       stackRequirements:
         MatterBin: 2
         Manipulator: 2
