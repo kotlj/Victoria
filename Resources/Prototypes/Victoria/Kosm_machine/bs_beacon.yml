@@ -162,6 +162,6 @@
       board: RadarConsoleCircuitboard
     - type: Construction
       graph: Machine
-      node: cosmBeacone  
+      node: cosmBeacon
     - type: StaticPrice
       price: 20000      
