@@ -66,7 +66,7 @@
   - type: InteractionOutline
   - type: Construction
     graph: Machine
-    node: cosmMachineBeaconeBase
+    node: cosmMachineBeaconBase
   - type: Sprite
     sprite: Victoria/Cosm_machine/cosm_machine.rsi
     state: beacon_base

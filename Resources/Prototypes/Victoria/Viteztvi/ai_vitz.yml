@@ -1,0 +1,223 @@
+#---------------------------------------страаааашная муть для поведения ВИ-----------------------
+#---------------------------------------Стрельба и убийство-------------------------
+- type: htnCompound
+  id: GunCombatCompoundBotVitz
+  branches:
+    # Pick target, then move into range and shoot them.
+    - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:UtilityOperator
+            proto: NearbyGunTargets
+        - !type:HTNPrimitiveTask
+          operator: !type:MoveToOperator
+            shutdownState: PlanFinished
+            pathfindInPlanning: true
+            removeKeyOnFinish: false
+            targetKey: TargetCoordinates
+            pathfindKey: TargetPathfind
+            stopOnLineOfSight: true
+            rangeKey: MeleeRange
+        - !type:HTNPrimitiveTask
+          operator: !type:JukeOperator
+            jukeType: AdjacentTile
+        - !type:HTNPrimitiveTask
+          operator: !type:SpeakOperator
+            speech: Огонь туда!
+        - !type:HTNPrimitiveTask
+          preconditions:
+            - !type:KeyExistsPrecondition
+              key: Target
+          operator: !type:GunOperator
+            targetKey: Target
+          services:
+            - !type:UtilityService
+              id: RangedService
+              proto: NearbyGunTargets
+              key: Target
+        - !type:HTNPrimitiveTask
+          operator: !type:SpeakOperator
+            speech: Ага, свалили!
+#--------------------------------------Сочетание правил ВИ-----------------------------------------
+#-----------------Без ходить-бродить----------
+#------обыч-----------          
+- type: htnCompound
+  id: BotVitzStop
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: GunCombatCompoundBotVitz
+
+#--------------------------------действия ботов-----------------------------------
+#-------------------------Мистерр Хилл-----------------
+#----------------------------------
+- type: emote
+  id: EmoteMrHillCigarette
+  name: chat-emote-name-mrHill-cigarette
+  category: Hands
+  whitelist:
+    components:
+    - Hands
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-name-mrHill-cigarette"]
+  
+- type: autoEmote
+  id: EmoteMrHillCigarette
+  emote: EmoteMrHillCigarette
+  interval: 300.0
+  chance: 0.5
+  withChat: true
+#----------------------------------
+- type: emote
+  id: EmoteMrHillEvaluates
+  name: chat-emote-name-mrHill-evaluates
+  category: Hands
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-name-mrHill-evaluates"]
+  
+- type: autoEmote
+  id: EmoteMrHillEvaluates
+  emote: EmoteMrHillEvaluates
+  interval: 150.0
+  chance: 0.8
+  withChat: true  
+#----------------------------------
+- type: emote
+  id: EmoteMrHilllooks
+  name: chat-emote-name-mrHill-looks
+  category: Hands
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-name-mrHill-looks"]
+  
+- type: autoEmote
+  id: EmoteMrHilllooks
+  emote: EmoteMrHilllooks
+  interval: 300.0
+  chance: 0.3
+  withChat: true 
+#----------------------------------
+- type: emote
+  id: EmoteMrHilllistening
+  name: chat-emote-name-mrHill-listening
+  category: Hands
+  chatMessages: ["chat-emote-name-mrHill-listening"]
+  
+- type: autoEmote
+  id: EmoteMrHilllistening
+  emote: EmoteMrHilllistening
+  interval: 200.0
+  chance: 0.5
+  withChat: true 
+#----------------------------------
+- type: emote
+  id: EmoteMrHillwhiskey
+  name: chat-emote-name-mrHill-whiskey
+  category: Hands
+  chatMessages: ["chat-emote-name-mrHill-whiskey"]
+  blacklist:
+    components:
+    - BorgChassis
+  
+- type: autoEmote
+  id: EmoteMrHillwhiskey
+  emote: EmoteMrHillwhiskey
+  interval: 250.0
+  chance: 0.5
+  withChat: true 
+#---------------------------------------Говорение------------------------------------  
+- type: localizedDataset
+  id: SpeakingMobVitzMrHill
+  values:
+    prefix: advertisement-bot-mrhill-
+    count: 6 
+#---------------------------------------Список товаров------------------------------------  
+- type: vendingMachineInventory
+  id: MrHillInventory
+  startingInventory:
+    ReinforcementRadioVitzEfreitor: 4
+    ReinforcementRadioVitzStarshina: 1    
+#---------------------------------------Сами боты----------------------------------------
+#-------------------------------Мистер Хилл----------------------
+#-------------Вооружён стоит---------------  
+- type: entity
+  suffix: Бот, Витезтви, друж, стоп
+  parent: BaseMobHuman
+  id: MobVitzMrHill
+  components:
+  - type: Advertise
+    pack: SpeakingMobVitzMrHill
+    minimumWait: 30
+    maximumWait: 60
+    prewarm: false
+  - type: Speech
+    speechSounds: Baritone
+  - type: Vocal
+    sounds:
+      Unsexed: MaleHuman
+  - type: AutoEmote
+    emotes: 
+    - Sneezes
+    - Coughs
+    - Whistles
+    - EmoteMrHillCigarette
+    - EmoteMrHillEvaluates
+    - EmoteMrHilllooks
+    - EmoteMrHilllistening
+    - EmoteMrHillwhiskey
+  - type: RandomMetadata
+    nameSegments:
+    - VitzName-mr
+    - VitzNameTwoHill
+  - type: NpcFactionMember
+    factions:
+      - VitzBitMrHill
+  - type: Loadout
+    prototypes:
+      - VitzMrHillGear
+  - type: InputMover
+  - type: MobMover
+  - type: HTN
+    rootTask:
+      task: BotVitzStop
+  - type: NPCRetaliation
+    attackMemoryLength: 100
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 2
+    rechargeSound:
+      path: /Audio/Weapons/Guns/MagIn/revolver_magin.ogg
+  - type: BasicEntityAmmoProvider
+    proto: CartridgeMagnum
+    capacity: 6
+    count: 6
+  - type: Gun
+    showExamineText: false
+    fireRate: 5
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/revolver.ogg
+  - type: VendingMachine
+    pack: MrHillInventory
+#---------------------------------------Спавнеры ботов-------------------      
+#-------------------------------Солдат----------------------
+#-------------Без оружия бегающий---------------
+- type: entity
+  name: Спавнер бота Мистерр Хилл
+  suffix: Бот, Витезтви, друж, стоп
+  id: SpawnMobVitzMrHill
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+    - state: green
+    - state: reporter
+  - type: ConditionalSpawner
+    prototypes:
+    - MobVitzMrHill
