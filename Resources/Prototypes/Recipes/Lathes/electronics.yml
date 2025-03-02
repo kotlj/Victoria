@@ -248,7 +248,7 @@
     SiPlazCircuitBordMaterial: 500
     ProgrammableCircuitMaterial: 300
     DiscreteCircuitMaterial: 200
-#---------------------Макак---------------------------------
+#---------------------Макак и космециевые машины---------------------------------
 - type: latheRecipe
   abstract: true
   id: BaseRecipeSiPlaz_3
@@ -828,3 +828,23 @@
   parent: BaseRecipeSiPlaz_2
   id: VacuumMachineMachineCircuitboard
   result: VacuumMachineMachineCircuitboard
+  
+- type: latheRecipe
+  parent: BaseRecipeSiPlaz_2
+  id: MachineCircuitboardCosmMachine
+  result: MachineCircuitboardCosmMachine
+  
+- type: latheRecipe
+  parent: BaseRecipeSiPlaz_3
+  id: MachineCircuitboardCosmAccum
+  result: MachineCircuitboardCosmAccum
+  
+- type: latheRecipe
+  parent: BaseRecipeSiPlaz_3
+  id: MachineCircuitboardCosmBeacon
+  result: MachineCircuitboardCosmBeacon
+  
+- type: latheRecipe
+  parent: BaseRecipeSiPlaz_1
+  id: MachineCircuitboardCosmScanner
+  result: MachineCircuitboardCosmScanner

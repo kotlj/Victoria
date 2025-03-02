@@ -2028,3 +2028,53 @@
   - type: NpcFactionMember
     factions:
     - KMLG
+#-------------------------------------Спавнер потеряных-----------------------------------  
+- type: entity
+  name: name-of-LostKMLGCt
+  id: LostKMLGCtSpawner
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: Objects/Tools/appraisal-tool.rsi
+          state: icon
+    - type: RandomSpawner
+      prototypes:
+      - RandomKMLGCt
+      chance: 1
+      
+- type: entity
+  id: RandomKMLGCt
+  name: name-of-RandomKMLGCt
+  components:
+    - type: Sprite
+      sprite: Objects/Tools/appraisal-tool.rsi
+      state: icon
+    - type: RandomHumanoidSpawner
+      settings: LostKMLGCt
+
+- type: startingGear
+  id: KMLGGearCt1
+  equipment:
+    jumpsuit: KMLGUniformCargotech
+    back: KMLGBackpackStdFilled
+    shoes: KMLGBootsWork
+    head: KMLGBeret
+    id: KMLGPDACt
+    ears: KMLGHeadset
+    gloves: ClothingHandsGlovesFingerless
+    pocket1: KMLGPaperCt
+
+- type: randomHumanoidSettings
+  id: LostKMLGCt
+  parent: EventHumanoid
+  components:
+    - type: GhostRole
+      name: Грузчик Космологистики
+      description: Станция Снабжения дала указание доставить ВЕСЬ ваш груз на станцию НТ. Вам не важно что там НТшники хотят или не хотят, у вас контракт - доставить и выгрузить ВСЁ!
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: Loadout
+      prototypes: [ KMLGGearCt, KMLGGearCt1 ]

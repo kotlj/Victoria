@@ -1,0 +1,167 @@
+#-----------------------------------------------схема маяка----------------------------------------
+- type: Tag
+  id: MachineCircuitboardCosmBeacon
+
+- type: stack
+  id: MachineCircuitboardCosmBeaconStack
+  name: Плата блюспейс-маяка
+  icon: { sprite: Objects/Misc/module.rsi, state: science }
+  spawn: MachineCircuitboardCosmBeacon
+  maxCount: 1
+
+- type: material
+  id: MachineCircuitboardCosmBeaconMaterial
+  stackEntity: MachineCircuitboardCosmBeacon
+  name: Плата блюспейс-маяка
+  icon: { sprite: Objects/Misc/module.rsi, state: science }
+  price: 1 
+
+- type: entity
+  id: MachineCircuitboardCosmBeacon
+  parent: CrystalOreBase
+  name: Плата блюспейс-маяка
+  description: Электронная плата для системы управления космециевым маяком.
+  suffix: Космециевая машина
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/module.rsi
+      state: science
+    - type: Tag
+      tags:
+        - MachineCircuitboardCosmBeacon
+    - type: Item
+      size: Small
+    - type: Stack
+      stackType: MachineCircuitboardCosmBeaconStack
+      count: 1 
+    - type: PhysicalComposition
+      materialComposition:
+        MachineCircuitboardCosmBeaconMaterial: 1000   
+    - type: Material  
+#-----------------------------------------------основа маяка----------------------------------------  
+- type: entity
+  id: CosmBeaconBase
+  parent: BaseStructureDynamic
+  name: Основа блюспейс-маяка
+  description: Все основные системы космециевого маяка распологаются тут, но не хватает верхнего силового модуля.
+  suffix: Не маппить!, Космециевая машина
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Transform
+    anchored: true
+    noRot: false
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 60
+        mask:
+        - MachineMask
+        layer:
+        - GlassAirlockLayer
+  - type: InteractionOutline
+  - type: Construction
+    graph: Machine
+    node: cosmMachineBeaconBase
+  - type: Sprite
+    sprite: Victoria/Cosm_machine/cosm_machine.rsi
+    state: beacon_base
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors: #excess damage, don't spawn entities.
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 350
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak 
+#-----------------------------------------------маяк----------------------------------------
+- type: entity
+  id: CosmBeaconulator
+  parent: BaseMachine
+  name: Блюспейс-маяк
+  description: Крупный маяк совместной разработки НаноТрейзен и Космологистики, который используется для накопление существенного количества энергии в космециевых ядрах.
+  suffix: Не маппить!, Космециевая машина
+  components:
+    - type: AmbientSound
+      volume: -7
+      range: 3
+      sound:
+        path: /Audio/Ambience/Objects/periodic_beep.ogg
+    - type: Sprite
+      sprite: Victoria/Cosm_machine/cosm_machine.rsi
+      layers:
+      - state: beacon
+      - state: bs
+        shader: unshaded
+    - type: Appearance
+    - type: ExtensionCableReceiver
+    - type: ApcPowerReceiver
+      powerLoad: 1000
+    - type: BatteryDischarger
+      voltage: High
+      node: output
+    - type: BatteryCharger
+      voltage: High
+      node: input
+    - type: PointLight
+      radius: 1.5
+      energy: 1.6
+      color: "#23344f"
+      castShadows: false
+    - type: WiresPanel
+    - type: Electrified
+      onHandInteract: false
+      onInteractUsing: false
+      onBump: false
+      requirePower: true
+      highVoltageNode: input
+      mediumVoltageNode: output
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: StructuralMetallicStrong
+    - type: BatterySensor
+    - type: DeviceNetwork
+      deviceNetId: AtmosDevices
+      receiveFrequencyId: AtmosMonitor
+      transmitFrequencyId: AtmosMonitor
+      prefix: device-address-prefix-smes
+      sendBroadcastAttemptEvent: true
+      examinableAddress: true
+    - type: WiredNetworkConnection
+    - type: RadarConsole
+    - type: ActivatableUI
+      key: enum.RadarConsoleUiKey.Key
+    - type: UserInterface
+      interfaces:
+          enum.RadarConsoleUiKey.Key:
+            type: RadarConsoleBoundUserInterface
+          enum.WiresUiKey.Key:
+            type: WiresBoundUserInterface
+    - type: Computer
+      board: RadarConsoleCircuitboard
+    - type: Construction
+      graph: Machine
+      node: cosmBeacon
+    - type: StaticPrice
+      price: 20000      
