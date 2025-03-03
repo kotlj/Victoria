@@ -474,7 +474,7 @@
       prototype: VacuumMachine
       stackRequirements:
         Capacitor: 10
-        BSModule: 3
+        BSModuleStack: 3
       tagRequirements:
         GlassBeaker:
           amount: 10
