@@ -471,7 +471,7 @@
   description: Электронная плата, необходимая для работы системы корпоративного сотрудничества
   components:
     - type: MachineBoard
-      prototype: VacuumMachine
+      prototype: ComputerCorpShop
       stackRequirements:
         Capacitor: 10
         BSModuleStack: 3
