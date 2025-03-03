@@ -153,7 +153,6 @@
     description: cargo-gift-space-protection
     dest: cargo-gift-dest-supp
     gifts:
-      EmergencyInternalsLarge: 2
       EmergencyInflatablewall: 1
       MedicalBiosuit: 11
 
