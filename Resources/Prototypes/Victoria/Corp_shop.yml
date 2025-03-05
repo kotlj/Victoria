@@ -463,6 +463,27 @@
   - type: Sprite
     layers:
       - state: box_medical
+#------------------------------------------------------Случайный спавнер----------------------      
+- type: entity
+  parent: MarkerBase
+  id: RandomSpawnerChipLoyalty
+  name: Спавнер случайного чипа лояльности
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Victoria/Corp_chips/chips.rsi
+        state: nt_chip
+  - type: RandomSpawner
+    offset: 0
+    prototypes:
+      - NTChip
+      - VitzChip
+      - KMLGChip
+      - NEChip
+      - GFChip
+      - SbChip
+      - GDChip
 #------------------------------------------------------Консоль магазина----------------------  
 - type: entity
   id: CorpShopMachineMachineCircuitboard
