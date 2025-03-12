@@ -215,7 +215,7 @@
 - type: entity
   id: MachineCircuitboardCosmMachine
   parent: BaseMachineCircuitboard
-  name: Плата базы космециевой машины
+  name: плата базы космециевой машины
   description: Электронная плата для системы управления космециевой машины.
   suffix: Космециевая машина
   components:
@@ -238,7 +238,7 @@
 
 - type: stack
   id: MachineCircuitboardCosmAccumStack
-  name: Плата космециевого аккумулятора
+  name: плата космециевого аккумулятора
   icon: { sprite: Objects/Misc/module.rsi, state: science }
   spawn: MachineCircuitboardCosmAccum
   maxCount: 1
@@ -246,14 +246,14 @@
 - type: material
   id: MachineCircuitboardCosmAccumMaterial
   stackEntity: MachineCircuitboardCosmAccum
-  name: Плата космециевого аккумулятора
+  name: плата космециевого аккумулятора
   icon: { sprite: Objects/Misc/module.rsi, state: science }
   price: 1 
 
 - type: entity
   id: MachineCircuitboardCosmAccum
   parent: CrystalOreBase
-  name: Плата космециевого аккумулятора
+  name: плата космециевого аккумулятора
   description: Электронная плата для системы управления космециевым аккумулятором.
   suffix: Космециевая машина
   components:
