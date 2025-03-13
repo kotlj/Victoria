@@ -538,12 +538,12 @@
   - Research
   - External
   - Maintenance
-#-------------------------------------------Врач-наставник----------------------------
+#-------------------------------------------Мед. консультант----------------------------
 #-------------------------Комбез--------------
 - type: entity
   parent: ClothingUniformSkirtBase
   id: MedTeacherUniform
-  name: форма врача-наставника
+  name: форма мед. консультанта
   suffix: Наставники
   description: Очень чистая и почти стерильная. От неё так и веет здоровьем вперемешку с цинизмом
   components:
@@ -583,7 +583,7 @@
 - type: entity
   parent: CargoIDCard
   id: MedTeacherIDCard
-  name: ID-карта врача-наставника
+  name: ID-карта мед. консультанта
   description: Дает доступы в медицинский отдел, морг и лабораторию химии, а также к помещениям наставников
   suffix: Наставники
   components:
@@ -598,7 +598,7 @@
 - type: entity
   parent: BaseMedicalPDA
   id: PDAMedTeacher
-  name: КПК врача-наставника
+  name: КПК мед. консультанта
   suffix: Ведущий
   description: Очень много знащий и очень циничный КПК
   components:
@@ -636,7 +636,7 @@
 #-------------------------Роль--------------
 - type: job
   id: MedTeacher
-  name: врач-наставник
+  name: мед. консультант
   description: Профессиональный врач, занимающийся бумажной работой и наставлением менее опытных сотрудников
   playTimeTracker: JobMedTeacher
   requirements:
@@ -704,11 +704,11 @@
     layers:
       - state: green
       - state: roboticist
-#-------------------------Врач-наставник--------------
+#-------------------------Мед. консультант--------------
 - type: entity
   id: SpawnPointMedTeacher
   parent: SpawnPointJobBase
-  name: врач-наставник
+  name: мед. консультант
   components:
   - type: SpawnPoint
     job_id: MedTeacher
