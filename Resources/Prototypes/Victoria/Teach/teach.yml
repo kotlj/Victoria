@@ -3,9 +3,9 @@
 - type: entity
   parent: ClothingUniformSkirtBase
   id: CargoTeacherUniform
-  name: Комбинезон бригадира
+  name: комбинезон бригадира
   suffix: Наставники
-  description: Прочный и практичный комбинезон бригадира отдела снабжения НаноТрейзен
+  description: Прочный и практичный комбинезон бригадира отдела снабжения
   components:
   - type: Sprite
     sprite: Victoria/Teach/uniform_cargo_teacher.rsi
@@ -15,7 +15,7 @@
 - type: entity
   parent: ClothingNeckBase
   id: MantelTeacher
-  name: Мантия наставника
+  name: мантия наставника
   suffix: Наставники
   description: Это статусная накидка на плечи демонстрирует, что сотрудник является не просто хорошим специалистом в своей сфере, но и способен успешно учить других
   components:
@@ -37,7 +37,7 @@
 - type: entity
   parent: Airlock
   id: AirlockCargoTeatcherLocked
-  name: Шлюз
+  name: шлюз
   suffix: Наставники, Locked
   description: Он открывается, он закрывается, он может вас раздавить
   components:
@@ -50,7 +50,7 @@
 - type: entity
   parent: AirlockGlass
   id: AirlockCargoTeatcherLockedGlass
-  name: Стеклянный шлюз
+  name: стеклянный шлюз
   suffix: Наставники, Locked
   description: Он открывается, он закрывается, он может вас раздавить
   components:
@@ -66,7 +66,7 @@
   parent: CargoIDCard
   id: CargoTeacherIDCard
   name: ID-карта бригадира
-  description: Даёт доступы в отделы Снабжения и Утилизации, а так же к помещениям наставников
+  description: Даёт доступы в отдел снабжения и утилизации, а также к помещениям наставников
   suffix: Наставники
   components:
   - type: Sprite
@@ -113,12 +113,12 @@
   icon:
     sprite: /Textures/Victoria/Teach/job_icons_teacher.rsi
     state: TeacherCargo
-  jobName: Бригадир
+  jobName: бригадир
 #-------------------------Роль--------------
 - type: job
   id: CargoTeacher
   name: бригадир
-  description: Строгий и грозный сотрудник отдела снабженая, что может служить Квартирмейсеру правой рукой, кулаком или личным оралом
+  description: Строгий и грозный сотрудник отдела снабжения, что может служить квартирмейстеру правой рукой, кулаком или личным оралом
   playTimeTracker: JobCargoTeacher
   requirements:
     - !type:RoleTimeRequirement
@@ -141,7 +141,7 @@
 - type: entity
   parent: ClothingUniformSkirtBase
   id: EngTeacherUniform
-  name: Комбинезон ведущего инженера
+  name: комбинезон ведущего инженера
   suffix: Наставники
   description: Прочный и практичный комбинезон ведущего инженера
   components:
@@ -154,7 +154,7 @@
 - type: entity
   parent: Airlock
   id: AirlockEngTeatcherLocked
-  name: Шлюз
+  name: шлюз
   suffix: Наставники, Locked
   description: Он открывается, он закрывается, он может вас раздавить
   components:
@@ -167,7 +167,7 @@
 - type: entity
   parent: AirlockGlass
   id: AirlockEngTeatcherLockedGlass
-  name: Стеклянный шлюз
+  name: стеклянный шлюз
   suffix: Наставники, Locked
   description: Он открывается, он закрывается, он может вас раздавить
   components:
@@ -183,7 +183,7 @@
   parent: CargoIDCard
   id: EngTeacherIDCard
   name: ID-карта ведущего инженера
-  description: Даёт доступы в отделы Инженеров и Атмосферной техники, а так же к помещениям наставников
+  description: Даёт доступы в инженерный отдел и атмос, а также к помещениям наставников
   suffix: Наставники
   components:
   - type: Sprite
@@ -213,7 +213,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: EngTeacherBeret
-  name: Берет ведущего инженера
+  name: берет ведущего инженера
   suffix: Наставники
   description: Берет действиетельно опытного и заслуженного инженера
   components:
@@ -247,12 +247,12 @@
   icon:
     sprite: /Textures/Victoria/Teach/job_icons_teacher.rsi
     state: TeacherEngineer
-  jobName: Ведущий инженер
+  jobName: ведущий инженер
 #-------------------------Роль--------------
 - type: job
   id: EngTeacher
   name: ведущий инженер
-  description: Опытный, но слегка заносчивый ведущий инженер, что является хорошим помощником Старшему инженеру
+  description: Опытный, но слегка заносчивый ведущий инженер, что является хорошим помощником старшему инженеру
   playTimeTracker: JobEngTeacher
   requirements:
     - !type:RoleTimeRequirement
@@ -275,7 +275,7 @@
 - type: entity
   parent: ClothingUniformSkirtBase
   id: SecTeacherUniform
-  name: Форма инструктора СБ
+  name: форма инструктора СБ
   suffix: Наставники
   description: Крепкая и очень красивая. Привлекает к себе дамочек и заставляет боятся кадетов
   components:
@@ -288,7 +288,7 @@
 - type: entity
   parent: Airlock
   id: AirlockSecTeatcherLocked
-  name: Шлюз
+  name: шлюз
   suffix: Наставники, Locked
   description: Он открывается, он закрывается, он может вас раздавить
   components:
@@ -301,7 +301,7 @@
 - type: entity
   parent: AirlockGlass
   id: AirlockSecTeatcherLockedGlass
-  name: Стеклянный шлюз
+  name: стеклянный шлюз
   suffix: Наставники, Locked
   description: Он открывается, он закрывается, он может вас раздавить
   components:
@@ -317,7 +317,7 @@
   parent: CargoIDCard
   id: SecTeacherIDCard
   name: ID-карта инструктора СБ
-  description: Даёт доступы в Бриг и зоны Службы безопасности, а так же в помещения наставников
+  description: Даёт доступ в отдел службы безопасности, а также в помещения наставников
   suffix: Наставники
   components:
   - type: Sprite
@@ -347,9 +347,9 @@
 - type: entity
   parent: ClothingHeadBase
   id: SecTeacherCap
-  name: Фуражка инструктора СБ
+  name: фуражка инструктора СБ
   suffix: Наставники
-  description: Фуражка сотрудника, который утвержает, что он "теперь твой папа, мама и господин инструктор!"
+  description: Фуражка сотрудника, которая утверждает, что он теперь твой папа, мама и инструктор!
   components:
   - type: Sprite
     sprite: Victoria/Teach/cap_teacher.rsi
@@ -383,12 +383,12 @@
   icon:
     sprite: /Textures/Victoria/Teach/job_icons_teacher.rsi
     state: TeacherOfficer
-  jobName: Инструктор
+  jobName: инструктор
 #-------------------------Роль--------------
 - type: job
   id: SecTeacher
   name: инструктор
-  description: Суровый и бывалый сотрудник СБ, что решил посвятиь некоторое время передаче опыта молодому поколению
+  description: Суровый и бывалый сотрудник СБ, что решил посвятить свое время передаче опыта молодому поколению
   playTimeTracker: JobSecTeacher
   requirements:
     - !type:RoleTimeRequirement
@@ -418,7 +418,7 @@
 - type: entity
   parent: ClothingUniformSkirtBase
   id: SciTeacherUniform
-  name: Форма инструктора СБ
+  name: форма инструктора СБ
   suffix: Наставники
   description: Крепкая и очень красивая. Привлекает к себе дамочек и заставляет боятся кадетов
   components:
@@ -431,7 +431,7 @@
 - type: entity
   parent: Airlock
   id: AirlockSciTeatcherLocked
-  name: Шлюз
+  name: шлюз
   suffix: Наставники, Locked
   description: Он открывается, он закрывается, он может вас раздавить
   components:
@@ -444,7 +444,7 @@
 - type: entity
   parent: AirlockGlass
   id: AirlockSciTeatcherLockedGlass
-  name: Стеклянный шлюз
+  name: стеклянный шлюз
   suffix: Наставники, Locked
   description: Он открывается, он закрывается, он может вас раздавить
   components:
@@ -490,9 +490,9 @@
 - type: entity
   parent: ClothingOuterCoatLab
   id: ClothingOuterCoatLabTeacher
-  name: Лабораторный халат
+  name: лабораторный халат
   suffix: Наставники
-  description: Одевается поверх основной одежды дабы продемонстрировать статус опытного сотрудника и статус наставника
+  description: Одевается поверх основной одежды, дабы продемонстрировать статус опытного сотрудника и статус наставника
   components:
   - type: Sprite
     sprite: Victoria/Teach/labcoat_teacher.rsi
@@ -519,7 +519,7 @@
   icon:
     sprite: /Textures/Victoria/Teach/job_icons_teacher.rsi
     state: TeacherSci
-  jobName: Доцент
+  jobName: доцент
 #-------------------------Роль--------------
 - type: job
   id: SciTeacher
@@ -538,12 +538,12 @@
   - Research
   - External
   - Maintenance
-#-------------------------------------------Мед.консультант----------------------------
+#-------------------------------------------Врач-наставник----------------------------
 #-------------------------Комбез--------------
 - type: entity
   parent: ClothingUniformSkirtBase
   id: MedTeacherUniform
-  name: Форма мед.консультанта
+  name: форма врача-наставника
   suffix: Наставники
   description: Очень чистая и почти стерильная. От неё так и веет здоровьем вперемешку с цинизмом
   components:
@@ -555,7 +555,7 @@
 - type: entity
   parent: Airlock
   id: AirlockMedTeatcherLocked
-  name: Шлюз
+  name: шлюз
   suffix: Наставники, Locked
   description: Он открывается, он закрывается, он может вас раздавить
   components:
@@ -568,7 +568,7 @@
 - type: entity
   parent: AirlockGlass
   id: AirlockMedTeatcherLockedGlass
-  name: Стеклянный шлюз
+  name: стеклянный шлюз
   suffix: Наставники, Locked
   description: Он открывается, он закрывается, он может вас раздавить
   components:
@@ -583,8 +583,8 @@
 - type: entity
   parent: CargoIDCard
   id: MedTeacherIDCard
-  name: ID-карта мед.консультанта
-  description: Даёт доступы в помещения Медбея, Морг и лабораторию Химии, а так же к помещениям наставников
+  name: ID-карта врача-наставника
+  description: Дает доступы в медицинский отдел, морг и лабораторию химии, а также к помещениям наставников
   suffix: Наставники
   components:
   - type: Sprite
@@ -598,7 +598,7 @@
 - type: entity
   parent: BaseMedicalPDA
   id: PDAMedTeacher
-  name: КПК мед.консультанта
+  name: КПК врача-наставника
   suffix: Ведущий
   description: Очень много знащий и очень циничный КПК
   components:
@@ -632,11 +632,11 @@
   icon:
     sprite: /Textures/Victoria/Teach/job_icons_teacher.rsi
     state: TeacherMed
-  jobName: Мед.консультант
+  jobName: врач-наставник
 #-------------------------Роль--------------
 - type: job
   id: MedTeacher
-  name: мед.консультант
+  name: врач-наставник
   description: Профессиональный врач, занимающийся бумажной работой и наставлением менее опытных сотрудников
   playTimeTracker: JobMedTeacher
   requirements:
@@ -704,11 +704,11 @@
     layers:
       - state: green
       - state: roboticist
-#-------------------------Мед.Консультант--------------
+#-------------------------Врач-наставник--------------
 - type: entity
   id: SpawnPointMedTeacher
   parent: SpawnPointJobBase
-  name: мед.консультант
+  name: врач-наставник
   components:
   - type: SpawnPoint
     job_id: MedTeacher
@@ -721,18 +721,18 @@
 - type: entity
   parent: Airlock
   id: AirlockTeacherLocked
-  name: Шлюз
+  name: шлюз
   suffix: Наставники, Locked
   description: Он открывается, он закрывается, он может вас раздавить
   components:
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsTeacherAccess ]
-#------------------------------------закрытый стеклянный шлюз---------- 
+#------------------------------------Закрытый стеклянный шлюз---------- 
 - type: entity
   parent: AirlockGlass
   id: AirlockTeacherGlassLocked
-  name: Стеклянный шлюз
+  name: стеклянный шлюз
   suffix: Наставники, Locked
   description: Он открывается, он закрывается, он может вас раздавить
   components:

@@ -2,8 +2,8 @@
 - type: entity
   id: CosmAccumulator
   parent: BaseMachine
-  name: Космециевый аккумулятор
-  description: Крупный аккумулятор совместной разработки НаноТрейзен и Накамура Инжениринг, который используется для накопление существенного количества энергии в космециевых ядрах.
+  name: космециевый аккумулятор
+  description: Крупный аккумулятор совместной разработки NanoTrasen и Nakamura Engineering, который используется для накопление существенного количества энергии в космециевых ядрах.
   suffix: Не маппить!, Космециевая машина
   components:
     - type: AmbientSound
@@ -93,7 +93,7 @@
 - type: entity
   id: CosmAccumBase
   parent: BaseStructureDynamic
-  name: Основа космециевого аккумулятора
+  name: основа космециевого аккумулятора
   description: Все основные системы космециевого аккумулятора распологаются тут, но не хватает верхнего силового модуля.
   suffix: Не маппить!, Космециевая машина
   categories: [ HideSpawnMenu ]
@@ -150,7 +150,7 @@
 - type: entity
   id: CosmMachineBase
   parent: [ BaseMachine, ConstructibleMachine ]
-  name: База космециевой машины
+  name: база космециевой машины
   description: Корпус, база управления и накопитель энергии для любой космециевой машины.
   suffix: Космециевая машина
   placement:
