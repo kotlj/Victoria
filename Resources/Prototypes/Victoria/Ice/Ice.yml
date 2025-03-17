@@ -1,0 +1,360 @@
+#--------------------------------------реагенты-------------------------------
+- type: flavor
+  id: Dirty
+  flavorType: Complex
+  description: dirty-flavor
+
+- type: reagent
+  id: Dirty
+  name: name-dirty
+  group: Dirty
+  desc: desc-dirty
+  physicalDesc: phy-desc-dirty
+  flavor: Dirty
+  color: "#543526"
+  meltingPoint: -101.5
+  boilingPoint: -34.04
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 1
+
+- type: flavor
+  id: HydrochloricAcid
+  flavorType: Complex
+  description: hydrochloric-acid-flavor
+  
+- type: reagent
+  id: HydrochloricAcid
+  name: name-hydrochloric-acid
+  group: Dirty
+  desc: desc-hydrochloric-acid
+  physicalDesc: phy-desc-hydrochloric-acid
+  flavor: HydrochloricAcid
+  color: "#bcf3ff"
+  meltingPoint: -101.5
+  boilingPoint: -34.04
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Caustic: 5
+
+- type: flavor
+  id: Precipitator
+  flavorType: Complex
+  description: precipitator-flavor
+            
+- type: reagent
+  id: Precipitator
+  name: name-precipitator
+  group: Dirty
+  desc: desc-precipitator
+  physicalDesc: phy-desc-precipitator
+  flavor: Precipitator
+  color: "#bcf3ff"
+  meltingPoint: -101.5
+  boilingPoint: -34.04
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Caustic: 7
+#--------------------------------------лёд------------------------------------------
+- type: entity
+  id: PuddleHuyddle
+  parent: PuddleTemporary
+  suffix: Вода
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      puddle:
+        maxVol: 1000
+        reagents:
+        - ReagentId: Water
+          Quantity: 10
+          
+- type: entity
+  id: PuddleHuyddleDirty
+  parent: PuddleTemporary
+  suffix: Грязная вода
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      puddle:
+        maxVol: 1000
+        reagents:
+        - ReagentId: Water
+          Quantity: 5
+        - ReagentId: Dirty
+          Quantity: 5
+#--------------------------------чистый--------------------------------
+#----------Сама руда-------------------------
+- type: entity
+  parent: CrystalOreBase
+  id: PiceIce
+  name: Чистый лёд
+  suffix: Полный
+  description: Холодный, но такой красивый...
+  components:
+  - type: Stack
+    stackType: PiceIce
+  - type: Sprite
+    sprite: Victoria/ice.rsi
+    state: clean
+  - type: Extractable
+    grindableSolutionName: cleanice
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      RawPiceIce: 10
+  - type: SolutionContainerManager
+    solutions:
+      cleanice:
+        reagents:
+        - ReagentId: Water
+          Quantity: 10
+  - type: Tag
+    tags:
+    - Ore
+  - type: Perishable
+    rotAfter: 300
+    molsPerSecondPerUnitMass: 0
+  - type: RotInto
+    entity: PuddleHuyddle
+    stage: 1
+#------------Стак--------------------------
+- type: stack
+  id: PiceIce
+  name: Чистый лёд
+  icon: { sprite: Victoria/ice.rsi, state: clean }
+  spawn: PiceIce1
+  maxCount: 30
+#-------------Единица руды--------------------------
+- type: entity
+  parent: PiceIce
+  id: PiceIce1
+  suffix: Один
+  components:
+  - type: Stack
+    count: 1  
+#-------------материал----------------------------------
+- type: material
+  id: RawPiceIce
+  stackEntity: PiceIce1
+  name: Чистый лёд
+  icon: { sprite: Victoria/ice.rsi, state: clean }
+  price: 0.1 
+#--------------руда--------------------------
+- type: ore
+  id: PiceIce
+  oreEntity: PiceIce1
+  minOreYield: 2
+  maxOreYield: 4
+#--------------------------------грязный--------------------------------  
+- type: entity
+  parent: CrystalOreBase
+  id: PiceIceDirty
+  name: Грязный лёд
+  suffix: Полный
+  description: Холодный и с явной грязюкой...
+  components:
+  - type: Stack
+    stackType: PiceIceDirty
+  - type: Sprite
+    sprite: Victoria/ice.rsi
+    state: dirty
+  - type: Extractable
+    grindableSolutionName: dirtyice
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      RawPiceIce: 10
+  - type: SolutionContainerManager
+    solutions:
+      dirtyice:
+        reagents:
+        - ReagentId: Water
+          Quantity: 5
+        - ReagentId: Dirty
+          Quantity: 5
+  - type: Tag
+    tags:
+    - Ore
+  - type: Perishable
+    rotAfter: 300
+    molsPerSecondPerUnitMass: 0
+  - type: RotInto
+    entity: PuddleHuyddleDirty
+    stage: 1
+#--------------Стак--------------------------
+- type: stack
+  id: PiceIceDirty
+  name: Грязный лёд
+  icon: { sprite: Victoria/ice.rsi, state: dirty }
+  spawn: PiceIceDirty1
+  maxCount: 30
+#--------------Единица руды--------------------------
+- type: entity
+  parent: PiceIceDirty
+  id: PiceIceDirty1
+  suffix: Один
+  components:
+  - type: Stack
+    count: 1  
+#--------------материал----------------------------------
+- type: material
+  id: RawPiceIceDirty
+  stackEntity: PiceIceDirty1
+  name: Грязный лёд
+  icon: { sprite: Victoria/ice.rsi, state: dirty }
+  price: 0.1 
+#--------------руда--------------------------
+- type: ore
+  id: PiceIceDirty
+  oreEntity: PiceIceDirty1
+  minOreYield: 1
+  maxOreYield: 2 
+#--------------------------------вместе--------------------------------
+- type: weightedRandomOre
+  id: RandomOrePiceIce
+  weights:
+    PiceIce: 5
+    PiceIceDirty: 3
+    
+- type: weightedRandomOre
+  id: RandomOrePiceIceCoal
+  weights:
+    PiceIceDirty: 3
+    OreCoal: 5
+    
+- type: weightedRandomOre
+  id: RandomOrePiceIceGold
+  weights:
+    PiceIceDirty: 3
+    OreGold: 3
+    
+- type: weightedRandomOre
+  id: RandomOrePiceIceDiamond
+  weights:
+    PiceIceDirty: 3
+    OreDiamond: 3
+    
+- type: weightedRandomOre
+  id: RandomOrePiceIcePlasma
+  weights:
+    PiceIceDirty: 3
+    OrePlasma: 3
+    
+- type: weightedRandomOre
+  id: RandomOrePiceIceQuartz
+  weights:
+    PiceIceDirty: 3
+    OreSpaceQuartz: 2
+    
+- type: weightedRandomOre
+  id: RandomOrePiceIceSilver
+  weights:
+    PiceIceDirty: 3
+    OreSilver: 3
+    
+- type: weightedRandomOre
+  id: RandomOrePiceIceSteel
+  weights:
+    PiceIceDirty: 3
+    OreSteel: 3
+    
+- type: weightedRandomOre
+  id: RandomOrePiceIceUranium
+  weights:
+    PiceIceDirty: 3
+    OreUranium: 2
+    OrePlumbum: 2
+    
+- type: weightedRandomOre
+  id: RandomOrePiceIceBananium
+  weights:
+    PiceIceDirty: 3
+    OreBananium: 2
+    
+- type: weightedRandomOre
+  id: RandomOrePiceIceArtifactFragment
+  weights:
+    PiceIceDirty: 3
+    OreArtifactFragment: 2
+    
+- type: weightedRandomOre
+  id: RandomOrePiceIceSalt
+  weights:
+    PiceIceDirty: 3
+    OreSalt: 2
+    
+- type: weightedRandomOre
+  id: RandomOrePiceIceCooper
+  weights:
+    PiceIceDirty: 3
+    OreCooper: 3
+    OrePlumbum: 2
+    
+- type: weightedRandomOre
+  id: RandomOrePiceIceAluminium
+  weights:
+    PiceIceDirty: 3
+    OreAluminium: 3
+    
+- type: weightedRandomOre
+  id: RandomOrePiceIceBSCrystal
+  weights:
+    PiceIceDirty: 3
+    OreBSCrystall: 3
+    
+- type: weightedRandomOre
+  id: RandomOrePiceIceRSCrystal
+  weights:
+    PiceIceDirty: 3
+    OreRSCrystal: 3
+    
+- type: weightedRandomOre
+  id: RandomOrePiceIceCosmCrystall
+  weights:
+    PiceIceDirty: 3
+    OreCosmCrystall: 3
+#--------------------------------------реакции-------------------------------
+- type: reaction
+  id: HydrochloricAcid
+  reactants:
+    Hydrogen:
+      amount: 1
+    Chlorine:
+      amount: 1
+  products:
+    HydrochloricAcid: 2
+    
+- type: reaction
+  id: Precipitator
+  reactants:
+    HydrochloricAcid:
+      amount: 1
+    SulfuricAcid:
+      amount: 1
+  products:
+    Precipitator: 4
+      
+- type: reaction
+  id: CreateСeramicsReaction
+  impact: Low
+  quantized: true
+  minTemp: 340
+  reactants:
+    Dirty:
+      amount: 10
+  effects:
+    - !type:CreateEntityReactionEffect
+      entity: СeramicsCrystall1

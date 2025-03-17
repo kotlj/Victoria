@@ -4,6 +4,7 @@
   parent: BaseStorageItem
   description: A robust bag for salvage specialists and miners alike to carry large amounts of ore. Magnetises any nearby ores when attached to a belt.
   components:
+  - type: AntiRottingContainer
   - type: MagnetPickup
   - type: Sprite
     sprite: Objects/Specific/Mining/ore_bag.rsi
