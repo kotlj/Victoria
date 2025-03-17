@@ -317,7 +317,7 @@
   parent: CargoIDCard
   id: SecTeacherIDCard
   name: ID-карта инструктора СБ
-  description: Даёт доступ в отдел службы безопасности, а также в помещения наставников
+  description: Даёт доступ в бриг и отдел службы безопасности, а также в помещения наставников
   suffix: Наставники
   components:
   - type: Sprite
