@@ -372,7 +372,7 @@
   id: PlazСeramicsCircuitBord
   name: Плазкерамовая плата
   icon: { sprite: Victoria/Electron/raw_circuit_bord.rsi, state: plazсeram }
-  spawn: lazСeramicsCircuitBord1
+  spawn: PlazСeramicsCircuitBord1
   maxCount: 30
 #------------------Один кристалл--------------------------
 - type: entity

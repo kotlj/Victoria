@@ -27,7 +27,7 @@
 #------------------Стак--------------------------
 - type: stack
   id: DigitalCircuit
-  name: Цифровые компоненты
+  name: цифровые компоненты
   icon: { sprite: Victoria/Electron/components_circuit.rsi, state: digital }
   spawn: DigitalCircuit1
   maxCount: 30
@@ -39,11 +39,11 @@
   components:
   - type: Stack
     count: 1  
-#----------------------------------материал----------------------------------
+#----------------------------------Материал----------------------------------
 - type: material
   id: DigitalCircuitMaterial
   stackEntity: DigitalCircuit1
-  name: Цифровые компоненты
+  name: цифровые компоненты
   icon: { sprite: Victoria/Electron/components_circuit.rsi, state: digital }
   price: 0.05    
 #------------------Рецепт--------------------------
@@ -76,7 +76,7 @@
 #------------------Стак--------------------------
 - type: stack
   id: AnalogCircuit
-  name: Аналоговые компоненты
+  name: аналоговые компоненты
   icon: { sprite: Victoria/Electron/components_circuit.rsi, state: analog }
   spawn: AnalogCircuit1
   maxCount: 30
@@ -88,11 +88,11 @@
   components:
   - type: Stack
     count: 1  
-#----------------------------------материал----------------------------------
+#----------------------------------Материал----------------------------------
 - type: material
   id: AnalogCircuitMaterial
   stackEntity: AnalogCircuit1
-  name: Аналоговые компоненты
+  name: аналоговые компоненты
   icon: { sprite: Victoria/Electron/components_circuit.rsi, state: analog }
   price: 0.05    
 #------------------Рецепт--------------------------
@@ -124,7 +124,7 @@
 #------------------Стак--------------------------
 - type: stack
   id: PulseCircuit
-  name: Импульсные компоненты
+  name: импульсные компоненты
   icon: { sprite: Victoria/Electron/components_circuit.rsi, state: pulse }
   spawn: PulseCircuit1
   maxCount: 30
@@ -136,11 +136,11 @@
   components:
   - type: Stack
     count: 1  
-#----------------------------------материал----------------------------------
+#----------------------------------Материал----------------------------------
 - type: material
   id: PulseCircuitMaterial
   stackEntity: PulseCircuit1
-  name: Импульсные компоненты
+  name: импульсные компоненты
   icon: { sprite: Victoria/Electron/components_circuit.rsi, state: pulse }
   price: 0.05    
 #------------------Рецепт--------------------------
@@ -173,7 +173,7 @@
 #------------------Стак--------------------------
 - type: stack
   id: PowerCircuit
-  name: Силовые компоненты
+  name: силовые компоненты
   icon: { sprite: Victoria/Electron/components_circuit.rsi, state: power }
   spawn: PowerCircuit1
   maxCount: 30
@@ -181,15 +181,15 @@
 - type: entity
   parent: PowerCircuit
   id: PowerCircuit1
-  suffix: Электроника, Single
+  suffix: электроника, Single
   components:
   - type: Stack
     count: 1  
-#----------------------------------материал----------------------------------
+#----------------------------------Материал----------------------------------
 - type: material
   id: PowerCircuitMaterial
   stackEntity: PowerCircuit1
-  name: Силовые компоненты
+  name: силовые компоненты
   icon: { sprite: Victoria/Electron/components_circuit.rsi, state: power }
   price: 0.05    
 #------------------Рецепт--------------------------
@@ -200,7 +200,7 @@
   materials:
     CooperMaterial: 150
     SapphireMaterial: 100
-#--------------------------------------Програмируемые------------------------------------------
+#--------------------------------------Программируемые------------------------------------------
 #------------------Сам-------------------------
 - type: entity
   parent: DigitalCircuit
@@ -233,7 +233,7 @@
   components:
   - type: Stack
     count: 1  
-#----------------------------------материал----------------------------------
+#----------------------------------Материал----------------------------------
 - type: material
   id: ProgrammableCircuitMaterial
   stackEntity: ProgrammableCircuit1
@@ -282,7 +282,7 @@
   components:
   - type: Stack
     count: 1  
-#----------------------------------материал----------------------------------
+#----------------------------------Материал----------------------------------
 - type: material
   id: MicrowaveCircuitMaterial
   stackEntity: MicrowaveCircuit1
@@ -298,7 +298,7 @@
     AluminiumMaterial: 150
     SiMaterial: 100
     Gold: 50
-#--------------------------------------Рассыпуха------------------------------------------
+#--------------------------------------Дискретные------------------------------------------
 #------------------Сам-------------------------
 - type: entity
   parent: DigitalCircuit
@@ -319,7 +319,7 @@
 #------------------Стак--------------------------
 - type: stack
   id: DiscreteCircuit
-  name: Дискретные компоненты
+  name: дискретные компоненты
   icon: { sprite: Victoria/Electron/components_circuit.rsi, state: discrete }
   spawn: DiscreteCircuit1
   maxCount: 30
@@ -331,11 +331,11 @@
   components:
   - type: Stack
     count: 1  
-#----------------------------------материал----------------------------------
+#----------------------------------Материал----------------------------------
 - type: material
   id: DiscreteCircuitMaterial
   stackEntity: DiscreteCircuit1
-  name: Дискретные компоненты
+  name: дискретные компоненты
   icon: { sprite: Victoria/Electron/components_circuit.rsi, state: discrete }
   price: 0.05    
 #------------------Рецепт--------------------------
@@ -350,7 +350,7 @@
 - type: entity
   id: LithographMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: Плата литографа
+  name: плата литографа
   description: Электронная плата, необходимая для работы литографа
   components:
     - type: MachineBoard
@@ -366,7 +366,7 @@
 - type: entity
   id: Lithograph
   parent: BaseLatheLube
-  name: Литограф
+  name: литограф
   description: Чудная машина для создания чипов электронных схем
   components:
   - type: Sprite

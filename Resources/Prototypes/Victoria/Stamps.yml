@@ -1,5 +1,5 @@
 - type: entity
-  name: Штамп "Сверхсрочно"
+  name: штамп "Сверхсрочно"
   suffix: Срочность
   parent: RubberStampBaseAlt
   id: SverhSrochRubberStamp
@@ -13,7 +13,7 @@
     state: stamp-hos
     
 - type: entity
-  name: Штамп "Срочно"
+  name: штамп "Срочно"
   suffix: Срочность
   parent: RubberStampBaseAlt
   id: SrochRubberStamp
@@ -27,7 +27,7 @@
     state: stamp-ce
     
 - type: entity
-  name: Штамп "Средняя срочность"
+  name: штамп "Средняя срочность"
   suffix: Срочность
   parent: RubberStampBaseAlt
   id: SredSrochRubberStamp
@@ -41,7 +41,7 @@
     state: stamp-centcom
     
 - type: entity
-  name: Штамп "В последнюю очередь"
+  name: штамп "В последнюю очередь"
   suffix: Срочность
   parent: RubberStampBaseAlt
   id: ZeroSrochRubberStamp
@@ -55,7 +55,7 @@
     state: stamp-hop
     
 - type: entity
-  name: Штамп "Срочность на усмотрение"
+  name: штамп "Срочность на усмотрение"
   suffix: Срочность
   parent: RubberStampBaseAlt
   id: VarySrochRubberStamp
@@ -69,7 +69,7 @@
     state: stamp-chaplain
     
 - type: entity
-  name: Коробка штампов срочности
+  name: коробка штампов срочности
   suffix: Срочность
   parent: BoxCardboard
   id: BoxSrochRubberStamp

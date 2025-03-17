@@ -28,7 +28,7 @@
 #------------------Стак--------------------------
 - type: stack
   id: СeramicsCrystall
-  name: Керамика
+  name: керамика
   icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: сeramics }
   spawn: СeramicsCrystall1
   maxCount: 30
@@ -40,11 +40,11 @@
   components:
   - type: Stack
     count: 1  
-#----------------------------------материал----------------------------------
+#----------------------------------Материал----------------------------------
 - type: material
   id: СeramicsMaterial
   stackEntity: СeramicsCrystall1
-  name: Керамика
+  name: керамика
   icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: сeramics }
   price: 0.1    
 #------------------Рецепт--------------------------
@@ -55,7 +55,7 @@
   materials:
     RawIron: 500
     RawQuartz: 500
-#--------------------------------------Пласкерам------------------------------------------
+#--------------------------------------Плазкерам------------------------------------------
 #------------------Сам-------------------------
 - type: entity
   parent: CrystalOreBase
@@ -82,7 +82,7 @@
 #------------------Стак--------------------------
 - type: stack
   id: PlazСeramicsCrystall
-  name: Плазкерам
+  name: плазкерам
   icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: plazсeramics_crystal }
   spawn: PlazСeramicsCrystall1
   maxCount: 30
@@ -94,11 +94,11 @@
   components:
   - type: Stack
     count: 1  
-#----------------------------------материал----------------------------------
+#----------------------------------Материал----------------------------------
 - type: material
   id: PlazСeramicsMaterial
   stackEntity: PlazСeramicsCrystall1
-  name: Плазкерам
+  name: плазкерам
   icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: plazсeramics_crystal }
   price: 0.2    
 #------------------Рецепт--------------------------
@@ -144,7 +144,7 @@
 #------------------Стак--------------------------
 - type: stack
   id: SiСeramicsCrystall
-  name: Кремнекерам
+  name: кремнекерам
   icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: siсeramics_crystal }
   spawn: SiСeramicsCrystall1
   maxCount: 30
@@ -156,11 +156,11 @@
   components:
   - type: Stack
     count: 1  
-#----------------------------------материал----------------------------------
+#----------------------------------Материал----------------------------------
 - type: material
   id: SiСeramicsMaterial
   stackEntity: SiСeramicsCrystall1
-  name: Кремнекерам
+  name: кремнекерам
   icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: siсeramics_crystal }
   price: 0.2    
 #------------------Рецепт--------------------------
@@ -206,7 +206,7 @@
 #------------------Стак--------------------------
 - type: stack
   id: CarbonPitch
-  name: Углеродная смола
+  name: углеродная смола
   icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: carbonpitch }
   spawn: CarbonPitch1
   maxCount: 30
@@ -218,11 +218,11 @@
   components:
   - type: Stack
     count: 1  
-#----------------------------------материал----------------------------------
+#----------------------------------Материал----------------------------------
 - type: material
   id: CarbonPitchMaterial
   stackEntity: CarbonPitch1
-  name: Углеродная смола
+  name: углеродная смола
   icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: carbonpitch }
   price: 0    
 #------------------Рецепт--------------------------
@@ -266,7 +266,7 @@
 #------------------Стак--------------------------
 - type: stack
   id: PolymerPitch
-  name: Полимерная смола
+  name: полимерная смола
   icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: polymerpitch }
   spawn: PolymerPitch1
   maxCount: 30
@@ -278,11 +278,11 @@
   components:
   - type: Stack
     count: 1  
-#----------------------------------материал----------------------------------
+#----------------------------------Материал----------------------------------
 - type: material
   id: PolymerPitchMaterial
   stackEntity: PolymerPitch1
-  name: Полимерная смола
+  name: полимерная смола
   icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: polymerpitch }
   price: 0    
 #------------------Рецепт--------------------------
@@ -319,7 +319,7 @@
 #------------------Стак--------------------------
 - type: stack
   id: Fiberglass
-  name: Стеклотекстолит
+  name: стеклотекстолит
   icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: fiberglass }
   spawn: PolymerPitch1
   maxCount: 30
@@ -331,11 +331,11 @@
   components:
   - type: Stack
     count: 1  
-#----------------------------------материал----------------------------------
+#----------------------------------Материал----------------------------------
 - type: material
   id: FiberglassMaterial
   stackEntity: Fiberglass1
-  name: Стеклотекстолит
+  name: стеклотекстолит
   icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: fiberglass }
   price: 0.15   
 #------------------Рецепт--------------------------
@@ -373,7 +373,7 @@
 #------------------Стак--------------------------
 - type: stack
   id: Gethinax
-  name: Гетинакс
+  name: гетинакс
   icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: gethinax }
   spawn: PolymerPitch1
   maxCount: 30
@@ -385,11 +385,11 @@
   components:
   - type: Stack
     count: 1  
-#----------------------------------материал----------------------------------
+#----------------------------------Материал----------------------------------
 - type: material
   id: GethinaxMaterial
   stackEntity: Gethinax1
-  name: Гетинакс
+  name: гетинакс
   icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: gethinax }
   price: 0.05    
 #------------------Рецепт--------------------------
@@ -426,7 +426,7 @@
 #------------------Стак--------------------------
 - type: stack
   id: SiPlazCrystall
-  name: Кремнеплаз
+  name: кремнеплаз
   icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: siplaz_crystal }
   spawn: SiСeramicsCrystall1
   maxCount: 30
@@ -438,11 +438,11 @@
   components:
   - type: Stack
     count: 1  
-#----------------------------------материал----------------------------------
+#----------------------------------Материал----------------------------------
 - type: material
   id: SiPlazMaterial
   stackEntity: SiPlazCrystall
-  name: Кремнеплаз
+  name: кремнеплаз
   icon: { sprite: Victoria/Electron/rawelectronics_mat.rsi, state: siplaz_crystal }
   price: 0.2    
 #------------------Рецепт--------------------------

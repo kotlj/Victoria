@@ -1,10 +1,10 @@
-#-----------------------------------------------схема сканнера----------------------------------------
+#-----------------------------------------------схема сканера----------------------------------------
 - type: Tag
   id: MachineCircuitboardCosmScanner
 
 - type: stack
   id: MachineCircuitboardCosmScannerStack
-  name: Плата Редспейс-сканнера
+  name: плата редспейс-сканера
   icon: { sprite: Objects/Misc/module.rsi, state: science }
   spawn: MachineCircuitboardCosmScanner
   maxCount: 1
@@ -12,14 +12,14 @@
 - type: material
   id: MachineCircuitboardCosmScannerMaterial
   stackEntity: MachineCircuitboardCosmScanner
-  name: Плата Редспейс-сканнера
+  name: плата редспейс-сканера
   icon: { sprite: Objects/Misc/module.rsi, state: science }
   price: 1 
 
 - type: entity
   id: MachineCircuitboardCosmScanner
   parent: CrystalOreBase
-  name: Плата Редспейс-сканнера
+  name: плата редспейс-сканера
   description: Электронная плата для системы управления космециевым сканнером.
   suffix: Космециевая машина
   components:
@@ -38,12 +38,12 @@
       materialComposition:
         MachineCircuitboardCosmScannerMaterial: 1000   
     - type: Material  
-#-----------------------------------------------основа сканнера----------------------------------------  
+#-----------------------------------------------основа сканера----------------------------------------  
 - type: entity
   id: CosmScannerBase
   parent: BaseStructureDynamic
-  name: Основа Редспейс-сканнера
-  description: Все основные системы космециевого сканнера распологаются тут, но не хватает верхнего силового модуля.
+  name: основа редспейс-сканера
+  description: Все основные системы космециевого сканера распологаются тут, но не хватает верхнего силового модуля.
   suffix: Не маппить!, Космециевая машина
   categories: [ HideSpawnMenu ]
   components:
@@ -95,12 +95,12 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak 
-#-----------------------------------------------сканнер----------------------------------------
+#-----------------------------------------------сканер----------------------------------------
 - type: entity
   id: CosmScanner
   parent: BaseMachine
-  name: Редспейс-сканнер
-  description: Крупный сканнер совместной разработки НаноТрейзен и Космологистики, который используется для накопление существенного количества энергии в космециевых ядрах.
+  name: редспейс-сканер
+  description: Крупный сканер разработанный NanoTrasen, который используется для накопление существенного количества энергии в космециевых ядрах.
   suffix: Не маппить!, Космециевая машина
   components:
     - type: AmbientSound
