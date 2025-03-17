@@ -371,7 +371,7 @@
   id: PlazСeramicsCircuitBord
   name: плазкерамовая плата
   icon: { sprite: Victoria/Electron/raw_circuit_bord.rsi, state: plazсeram }
-  spawn: SapphireCrystall1
+  spawn: PlazСeramicsCircuitBord1
   maxCount: 30
 #------------------Один кристалл--------------------------
 - type: entity
@@ -418,7 +418,7 @@
   id: SiСeramicsCircuitBord
   name: кремнекерамовая плата
   icon: { sprite: Victoria/Electron/raw_circuit_bord.rsi, state: siсeramics }
-  spawn: SapphireCrystall1
+  spawn: SiСeramicsCircuitBord1
   maxCount: 30
 #------------------Один кристалл--------------------------
 - type: entity
@@ -465,7 +465,7 @@
   id: FiberglassCircuitBord
   name: стеклотекстолитная плата
   icon: { sprite: Victoria/Electron/raw_circuit_bord.rsi, state: fiberglass }
-  spawn: SapphireCrystall1
+  spawn: FiberglassCircuitBord1
   maxCount: 30
 #------------------Один кристалл--------------------------
 - type: entity
@@ -512,7 +512,7 @@
   id: GethinaxCircuitBord
   name: гетинаксная плата
   icon: { sprite: Victoria/Electron/raw_circuit_bord.rsi, state: gethinax }
-  spawn: SapphireCrystall1
+  spawn: GethinaxCircuitBord1
   maxCount: 30
 #------------------Один кристалл--------------------------
 - type: entity
@@ -559,7 +559,7 @@
   id: SiPlazCircuitBord
   name: кремнеплазовая плата
   icon: { sprite: Victoria/Electron/raw_circuit_bord.rsi, state: siplaz }
-  spawn: SapphireCrystall1
+  spawn: SiPlazCircuitBord1
   maxCount: 30
 #------------------Один кристалл--------------------------
 - type: entity
