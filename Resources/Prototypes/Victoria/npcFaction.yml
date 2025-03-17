@@ -82,6 +82,24 @@
   - PetsNT
   - KMLG
   - Vitz
+  
+- type: npcFaction
+  id: VitzBitMrHill
+  hostile:
+  - SimpleHostile
+  - Xeno
+  - Zombie
+  - Syndicate
+  - Revolutionary
+  - Dragon
+  - Petr
+  friendly:
+  - UmporBot
+  - Umpor
+  - NanoTrasen
+  - PetsNT
+  - KMLG
+  - Vitz
 #-----------------------------------------------СНК----------------------------------
 - type: npcFaction
   id: SNKBot
@@ -172,3 +190,23 @@
   - NanoTrasen
   - PetsNT
   - Vitz
+  
+- type: npcFaction
+  id: KMLGEnemy
+  hostile:
+  - SimpleHostile
+  - Xeno
+  - Zombie
+  - Syndicate
+  - Revolutionary
+  - Dragon
+  - Petr
+  - Noocraty
+  - NoocratyBot
+  - NanoTrasen
+  - PetsNT
+  - Vitz
+  friendly:
+  - SNKBot
+  - SNK
+  - VitzBitMrHill

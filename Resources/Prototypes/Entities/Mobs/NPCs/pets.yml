@@ -114,6 +114,7 @@
   id: MobCorgiIanPup
   description: Favourite puppy corgi. Awww.
   components:
+  - type: Item
   - type: Grammar
     attributes:
       proper: true

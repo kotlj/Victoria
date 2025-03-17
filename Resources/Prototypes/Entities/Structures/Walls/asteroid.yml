@@ -1313,6 +1313,9 @@
   name: snowdrift
   parent: WallRock
   components:
+    - type: OreVein
+      oreChance: 1.0
+      oreRarityPrototypeId: RandomOrePiceIce
     - type: Icon
       sprite: Structures/Walls/rock.rsi
       state: rock_snow
@@ -1337,7 +1340,7 @@
   components:
     - type: OreVein
       oreChance: 1.0
-      currentOre: OreCoal
+      oreRarityPrototypeId: RandomOrePiceIceCoal
     - type: Sprite
       layers:
         - state: rock_snow
@@ -1360,7 +1363,7 @@
   components:
     - type: OreVein
       oreChance: 1.0
-      currentOre: OreGold
+      oreRarityPrototypeId: RandomOrePiceIceGold
     - type: Sprite
       layers:
         - state: rock_snow
@@ -1383,7 +1386,7 @@
   components:
     - type: OreVein
       oreChance: 1.0
-      currentOre: OreDiamond
+      oreRarityPrototypeId: RandomOrePiceIceDiamond
     - type: Sprite
       layers:
         - state: rock_snow
@@ -1406,7 +1409,7 @@
   components:
     - type: OreVein
       oreChance: 1.0
-      currentOre: OrePlasma
+      oreRarityPrototypeId: RandomOrePiceIcePlasma
     - type: Sprite
       layers:
         - state: rock_snow
@@ -1429,7 +1432,7 @@
   components:
     - type: OreVein
       oreChance: 1.0
-      currentOre: OreSpaceQuartz
+      oreRarityPrototypeId: RandomOrePiceIceQuartz
     - type: Sprite
       layers:
         - state: rock_snow
@@ -1452,7 +1455,7 @@
   components:
     - type: OreVein
       oreChance: 1.0
-      currentOre: OreSilver
+      oreRarityPrototypeId: RandomOrePiceIceSilver
     - type: Sprite
       layers:
         - state: rock_snow
@@ -1475,7 +1478,7 @@
   components:
     - type: OreVein
       oreChance: 1.0
-      currentOre: OreSteel
+      oreRarityPrototypeId: RandomOrePiceIceSteel
     - type: Sprite
       layers:
         - state: rock_snow
@@ -1498,7 +1501,7 @@
   components:
     - type: OreVein
       oreChance: 1.0
-      currentOre: OreUranium
+      oreRarityPrototypeId: RandomOrePiceIceUranium
     - type: Sprite
       layers:
         - state: rock_snow
@@ -1522,7 +1525,7 @@
   components:
     - type: OreVein
       oreChance: 1.0
-      currentOre: OreBananium
+      oreRarityPrototypeId: RandomOrePiceIceBananium
     - type: Sprite
       layers:
         - state: rock_snow
@@ -1545,7 +1548,7 @@
   components:
     - type: OreVein
       oreChance: 1.0
-      currentOre: OreArtifactFragment
+      oreRarityPrototypeId: RandomOrePiceIceArtifactFragment
     - type: Sprite
       layers:
         - state: rock_snow
@@ -1568,7 +1571,7 @@
   components:
     - type: OreVein
       oreChance: 1.0
-      currentOre: OreSalt
+      oreRarityPrototypeId: RandomOrePiceIceSalt
     - type: Sprite
       layers:
         - state: rock_snow
@@ -1582,6 +1585,126 @@
           state: rock_snow_west
         - state: rock_salt
           map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+          
+- type: entity
+  id: WallRockSnowCooper
+  name: сугроб
+  parent: WallRockSnow
+  description: С примесью медной руды
+  suffix: Медь
+  components:
+    - type: OreVein
+      oreChance: 1.0
+      oreRarityPrototypeId: RandomOrePiceIceCooper
+    - type: Sprite
+      layers:
+        - state: rock_snow
+        - map: [ "enum.EdgeLayer.South" ]
+          state: rock_snow_south
+        - map: [ "enum.EdgeLayer.East" ]
+          state: rock_snow_east
+        - map: [ "enum.EdgeLayer.North" ]
+          state: rock_snow_north
+        - map: [ "enum.EdgeLayer.West" ]
+          state: rock_snow_west
+        - state: cooper
+          sprite: Victoria/Electron/electronic_rock.rsi
+          
+- type: entity
+  id: WallRockSnowAluminium
+  name: сугроб
+  parent: WallRockSnow
+  description: С примесью алюминиевой руды.
+  suffix: Алюминий
+  components:
+    - type: OreVein
+      oreChance: 1.0
+      oreRarityPrototypeId: RandomOrePiceIceAluminium
+    - type: Sprite
+      layers:
+        - state: rock_snow
+        - map: [ "enum.EdgeLayer.South" ]
+          state: rock_snow_south
+        - map: [ "enum.EdgeLayer.East" ]
+          state: rock_snow_east
+        - map: [ "enum.EdgeLayer.North" ]
+          state: rock_snow_north
+        - map: [ "enum.EdgeLayer.West" ]
+          state: rock_snow_west
+        - state: aluminium
+          sprite: Victoria/Electron/electronic_rock.rsi
+
+- type: entity
+  id: WallRockSnowBSCrystal
+  name: сугроб
+  parent: WallRockSnow
+  description: С блюспейс-кристаллами.
+  suffix: БС-кристаллы
+  components:
+    - type: OreVein
+      oreChance: 1.0
+      oreRarityPrototypeId: RandomOrePiceIceBSCrystal
+    - type: Sprite
+      layers:
+        - state: rock_snow
+        - map: [ "enum.EdgeLayer.South" ]
+          state: rock_snow_south
+        - map: [ "enum.EdgeLayer.East" ]
+          state: rock_snow_east
+        - map: [ "enum.EdgeLayer.North" ]
+          state: rock_snow_north
+        - map: [ "enum.EdgeLayer.West" ]
+          state: rock_snow_west
+        - state: bs
+          sprite: Victoria/Special_crystals/crystal_rock.rsi
+          
+- type: entity
+  id: WallRockSnowRSCrystal
+  name: сугроб
+  parent: WallRockSnow
+  description: С редспейс-кристаллами.
+  suffix: Телекристаллы
+  components:
+    - type: OreVein
+      oreChance: 1.0
+      oreRarityPrototypeId: RandomOrePiceIceRSCrystal
+    - type: Sprite
+      layers:
+        - state: rock_snow
+        - map: [ "enum.EdgeLayer.South" ]
+          state: rock_snow_south
+        - map: [ "enum.EdgeLayer.East" ]
+          state: rock_snow_east
+        - map: [ "enum.EdgeLayer.North" ]
+          state: rock_snow_north
+        - map: [ "enum.EdgeLayer.West" ]
+          state: rock_snow_west
+        - state: rs
+          sprite: Victoria/Special_crystals/crystal_rock.rsi
+
+- type: entity
+  id: WallRockSnowCosmCrystall
+  name: сугроб
+  parent: WallRockSnow
+  description: С космециевыми кристаллами.
+  suffix: Космеций
+  components:
+    - type: OreVein
+      oreChance: 1.0
+      oreRarityPrototypeId: RandomOrePiceIceCosmCrystall
+    - type: Sprite
+      layers:
+        - state: rock_snow
+        - map: [ "enum.EdgeLayer.South" ]
+          state: rock_snow_south
+        - map: [ "enum.EdgeLayer.East" ]
+          state: rock_snow_east
+        - map: [ "enum.EdgeLayer.North" ]
+          state: rock_snow_north
+        - map: [ "enum.EdgeLayer.West" ]
+          state: rock_snow_west
+        - state: cosm
+          sprite: Victoria/Special_crystals/crystal_rock.rsi
 
 # Sand variants
 - type: entity

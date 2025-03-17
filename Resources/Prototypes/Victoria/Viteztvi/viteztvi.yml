@@ -1451,7 +1451,7 @@
       allowSpeech: true
       makeSentient: true
       name: Пехотинец Витезтви
-      description: "Вы боец рядового состава корпорации Витезтви. исполняйте приказы своего командира и воюте на совесть, ибо чем лучше вы работаете, тем больше вам платят."
+      description: "Вы боец рядового состава корпорации Витезтви. Исполняйте приказы своего командира и воюте на совесть, ибо чем лучше вы работаете, тем больше вам платят."
     - type: GhostTakeoverAvailable
     - type: MobThresholds
       thresholds:
@@ -2067,3 +2067,35 @@
       - id: VitzEncryptionKeyPil
       - id: VitzEncryptionKeyPil
       - id: VitzEncryptionKeyCom
+#-------------------------------------------------Радио призыва------------------ 
+- type: entity
+  parent: ReinforcementRadio
+  id: ReinforcementRadioVitzEfreitor
+  name: Радио призыва бойца Витезтви
+  description: Призовите на помощь матёрого солдафона из корпорации Витезтви, дайте ему обзор ситуации и скажите, что надо сделать.
+  suffix: Витезтви
+  components:
+  - type: GhostRole
+    name: Пехотинец Витезтви
+    description: Вы боец рядового состава корпорации Витезтви. Исполняйте приказы своего командира и воюте на совесть, ибо чем лучше вы работаете, тем больше вам платят.
+    rules: ghost-role-information-vitz-efreitor-rules
+    raffle:
+      settings: default
+  - type: GhostRoleMobSpawner
+    prototype: VitzMobHumanEfreitor
+    
+- type: entity
+  parent: ReinforcementRadio
+  id: ReinforcementRadioVitzStarshina
+  name: Радио призыва старшины Витезтви
+  description: Призовите на помощь полевого командира из корпорации Витезтви, дайте ему обзор ситуации и скажите, что надо сделать.
+  suffix: Витезтви
+  components:
+  - type: GhostRole
+    name: Старшина Витезтви
+    description: Старшина армии корпорации Витезтви. Командуйте своими подчинёнными с умом. Помните - чем эффективней ваша работа, тем больше вам платят.
+    rules: ghost-role-information-vitz-starshina-rules
+    raffle:
+      settings: default
+  - type: GhostRoleMobSpawner
+    prototype: VitzMobHumanStarshina

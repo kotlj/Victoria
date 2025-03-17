@@ -1,0 +1,859 @@
+#---------------------------------------Драться в ближнем бою и добить, а ещё искать оружие ближнего боя-------------------
+- type: htnCompound
+  id: MeleeAttackTargetCompoundBotKMLG
+  branches:
+    # Move to melee range and hit them
+    - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:MoveToOperator
+            shutdownState: PlanFinished
+            pathfindInPlanning: true
+            removeKeyOnFinish: false
+            targetKey: TargetCoordinates
+            pathfindKey: TargetPathfind
+            rangeKey: MeleeRange
+        - !type:HTNPrimitiveTask
+          operator: !type:JukeOperator
+            jukeType: Away
+        - !type:HTNPrimitiveTask
+          operator: !type:MeleeOperator
+            targetKey: Target
+          preconditions:
+            - !type:KeyExistsPrecondition
+              key: Target
+            - !type:TargetInRangePrecondition
+              targetKey: Target
+              rangeKey: MeleeRange
+          services:
+            - !type:UtilityService
+              id: MeleeService
+              proto: NearbyMeleeTargets
+              key: Target
+        - !type:HTNPrimitiveTask
+          operator: !type:SpeakOperator
+            speech: Отлично!
+
+- type: htnCompound
+  id: MeleeCombatCompoundBotKMLG
+  branches:
+    - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:SpeakOperator
+            speech: Накостыляю!
+        - !type:HTNPrimitiveTask
+          operator: !type:UtilityOperator
+            proto: NearbyMeleeTargets
+        - !type:HTNCompoundTask
+          task: MeleeAttackTargetCompoundBotKMLG
+#---------------------------------------Стрельба и убийство-------------------------
+- type: htnCompound
+  id: GunCombatCompoundBotKMLG
+  branches:
+    # Pick target, then move into range and shoot them.
+    - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:UtilityOperator
+            proto: NearbyGunTargets
+        - !type:HTNPrimitiveTask
+          operator: !type:MoveToOperator
+            shutdownState: PlanFinished
+            pathfindInPlanning: true
+            removeKeyOnFinish: false
+            targetKey: TargetCoordinates
+            pathfindKey: TargetPathfind
+            stopOnLineOfSight: true
+            rangeKey: MeleeRange
+        - !type:HTNPrimitiveTask
+          operator: !type:JukeOperator
+            jukeType: AdjacentTile
+        - !type:HTNPrimitiveTask
+          operator: !type:SpeakOperator
+            speech: Огонь!
+        - !type:HTNPrimitiveTask
+          preconditions:
+            - !type:KeyExistsPrecondition
+              key: Target
+          operator: !type:GunOperator
+            targetKey: Target
+          services:
+            - !type:UtilityService
+              id: RangedService
+              proto: NearbyGunTargets
+              key: Target
+        - !type:HTNPrimitiveTask
+          operator: !type:SpeakOperator
+            speech: Так тебе!
+#---------------------------------------Взять-выкинуть ствол-------------------------
+- type: htnCompound
+  id: RangedCombatCompoundBotKMLG
+  branches:
+    - preconditions:
+        - !type:GunAmmoPrecondition
+          minPercent: 0.001
+      tasks:
+        - !type:HTNCompoundTask
+          task: GunCombatCompoundBotKMLG
+    -  preconditions:
+         - !type:ActiveHandComponentPrecondition
+           components:
+             - type: Gun
+           invert: true
+       tasks:
+         - !type:HTNCompoundTask
+           task: PickupGunCompound
+         - !type:HTNPrimitiveTask
+           operator: !type:SpeakOperator
+             speech: Там ствол!
+    - preconditions:
+        - !type:ActiveHandComponentPrecondition
+          components:
+            - type: Gun
+        - !type:GunAmmoPrecondition
+          maxPercent: 0.001
+      tasks:
+        - !type:HTNPrimitiveTask
+          preconditions:
+            - !type:ActiveHandEntityPrecondition
+          operator: !type:DropOperator
+        - !type:HTNPrimitiveTask
+          operator: !type:SpeakOperator
+            speech: Зарядов нет!
+#---------------------------------------Лечение-------------------------            
+- type: htnCompound
+  id: KMLGInjectNearbyCompound
+  branches:
+    - tasks:
+        # TODO: Kill this shit
+        - !type:HTNPrimitiveTask
+          operator: !type:PickNearbyInjectableOperator
+            targetKey: InjectTarget
+            targetMoveKey: TargetCoordinates
+        - !type:HTNPrimitiveTask
+          operator: !type:SpeakOperator
+            speech: Стой! Сейчас вылечу!
+            hidden: true
+        - !type:HTNPrimitiveTask
+          operator: !type:MoveToOperator
+            pathfindInPlanning: false
+        - !type:HTNPrimitiveTask
+          operator: !type:SetFloatOperator
+            targetKey: IdleTime
+            amount: 3
+        - !type:HTNPrimitiveTask
+          operator: !type:WaitOperator
+            key: IdleTime
+          preconditions:
+            - !type:KeyExistsPrecondition
+              key: IdleTime
+        # TODO: Kill this
+        - !type:HTNPrimitiveTask
+          operator: !type:MedibotInjectOperator
+            targetKey: InjectTarget
+#--------------------------------------Сочетание правил ВИ-----------------------------------------
+#-----------------С ходить-бродить----------
+#------Обыч-----------
+- type: htnCompound
+  id: BotKMLG
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: GunCombatCompoundBotKMLG
+    - tasks:
+        - !type:HTNCompoundTask
+          task: MeleeCombatCompoundBotKMLG
+    - tasks:
+        - !type:HTNCompoundTask
+          task: IdleCompoundBot
+#-----------------Без ходить-бродить----------
+#------Обыч-----------          
+- type: htnCompound
+  id: BotKMLGStop
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: GunCombatCompoundBotKMLG
+    - tasks:
+        - !type:HTNCompoundTask
+          task: MeleeCombatCompoundBotKMLG
+
+#--------------------------------Действия ботов-----------------------------------
+#-------------------------Грузчик-----------------
+#----------------------------------
+- type: emote
+  id: Coffe
+  name: chat-emote-name-coffe
+  category: Hands
+  whitelist:
+    components:
+    - Hands
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-name-coffe"]
+  
+- type: autoEmote
+  id: Coffe
+  emote: Coffe
+  interval: 100.0
+  chance: 0.7
+  withChat: true
+#----------------------------------
+- type: emote
+  id: Scratches
+  name: chat-emote-name-scratches
+  category: Hands
+  whitelist:
+    components:
+    - Hands
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-name-scratches"]
+  
+- type: autoEmote
+  id: Scratches
+  emote: Scratches
+  interval: 150.0
+  chance: 0.6
+  withChat: true  
+#----------------------------------
+- type: emote
+  id: Cigarette
+  name: chat-emote-name-cigarette
+  category: Hands
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-name-cigarette"]
+  
+- type: autoEmote
+  id: Cigarette
+  emote: Cigarette
+  interval: 300.0
+  chance: 0.3
+  withChat: true 
+#----------------------------------
+- type: emote
+  id: Watch
+  name: chat-emote-name-watch
+  category: Hands
+  chatMessages: ["chat-emote-name-watch"]
+  
+- type: autoEmote
+  id: Watch
+  emote: Watch
+  interval: 200.0
+  chance: 0.5
+  withChat: true 
+#----------------------------------
+- type: emote
+  id: Warming
+  name: chat-emote-name-warming
+  category: Hands
+  chatMessages: ["chat-emote-name-warming"]
+  blacklist:
+    components:
+    - BorgChassis
+  
+- type: autoEmote
+  id: Warming
+  emote: Warming
+  interval: 250.0
+  chance: 0.5
+  withChat: true 
+#-------------------------Старший снабженец-----------------
+#----------------------------------
+- type: emote
+  id: Counts
+  name: chat-emote-name-counts
+  category: Hands
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-name-counts"]
+  
+- type: autoEmote
+  id: Counts
+  emote: Counts
+  interval: 200.0
+  chance: 0.5
+  withChat: true
+#----------------------------------
+- type: emote
+  id: Listening
+  name: chat-emote-name-listening
+  category: Hands
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-name-listening"]
+  
+- type: autoEmote
+  id: Listening
+  emote: Listening
+  interval: 200.0
+  chance: 0.5
+  withChat: true
+#----------------------------------
+- type: emote
+  id: Watching
+  name: chat-emote-name-watching
+  category: Hands
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-name-watching"]
+  
+- type: autoEmote
+  id: Watching
+  emote: Watching
+  interval: 200.0
+  chance: 0.5
+  withChat: true
+#----------------------------------
+- type: emote
+  id: Grumbles
+  name: chat-emote-name-grumbles
+  category: Hands
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-name-grumbles"]
+  
+- type: autoEmote
+  id: Grumbles
+  emote: Grumbles
+  interval: 180.0
+  chance: 0.3
+  withChat: true
+#----------------------------------
+- type: emote
+  id: Looks
+  name: chat-emote-name-looks
+  category: Hands
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-name-looks"]
+  
+- type: autoEmote
+  id: Looks
+  emote: Looks
+  interval: 120.0
+  chance: 0.4
+  withChat: true
+#-------------------------Ремонтник-----------------
+#----------------------------------
+- type: emote
+  id: Sniffs
+  name: chat-emote-name-sniffs
+  category: Hands
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-name-sniffs"]
+  chatTriggers:
+    - шмыгает
+  
+- type: autoEmote
+  id: Sniffs
+  emote: Sniffs
+  interval: 120.0
+  chance: 0.6
+  withChat: true
+#----------------------------------
+- type: emote
+  id: Wipes
+  name: chat-emote-name-wipes
+  category: Hands
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-name-wipes"]
+  
+- type: autoEmote
+  id: Wipes
+  emote: Wipes
+  interval: 360.0
+  chance: 0.9
+  withChat: true
+#----------------------------------
+- type: emote
+  id: Swearing
+  name: chat-emote-name-swearing
+  category: Hands
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-name-swearing"]
+  
+- type: autoEmote
+  id: Swearing
+  emote: Swearing
+  interval: 200.0
+  chance: 0.3
+  withChat: true
+#----------------------------------
+- type: emote
+  id: Twists
+  name: chat-emote-name-twists
+  category: Hands
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-name-twists"]
+  
+- type: autoEmote
+  id: Twists
+  emote: Twists
+  interval: 240.0
+  chance: 0.7
+  withChat: true
+#----------------------------------
+- type: emote
+  id: Checks
+  name: chat-emote-name-checks
+  category: Hands
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-name-checks"]
+  
+- type: autoEmote
+  id: Checks
+  emote: Checks
+  interval: 240.0
+  chance: 0.7
+  withChat: true
+#-------------------------Охранник-----------------
+#----------------------------------
+- type: emote
+  id: Bolt
+  name: chat-emote-name-bolt
+  category: Hands
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-name-bolt"]
+  
+- type: autoEmote
+  id: Bolt
+  emote: Bolt
+  interval: 180.0
+  chance: 0.6
+  withChat: true
+#----------------------------------
+- type: emote
+  id: Cartridges
+  name: chat-emote-name-cartridges
+  category: Hands
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-name-cartridges"]
+  
+- type: autoEmote
+  id: Cartridges
+  emote: Cartridges
+  interval: 240.0
+  chance: 0.6
+  withChat: true
+#----------------------------------
+- type: emote
+  id: Gear
+  name: chat-emote-name-gear
+  category: Hands
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-name-gear"]
+  
+- type: autoEmote
+  id: Gear
+  emote: Gear
+  interval: 360.0
+  chance: 0.7
+  withChat: true
+#-------------------------Инженер-----------------
+#----------------------------------
+- type: emote
+  id: Checked
+  name: chat-emote-name-checked
+  category: Hands
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-name-checked"]
+  
+- type: autoEmote
+  id: Checked
+  emote: Checked
+  interval: 180.0
+  chance: 0.5
+  withChat: true
+#----------------------------------
+- type: emote
+  id: Measurement
+  name: chat-emote-name-measurement
+  category: Hands
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-name-measurement"]
+  
+- type: autoEmote
+  id: Measurement
+  emote: Measurement
+  interval: 120.0
+  chance: 0.8
+  withChat: true
+#---------------------------------------Говорение------------------------------------  
+#------------------------------Грузчик---------------------------
+- type: localizedDataset
+  id: SpeakingMobKMLGCt
+  values:
+    prefix: advertisement-bot-kmlg-ct-
+    count: 10  
+#------------------------------Старший снабженец---------------------------
+- type: localizedDataset
+  id: SpeakingMobKMLGCc
+  values:
+    prefix: advertisement-bot-kmlg-cc-
+    count: 10  
+#------------------------------Ремонтник---------------------------
+- type: localizedDataset
+  id: SpeakingMobKMLGRm
+  values:
+    prefix: advertisement-bot-kmlg-rm-
+    count: 10  
+#------------------------------Охранник---------------------------
+- type: localizedDataset
+  id: SpeakingMobKMLGS
+  values:
+    prefix: advertisement-bot-kmlg-s-
+    count: 10  
+#------------------------------Инженер---------------------------
+- type: localizedDataset
+  id: SpeakingMobKMLGE
+  values:
+    prefix: advertisement-bot-kmlg-e-
+    count: 10  
+#---------------------------------------Сами боты----------------------------------------
+#--------------------------------------Стоящий грузчик---------------------------
+- type: entity
+  name: грузчик Космологистики
+  suffix: Бот, Космологистика, друж, стоп
+  parent: BaseMobHuman
+  id: MobKMLGCt
+  components:
+  - type: Advertise
+    pack: SpeakingMobKMLGCt
+    minimumWait: 30
+    maximumWait: 60
+    prewarm: false
+  - type: Speech
+    speechSounds: Baritone
+  - type: Vocal
+    sounds:
+      Unsexed: MaleHuman
+  - type: AutoEmote
+    emotes: 
+    - Yawns
+    - Sneezes
+    - Coughs
+    - Whistles
+    - Coffe
+    - Scratches
+    - Cigarette
+    - Watch
+    - Warming
+  - type: RandomMetadata
+    nameSegments:
+    - KMLGName
+    - KMLGNameTwo
+  - type: NpcFactionMember
+    factions:
+      - KMLG
+  - type: Loadout
+    prototypes:
+      - KMLGGearCt
+  - type: InputMover
+  - type: MobMover
+  - type: HTN
+    rootTask:
+      task: BotKMLGStop
+  - type: NPCRetaliation
+    attackMemoryLength: 100
+#--------------------------------------Ходящий старший снабженец----------------------------
+- type: entity
+  name: старший снабженец Космологистики
+  suffix: Бот, Космологистика, друж, бег
+  parent: BaseMobHuman
+  id: MobKMLGCc
+  components:
+  - type: Advertise
+    pack: SpeakingMobKMLGCc
+    minimumWait: 30
+    maximumWait: 60
+    prewarm: false
+  - type: Speech
+    speechSounds: Baritone
+  - type: Vocal
+    sounds:
+      Unsexed: MaleHuman
+  - type: AutoEmote
+    emotes: 
+    - Yawns
+    - Sneezes
+    - Coughs
+    - Whistles
+    - Counts
+    - Listening
+    - Watching
+    - Grumbles
+    - Looks
+  - type: RandomMetadata
+    nameSegments:
+    - KMLGName
+    - KMLGNameTwo
+  - type: NpcFactionMember
+    factions:
+      - KMLG
+  - type: Loadout
+    prototypes:
+      - KMLGGearCc
+  - type: InputMover
+  - type: MobMover
+  - type: HTN
+    rootTask:
+      task: BotKMLG
+  - type: NPCRetaliation
+    attackMemoryLength: 100
+#--------------------------------------Ходящий охранник----------------------------
+- type: entity
+  name: охранник Космологистики
+  suffix: Бот, Космологистика, враждебный, бег
+  parent: BaseMobHuman
+  id: MobKMLGS
+  components:
+  - type: Advertise
+    pack: SpeakingMobKMLGS
+    minimumWait: 30
+    maximumWait: 60
+    prewarm: false
+  - type: Speech
+    speechSounds: Baritone
+  - type: Vocal
+    sounds:
+      Unsexed: MaleHuman
+  - type: AutoEmote
+    emotes: 
+    - Yawns
+    - Sneezes
+    - Coughs
+    - Whistles
+    - Bolt
+    - Listening
+    - Cartridges
+    - Gear
+    - Looks
+  - type: RandomMetadata
+    nameSegments:
+    - KMLGName
+    - KMLGNameTwo
+  - type: NpcFactionMember
+    factions:
+      - KMLGEnemy
+  - type: Loadout
+    prototypes:
+      - KMLGGearS
+  - type: InputMover
+  - type: MobMover
+  - type: HTN
+    rootTask:
+      task: BotKMLG
+  - type: NPCRetaliation
+    attackMemoryLength: 100
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 2
+    rechargeSound:
+      path: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+  - type: BasicEntityAmmoProvider
+    proto: CartridgeRifle
+    capacity: 30
+    count: 30
+  - type: Gun
+    showExamineText: false
+    fireRate: 5
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rifle2.ogg
+#--------------------------------------Ходящий ремонтник----------------------------
+- type: entity
+  name: ремонтник Космологистики
+  suffix: Бот, Космологистика, друж, бег
+  parent: BaseMobHuman
+  id: MobKMLGRm
+  components:
+  - type: Advertise
+    pack: SpeakingMobKMLGRm
+    minimumWait: 30
+    maximumWait: 60
+    prewarm: false
+  - type: Speech
+    speechSounds: Baritone
+  - type: Vocal
+    sounds:
+      Unsexed: MaleHuman
+  - type: AutoEmote
+    emotes: 
+    - Yawns
+    - Sneezes
+    - Coughs
+    - Whistles
+    - Sniffs
+    - Wipes
+    - Swearing
+    - Twists
+    - Checks
+  - type: RandomMetadata
+    nameSegments:
+    - KMLGName
+    - KMLGNameTwo
+  - type: NpcFactionMember
+    factions:
+      - KMLG
+  - type: Loadout
+    prototypes:
+      - KMLGGearRm
+  - type: InputMover
+  - type: MobMover
+  - type: HTN
+    rootTask:
+      task: BotKMLG
+  - type: NPCRetaliation
+    attackMemoryLength: 100
+#--------------------------------------Стоящий инженер---------------------------
+- type: entity
+  name: инженер Космологистики
+  suffix: Бот, Космологистика, друж, стоп
+  parent: BaseMobHuman
+  id: MobKMLGE
+  components:
+  - type: Advertise
+    pack: SpeakingMobKMLGE
+    minimumWait: 30
+    maximumWait: 60
+    prewarm: false
+  - type: Speech
+    speechSounds: Baritone
+  - type: Vocal
+    sounds:
+      Unsexed: MaleHuman
+  - type: AutoEmote
+    emotes: 
+    - Yawns
+    - Sneezes
+    - Coughs
+    - Whistles
+    - Twists
+    - Checks
+    - Checked
+    - Measurement
+    - Counts
+  - type: RandomMetadata
+    nameSegments:
+    - KMLGName
+    - KMLGNameTwo
+  - type: NpcFactionMember
+    factions:
+      - KMLG
+  - type: Loadout
+    prototypes:
+      - KMLGGearE
+  - type: InputMover
+  - type: MobMover
+  - type: HTN
+    rootTask:
+      task: BotKMLGStop
+  - type: NPCRetaliation
+    attackMemoryLength: 100
+
+#---------------------------------------Спавнеры ботов-------------------      
+#-------------------------------Грузчик----------------------
+- type: entity
+  name: Спавнер грузчика Космологистики
+  suffix: Бот, Космологистика, друж, стоп
+  id: SpawnMobKMLGCt
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+    - state: green
+    - state: cargo_tech
+  - type: ConditionalSpawner
+    prototypes:
+    - MobKMLGCt
+#-------------------------------Старший снабженец----------------------
+- type: entity
+  name: Спавнер старший снабженец Космологистики
+  suffix: Бот, Космологистика, друж, бег
+  id: SpawnMobKMLGCc
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+    - state: green
+    - state: qm
+  - type: ConditionalSpawner
+    prototypes:
+    - MobKMLGCc
+#-------------------------------Охранник----------------------
+- type: entity
+  name: Спавнер охранник Космологистики
+  suffix: Бот, Космологистика, враждебный, бег
+  id: SpawnMobKMLGS
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+    - state: green
+    - state: security_officer
+  - type: ConditionalSpawner
+    prototypes:
+    - MobKMLGS
+#-------------------------------Ремонтник----------------------
+- type: entity
+  name: Спавнер ремонтник Космологистики
+  suffix: Бот, Космологистика, друж, бег
+  id: SpawnMobKMLGRm
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+    - state: green
+    - state: technicalassistant
+  - type: ConditionalSpawner
+    prototypes:
+    - MobKMLGRm
+#-------------------------------Инженер----------------------
+- type: entity
+  name: Спавнер инженер Космологистики
+  suffix: Бот, Космологистика, друж, стоп
+  id: SpawnMobKMLGE
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+    - state: green
+    - state: engineer
+  - type: ConditionalSpawner
+    prototypes:
+    - MobKMLGE

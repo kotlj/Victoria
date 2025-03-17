@@ -33,6 +33,7 @@
     - type: Battery
       startingCharge: 0
       maxCharge: 8000000
+      pricePerJoule: 0.000583
     - type: ExaminableBattery
     - type: NodeContainer
       examinable: true

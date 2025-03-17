@@ -1122,7 +1122,7 @@
 - type: entity
   parent: [ClothingUniformBase, BaseCommandContraband]
   id: ClothingUniformToxicology
-  name: Комбинезон токсиколога
+  name: комбинезон токсиколога
   suffix: Токсикология
   description: Беленький комбинезон с нашивками токсиколога, которая очень помогает копаться в чужих желудках 
   components:
@@ -1134,7 +1134,7 @@
 - type: entity
   parent: ClothingOuterStorageFoldableBase
   id: ClothingOuterCoatLabToxicology
-  name: Халат токсиколога
+  name: халат токсиколога
   suffix: Токсикология
   description: Халат с гидрофобностью, который отталкивает в том числе и гадкие токсины.
   components:
@@ -1150,7 +1150,7 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackToxicology
-  name: Рюкзак токсиколога
+  name: рюкзак токсиколога
   suffix: Токсикология
   description: Обычный мед.рюкзак, но с нашивками подотдела вирусологии.
   components:
@@ -1160,7 +1160,7 @@
 - type: entity
   parent: ClothingOuterBioGeneral
   id: ClothingOuterBioToxicology
-  name: Биозащитный костюм
+  name: биозащитный костюм
   suffix: Токсикология
   description: Костюм биологической защиты, надеваемый на одежду в расцвете подотдела токсикологии.
   components:
@@ -1172,7 +1172,7 @@
 - type: entity
   parent: ClothingHeadHatHoodBioGeneral
   id: ClothingHeadHatHoodBioToxicology
-  name: Биозащитный "капюшон"
+  name: биозащитный "капюшон"
   suffix: Токсикология
   description: Головной убор, являющийся дополнением к биозащитному костюму токсиколога
   components:
@@ -1187,7 +1187,7 @@
   id: WardrobeToxicologyFilled
   suffix: Filled
   parent: WardrobeWhite
-  name: Гардероб токсиколога
+  name: гардероб токсиколога
   description: Одежда достойная ношения бесстрашных врачей-токсикологов.
   components:
   - type: StorageFill
@@ -1265,7 +1265,7 @@
 - type: entity
   parent: BaseSign
   id: SignToxicology
-  name: Знак "Токсикология"
+  name: знак "Токсикология"
   description: Знак предупреждающий о том, что за стеной лечат от очень ядовитой жути.
   components:
   - type: Sprite

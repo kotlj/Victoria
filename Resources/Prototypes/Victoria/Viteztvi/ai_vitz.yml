@@ -1,0 +1,336 @@
+#---------------------------------------страаааашная муть для поведения ВИ-----------------------
+#---------------------------------------Стрельба и убийство-------------------------
+- type: htnCompound
+  id: GunCombatCompoundBotVitz
+  branches:
+    # Pick target, then move into range and shoot them.
+    - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:UtilityOperator
+            proto: NearbyGunTargets
+        - !type:HTNPrimitiveTask
+          operator: !type:MoveToOperator
+            shutdownState: PlanFinished
+            pathfindInPlanning: true
+            removeKeyOnFinish: false
+            targetKey: TargetCoordinates
+            pathfindKey: TargetPathfind
+            stopOnLineOfSight: true
+            rangeKey: MeleeRange
+        - !type:HTNPrimitiveTask
+          operator: !type:JukeOperator
+            jukeType: AdjacentTile
+        - !type:HTNPrimitiveTask
+          operator: !type:SpeakOperator
+            speech: Огонь туда!
+        - !type:HTNPrimitiveTask
+          preconditions:
+            - !type:KeyExistsPrecondition
+              key: Target
+          operator: !type:GunOperator
+            targetKey: Target
+          services:
+            - !type:UtilityService
+              id: RangedService
+              proto: NearbyGunTargets
+              key: Target
+        - !type:HTNPrimitiveTask
+          operator: !type:SpeakOperator
+            speech: Ага, свалили!
+#--------------------------------------Сочетание правил ВИ-----------------------------------------
+#-----------------Без ходить-бродить----------
+#------обыч-----------          
+- type: htnCompound
+  id: BotVitzStop
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: GunCombatCompoundBotVitz
+
+#--------------------------------действия ботов-----------------------------------
+#-------------------------Мистерр Хилл-----------------
+#----------------------------------
+- type: emote
+  id: EmoteMrHillCigarette
+  name: chat-emote-name-mrHill-cigarette
+  category: Hands
+  whitelist:
+    components:
+    - Hands
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-name-mrHill-cigarette"]
+  
+- type: autoEmote
+  id: EmoteMrHillCigarette
+  emote: EmoteMrHillCigarette
+  interval: 300.0
+  chance: 0.5
+  withChat: true
+#----------------------------------
+- type: emote
+  id: EmoteMrHillEvaluates
+  name: chat-emote-name-mrHill-evaluates
+  category: Hands
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-name-mrHill-evaluates"]
+  
+- type: autoEmote
+  id: EmoteMrHillEvaluates
+  emote: EmoteMrHillEvaluates
+  interval: 150.0
+  chance: 0.8
+  withChat: true  
+#----------------------------------
+- type: emote
+  id: EmoteMrHilllooks
+  name: chat-emote-name-mrHill-looks
+  category: Hands
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-name-mrHill-looks"]
+  
+- type: autoEmote
+  id: EmoteMrHilllooks
+  emote: EmoteMrHilllooks
+  interval: 300.0
+  chance: 0.3
+  withChat: true 
+#----------------------------------
+- type: emote
+  id: EmoteMrHilllistening
+  name: chat-emote-name-mrHill-listening
+  category: Hands
+  chatMessages: ["chat-emote-name-mrHill-listening"]
+  
+- type: autoEmote
+  id: EmoteMrHilllistening
+  emote: EmoteMrHilllistening
+  interval: 200.0
+  chance: 0.5
+  withChat: true 
+#----------------------------------
+- type: emote
+  id: EmoteMrHillwhiskey
+  name: chat-emote-name-mrHill-whiskey
+  category: Hands
+  chatMessages: ["chat-emote-name-mrHill-whiskey"]
+  blacklist:
+    components:
+    - BorgChassis
+  
+- type: autoEmote
+  id: EmoteMrHillwhiskey
+  emote: EmoteMrHillwhiskey
+  interval: 250.0
+  chance: 0.5
+  withChat: true 
+#---------------------------------------Говорение------------------------------------  
+- type: localizedDataset
+  id: SpeakingMobVitzMrHill
+  values:
+    prefix: advertisement-bot-mrhill-
+    count: 6 
+#---------------------------------------Магаз------------------------------------  
+#-----------------категории в магазе------------
+- type: storeCategory
+  id: VitzMrHillShopSolders
+  name: Личный состав
+  priority: 0
+
+- type: storeCategory
+  id: VitzMrHillShopWeaponry
+  name: Вооружение
+  priority: 1
+
+- type: storeCategory
+  id: VitzMrHillShopAmmo
+  name: Боезапас
+  priority: 2
+#-----------------листинг покупок------------
+#------категория личный состав----------
+- type: listing
+  id: ReinforcementRadioVitzEfreitor
+  name: Система призыва пехотинца Витезтви
+  description: Система дальней связи для развёртывания бойца пехотного соединения корпорации Витезтви.
+  productEntity: ReinforcementRadioVitzEfreitor
+  cost:
+    VitzChip_currency: 2
+  categories:
+  - VitzMrHillShopSolders
+  
+- type: listing
+  id: ReinforcementRadioVitzStarshina
+  name: Система призыва старшины Витезтви
+  description: Система дальней связи для развёртывания старшины пехотного соединения корпорации Витезтви.
+  productEntity: ReinforcementRadioVitzStarshina
+  cost:
+    VitzChip_currency: 3
+  categories:
+  - VitzMrHillShopSolders
+#------категория вооружиение----------
+- type: listing
+  id: VitzCrateWeaponsBase
+  name: Ящик стандартного пехотного оружия
+  description: По 4 "Лектера", "Силовика" и Лазерных карабинов.
+  productEntity: VitzCrateWeaponsBase
+  cost:
+    VitzChip_currency: 2
+  categories:
+  - VitzMrHillShopWeaponry
+  
+- type: listing
+  id: VitzCrateWeaponsHelp
+  name: Ящик вспомогательного пехотного оружия
+  description: По 3 Христова и Пулемёта L6
+  productEntity: VitzCrateWeaponsHelp
+  cost:
+    VitzChip_currency: 4
+  categories:
+  - VitzMrHillShopWeaponry 
+
+- type: listing
+  id: VitzCrateWeaponsLight
+  name: Ящик лёгкого оружия
+  description: 4 пистолета МК58, 3 ПП "Орлик", 2 револьвера "Инспектор" и 1 револьвер "Матеба".
+  productEntity: VitzCrateWeaponsLight
+  cost:
+    VitzChip_currency: 3
+  categories:
+  - VitzMrHillShopWeaponry 
+#------категория боезапас----------
+- type: listing
+  id: VitzCrateAmmoBase
+  name: Ящик боеприпасов основного пехотного оружия
+  description: 5 коробок винтовочных патронов, 4 коробки ружейных потронов.
+  productEntity: VitzCrateAmmoBase
+  cost:
+    VitzChip_currency: 3
+  categories:
+  - VitzMrHillShopAmmo 
+
+- type: listing
+  id: VitzCrateAmmoHelp
+  name: Ящик боеприпасов вспомогательного пехотного оружия
+  description: 2 коробки снайперских патронов и ц здоровых цинка к пулемёту.
+  productEntity: VitzCrateAmmoHelp
+  cost:
+    VitzChip_currency: 2
+  categories:
+  - VitzMrHillShopAmmo
+
+- type: listing
+  id: VitzCrateAmmoLight
+  name: Ящик боеприпасов лёгкого оружия
+  description: 6 коробок пистолетных патронов и 3 коробки патронов Магнума.
+  productEntity: VitzCrateAmmoLight
+  cost:
+    VitzChip_currency: 2
+  categories:
+  - VitzMrHillShopAmmo
+#-----------------пресет категорий в магазе------------
+- type: entity
+  id: StorePresetVitzMrHillShop
+  abstract: true
+  components:
+  - type: Store
+    name: Vitz-Category
+    categories:
+    - VitzMrHillShopSolders
+    - VitzMrHillShopWeaponry
+    - VitzMrHillShopAmmo
+    currencyWhitelist:
+    - VitzChip_currency
+    balance:
+      VitzChip_currency: 0  
+#---------------------------------------Сами боты----------------------------------------
+#-------------------------------Мистер Хилл----------------------
+#-------------Вооружён стоит---------------  
+- type: entity
+  name: Бот-шоп Мистер Хилл
+  suffix: Бот, Витезтви, Шоп, друж, стоп
+  parent: [BaseMobHuman, StorePresetVitzMrHillShop]
+  id: MobVitzMrHill
+  components:
+  - type: Advertise
+    pack: SpeakingMobVitzMrHill
+    minimumWait: 30
+    maximumWait: 60
+    prewarm: false
+  - type: Speech
+    speechSounds: Baritone
+  - type: Vocal
+    sounds:
+      Unsexed: MaleHuman
+  - type: AutoEmote
+    emotes: 
+    - Sneezes
+    - Coughs
+    - Whistles
+    - EmoteMrHillCigarette
+    - EmoteMrHillEvaluates
+    - EmoteMrHilllooks
+    - EmoteMrHilllistening
+    - EmoteMrHillwhiskey
+  - type: RandomMetadata
+    nameSegments:
+    - VitzName-mr
+    - VitzNameTwoHill
+  - type: NpcFactionMember
+    factions:
+      - VitzBitMrHill
+  - type: Loadout
+    prototypes:
+      - VitzMrHillGear
+  - type: InputMover
+  - type: MobMover
+  - type: HTN
+    rootTask:
+      task: BotVitzStop
+  - type: NPCRetaliation
+    attackMemoryLength: 100
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 2
+    rechargeSound:
+      path: /Audio/Weapons/Guns/MagIn/revolver_magin.ogg
+  - type: BasicEntityAmmoProvider
+    proto: CartridgeMagnum
+    capacity: 6
+    count: 6
+  - type: Gun
+    showExamineText: false
+    fireRate: 2
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/revolver.ogg
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: AccessReader
+    access: [[ "Command" ]]
+#---------------------------------------Спавнеры ботов-------------------      
+#-------------------------------Солдат----------------------
+#-------------Без оружия бегающий---------------
+- type: entity
+  name: Спавнер бот-шопа Мистерр Хилл
+  suffix: Бот, Витезтви, Шоп, друж, стоп
+  id: SpawnMobVitzMrHill
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+    - state: green
+    - state: reporter
+  - type: ConditionalSpawner
+    prototypes:
+    - MobVitzMrHill
