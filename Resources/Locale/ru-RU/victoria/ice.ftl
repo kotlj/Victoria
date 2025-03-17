@@ -1,8 +1,3 @@
-name-subtype-indicator = Реагент-индикатор токсина
-desc-subtype-indicator = Разлагает токсины в крови, давая возможность определять подтип токсина.
-phy-desc-subtype-indicator = Фиолетовое и очень лёгкое 
-fla-subtype-indicator = Солёное и вяжет
-
 name-dirty = Грязь
 desc-dirty = Грязная грязь
 phy-desc-dirty = Коричневая и противная
