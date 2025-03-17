@@ -2,8 +2,8 @@
 - type: entity
   id: CosmAccumulator
   parent: BaseMachine
-  name: Космециевый аккумулятор
-  description: Крупный аккумулятор совместной разработки НаноТрейзен и Накамура Инжениринг, который используется для накопление существенного количества энергии в космециевых ядрах.
+  name: космециевый аккумулятор
+  description: Крупный аккумулятор совместной разработки NanoTrasen и Nakamura Engineering, который используется для накопление существенного количества энергии в космециевых ядрах.
   suffix: Не маппить!, Космециевая машина
   components:
     - type: AmbientSound
@@ -93,7 +93,7 @@
 - type: entity
   id: CosmAccumBase
   parent: BaseStructureDynamic
-  name: Основа космециевого аккумулятора
+  name: основа космециевого аккумулятора
   description: Все основные системы космециевого аккумулятора распологаются тут, но не хватает верхнего силового модуля.
   suffix: Не маппить!, Космециевая машина
   categories: [ HideSpawnMenu ]
@@ -150,7 +150,7 @@
 - type: entity
   id: CosmMachineBase
   parent: [ BaseMachine, ConstructibleMachine ]
-  name: База космециевой машины
+  name: база космециевой машины
   description: Корпус, база управления и накопитель энергии для любой космециевой машины.
   suffix: Космециевая машина
   placement:
@@ -215,7 +215,7 @@
 - type: entity
   id: MachineCircuitboardCosmMachine
   parent: BaseMachineCircuitboard
-  name: Плата базы космециевой машины
+  name: плата базы космециевой машины
   description: Электронная плата для системы управления космециевой машины.
   suffix: Космециевая машина
   components:
@@ -238,7 +238,7 @@
 
 - type: stack
   id: MachineCircuitboardCosmAccumStack
-  name: Плата космециевого аккумулятора
+  name: плата космециевого аккумулятора
   icon: { sprite: Objects/Misc/module.rsi, state: science }
   spawn: MachineCircuitboardCosmAccum
   maxCount: 1
@@ -246,14 +246,14 @@
 - type: material
   id: MachineCircuitboardCosmAccumMaterial
   stackEntity: MachineCircuitboardCosmAccum
-  name: Плата космециевого аккумулятора
+  name: плата космециевого аккумулятора
   icon: { sprite: Objects/Misc/module.rsi, state: science }
   price: 1 
 
 - type: entity
   id: MachineCircuitboardCosmAccum
   parent: CrystalOreBase
-  name: Плата космециевого аккумулятора
+  name: плата космециевого аккумулятора
   description: Электронная плата для системы управления космециевым аккумулятором.
   suffix: Космециевая машина
   components:

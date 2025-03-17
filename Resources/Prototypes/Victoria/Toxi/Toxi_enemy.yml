@@ -293,7 +293,7 @@
 - type: entity
   id: ProjectileToxiAnome
   parent: BaseBullet
-  name: Заряд токсина
+  name: заряд токсина
   description: Воняет отвратно...
   categories: [ HideSpawnMenu ]
   components:
@@ -322,7 +322,7 @@
 - type: entity
   parent: BaseMobFlesh
   id: ToxiLeech
-  name: Токсиявка
+  name: токсиявка
   description: Мелкая гадкая аморфная сущность состаящая из сгущёного токсина. Кусает не то чтобы больно, но тут же вкалывает токсин.
   components:
   - type: Sprite
@@ -355,7 +355,7 @@
 - type: entity
   parent: BaseMobFlesh
   id: ToxiTroll
-  name: Токситролль
+  name: токситролль
   description: Здоровая сущность из сгущённого токсина. Сурово бьёт и опасно отравляет.
   components:
   - type: Sprite
@@ -507,8 +507,8 @@
 #----------------------------------Товар в аплинк---------------------------
 - type: listing
   id: UplinkToxineSA1BeakerSmall
-  name: Токсин SA1
-  description: Синтетический Атомарный Альфа-токсин. Усваивается достаточно быстро, но серьёзно травит жертву. 20 юнитов.
+  name: токсин СА-1
+  description: Синтетический-атомарный токсин подтипа альфа. Усваивается достаточно быстро, но серьёзно травит жертву.
   productEntity: ToxineSA1BeakerSmall
   discountCategory: usualDiscounts
   discountDownTo:
@@ -536,8 +536,8 @@
 #----------------------------------Товар в аплинк---------------------------
 - type: listing
   id: UplinkToxineSM1BeakerSmall
-  name: Токсин SM1
-  description: Синтетический Молекулярный Альфа-токсин. Усваивается не слишком быстро, но серьёзно травит жертву. 20 юнитов.
+  name: токсин СМ-1
+  description: Синтетический-молекулярный подтипа альфа. Усваивается не слишком быстро, но серьёзно травит жертву.
   productEntity: ToxineSM1BeakerSmall
   discountCategory: usualDiscounts
   discountDownTo:
@@ -565,8 +565,8 @@
 #----------------------------------Товар в аплинк---------------------------
 - type: listing
   id: UplinkToxinePM1BeakerSmall
-  name: Токсин PM1
-  description: Природный Молекулярный Альфа-токсин. Усваивается очень долго и серьёзно травит жертву. 20 юнитов.
+  name: токсин ПМ-1
+  description: Природно-молекулярный токсин подтипа альфа. Усваивается очень долго и серьёзно травит жертву.
   productEntity: ToxinePM1BeakerSmall
   discountCategory: usualDiscounts
   discountDownTo:

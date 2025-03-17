@@ -189,7 +189,7 @@
 #------------------Стак--------------------------
 - type: stack
   id: SpaceCosmCrystall
-  name: Кристалл Космеция
+  name: кристалл космеция
   icon: { sprite: Victoria/Special_crystals/cosm_crystal.rsi, state: cosm_crystal }
   spawn: SpaceCosmCrystall1
   maxCount: 10
@@ -314,7 +314,7 @@
 #------------------Стак--------------------------
 - type: stack
   id: СhromeCrystall
-  name: Куски хрома
+  name: куски хрома
   icon: { sprite: Victoria/Special_crystals/chrome_crystal.rsi, state: chrome_crystal }
   spawn: СhromeCrystall1
   maxCount: 30
@@ -331,7 +331,7 @@
 - type: entity
   parent: CrystalOreBase
   id: SiCrystall
-  name: булька Кремния
+  name: булька кремния
   description: Дешёвый, простой, удобный! Это кремний, это электроника.
   suffix: Особые кристаллы, Full
   components:
@@ -387,7 +387,7 @@
 - type: material
   id: BSCrystalMaterial
   stackEntity: SpaceBSCrystall1
-  name: бс-кристаллы
+  name: блюспейс-кристаллы
   icon: { sprite: Victoria/Special_crystals/bs_crystal.rsi, state: bs_crystal }
   price: 0.5
 #----------------------------------РС--------------------------------
@@ -477,7 +477,7 @@
 - type: entity
   id: Transmutator
   parent: BaseLatheLube
-  name: Трансмутатор
+  name: трансмутатор
   description: Сложное научное оборудование для преобразования кристаллов
   components:
   - type: Sprite
@@ -554,7 +554,7 @@
 
 - type: stack
   id: BSModuleStack
-  name: Блюспейс-модуль
+  name: блюспейс-модуль
   icon: { sprite: Victoria/Special_crystals/module.rsi, state: bs_module }
   spawn: BSModule
   maxCount: 6
@@ -562,13 +562,13 @@
 - type: material
   id: BSModuleMaterial
   stackEntity: BSModule
-  name: Блюспейс-модуль
+  name: блюспейс-модуль
   icon: { sprite: Victoria/Special_crystals/module.rsi, state: bs_module }
   price: 6
 
 - type: entity
   id: BSModule
-  name: Блюспейс-модуль
+  name: блюспейс-модуль
   parent: BaseStockPart
   description: Сложное энергетическо-вычислительное устройство, используемое для создания крупных машин, взаимодействующих с Блюспейс-пространством.
   components:
@@ -589,7 +589,7 @@
 
 - type: stack
   id: RSModuleStack
-  name: Редспейс-модуль
+  name: редспейс-модуль
   icon: { sprite: Victoria/Special_crystals/module.rsi, state: rs_module }
   spawn: RSModule
   maxCount: 6
@@ -597,13 +597,13 @@
 - type: material
   id: RSModuleMaterial
   stackEntity: RSModule
-  name: Редспейс-модуль
+  name: редспейс-модуль
   icon: { sprite: Victoria/Special_crystals/module.rsi, state: rs_module }
   price: 6
 
 - type: entity
   id: RSModule
-  name: Редспейс-модуль
+  name: редспейс-модуль
   parent: BaseStockPart
   description: Сложное энергетическо-осциллирующейй устройство, используемое для создания техники, взаимодействующей с Редспейсом.
   components:
@@ -624,7 +624,7 @@
 
 - type: stack
   id: CMCoreStack
-  name: Ядро космеция
+  name: ядро космеция
   icon: { sprite: Victoria/Special_crystals/module.rsi, state: cosm_core }
   spawn: CMCore
   maxCount: 6
@@ -632,13 +632,13 @@
 - type: material
   id: CMCoreMaterial
   stackEntity: CMCore
-  name: Ядро космеция
+  name: ядро космеция
   icon: { sprite: Victoria/Special_crystals/module.rsi, state: cosm_core }
   price: 6 
 
 - type: entity
   id: CMCore
-  name: Ядро космеция
+  name: ядро космеция
   parent: BaseStockPart
   description: Сложное энергетическо-силовое устройство, используемое для создания высокоэнергетических, но сравнительно малогабаритных устройств.
   components:
