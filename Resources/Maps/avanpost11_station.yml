@@ -6314,7 +6314,7 @@ entities:
       pos: 45.5,-2.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -23299.154
+      secondsUntilStateChange: -23614.658
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -74168,12 +74168,6 @@ entities:
     - type: Transform
       pos: 45.5,-22.5
       parent: 2
-  - uid: 4311
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 39.5,-17.5
-      parent: 2
   - uid: 4312
     components:
     - type: Transform
@@ -74195,12 +74189,6 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 32.5,-22.5
-      parent: 2
-  - uid: 4316
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 41.5,-17.5
       parent: 2
   - uid: 5361
     components:
@@ -75916,6 +75904,11 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 59.5,48.5
+      parent: 2
+  - uid: 18140
+    components:
+    - type: Transform
+      pos: 40.5,-16.5
       parent: 2
 - proto: PoweredlightOrange
   entities:
@@ -80405,57 +80398,83 @@ entities:
       parent: 2
 - proto: SinkEmpty
   entities:
+  - uid: 4311
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 75.5,-13.5
+      parent: 2
+    missingComponents:
+    - SolutionRegeneration
   - uid: 9901
     components:
     - type: Transform
       pos: 65.5,1.5
       parent: 2
+    missingComponents:
+    - SolutionRegeneration
   - uid: 9902
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 64.5,-2.5
       parent: 2
+    missingComponents:
+    - SolutionRegeneration
   - uid: 11267
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 63.5,36.5
       parent: 2
+    missingComponents:
+    - SolutionRegeneration
   - uid: 11268
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 64.5,36.5
       parent: 2
+    missingComponents:
+    - SolutionRegeneration
   - uid: 11269
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 65.5,36.5
       parent: 2
+    missingComponents:
+    - SolutionRegeneration
   - uid: 11270
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 66.5,36.5
       parent: 2
+    missingComponents:
+    - SolutionRegeneration
   - uid: 11448
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 80.5,30.5
       parent: 2
+    missingComponents:
+    - SolutionRegeneration
   - uid: 11595
     components:
     - type: Transform
       pos: 61.5,29.5
       parent: 2
+    missingComponents:
+    - SolutionRegeneration
   - uid: 11596
     components:
     - type: Transform
       pos: 62.5,29.5
       parent: 2
+    missingComponents:
+    - SolutionRegeneration
   - uid: 11597
     components:
     - type: Transform
@@ -80468,11 +80487,15 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 61.5,18.5
       parent: 2
+    missingComponents:
+    - SolutionRegeneration
   - uid: 11633
     components:
     - type: Transform
       pos: 74.5,45.5
       parent: 2
+    missingComponents:
+    - SolutionRegeneration
   - uid: 11634
     components:
     - type: Transform
@@ -80485,6 +80508,24 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 65.5,46.5
       parent: 2
+    missingComponents:
+    - SolutionRegeneration
+  - uid: 18138
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 41.5,-17.5
+      parent: 2
+    missingComponents:
+    - SolutionRegeneration
+  - uid: 18139
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 39.5,-17.5
+      parent: 2
+    missingComponents:
+    - SolutionRegeneration
 - proto: SiPlazCircuitBord1
   entities:
   - uid: 4714
@@ -81703,6 +81744,13 @@ entities:
     components:
     - type: Transform
       pos: 75.5,-5.5
+      parent: 2
+- proto: SpawnPointObserver
+  entities:
+  - uid: 4316
+    components:
+    - type: Transform
+      pos: 58.5,17.5
       parent: 2
 - proto: SpawnPointParamedic
   entities:
@@ -84621,21 +84669,29 @@ entities:
     - type: Transform
       pos: 61.5,39.5
       parent: 2
+    missingComponents:
+    - SolutionRegeneration
   - uid: 11259
     components:
     - type: Transform
       pos: 63.5,39.5
       parent: 2
+    missingComponents:
+    - SolutionRegeneration
   - uid: 11260
     components:
     - type: Transform
       pos: 65.5,39.5
       parent: 2
+    missingComponents:
+    - SolutionRegeneration
   - uid: 11261
     components:
     - type: Transform
       pos: 67.5,39.5
       parent: 2
+    missingComponents:
+    - SolutionRegeneration
 - proto: ToiletGoldenDirtyWater
   entities:
   - uid: 583
