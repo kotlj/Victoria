@@ -1333,6 +1333,7 @@
             - NoocMagazineCureRifleMech
             - NoocMagazineCureRifleHeat
             - NoocMagazineCureRifleRadi
+            - NoocMagazineCureRifleEmpty
       gun_chamber:
         name: Chamber
         startingItem: NoocCartridgeHilMech
