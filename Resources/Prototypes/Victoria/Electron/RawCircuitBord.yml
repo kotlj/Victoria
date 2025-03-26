@@ -23,7 +23,7 @@
       RawCooper: 100
   - type: SolutionContainerManager
     solutions:
-      ironore:
+      cooper:
         reagents:
         - ReagentId: Copper
           Quantity: 40
@@ -87,7 +87,8 @@
           state: rock_north
         - map: [ "enum.EdgeLayer.West" ]
           state: rock_west
-        - state: cooper  
+        - state: cooper 
+          map: [ "enum.MiningScannerVisualLayers.Overlay" ]        
 #------------------Переплавка-------------------------        
 - type: latheRecipe
   id: MeltingCooper
@@ -174,7 +175,7 @@
       RawAluminium: 100
   - type: SolutionContainerManager
     solutions:
-      ironore:
+      aluminium:
         reagents:
         - ReagentId: Aluminium
           Quantity: 40
@@ -233,6 +234,7 @@
         - map: [ "enum.EdgeLayer.West" ]
           state: rock_west
         - state: aluminium  
+          map: [ "enum.MiningScannerVisualLayers.Overlay" ]
 #------------------Переплавка-------------------------        
 - type: latheRecipe
   id: MeltingAluminium

@@ -1343,6 +1343,7 @@
             - NoocCartridgeHilMech
             - NoocCartridgeHilHeat
             - NoocCartridgeHilRadi
+            - NoocCartridgeHilEmpty
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -2955,6 +2956,11 @@
     idleState: icon
     runningState: icon
     staticRecipes:
+      - ExplosiveMineBase
+      - FragmentationMineBase
+      - FuseMine
+      - RecipeSteelWire
+      - RecipeCord
       - NoocPowerCellOne
       - NoocPowerCellThree
       - NoocPowerCellTwo
