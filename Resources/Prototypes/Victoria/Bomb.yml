@@ -782,6 +782,10 @@
     deconstructionTarget: start
   - type: StaminaDamageOnCollide
     damage: 30
+  - type: DamageContacts
+    damage:
+      types:
+        Piercing: 3
   - type: SpeedModifierContacts
     walkSpeedModifier: 0.15
     sprintSpeedModifier: 0.15
@@ -874,11 +878,27 @@
     graph: Stumble
     node: Stumble
     deconstructionTarget: start
+  - type: DamageContacts
+    damage:
+      types:
+        Piercing: 1
   - type: StaminaDamageOnCollide
     damage: 20
   - type: SpeedModifierContacts
     walkSpeedModifier: 0.5
     sprintSpeedModifier: 0.5
+  - type: StepTrigger
+    intersectRatio: 0.2
+  - type: TriggerOnStepTrigger
+  - type: PreventableStepTrigger
+  - type: Slippery
+    slipSound:
+      path: /Audio/Effects/fence_rattle2.ogg
+    launchForwardsMultiplier: 0
+  - type: DamageUserOnTrigger
+    damage:
+      types:
+        Piercing: 5
 #-------------------------------сборка------------------------------------
 - type: constructionGraph
   id: Stumble
