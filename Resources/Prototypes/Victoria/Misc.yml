@@ -1,7 +1,7 @@
 # -----------------------------канал----------------------------------------  
 - type: radioChannel
   id: SecurityReservRadio
-  name: СБРезерв
+  name: name-securityreservradio
   keycode: 'ъ' 
   frequency: 9876
   color: "#ff0000"

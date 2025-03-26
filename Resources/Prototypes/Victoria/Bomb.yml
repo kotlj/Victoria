@@ -431,7 +431,7 @@
   description: Мягкая субстанция палевого или зеленоватого цвета. Сослепу можно спутать с хлебным мякишом или солёным тестом. НЕ ЖРАТЬ! НЕ РОНЯТЬ! НЕ ГРЕТЬ!
   components:
   - type: Item
-    itemSize: Tiny
+    size: Tiny
   - type: Stack
     stackType: PicePlastid
     count: 1
