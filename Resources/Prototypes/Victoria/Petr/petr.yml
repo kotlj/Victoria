@@ -422,7 +422,7 @@
       - id: CombatKnife
       - id: PetrMagazinePistol
       - id: PetrMagazinePistol
-      - id: PetrExGrenade
+      - id: ExGrenade
 #-------------------------------------пояс специалиста--------------------------------------- 
 - type: entity
   parent: ClothingBeltStorageBase
@@ -462,8 +462,8 @@
   - type: StorageFill
     contents:
       - id: CombatKnife
-      - id: PetrExGrenade
-      - id: PetrExGrenade
+      - id: ExGrenade
+      - id: ExGrenade
       - id: PetrSmokeGrenade
       - id: PetrSmokeGrenade
 #-------------------------------------оружие-------------------------------------------------------------------------------
@@ -1500,13 +1500,14 @@
   - type: StorageFill
     contents:
       - id: PetrHelmet
-      - id: PetrExGrenade
-      - id: PetrExGrenade
+      - id: ExGrenade
+      - id: ExGrenade
       - id: PetrSmokeGrenade
       - id: PetrSmokeGrenade
-      - id: PetrSmokeGrenade
-      - id: C4
-      - id: C4
+      - id: CordStack
+      - id: Plastid
+      - id: Plastid
+      - id: FuseMine
       - id: ClothingMaskGas
       - id: FoodTinMRE
       - id: DrinkWaterBottleFull
@@ -2316,12 +2317,12 @@
       - id: PetrSmokeGrenade
       - id: PetrSmokeGrenade
       - id: PetrSmokeGrenade
-      - id: PetrExGrenade
-      - id: PetrExGrenade
-      - id: PetrExGrenade
-      - id: PetrExGrenade
-      - id: PetrExGrenade
-      - id: PetrExGrenade
+      - id: ExGrenade
+      - id: ExGrenade
+      - id: ExGrenade
+      - id: ExGrenade
+      - id: ExGrenade
+      - id: ExGrenade
 #-----------------------------Ящик формы------------------ 
 - type: entity
   id: PetrCrateForm
@@ -2414,33 +2415,6 @@
       - id: PetrEncryptionKey
       
 #-----------------------------------обычные грены...--------------------------------
-- type: Tag
-  id: PetrExGrenade
-
-- type: entity
-  name: Разрывная граната
-  description: Мама говорила, что ей разом можно убить 40 человек...
-  parent: GrenadeBase
-  id: PetrExGrenade
-  components:
-  - type: ExplodeOnTrigger
-  - type: Explosive
-    explosionType: Default
-    maxIntensity: 10
-    intensitySlope: 3
-    totalIntensity: 120 # about a ~4 tile radius
-    canCreateVacuum: false
-  - type: OnUseTimerTrigger
-    beepSound:
-      path: "/Audio/Effects/beep1.ogg"
-      params:
-        volume: 5
-    initialBeepDelay: 0
-    beepInterval: 2
-  - type: Tag
-    tags:
-      - PetrExGrenade
-
 - type: Tag
   id: PetrSmokeGrenade
     
