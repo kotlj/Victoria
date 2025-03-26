@@ -460,7 +460,7 @@
   description: Округлый корпус начинённый взрывчаткой. Безопасный без взрыватель. Можно даже ронять. НЕ КОЛОТЬ ОРЕХИ!
   components:
   - type: Item
-    itemSize: Small
+    size: Small
   - type: Stack
     stackType: ExplosiveMineBase
     count: 1
@@ -528,7 +528,7 @@
   description: Округлый корпус начинённый взрывчаткой и шрапнелью. Безопасный без взрыватель. Можно даже ронять. НЕ КОЛОТЬ ОРЕХИ!
   components:
   - type: Item
-    itemSize: Small
+    size: Small
   - type: Stack
     stackType: FragmentationMineBase
     count: 1
@@ -597,7 +597,7 @@
   description: Небольшой целиндр с проводочками и датчиком давления. Сам по себе не представляет угрозы.
   components:
   - type: Item
-    itemSize: Small
+    size: Small
   - type: Stack
     stackType: FuseMine
     count: 3
@@ -677,7 +677,7 @@
     state: icon
   - type: Item
     sprite: Victoria/Bomb/microbomb.rsi
-    itemSize: Tiny
+    size: Tiny
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
