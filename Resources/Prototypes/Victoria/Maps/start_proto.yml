@@ -15,7 +15,5 @@
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/emergency_corvaxdelta.yml
         - type: StationJobs
-          overflowJobs:
-            - Passenger
           availableJobs:
             Passenger: [ -1, -1 ]

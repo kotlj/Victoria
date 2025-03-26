@@ -67,12 +67,12 @@
   spawn: CableWireStack1
   maxCount: 30
   
-- type: material
-  id: CableWireMaterial
-  stackEntity: Wire
-  name: стальная проволока
-  icon: { sprite: "/Textures/Victoria/Bomb/coils.rsi", state: coilwire-30 }
-  price: 0.05
+# - type: material
+  # id: CableWireMaterial
+  # stackEntity: Wire
+  # name: стальная проволока
+  # icon: { sprite: "/Textures/Victoria/Bomb/coils.rsi", state: coilwire-30 }
+  # price: 0.05
 #-------------------------------крафт------------------------------------    
 #---------------------руками----------------------------
 - type: constructionGraph
@@ -392,7 +392,7 @@
   description: Мягкая субстанция палевого или зеленоватого цвета. Сослепу можно спутать с хлебным мякишом или солёным тестом. НЕ ЖРАТЬ! НЕ РОНЯТЬ! НЕ ГРЕТЬ!
   components:
   - type: Item
-    itemSize: Small
+    size: Small
   - type: Stack
     stackType: Plastid
     count: 1
@@ -677,7 +677,6 @@
     state: icon
   - type: Item
     sprite: Victoria/Bomb/microbomb.rsi
-    state: icon
     itemSize: Tiny
   - type: ExplodeOnTrigger
   - type: Explosive
@@ -735,7 +734,7 @@
   targetNode: MicroBomb
   category: construction-category-materials
   description: Округлый корпус начинённый взрывчаткой. Безопасный без взрыватель. Можно даже ронять. НЕ КОЛОТЬ ОРЕХИ!
-  icon: { sprite: Victoria/Bomb/part_mine.rsi, state: microbomb }
+  icon: { sprite: Victoria/Bomb/microbomb.rsi, state: icon }
   objectType: Item
 #----------------------------------------------------структуры-------------------------------------
 #-----------------------------------------колючая проволока-------------------------------
@@ -813,7 +812,7 @@
             - !type:AdminLog
               message: "Колючка была разрезан"
             - !type:SpawnPrototype
-              prototype: Wire
+              prototype: CableWireStack1
               amount: 3 
             - !type:DeleteEntity
           steps:

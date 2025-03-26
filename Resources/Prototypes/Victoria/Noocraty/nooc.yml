@@ -1343,7 +1343,7 @@
             - NoocCartridgeHilMech
             - NoocCartridgeHilHeat
             - NoocCartridgeHilRadi
-            - NoocCartridgeHilEmpty
+            - NoocCartridgeHillEmpty
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
