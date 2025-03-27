@@ -1333,6 +1333,7 @@
             - NoocMagazineCureRifleMech
             - NoocMagazineCureRifleHeat
             - NoocMagazineCureRifleRadi
+            - NoocMagazineCureRifleEmpty
       gun_chamber:
         name: Chamber
         startingItem: NoocCartridgeHilMech
@@ -1342,6 +1343,7 @@
             - NoocCartridgeHilMech
             - NoocCartridgeHilHeat
             - NoocCartridgeHilRadi
+            - NoocCartridgeHillEmpty
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -2954,6 +2956,11 @@
     idleState: icon
     runningState: icon
     staticRecipes:
+      - ExplosiveMineBase
+      - FragmentationMineBase
+      - FuseMine
+      - RecipeSteelWire
+      - RecipeCord
       - NoocPowerCellOne
       - NoocPowerCellThree
       - NoocPowerCellTwo
